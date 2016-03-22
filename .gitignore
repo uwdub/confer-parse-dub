@@ -1,0 +1,8 @@
+# virtualenv directory
+env35
+
+# Python compiled files
+*.pyc
+
+# Pycharm files
+.idea
