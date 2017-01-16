@@ -1,2 +1,267 @@
 file_input: 'data/chi2016/chi2016papers.json'
 file_output: 'data/chi2016/chi2016papers.yml'
+
+include:
+  - type: 'paper'
+    affiliation: 'Washington'
+
+exclude:
+  - id: 'pn1007'
+
+affiliations:
+  - affiliation: 'UW Biomedical and Health Informatics'
+    match:
+      affiliation:
+        - 'Biomedical and Health Informatics, University of Washington'
+        - 'Biomedical Informatics and Medical Education, University of Washington'
+      name:
+        - 'Andrew D Miller'
+  - affiliation: 'UW Communication'
+    match:
+      affiliation:
+        - 'Department of Communication, University of Washington'
+      name:
+        - 'Charles Kiene'
+  - affiliation: 'UW Computer Science & Engineering'
+    match:
+      affiliation:
+        - 'Computer Science & Engineering , DUB Group'
+        - 'Computer Science & Engineering, University of Washington'
+        - 'Computer Science and Engineering, University of Washington'
+        - 'UW Computer Science & Engineering'
+        - 'Center for Game Science, Department of Computer Science & Engineering, University of Washington'
+      name:
+        - 'Christy Ballweber'
+        - 'Gaetano Borriello'
+        - 'James Fogarty'
+        - 'Mayank Goel'
+        - 'Tadayoshi Kohno'
+        - 'Zoran Popovic'
+        - 'Eric Whitmire'
+        - 'Xiaoyi Zhang'
+  - affiliation: 'UW Computer Science & Engineering / UW Electrical Engineering'
+    match:
+      affiliation:
+        - 'UW Computer Science & Engineering / UW Electrical Engineering'
+      name:
+        - 'Shwetak N Patel'
+  - affiliation: 'UW Computer Science & Engineering / UW Human Centered Design & Engineering'
+    match:
+      affiliation:
+      name:
+        - 'Laura R Pina'
+  - affiliation: 'UW Division of Design'
+    match:
+      affiliation:
+      name:
+        - 'Shaghayegh Ghassemian'
+  - affiliation: 'UW Electrical Engineering'
+    match:
+      affiliation:
+        - 'Electrical Engineering, University of Washington'
+      name:
+        - 'Ke-Yu Chen'
+        - 'Josh Fromm'
+        - 'Elliot Saba'
+  - affiliation: 'UW Environmental Science'
+    match:
+      affiliation:
+      name:
+        - 'Thomas Tran'
+  - affiliation: 'UW Human Centered Design & Engineering'
+    match:
+      affiliation:
+        - 'Department of Human Centered Design and Engineering, University of Washington'
+        - 'Human Centered Design & Engineering, University of Washington'
+        - 'Human Centered Design & Engineering, University of Washington, UW'
+        - 'Human Centered Design and Engineering, University of Washington'
+        - 'TAT Lab, University of Washington'
+        - 'UW Human Centered Design & Engineering'
+        - 'Human Centered Design & Engineering, University of Washington, Seattle, Washington, United States, University of Washington'
+        - 'University of Washington , Human Centered Design and Engineering'
+      name:
+        - 'Hyewon Suh'
+  - affiliation: 'UW Information School'
+    match:
+      affiliation:
+        - 'Information School, University of Washington'
+        - 'Information School , University of Washington'
+        - 'School of Information, University of Washington'
+        - 'UW Information School'
+        - 'The Information School, University of Washington'
+      name:
+        - 'Martez E Mott'
+        - 'Jacob Wobbrock'
+        - 'Jacob O Wobbrock'
+        - 'Wanda Pratt'
+  - affiliation: 'UW Mechanical Engineering'
+    match:
+      affiliation:
+        - 'Mechanical Engineering, University of Washington'
+      name:
+  - affiliation: 'UW MHCI+D'
+    match:
+      affiliation:
+      name:
+        - 'Nina Shahriaree'
+  - affiliation: 'UW School of Medicine'
+    match:
+      affiliation:
+        - 'Department of Pediatrics - School of Medicine, University of Washington'
+      name:
+        - 'Ari H Pollack'
+  - affiliation: 'Arizona State University'
+    match:
+      affiliation:
+        - 'Arizona State University'
+      name:
+  - affiliation: 'Carnegie Mellon University'
+    match:
+      affiliation:
+        - 'Human Computer Interaction, Carnegie Mellon University'
+        - 'Human-Computer Interaction Institute, Carnegie Mellon'
+        - 'Human-Computer Interaction Institute, Carnegie Mellon University'
+        - 'Human Computer Interaction Institute, Carnegie Mellon University'
+        - 'Human-Computer Interaction Institute, School of Computer Science, Carnegie Mellon University'
+      name:
+  - affiliation: 'Cornell University'
+    match:
+      affiliation:
+        - 'Cornell University'
+        - 'Information Science, Cornell University'
+      name:
+  - affiliation: 'Disney Research'
+    match:
+      affiliation:
+        - 'Disney Research'
+        - 'Disney Research Pittsburgh, Disney Research'
+      name:
+  - affiliation: 'FX Palo Alto Laboratory'
+    match:
+      affiliation:
+        - 'FXPAL'
+        - 'FX Palo Alto Laboratory, Inc.'
+      name:
+  - affiliation: 'Global Solidarity Corporation'
+    match:
+      affiliation:
+        - 'Global Solidarity Corporation'
+      name:
+  - affiliation: 'Inglemoor High School'
+    match:
+      affiliation:
+        - 'Inglemoor High School'
+      name:
+  - affiliation: 'Massachusetts Institute of Technology'
+    match:
+      affiliation:
+        - 'Massachusetts Institute of Technology'
+      name:
+  - affiliation: 'North Carolina State University'
+    match:
+      affiliation:
+        - 'North Carolina State University'
+      name:
+  - affiliation: 'Massachusetts Institute of Technology'
+    match:
+      affiliation:
+        - 'Massachusetts Institute of Technology'
+        - 'MIT Media Lab, Massachusetts Institute of Technology'
+      name:
+  - affiliation: 'Microsoft Research'
+    match:
+      affiliation:
+        - 'Microsoft Research'
+      name:
+  - affiliation: 'National Tsing Hua Unversity'
+    match:
+      affiliation:
+        - 'Electrical Engineering, National Tsing Hua Unversity'
+      name:
+  - affiliation: 'Northeastern University'
+    match:
+      affiliation:
+        - 'CCIS, Northeastern University'
+      name:
+  - affiliation: 'Oculus Research'
+    match:
+      affiliation:
+        - 'Oculus Research'
+      name:
+  - affiliation: 'Oregon State University'
+    match:
+      affiliation:
+        - 'Oregon State University'
+        - 'School of EECS, Oregon State University'
+      name:
+  - affiliation: 'Palo Alto Research Center'
+    match:
+      affiliation:
+        - 'Palo Alto Research Center'
+        - 'Palo Alto Research Center (PARC)'
+      name:
+  - affiliation: 'Pennsylvania State University'
+    match:
+      affiliation:
+        - 'College of Information Sciences and Technology, The Pennsylvania State University'
+        - 'College of Information Sciences and Technology, Pennsylvania State University'
+        - 'Information Sciences and Technology/HCI, The Pennsylvania State University'
+        - 'College of Information Sciences and Technology, Penn State'
+      name:
+  - affiliation: 'Seattle Pacific University'
+    match:
+      affiliation:
+        - 'Seattle Pacific University'
+      name:
+  - affiliation: 'Stanford University'
+    match:
+      affiliation:
+        - 'Computer Science, Stanford University'
+      name:
+  - affiliation: 'Southern Methodist University'
+    match:
+      affiliation:
+        - 'Computer Science and Engineering, Southern Methodist University'
+      name:
+  - affiliation: 'Technion'
+    match:
+      affiliation:
+        - 'Technion - Israel Institute of Technology'
+      name:
+  - affiliation: 'Tufts University'
+    match:
+      affiliation:
+        - 'Tufts University'
+      name:
+  - affiliation: 'University of Colorado'
+    match:
+      affiliation:
+        - 'University of Colorado Boulder'
+        - 'Department of Computer Science, University of Colorado'
+      name:
+  - affiliation: 'University of Dundee'
+    match:
+      affiliation:
+        - 'School of Computing, University of Dundee'
+      name:
+  - affiliation: 'University of Maryland'
+    match:
+      affiliation:
+        - 'University of Maryland'
+        - 'College of Education, University of Maryland'
+        - 'College of Information Studies, University of Maryland'
+        - 'Human-Computer Interaction Lab, University of Maryland'
+        - 'Department of Teaching and Learning, Policy and Leadership, University of Maryland'
+      name:
+        - 'Elizabeth Bonsignore'
+  - affiliation: 'University of Michigan'
+    match:
+      affiliation:
+        - 'School of Information , University of Michigan'
+        - 'School of Information, University of Michigan'
+      name:
+  - affiliation: 'University Stefan cel Mare of Suceava'
+    match:
+      affiliation:
+        - 'University Stefan cel Mare of Suceava'
+      name:
