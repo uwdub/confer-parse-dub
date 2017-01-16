@@ -445,14 +445,16 @@ def output_yaml(items, file_output):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Confer JSON parser for DUB')
-    parser.add_argument('-i', required=True, dest='file_input')
-    parser.add_argument('-o', required=True, dest='file_output')
+    parser = argparse.ArgumentParser(description='Conference data parser for DUB')
+    parser.add_argument('-f', required=True, dest='file_config')
     args = parser.parse_args()
 
-    items = parse_confer(args.file_input)
-    output_yaml(items, args.file_output)
+    with open(args.file_config, 'r') as f:
+        config = yaml.load(f)
 
-    print('{} papers'.format(len(items)))
-    print('{} best paper award'.format(len([item for item in items if item['award'] == True])))
-    print('{} best paper honorable mention'.format(len([item for item in items if item['hm'] == True])))
+    items = parse_confer(config['file_input'])
+    output_yaml(items, config['file_output'])
+
+    # print('{} papers'.format(len(items)))
+    # print('{} best paper award'.format(len([item for item in items if item['award'] == True])))
+    # print('{} best paper honorable mention'.format(len([item for item in items if item['hm'] == True])))

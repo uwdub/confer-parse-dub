@@ -1,0 +1,2 @@
+file_input: 'data/chi2016/chi2016papers.json'
+file_output: 'data/chi2016/chi2016papers.yml'
