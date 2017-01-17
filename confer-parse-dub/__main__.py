@@ -156,6 +156,26 @@ def match_include(config, items):
 
 
 def normalize_items(config, items):
+    # Clean up author names
+    for item_current in items:
+        for author_current in item_current['authors']:
+            # Check our approved authors, try to match one for this author
+            matched = False
+            matched_name = author_current['name']
+
+            for name_current in config['names']:
+                if author_current['name'] == name_current['name']:
+                    matched = True
+                if name_current.get('match', None) and \
+                   author_current['name'] in name_current['match']:
+                    matched = True
+                    matched_name = name_current['name']
+
+            if not matched:
+                print(author_current['name'])
+
+            author_current['name'] = matched_name
+
     # Clean up author affiliations
     for item_current in items:
         for author_current in item_current['authors']:

@@ -1,9 +1,9 @@
 papers:
 - authors:
   - affiliation: University of Colorado
-    name: Shaun Kane
+    name: Shaun K Kane
   - affiliation: Microsoft Research
-    name: Meredith Morris
+    name: Meredith R Morris
   - affiliation: Microsoft Research
     name: Ann Paradiso
   - affiliation: Microsoft Research
@@ -49,7 +49,7 @@ papers:
   - affiliation: Microsoft Research
     name: Mira Shah
   - affiliation: Microsoft Research
-    name: Meredith Morris
+    name: Meredith R Morris
   award: false
   hm: false
   title: 'AACrobat: Using Mobile Devices to Lower Communication Barriers and Provide
@@ -85,9 +85,9 @@ papers:
   - affiliation: UW Human Centered Design & Engineering
     name: Arpita Bhattacharya
   - affiliation: UW Human Centered Design & Engineering
-    name: Sean Munson
+    name: Sean A Munson
   - affiliation: UW Information School
-    name: Jacob Wobbrock
+    name: Jacob O Wobbrock
   - affiliation: UW Information School
     name: Wanda Pratt
   award: false
@@ -121,7 +121,7 @@ papers:
   - affiliation: Microsoft Research
     name: Ed Cutrell
   - affiliation: Microsoft Research
-    name: Meredith Morris
+    name: Meredith R Morris
   award: false
   hm: false
   title: 'EduFeed: A Social Feed to Engage Preliterate Children in Educational Activities'
@@ -137,19 +137,19 @@ papers:
   title: Empowering Investors With Social Annotation When Saving for Retirement
 - authors:
   - affiliation: UW Computer Science & Engineering / UW Human Centered Design & Engineering
-    name: Laura Pina
+    name: Laura R Pina
   - affiliation: UW Human Centered Design & Engineering
     name: Sang-Wha Sien
   - affiliation: UW School of Medicine
     name: Teresa Ward
   - affiliation: UW Information School
-    name: Jason Yip
+    name: Jason C Yip
   - affiliation: UW Human Centered Design & Engineering
-    name: Sean Munson
+    name: Sean A Munson
   - affiliation: UW Computer Science & Engineering
     name: James Fogarty
   - affiliation: UW Human Centered Design & Engineering
-    name: Julie Kientz
+    name: Julie A Kientz
   award: false
   hm: false
   title: 'From Personal Informatics to Family Informatics:  Understanding Family Practices
@@ -219,7 +219,7 @@ papers:
   - affiliation: UW Computer Science & Engineering
     name: James Fogarty
   - affiliation: UW Human Centered Design & Engineering
-    name: Sean Munson
+    name: Sean A Munson
   - affiliation: UW School of Medicine
     name: Jasmine Zia
   award: false
@@ -243,7 +243,7 @@ papers:
   - affiliation: Wikimedia Foundation
     name: Jonathan Morgan
   - affiliation: UW Communication
-    name: Benjamin Hill
+    name: Benjamin Mako Hill
   - affiliation: Northwestern University
     name: Aaron Shaw
   award: false

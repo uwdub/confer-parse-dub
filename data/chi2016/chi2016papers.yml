@@ -5,7 +5,7 @@ papers:
   - affiliation: UW MHCI+D
     name: Nina Shahriaree
   - affiliation: Arizona State University
-    name: Eric Hekler
+    name: Eric B Hekler
   - affiliation: UW Human Centered Design & Engineering
     name: Julie A Kientz
   award: true
@@ -187,7 +187,7 @@ papers:
   - affiliation: University Stefan cel Mare of Suceava
     name: Radu-Daniel Vatavu
   - affiliation: UW Information School
-    name: Jacob Wobbrock
+    name: Jacob O Wobbrock
   award: false
   hm: false
   title: 'Between-Subjects Elicitation Studies: Formalization and Tool Support'
@@ -305,7 +305,7 @@ papers:
   - affiliation: UW Information School
     name: Yea-Seul Kim
   - affiliation: UW Information School
-    name: Jessica Hullman
+    name: Jessica R Hullman
   - affiliation: Stanford University
     name: Maneesh Agrawala
   award: false
@@ -429,7 +429,7 @@ papers:
   - affiliation: Massachusetts Institute of Technology
     name: Sayamindu Dasgupta
   - affiliation: UW Communication
-    name: Benjamin M Hill
+    name: Benjamin Mako Hill
   award: false
   hm: false
   title: Skill Progression in Scratch Revisited
@@ -437,7 +437,7 @@ papers:
   - affiliation: UW Communication
     name: Charles Kiene
   - affiliation: Microsoft Research
-    name: Andrs Monroy-Hernndez
+    name: Andres Monroy-Hernandez
   - affiliation: UW Communication
     name: Benjamin Mako Hill
   award: false
