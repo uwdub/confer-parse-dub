@@ -6,6 +6,10 @@ include:
   - affiliation: 'Washington'
 
 exclude:
+  - id: '0079'
+  - id: '0082'
+  - id: '0142'
+  - id: '0163'
 
 names:
   - name: 'Aaron Shaw'

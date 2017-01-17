@@ -1,19 +1,5 @@
 papers:
 - authors:
-  - affiliation: University of Colorado
-    name: Shaun K Kane
-  - affiliation: Microsoft Research
-    name: Meredith R Morris
-  - affiliation: Microsoft Research
-    name: Ann Paradiso
-  - affiliation: Microsoft Research
-    name: Jon Campbell
-  award: false
-  hm: false
-  title: '"At Times Avuncular and Cantankerous, With the Reflexes of a Mongoose":
-    Understanding Self-Expression Through Augmentative and Alternative Communication
-    Devices'
-- authors:
   - affiliation: UW Information School
     name: Jordan Eschler
   - affiliation: UW Information School
@@ -54,31 +40,6 @@ papers:
   hm: false
   title: 'AACrobat: Using Mobile Devices to Lower Communication Barriers and Provide
     Autonomy With Gaze-Based AAC'
-- authors:
-  - affiliation: Woodrow Wilson International Center for Scholars
-    name: Anne Bowser
-  - affiliation: University of Maryland
-    name: Katie Shilton
-  - affiliation: University of Maryland
-    name: Jenny Preece
-  - affiliation: University of Maryland
-    name: Elizabeth Warrick
-  award: false
-  hm: false
-  title: 'Accounting for Privacy in Citizen Science: Ethical Research in a Context
-    of Openness'
-- authors:
-  - affiliation: Stanford University
-    name: Niloufar Salehi
-  - affiliation: Microsoft Research
-    name: Jaime Teevan
-  - affiliation: Microsoft Research
-    name: Shamsi Iqbal
-  - affiliation: Microsoft Research
-    name: Ece Kamar
-  award: false
-  hm: false
-  title: Communicating Context to the Crowd for  Complex Writing Tasks
 - authors:
   - affiliation: UW Information School
     name: Kathleen O'Leary
@@ -125,16 +86,6 @@ papers:
   award: false
   hm: false
   title: 'EduFeed: A Social Feed to Engage Preliterate Children in Educational Activities'
-- authors:
-  - affiliation: New York University
-    name: Junius Gunaratne
-  - affiliation: RAND Corporation
-    name: Jeremy Burke
-  - affiliation: New York University
-    name: Oded Nov
-  award: false
-  hm: false
-  title: Empowering Investors With Social Annotation When Saving for Retirement
 - authors:
   - affiliation: UW Computer Science & Engineering / UW Human Centered Design & Engineering
     name: Laura R Pina
