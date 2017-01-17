@@ -1,4 +1,5 @@
 file_input: 'data/chi2016/chi2016papers.json'
+file_input_type: 'confer'
 file_output: 'data/chi2016/chi2016papers.yml'
 
 include:
