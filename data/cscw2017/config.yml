@@ -1,0 +1,144 @@
+file_input: 'data/cscw2017/cscw_proceedings.xml'
+file_input_type: 'proceedings'
+file_output: 'data/cscw2017/cscw2017papers.yml'
+
+include:
+  - affiliation: 'Washington'
+
+exclude:
+
+affiliations:
+  - affiliation: 'UW Communication'
+    match:
+      affiliation:
+        - 'Department of Communication, University of Washington, Seattle, Washington, United States'
+      name:
+        - 'Elodie Fichet'
+  - affiliation: 'UW Computer Science & Engineering'
+    match:
+      affiliation:
+        - 'Computer Science & Engineering, University of Washington, Seattle, Washington, United States'
+        - 'Computer Science and Engineering, University of Washington, Seattle, Washington, United States'
+      name:
+        - 'James Fogarty'
+  - affiliation: 'UW Computer Science & Engineering / UW Human Centered Design & Engineering'
+    match:
+      affiliation:
+      name:
+        - 'Laura Pina'
+  - affiliation: 'UW Educational Psychology'
+    match:
+      affiliation:
+      name:
+        - 'Sarah Evans'
+  - affiliation: 'UW Human Centered Design & Engineering'
+    match:
+      affiliation:
+        - 'Department of Human Centered Design and Engineering, University of Washington, Seattle, Washington, United States'
+        - 'Human Centered Design & Engineering, University of Washington, Seattle, Washington, United States'
+        - 'Human Centered Design & Engineering, University of Washington, Seattle, Seattle, Washington, United States'
+        - 'Human Centered Design and Engineering, University of Washington, Seattle, Washington, United States'
+        - 'Human Centered Design and Engineering (HCDE), University of Washington, Seattle, Washington, United States'
+      name:
+        - 'Ahmer Arif'
+        - 'Julie Campbell'
+        - 'Sean Munson'
+        - 'John Robinson'
+        - 'Stephanie Stanek'
+        - 'Kate Starbird'
+        - 'Paul Townsend'
+        - 'Zena Worku'
+  - affiliation: 'UW Information School'
+    match:
+      affiliation:
+        - 'Information School, University of Washington, Seattle, Washington, United States'
+        - 'Information School, University of Washington, Seattle, Washington, USA'
+        - 'Information School, University of Washington, Seattle, WA, United States'
+        - 'The Information School, University of Washington, Seattle, Washington, United States'
+        - 'The Information School, University of Washington, Seattle, WA, United States'
+        - 'The Information School, University of Washington, Seattle , Washington, United States'
+      name:
+        - 'Jacob Wobbrock'
+        - 'Wanda Pratt'
+  - affiliation: 'UW School of Medicine'
+    match:
+      affiliation:
+        - 'Division of Gastroenterology, University of Washington, Seattle, Washington, United Stated'
+        - 'School of Nursing, University of Washington, Seattle, Washington, United States'
+      name:
+  - affiliation: 'Carnegie Mellon University Qatar'
+    match:
+      affiliation:
+        - 'Carnegie Mellon University Qatar, Doha, Qatar'
+      name:
+  - affiliation: 'Harvard University'
+    match:
+      affiliation:
+        - 'Harvard Graduate School of Education, Harvard University, Cambridge, Massachusetts, United States'
+      name:
+  - affiliation: 'Microsoft Research'
+    match:
+      affiliation:
+        - 'ADT, Microsoft Research, Redmond, Washington, United States'
+        - 'Microsoft Research, Redmond, Washington, United States'
+        - 'Microsoft Research India, Bangalore, Karnataka, India'
+      name:
+  - affiliation: 'Northwestern University'
+    match:
+      affiliation:
+        - 'Northwestern University, Evanston, Illinois, United States'
+      name:
+  - affiliation: 'New York University'
+    match:
+      affiliation:
+        - 'New York University, New York, NY, USA'
+      name:
+  - affiliation: 'Philips'
+    match:
+      affiliation:
+        - 'Philips Design, Eindhoven, Netherlands'
+        - 'Philips Healthcare, Seattle, Washington, United States'
+      name:
+  - affiliation: 'Qatar Computing Research Institute'
+    match:
+      affiliation:
+        - 'Qatar Computing Research Institue , Doha, Qatar'
+      name:
+  - affiliation: 'RAND Corporation'
+    match:
+      affiliation:
+        - 'RAND Corporation, Washington, District of Columbia, United States'
+      name:
+  - affiliation: 'Stanford University'
+    match:
+      affiliation:
+        - 'Computer Science, Stanford University, Stanford, USA'
+        - 'Department of Computer Science, Stanford University, Palo Alto, California, United States'
+      name:
+  - affiliation: 'University of Colorado'
+    match:
+      affiliation:
+        - 'University of Colorado, Boulder, CO, United States'
+      name:
+  - affiliation: 'University of Maryland'
+    match:
+      affiliation:
+        - 'College of Information Studies, University of Maryland, College Park, Maryland, United States'
+        - 'College of Information Studies, University of Maryland, College Park, MD, United States'
+      name:
+  - affiliation: 'University of Southern California'
+    match:
+      affiliation:
+        - 'Annenberg School for Communication & Journalism, University of Southern California, Los Angeles, CA, USA'
+      name:
+  - affiliation: 'Wikimedia Foundation'
+    match:
+      affiliation:
+        - 'Wikimedia Foundation, Byrn Mawr, Pennsylvania, United States'
+        - 'Wikimedia Foundation, San Francisco, CA, USA'
+      name:
+  - affiliation: 'Woodrow Wilson International Center for Scholars'
+    match:
+      affiliation:
+        - 'Woodrow Wilson International Center for Scholars, Washington, District of Columbia, United States'
+      name:
