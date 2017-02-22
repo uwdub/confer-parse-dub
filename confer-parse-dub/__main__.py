@@ -1,458 +1,265 @@
 import argparse
 import json
 import operator
+import titlecase
+import xmltodict
 import yaml
 
 
-def parse_confer(file_input):
+def parse_confer(config):
     # Parse the json.
     #
     # Currently requires the file start with an opening bracket, manually stripping any 'entities ='
-    with open(file_input, 'r') as f:
+    with open(config['file_input'], 'r') as f:
         parsed_json = json.load(f)
 
-    # Go through items to see which we want
-    json_items = parsed_json.items()
-    filtered_json_items = []
-    for key_current, item_current in json_items:
-        # We only want papers
-        if item_current['type'] != 'paper':
-            continue
+    # Organize the file into a list as expected
+    items = parsed_json.items()
+    filtered_items = []
+    for key_current, item_current in items:
+        # Store the id on the item
+        item_current['id'] = key_current
 
-        # Check our desired affiliation
-        AFFILIATIONS = [
-            'Washington'
-        ]
+        filtered_items.append(item_current)
 
-        KEYS_EXCLUDE = [
-            'pn1007'
-        ]
+    items = filtered_items
 
-        if key_current in KEYS_EXCLUDE:
-            continue
+    # Apply our includes and excludes
+    items = match_include(config, items)
+    items = match_exclude(config, items)
 
-        matches_affiliation = False
-        for author_current in item_current['authors']:
-            for affiliation_test in AFFILIATIONS:
-                if affiliation_test in author_current['affiliation']:
-                    matches_affiliation = True
-        if not matches_affiliation:
-            continue
-
-        filtered_json_items.append(item_current)
-    json_items = filtered_json_items
-
-    # Go through items to clean them up
-    for item_current in json_items:
+    # Remove fields we do not use which could be confusing
+    for item_current in items:
+        del item_current['id']
         del item_current['abstract']
         del item_current['cAndB']
         del item_current['keywords']
         del item_current['subtype']
         del item_current['type']
 
-    # Go through authors to clean them up
-    for item_current in json_items:
         for author_current in item_current['authors']:
             del author_current['familyName']
             del author_current['givenName']
             del author_current['middleInitial']
 
-            AFFILIATIONS_CLEANED = {
-                'UW Biomedical and Health Informatics': {
-                    'affiliation': [
-                        'Biomedical and Health Informatics, University of Washington',
-                        'Biomedical Informatics and Medical Education, University of Washington'
-                    ],
-                    'name': [
-                        'Andrew D Miller'
-                    ]
-                },
-                'UW Communication': {
-                    'affiliation': [
-                        'Department of Communication, University of Washington'
-                    ],
-                    'name': [
-                        'Charles Kiene'
-                    ]
-                },
-                'UW Computer Science & Engineering': {
-                    'affiliation': [
-                        'Computer Science & Engineering , DUB Group',
-                        'Computer Science & Engineering, University of Washington',
-                        'Computer Science and Engineering, University of Washington',
-                        'UW Computer Science & Engineering',
-                        'Center for Game Science, Department of Computer Science & Engineering, University of Washington'
-                    ],
-                    'name': [
-                        'Christy Ballweber',
-                        'Gaetano Borriello',
-                        'James Fogarty',
-                        'Mayank Goel',
-                        'Tadayoshi Kohno',
-                        'Zoran Popovic',
-                        'Eric Whitmire',
-                        'Xiaoyi Zhang'
-                    ]
-                },
-                'UW Computer Science & Engineering / UW Electrical Engineering': {
-                    'affiliation': [
-                        'UW Computer Science & Engineering / UW Electrical Engineering'
-                    ],
-                    'name': [
-                        'Shwetak N Patel'
-                    ]
-                },
-                'UW Computer Science & Engineering / UW Human Centered Design & Engineering': {
-                    'affiliation': [
-                    ],
-                    'name': [
-                        'Laura R Pina'
-                    ]
-                },
-                'UW Division of Design': {
-                    'affiliation': [
-                    ],
-                    'name': [
-                        'Shaghayegh Ghassemian'
-                    ]
-                },
-                'UW Electrical Engineering': {
-                    'affiliation': [
-                        'Electrical Engineering, University of Washington'
-                    ],
-                    'name': [
-                        'Ke-Yu Chen',
-                        'Josh Fromm',
-                        'Elliot Saba'
-                    ]
-                },
-                'UW Environmental Science': {
-                    'affiliation': [
-                    ],
-                    'name': [
-                        'Thomas Tran'
-                    ]
-                },
-                'UW Human Centered Design & Engineering': {
-                    'affiliation': [
-                        'Department of Human Centered Design and Engineering, University of Washington',
-                        'Human Centered Design & Engineering, University of Washington',
-                        'Human Centered Design & Engineering, University of Washington, UW',
-                        'Human Centered Design and Engineering, University of Washington',
-                        'TAT Lab, University of Washington',
-                        'UW Human Centered Design & Engineering',
-                        'Human Centered Design & Engineering, University of Washington, Seattle, Washington, United States, University of Washington',
-                        'University of Washington , Human Centered Design and Engineering'
-                    ],
-                    'name': [
-                        'Hyewon Suh'
-                    ]
-                },
-                'UW Information School': {
-                    'affiliation': [
-                        'Information School, University of Washington',
-                        'Information School , University of Washington',
-                        'School of Information, University of Washington',
-                        'UW Information School',
-                        'The Information School, University of Washington'
-                    ],
-                    'name': [
-                        'Martez E Mott',
-                        'Jacob Wobbrock',
-                        'Jacob O Wobbrock',
-                        'Wanda Pratt'
-                    ]
-                },
-                'UW Mechanical Engineering': {
-                    'affiliation': [
-                        'Mechanical Engineering, University of Washington'
-                    ],
-                    'name': [
-                    ]
-                },
-                'UW MHCI+D': {
-                    'affiliation': [
-                    ],
-                    'name': [
-                        'Nina Shahriaree'
-                    ]
-                },
-                'UW School of Medicine': {
-                    'affiliation': [
-                        'Department of Pediatrics - School of Medicine, University of Washington'
-                    ],
-                    'name': [
-                        'Ari H Pollack'
-                    ]
-                },
-                'Arizona State University': {
-                    'affiliation': [
-                        'Arizona State University'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Carnegie Mellon University': {
-                    'affiliation': [
-                        'Human Computer Interaction, Carnegie Mellon University',
-                        'Human-Computer Interaction Institute, Carnegie Mellon',
-                        'Human-Computer Interaction Institute, Carnegie Mellon University',
-                        'Human Computer Interaction Institute, Carnegie Mellon University',
-                        'Human-Computer Interaction Institute, School of Computer Science, Carnegie Mellon University'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Cornell University': {
-                    'affiliation': [
-                        'Cornell University',
-                        'Information Science, Cornell University'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Disney Research': {
-                    'affiliation': [
-                        'Disney Research',
-                        'Disney Research Pittsburgh, Disney Research'
-                    ],
-                    'name': [
-                    ]
-                },
-                'FX Palo Alto Laboratory': {
-                    'affiliation': [
-                        'FXPAL',
-                        'FX Palo Alto Laboratory, Inc.'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Global Solidarity Corporation': {
-                    'affiliation': [
-                        'Global Solidarity Corporation'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Inglemoor High School': {
-                    'affiliation': [
-                        'Inglemoor High School'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Massachusetts Institute of Technology': {
-                    'affiliation': [
-                        'Massachusetts Institute of Technology'
-                    ],
-                    'name': [
-                    ]
-                },
-                'North Carolina State University': {
-                    'affiliation': [
-                        'North Carolina State University'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Massachusetts Institute of Technology': {
-                    'affiliation': [
-                        'Massachusetts Institute of Technology',
-                        'MIT Media Lab, Massachusetts Institute of Technology'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Microsoft Research': {
-                    'affiliation': [
-                        'Microsoft Research'
-                    ],
-                    'name': [
-                    ]
-                },
-                'National Tsing Hua Unversity': {
-                    'affiliation': [
-                        'Electrical Engineering, National Tsing Hua Unversity'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Northeastern University': {
-                    'affiliation': [
-                        'CCIS, Northeastern University'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Oculus Research': {
-                    'affiliation': [
-                        'Oculus Research'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Oregon State University': {
-                    'affiliation': [
-                        'Oregon State University',
-                        'School of EECS, Oregon State University'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Palo Alto Research Center': {
-                    'affiliation': [
-                        'Palo Alto Research Center',
-                        'Palo Alto Research Center (PARC)'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Pennsylvania State University': {
-                    'affiliation': [
-                        'College of Information Sciences and Technology, The Pennsylvania State University',
-                        'College of Information Sciences and Technology, Pennsylvania State University',
-                        'Information Sciences and Technology/HCI, The Pennsylvania State University',
-                        'College of Information Sciences and Technology, Penn State'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Seattle Pacific University': {
-                    'affiliation': [
-                        'Seattle Pacific University'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Stanford University': {
-                    'affiliation': [
-                        'Computer Science, Stanford University'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Southern Methodist University': {
-                    'affiliation': [
-                        'Computer Science and Engineering, Southern Methodist University'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Technion': {
-                    'affiliation': [
-                        'Technion - Israel Institute of Technology'
-                    ],
-                    'name': [
-                    ]
-                },
-                'Tufts University': {
-                    'affiliation': [
-                        'Tufts University'
-                    ],
-                    'name': [
-                    ]
-                },
-                'University of Colorado': {
-                    'affiliation': [
-                        'University of Colorado Boulder',
-                        'Department of Computer Science, University of Colorado'
-                    ],
-                    'name': [
-                    ]
-                },
-                'University of Dundee': {
-                    'affiliation': [
-                        'School of Computing, University of Dundee'
-                    ],
-                    'name': [
-                    ]
-                },
-                'University of Maryland': {
-                    'affiliation': [
-                        'University of Maryland',
-                        'College of Education, University of Maryland',
-                        'College of Information Studies, University of Maryland',
-                        'Human-Computer Interaction Lab, University of Maryland',
-                        'Department of Teaching and Learning, Policy and Leadership, University of Maryland'
-                    ],
-                    'name': [
-                        'Elizabeth Bonsignore'
-                    ]
-                },
-                'University of Michigan': {
-                    'affiliation': [
-                        'School of Information , University of Michigan',
-                        'School of Information, University of Michigan'
-                    ],
-                    'name': [
-                    ]
-                },
-                'University Stefan cel Mare of Suceava': {
-                    'affiliation': [
-                        'University Stefan cel Mare of Suceava'
-                    ],
-                    'name': [
-                    ]
-                }
-            }
+            del author_current['city']
+            del author_current['country']
+            del author_current['dept']
+            del author_current['institution']
+            del author_current['location']
 
+    # Normalize strings to deal with Unicode, title case, and other issues
+    for item_current in items:
+        item_current['title'] = normalize_title(item_current['title'])
+        for author_current in item_current['authors']:
+            author_current['name'] = normalize_text(author_current['name'])
+            author_current['affiliation'] = normalize_text(author_current['affiliation'])
+
+    return items
+
+
+def parse_proceedings(config):
+    # Parse the proceedings xml file.
+    with open(config['file_input'], 'rb') as f:
+        parsed_xml = xmltodict.parse(f, encoding='utf-8')
+
+    # Get our paper list from the XML
+    items = parsed_xml['proceedings']['paper_list']['paper']
+
+    # Organize the file into a list as expected
+    filtered_items = []
+    for item_current in items:
+        # Rename @id to id for consistency
+        item_current['id'] = item_current['@id']
+        del item_current['@id']
+
+        # Rename author to authors for consistency
+        item_current['authors'] = item_current['author']
+        del item_current['author']
+        # Make single-author papers still have a list of authors
+        if isinstance(item_current['authors'], dict):
+            item_current['authors'] = [item_current['authors']]
+        # Convert the ordereddict to a base dict
+        item_current['authors'] = [dict(author_current) for author_current in item_current['authors']]
+
+        # No award info in this file
+        item_current['award'] = False
+        item_current['hm'] = False
+
+        # Convert the ordereddict to a base dict
+        filtered_items.append(dict(item_current))
+
+    items = filtered_items
+
+    # Apply our includes and excludes
+    items = match_include(config, items)
+    items = match_exclude(config, items)
+
+    # Remove fields we do not use which could be confusing
+    for item_current in items:
+        del item_current['id']
+        del item_current['abstract']
+        del item_current['startpage']
+
+    # Normalize strings to deal with Unicode, title case, and other issues
+    for item_current in items:
+        item_current['title'] = normalize_title(item_current['title'])
+        for author_current in item_current['authors']:
+            author_current['name'] = normalize_text(author_current['name'])
+            author_current['affiliation'] = normalize_text(author_current['affiliation'])
+
+    return items
+
+
+def match_exclude(config, items):
+    # Go through to apply our excludes
+    #
+    # This 'works enough' but is probably not robust or formally defined
+    filtered_items = []
+    for item_current in items:
+        match_exclude = False
+
+        if config['exclude']:
+            for exclude_current in config['exclude']:
+                if 'id' in exclude_current:
+                    match_exclude |= exclude_current['id'] == item_current['id']
+
+        if not match_exclude:
+            filtered_items.append(item_current)
+
+    return filtered_items
+
+
+def match_include(config, items):
+    # Go through to apply our includes
+    #
+    # This 'works enough' but is probably not robust or formally defined
+    filtered_items = []
+    for item_current in items:
+        match_include = True
+
+        if config['include']:
+            for include_current in config['include']:
+                if 'type' in include_current:
+                    match_include &= include_current['type'] == item_current['type']
+                if 'affiliation' in include_current:
+                    match_affiliation = False
+                    for author_current in item_current['authors']:
+                        if include_current['affiliation'] in author_current['affiliation']:
+                            match_affiliation = True
+                    match_include &= match_affiliation
+
+        if match_include:
+            filtered_items.append(item_current)
+
+    return filtered_items
+
+
+def normalize_items(config, items):
+    # Clean up author names
+    for item_current in items:
+        for author_current in item_current['authors']:
+            # Check our approved authors, try to match one for this author
             matched = False
+            matched_name = author_current['name']
 
-            for affiliation_test_key, affiliation_test_value in AFFILIATIONS_CLEANED.items():
-                if author_current['affiliation'] in affiliation_test_value['affiliation']:
-                    matched_affiliation = affiliation_test_key
+            for name_current in config['names']:
+                if author_current['name'] == name_current['name']:
                     matched = True
-
-            for affiliation_test_key, affiliation_test_value in AFFILIATIONS_CLEANED.items():
-                if author_current['name'] in affiliation_test_value['name']:
-                    matched_affiliation = affiliation_test_key
+                if name_current.get('match', None) and \
+                   author_current['name'] in name_current['match']:
                     matched = True
+                    matched_name = name_current['name']
 
-            if matched:
-                author_current['affiliation'] = matched_affiliation
-                del author_current['city']
-                del author_current['country']
-                del author_current['dept']
-                del author_current['institution']
-                del author_current['location']
-            else:
-                print(author_current['affiliation'])
+            if not matched:
+                print(author_current['name'])
+
+            author_current['name'] = matched_name
+
+    # Clean up author affiliations
+    for item_current in items:
+        for author_current in item_current['authors']:
+            # Check our approved affiliations, try to match one for this author
+            matched = False
+            matched_affiliation = author_current['affiliation']
+
+            for affiliation_current in config['affiliations']:
+                if affiliation_current['match']['affiliation'] and \
+                   author_current['affiliation'] in affiliation_current['match']['affiliation']:
+                    matched = True
+                    matched_affiliation = affiliation_current['affiliation']
+                if affiliation_current['match']['name'] and \
+                   author_current['name'] in affiliation_current['match']['name']:
+                    matched = True
+                    matched_affiliation = affiliation_current['affiliation']
+
+            if not matched:
+                print(author_current)
+
+            author_current['affiliation'] = matched_affiliation
 
     # Sort them
-    json_items.sort(
+    items.sort(
         key=operator.itemgetter('title')
     )
-    json_items.sort(
+    items.sort(
         key=operator.itemgetter('hm'),
         reverse=True
     )
-    json_items.sort(
+    items.sort(
         key=operator.itemgetter('award'),
         reverse=True
     )
 
-    return json_items
+    return items
 
 
-def output_yaml(items, file_output):
-    data = { 'papers': items }
-    with open(file_output, 'w') as f:
-        yaml.dump(
+def normalize_text(text):
+    text = text.replace('\u2019', '\'')
+    text = text.replace('\u201C', '"')
+    text = text.replace('\u201D', '"')
+    return text
+
+
+def normalize_title(title):
+    title = normalize_text(title)
+    title = titlecase.titlecase(title)
+    title = title.replace('in Situ', 'In Situ')
+    return title
+
+
+def output_yaml(config, items):
+    data = {
+        'papers': items
+    }
+    with open(config['file_output'], 'w') as f:
+        yaml.safe_dump(
             data,
             stream=f,
             default_flow_style=False
         )
 
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Confer JSON parser for DUB')
-    parser.add_argument('-i', required=True, dest='file_input')
-    parser.add_argument('-o', required=True, dest='file_output')
+def main():
+    parser = argparse.ArgumentParser(description='Conference data parser for DUB')
+    parser.add_argument('-f', required=True, dest='file_config')
     args = parser.parse_args()
 
-    items = parse_confer(args.file_input)
-    output_yaml(items, args.file_output)
+    with open(args.file_config, 'r') as f:
+        config = yaml.safe_load(f)
 
-    print('{} papers'.format(len(items)))
-    print('{} best paper award'.format(len([item for item in items if item['award'] == True])))
-    print('{} best paper honorable mention'.format(len([item for item in items if item['hm'] == True])))
+    if config['file_input_type'] == 'confer':
+        items = parse_confer(config)
+    elif config['file_input_type'] == 'proceedings':
+        items = parse_proceedings(config)
+
+    items = normalize_items(config, items)
+    output_yaml(config, items)
+
+    # print('{} papers'.format(len(items)))
+    # print('{} best paper award'.format(len([item for item in items if item['award'] == True])))
+    # print('{} best paper honorable mention'.format(len([item for item in items if item['hm'] == True])))
+
+
+if __name__ == '__main__':
+    main()
