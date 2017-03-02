@@ -1,0 +1,474 @@
+file_input: 'data/chi2017/chi2017papers.json'
+file_input_type: 'confer'
+file_output: 'data/chi2017/chi2017papers.yml'
+
+include:
+  - type: 'paper'
+    affiliation: 'Washington'
+
+exclude:
+  - id: 'pn2839'
+
+names:
+  - name: 'Abigail C Evans'
+  - name: 'Abigale J Stangl'
+  - name: 'Aditya Saraf'
+  - name: 'Aditya Vashistha'
+  - name: 'Alexander Fiannaca'
+  - name: 'Alexis Hiniker'
+  - name: 'Amanda M Swearngin'
+  - name: 'Amy S Bruckman'
+  - name: 'Anand P Kulkarni'
+  - name: 'Anat Caspi'
+  - name: 'Andrea L Hartzler'
+  - name: 'Andres Monroy-Hernandez'
+  - name: 'Andrew B Berry'
+  - name: 'Andrew J Ko'
+  - name: 'Angelisa C Plane'
+  - name: 'Anne S Ross'
+  - name: 'Ann Paradiso'
+  - name: 'Annuska Zolyomi'
+  - name: 'Anushka Anand'
+  - name: 'Ari H Pollack'
+  - name: 'Arpita Bhattacharya'
+  - name: 'Ayshwarya Balasubramanian'
+  - name: 'Batya Friedman'
+  - name: 'Benjamin Mako Hill'
+  - name: 'Bernd Huber'
+  - name: 'Bill Howe'
+  - name: 'Bolin Ding'
+  - name: 'Bowen Yu'
+  - name: 'Caitlin L Kelleher'
+  - name: 'Caroline Pitt'
+  - name: 'Carol Moser'
+  - name: 'Carolyn Gearig'
+  - name: 'Catherine Lim'
+  - name: 'Cecilia R Aragon'
+  - name: 'Chanda Phelan'
+  - name: 'Chia-Fang Chung'
+  - name: 'Chi Wang'
+  - name: 'Christian Holz'
+  - name: 'Cynthia L Bennett'
+  - name: 'Daisy Yoo'
+  - name: 'Daniel A Epstein'
+  - name: 'Danyel Fisher'
+  - name: 'David Nemer'
+  - name: 'Dominik Moritz'
+  - name: 'Ed Cutrell'
+  - name: 'Edward Cutrell'
+  - name: 'Edward H Wagner'
+  - name: 'Elena Agapie'
+  - name: 'Elizabeth Bonsignore'
+  - name: 'Elizabeth V Korinek'
+  - name: 'Emad Elwany'
+  - name: 'Emily McReynolds'
+  - name: 'Emma S Spiro'
+  - name: 'Eric B Hekler'
+  - name: 'Erin Walker'
+  - name: 'Eunice Jun'
+  - name: 'Evette Ludman'
+  - name: 'Eytan Adar'
+  - name: 'Felix Ouk'
+  - name: 'Franziska Roesner'
+  - name: 'Gabe Cohn'
+  - name: 'Gillian R Hayes'
+  - name: 'Haley MacLeod'
+  - name: 'Halley Profita'
+  - name: 'Harish Kulkarni'
+  - name: 'Holger Winnemöller'
+  - name: 'Irina A Shklovski'
+  - name: 'Isabelle A Edwards'
+  - name: 'Jacob O Wobbrock'
+    match:
+        - 'Jacob Wobbrock'
+  - name: 'Jaime Teevan'
+  - name: 'James D Ralston'
+  - name: 'James Fogarty'
+  - name: 'Jasmine Zia'
+  - name: 'Jason C Yip'
+    match:
+      - 'Jason Yip'
+  - name: 'Jeffrey Bigham'
+  - name: 'Jeffrey Heer'
+  - name: 'Jeffrey Scofield'
+  - name: 'Jennifer H Kang'
+  - name: 'Jessica Hullman'
+  - name: 'Jessica Schroeder'
+  - name: 'Jessie Li'
+  - name: 'Jin Ha Lee'
+  - name: 'Jisoo Lee'
+  - name: 'Jock Mackinlay'
+  - name: 'John Harlow'
+  - name: 'Jonathan Bragg'
+  - name: 'Jon Campbell'
+  - name: 'Jon Froehlich'
+  - name: 'Joshua R Smith'
+  - name: 'Julie A Kientz'
+    match:
+      - 'Julie Kientz'
+  - name: 'Jun Xie'
+  - name: 'Justin B Cranshaw'
+  - name: 'Kai Lukoff'
+  - name: 'Kaitlyn Zhou'
+  - name: 'Kanit Wongsuphasawat'
+  - name: 'Kari Nasu'
+  - name: 'Kate Starbird'
+  - name: 'Katharina Reinecke'
+  - name: 'Katie Davis'
+  - name: 'Kiley Sobel'
+  - name: 'Kodlee Yin'
+  - name: 'Krzysztof Gajos'
+  - name: 'Kung Jin Lee'
+  - name: 'Kyle Rector'
+  - name: 'Laura R Pina'
+    match:
+      - 'Laura Pina'
+  - name: 'Leyla Norooz'
+  - name: 'LouAnne E Boyd'
+  - name: 'Maher Khelifi'
+  - name: 'Martez E Mott'
+  - name: 'Matthew Kay'
+  - name: 'Matthew P Buman'
+  - name: 'Matthew S Reynolds'
+  - name: 'Maya Cakmak'
+  - name: 'Meredith R Morris'
+    match:
+      - 'Meredith Morris'
+  - name: 'Michaelanne Dye'
+  - name: 'Michael Correll'
+  - name: 'Michelle Ichinco'
+  - name: 'Monica Katzen'
+  - name: 'Nanna Jensen'
+  - name: 'Neha Kumar'
+  - name: 'Nicole B Lee'
+  - name: 'Nigini Oliveira'
+  - name: 'Nithya Sambasivan'
+  - name: 'Oskar Bechtold'
+  - name: 'Paul Resnick'
+  - name: 'Peter M Krafft'
+  - name: 'Pooja Sethi'
+  - name: 'Predrag Klasnja'
+  - name: 'Rafael Valez'
+  - name: 'Rafal Kocielnik'
+  - name: 'Raphael Wimmer'
+  - name: 'Ravi Karkar'
+  - name: 'Richard J Anderson'
+  - name: 'Riley Chang'
+  - name: 'Robin Brewer'
+  - name: 'Roger Vilardaga'
+  - name: 'Ruth Ravichandran'
+  - name: 'Saiph Savage'
+  - name: 'Samantha Hautea'
+  - name: 'Sandeep Soni'
+  - name: 'Sang-Wha Sien'
+  - name: 'Sarah A Evans'
+  - name: 'Sarah Hubbard'
+  - name: 'Sarita Schoenebeck'
+  - name: 'Sayamindu Dasgupta'
+  - name: 'Sean A Munson'
+    match:
+      - 'Sean Munson'
+  - name: 'Seokbin Kang'
+  - name: 'Shane Williams'
+  - name: 'Shaun K Kane'
+  - name: 'Shefali Haldar'
+  - name: 'Shwetak N Patel'
+  - name: 'Sijin Chen'
+  - name: 'Sonali R Mishra'
+  - name: 'Stephen Schiller'
+  - name: 'Steve Hodges'
+  - name: 'Tad Hirsch'
+  - name: 'Tamara L Clegg'
+  - name: 'Thomas Outing'
+  - name: 'Timothy Lau'
+  - name: 'Tobias Grosse-Puppendahl'
+  - name: 'Todd Newman'
+  - name: 'Vanessa Oguamanam'
+  - name: 'Virginia Byrne'
+  - name: 'Wanda Pratt'
+  - name: 'Wilmot Li'
+  - name: 'Winslow Burleson'
+  - name: 'Wint Y Hnin'
+  - name: 'Xiaoyi Zhang'
+  - name: 'Yea-Seul Kim'
+  - name: 'Younghoon Kim'
+  - name: 'Zening Qu'
+
+affiliations:
+  - affiliation: 'UW Biomedical and Health Informatics'
+    match:
+      affiliation:
+        - 'Biomedical and Health Informatics, University of Washington'
+      name:
+  - affiliation: 'UW Communication'
+    match:
+      affiliation:
+        'Department of Communication, University of Washington'
+      name:
+  - affiliation: 'UW Computer Science & Engineering'
+    match:
+      affiliation:
+        - 'Computer Science and Engineering, University of Washington'
+        - 'Computer Science & Engineering, University of Washington'
+        - 'Computer Science & Engineering'
+        - 'Department of Computer Science & Engineering, University of Washington'
+      name:
+        - 'Alexander Fiannaca'
+        - 'Michael Correll'
+        - 'Matthew Kay'
+  - affiliation: 'UW Computer Science & Engineering / UW Electrical Engineering'
+    match:
+      affiliation:
+        - 'UW Computer Science & Engineering / UW Electrical Engineering'
+      name:
+        - 'Shwetak N Patel'
+  - affiliation: 'UW Computer Science & Engineering / UW Human Centered Design & Engineering'
+    match:
+      affiliation:
+      name:
+        - 'Laura R Pina'
+  - affiliation: 'UW Computer Science & Engineering / UW Information School'
+    match:
+      affiliation:
+      name:
+        - 'Jennifer H Kang'
+  - affiliation: 'UW Electrical Engineering'
+    match:
+      affiliation:
+        - 'Electrical Engineering, University of Washington'
+        - 'University of Washington, Electrical Engineering'
+      name:
+  - affiliation: 'UW Human Centered Design & Engineering'
+    match:
+      affiliation:
+        - 'Human Centered Design and Engineering, University of Washington'
+        - 'Human Centered Design & Engineering, University of Washington'
+        - 'Human-Centered Design & Engineering (HCDE), University of Washington'
+      name:
+        - 'Alexis Hiniker'
+        - 'Arpita Bhattacharya'
+        - 'Kiley Sobel'
+        - 'Rafal Kocielnik'
+        - 'Cecilia R Aragon'
+  - affiliation: 'UW Information School'
+    match:
+      affiliation:
+        - 'Information School, University of Washington'
+        - 'School of Information, University of Washington'
+        - 'The Information School, University of Washington'
+        - 'The Information School, University of Washington - Seattle'
+      name:
+        - 'Katie Davis'
+        - 'Jason C Yip'
+        - 'Jin Ha Lee'
+        - 'Bill Howe'
+  - affiliation: 'UW Taskar Center for Accessible Technology'
+    match:
+      affiliation:
+        - 'Taskar Center for Accessible Technology, University of Washington'
+      name:
+  - affiliation: 'UW Tech Policy Lab'
+    match:
+      affiliation:
+        - 'Tech Policy Lab, University of Washington'
+      name:
+  - affiliation: 'UW College of Education'
+    match:
+      affiliation:
+        - 'College of Education, University of Washington'
+      name:
+  - affiliation: 'UW School of Medicine'
+    match:
+      affiliation:
+        - 'Department of Pediatrics - School of Medicine, University of Washington'
+        - 'Division of Gastroenterology, University of Washington'
+      name:
+        - 'Ari H Pollack'
+  - affiliation: 'UW Mechanical Engineering'
+    match:
+      affiliation:
+      name:
+  - affiliation: 'UW MHCI+D'
+    match:
+      affiliation:
+      name:
+  - affiliation: 'UW Division of Design'
+    match:
+      affiliation:
+        - 'School of Art, Division of Design, University of Washington'
+      name:
+  - affiliation: 'Microsoft Research'
+    match:
+      affiliation:
+        - 'Microsoft Research'
+        - 'Microsoft Reserach'
+        - 'DMX, Microsoft Research'
+        - 'Microsoft Research, Microsoft Research'
+      name:
+  - affiliation: 'University of California Irvine'
+    match:
+      affiliation:
+        - 'University of California, Irvine'
+        - 'Informatics, UC Irvine'
+      name:
+  - affiliation: 'University of Colorado'
+    match:
+      affiliation:
+        - 'University of Colorado Boulder'
+        - 'University of Colorado- Boulder'
+        - 'University of Colorado'
+        - 'University of Colorado, Boulder'
+      name:
+  - affiliation: 'Adobe Systems'
+    match:
+      affiliation:
+        - 'Adobe Systems'
+        - 'Adobe Systems, Inc.'
+        - 'Imagination Lab, Adobe Systems, Inc.'
+      name:
+  - affiliation: 'West Virginia University'
+    match:
+      affiliation:
+        - 'West Virginia University'
+      name:
+  - affiliation: 'Carnegie Mellon University'
+    match:
+      affiliation:
+        - 'Human Computer Interaction, Carnegie Mellon University'
+        - 'Human-Computer Interaction Institute, Carnegie Mellon'
+        - 'Human-Computer Interaction Institute, Carnegie Mellon University'
+        - 'Human Computer Interaction Institute, Carnegie Mellon University'
+        - 'Human-Computer Interaction Institute, School of Computer Science, Carnegie Mellon University'
+        - 'Carnegie Mellon University'
+      name:
+  - affiliation: 'University of Maryland'
+    match:
+      affiliation:
+        - 'University of Maryland'
+        - 'Computer Science, Human-Computer Interaction Lab, Makeability Lab, University of Maryland'
+        - 'Department of Computer Science, University of Maryland'
+        - 'College of Information Studies, University of Maryland'
+        - 'College of Education, University of Maryland'
+        - 'Human Computer Interaction Lab, University of Maryland'
+        - 'College of Education, University of Maryland'
+        - 'iSchool, Human-Computer Interaction Lab, Makeability Lab, University of Maryland'
+        - 'College of Information Studies, University of Maryland'
+      name:
+  - affiliation: 'Indiana University'
+    match:
+      affiliation:
+        - 'School of Informatics & Computing, Indiana University'
+      name:
+  - affiliation: 'Arizona State University'
+    match:
+      affiliation:
+        - 'School of Nutrition and Health Promotion, Arizona State University'
+        - 'CIDSE, ASU'
+        - 'Arizona State University'
+      name:
+  - affiliation: 'Massachusetts Institute of Technology'
+    match:
+      affiliation:
+        - 'Massachusetts Institute of Technology'
+        - 'MIT Media Lab, Massachusetts Institute of Technology'
+        - 'Computer Science and Artificial Intelligence Laboratory, MIT'
+      name:
+  - affiliation: 'IT University of Copenhagen'
+    match:
+      affiliation:
+        - 'IT University of Copenhagen'
+      name:
+  - affiliation: 'University of Minnesota'
+    match:
+      affiliation:
+        - 'GroupLens, University of Minnesota'
+      name:
+  - affiliation: 'New York University'
+    match:
+      affiliation:
+      name:
+        - 'Winslow Burleson'
+  - affiliation: 'Group Health Research Institute'
+    match:
+      affiliation:
+      name:
+  - affiliation: 'University of Michigan'
+    match:
+      affiliation:
+        - 'School of Information, University of Michigan'
+        - 'The School of Information, The University of Michigan'
+        - 'University of Michigan'
+      name:
+  - affiliation: 'University of Iowa'
+    match:
+      affiliation:
+      name:
+        - 'Kyle Rector'
+  - affiliation: 'Harvard University'
+    match:
+      affiliation:
+        - 'Harvard University'
+      name:
+  - affiliation: 'Duke University'
+    match:
+      affiliation:
+      name:
+        - 'Roger Vilardaga'
+  - affiliation: 'Group Health Research Institute'
+    match:
+      affiliation:
+        - 'Group Health Research Institute'
+      name:
+  - affiliation: 'Google'
+    match:
+      affiliation:
+        - 'Google'
+      name:
+  - affiliation: 'Deloitte'
+    match:
+      affiliation:
+        - 'Deloitte'
+      name:
+  - affiliation: 'Tableau Software'
+    match:
+      affiliation:
+      name:
+        - 'Anushka Anand'
+        - 'Jock Mackinlay'
+  - affiliation: 'Independent Researcher'
+    match:
+      affiliation:
+      name:
+        - 'Nicole B Lee'
+  - affiliation: 'University of Kentucky'
+    match:
+      affiliation:
+      name:
+        - 'David Nemer'
+  - affiliation: 'Georgia Institute of Technology'
+    match:
+      affiliation:
+        - 'Georgia Institute of Technology'
+        - 'International Affairs; Interactive Computing, Georgia Tech'
+        - 'Computational Linguistics Lab, Georgia Institute of Technology'
+      name:
+  - affiliation: 'TU Darmstadt'
+    match:
+      affiliation:
+      name:
+        - 'Oskar Bechtold'
+  - affiliation: 'University of Regensburg'
+    match:
+      affiliation:
+      name:
+        - 'Raphael Wimmer'
+  - affiliation: 'Nortwestern University'
+    match:
+      affiliation:
+      name:
+        - 'Robin Brewer'
+  - affiliation: 'LeadGenius'
+    match:
+      affiliation:
+      name:
+        - 'Anand P Kulkarni'
