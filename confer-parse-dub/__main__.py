@@ -148,6 +148,8 @@ def match_include(config, items):
                         if include_current['affiliation'] in author_current['affiliation']:
                             match_affiliation = True
                     match_include &= match_affiliation
+                if 'id' in include_current:
+                    match_include |= include_current['id'] == item_current['id']
 
         if match_include:
             filtered_items.append(item_current)
