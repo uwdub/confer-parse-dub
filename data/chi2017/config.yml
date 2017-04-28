@@ -5,6 +5,8 @@ file_output: 'data/chi2017/chi2017papers.yml'
 include:
   - type: 'paper'
     affiliation: 'Washington'
+  - type: 'TOCHI'
+    affiliation: 'Washington'
   - id: 'pn3220'
 
 exclude:
@@ -234,6 +236,8 @@ affiliations:
         - 'UW Computer Science & Engineering / UW Electrical Engineering'
       name:
         - 'Shwetak N Patel'
+        - 'Matthew S Reynolds'
+        - 'Joshua R Smith'
   - affiliation: 'UW Computer Science & Engineering / UW Human Centered Design & Engineering'
     match:
       affiliation:
@@ -280,11 +284,10 @@ affiliations:
       affiliation:
         - 'Taskar Center for Accessible Technology, University of Washington'
       name:
-  - affiliation: 'UW Tech Policy Lab'
+  - affiliation: 'UW School of Law'
     match:
-      affiliation:
-        - 'Tech Policy Lab, University of Washington'
       name:
+        - 'Emily McReynolds'
   - affiliation: 'UW College of Education'
     match:
       affiliation:

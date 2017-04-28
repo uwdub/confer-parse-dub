@@ -251,6 +251,24 @@ papers:
   hm: false
   title: Citizen Science Opportunities in Volunteer-Based Online Experiments
 - authors:
+  - affiliation: Group Health Research Institue, Group Health Cooperative
+    name: Andrea Hartzler
+  - affiliation: UW Communication
+    name: Bridget Weis
+  - affiliation: UW Communication
+    name: Carly Cahill
+  - affiliation: UW Information School
+    name: Wanda Pratt
+  - affiliation: University of Utah
+    name: Albert Park
+  - affiliation: UW Communication
+    name: Uba Backonja
+  - affiliation: UW Human Centered Design & Engineering
+    name: David W McDonald
+  award: false
+  hm: false
+  title: Design and Usability of Interactive User Profiles for Online Health Communities
+- authors:
   - affiliation: Microsoft Research
     name: Tobias Grosse-Puppendahl
   - affiliation: Microsoft Research

@@ -247,6 +247,7 @@ def normalize_text(text):
 def normalize_title(title):
     title = normalize_text(title)
     title = titlecase.titlecase(title)
+    title = title.strip()
     title = title.replace('in Situ', 'In Situ')
     return title
 
