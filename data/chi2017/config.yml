@@ -18,13 +18,16 @@ names:
   - name: 'Abigale J Stangl'
   - name: 'Aditya Saraf'
   - name: 'Aditya Vashistha'
+  - name: 'Albert Park'
   - name: 'Alexander Fiannaca'
   - name: 'Alexis Hiniker'
   - name: 'Amanda M Swearngin'
   - name: 'Amy S Bruckman'
   - name: 'Anand P Kulkarni'
   - name: 'Anat Caspi'
-  - name: 'Andrea L Hartzler'
+  - name: 'Andrea Hartzler'
+    match:
+      - 'Andrea L Hartzler'
   - name: 'Andres Monroy-Hernandez'
   - name: 'Andrew B Berry'
   - name: 'Andrew J Ko'
@@ -42,7 +45,9 @@ names:
   - name: 'Bill Howe'
   - name: 'Bolin Ding'
   - name: 'Bowen Yu'
+  - name: 'Bridget Weis'
   - name: 'Caitlin L Kelleher'
+  - name: 'Carly Cahill'
   - name: 'Caroline Pitt'
   - name: 'Carol Moser'
   - name: 'Carolyn Gearig'
@@ -56,6 +61,9 @@ names:
   - name: 'Daisy Yoo'
   - name: 'Daniel A Epstein'
   - name: 'Danyel Fisher'
+  - name: 'David McDonald'
+    match:
+      - 'David W McDonald'
   - name: 'David Nemer'
   - name: 'Dominik Moritz'
   - name: 'Ed Cutrell'
@@ -205,6 +213,7 @@ names:
   - name: 'Cori Manthorne'
   - name: 'Elizabeth F Churchill'
   - name: 'Sunny Consolvo'
+  - name: 'Uba Backonja'
 
 affiliations:
 #####
@@ -405,10 +414,6 @@ affiliations:
       affiliation:
       name:
         - 'Winslow Burleson'
-  - affiliation: 'Group Health Research Institute'
-    match:
-      affiliation:
-      name:
   - affiliation: 'University of Michigan'
     match:
       affiliation:
@@ -435,6 +440,7 @@ affiliations:
     match:
       affiliation:
         - 'Group Health Research Institute'
+        - 'Group Health Research Institue, Group Health Cooperative'
       name:
   - affiliation: 'Google'
     match:
@@ -497,3 +503,4 @@ affiliations:
       affiliation:
       name:
         - 'Anand P Kulkarni'
+  - affiliation: 'University of Utah'
