@@ -20,8 +20,7 @@ papers:
     name: Sean A Munson
   award: true
   hm: false
-  title: "Examining Menstrual Tracking to Inform the Design Of\_Personal Informatics\
-    \ Tools"
+  title: "Examining Menstrual Tracking to Inform the Design Of Personal Informatics Tools"
 - authors:
   - affiliation: UW Information School
     name: Yea-Seul Kim
@@ -122,7 +121,7 @@ papers:
   - affiliation: UW Electrical Engineering
     name: Jun Xie
   - affiliation: Adobe Systems
-    name: "Holger Winnem\xF6ller"
+    name: "Holger Winnemöller"
   - affiliation: Adobe Systems
     name: Wilmot Li
   - affiliation: Adobe Systems
@@ -204,8 +203,7 @@ papers:
     name: Jason C Yip
   award: false
   hm: false
-  title: "\"It Wasn't Really About the Pok\xE9mon\": Parents' Perspectives on a Location-Based\
-    \ Mobile Game"
+  title: '"It Wasn''t Really About the Pokémon": Parents'' Perspectives on a Location-Based Mobile Game'
 - authors:
   - affiliation: Microsoft Research
     name: Justin B Cranshaw
@@ -265,9 +263,9 @@ papers:
     name: Oskar Bechtold
   - affiliation: Microsoft Research
     name: Steve Hodges
-  - affiliation: UW Electrical Engineering
+  - affiliation: UW Computer Science & Engineering / UW Electrical Engineering
     name: Matthew S Reynolds
-  - affiliation: UW Electrical Engineering
+  - affiliation: UW Computer Science & Engineering / UW Electrical Engineering
     name: Joshua R Smith
   award: false
   hm: false
@@ -522,7 +520,7 @@ papers:
   title: 'Toward Usable Evidence: Optimizing Knowledge Accumulation in HCI Research
     on Health Behavior Change'
 - authors:
-  - affiliation: UW Tech Policy Lab
+  - affiliation: UW School of Law
     name: Emily McReynolds
   - affiliation: UW Information School
     name: Sarah Hubbard
