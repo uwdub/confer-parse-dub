@@ -5,7 +5,7 @@ file_output: 'data/chi2017/chi2017papers.yml'
 include:
   - type: 'paper'
     affiliation: 'Washington'
-    id: 'pn3220'
+  - id: 'pn3220'
 
 exclude:
   - id: 'pn2839'
@@ -195,7 +195,7 @@ names:
   - name: 'Younghoon Kim'
   - name: 'Zening Qu'
   - name: 'Tara Matthews'
-  - name: "Kathleen O'Leary"
+  - name: 'Kathleen O''Leary'
   - name: 'Anna Turner'
   - name: 'Manya Sleeper'
   - name: 'Jill P Woelfer'
@@ -205,6 +205,9 @@ names:
   - name: 'Sunny Consolvo'
 
 affiliations:
+#####
+##### Names for UW affiliation
+#####
   - affiliation: 'UW Biomedical and Health Informatics'
     match:
       affiliation:
@@ -268,10 +271,10 @@ affiliations:
         - 'The Information School, University of Washington - Seattle'
       name:
         - 'Katie Davis'
-        - 'Jason C Yip'
-        - 'Jin Ha Lee'
         - 'Bill Howe'
-        - "Kathleen O'Leary"
+        - 'Kathleen O''Leary'
+        - 'Jin Ha Lee'
+        - 'Jason C Yip'
   - affiliation: 'UW Taskar Center for Accessible Technology'
     match:
       affiliation:
@@ -307,13 +310,15 @@ affiliations:
       affiliation:
         - 'School of Art, Division of Design, University of Washington'
       name:
+###
+### Non-UW Affiliations
+###
   - affiliation: 'Microsoft Research'
     match:
       affiliation:
-        - 'Microsoft Research'
-        - 'Microsoft Reserach'
         - 'DMX, Microsoft Research'
         - 'Microsoft Research, Microsoft Research'
+        - 'Microsoft Reserach'
       name:
   - affiliation: 'University of California Irvine'
     match:
@@ -332,7 +337,6 @@ affiliations:
   - affiliation: 'Adobe Systems'
     match:
       affiliation:
-        - 'Adobe Systems'
         - 'Adobe Systems, Inc.'
         - 'Imagination Lab, Adobe Systems, Inc.'
       name:

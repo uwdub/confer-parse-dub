@@ -1,6 +1,7 @@
 import argparse
 import json
 import operator
+import sys
 import titlecase
 import xmltodict
 import yaml
@@ -10,7 +11,7 @@ def parse_confer(config):
     # Parse the json.
     #
     # Currently requires the file start with an opening bracket, manually stripping any 'entities ='
-    with open(config['file_input'], 'r') as f:
+    with open(config['file_input'], 'r', encoding='utf-8') as f:
         parsed_json = json.load(f)
 
     # Organize the file into a list as expected
@@ -136,22 +137,25 @@ def match_include(config, items):
     # This 'works enough' but is probably not robust or formally defined
     filtered_items = []
     for item_current in items:
-        match_include = True
+        match_found = False
 
         if config['include']:
             for include_current in config['include']:
+                match_current = True
                 if 'type' in include_current:
-                    match_include &= include_current['type'] == item_current['type']
+                    match_current &= include_current['type'] == item_current['type']
                 if 'affiliation' in include_current:
                     match_affiliation = False
                     for author_current in item_current['authors']:
                         if include_current['affiliation'] in author_current['affiliation']:
                             match_affiliation = True
-                    match_include &= match_affiliation
+                    match_current &= match_affiliation
                 if 'id' in include_current:
-                    match_include |= include_current['id'] == item_current['id']
+                    match_current &= include_current['id'] == item_current['id']
 
-        if match_include:
+                match_found |= match_current
+
+        if match_found:
             filtered_items.append(item_current)
 
     return filtered_items
@@ -174,7 +178,9 @@ def normalize_items(config, items):
                     matched_name = name_current['name']
 
             if not matched:
-                print(author_current['name'])
+                print(
+                    'No Name Match:  ' + author_current['name'].encode(sys.getdefaultencoding(), 'backslashreplace').decode()
+                )
 
             author_current['name'] = matched_name
 
@@ -185,18 +191,33 @@ def normalize_items(config, items):
             matched = False
             matched_affiliation = author_current['affiliation']
 
-            for affiliation_current in config['affiliations']:
-                if affiliation_current['match']['affiliation'] and \
-                   author_current['affiliation'] in affiliation_current['match']['affiliation']:
-                    matched = True
-                    matched_affiliation = affiliation_current['affiliation']
-                if affiliation_current['match']['name'] and \
-                   author_current['name'] in affiliation_current['match']['name']:
-                    matched = True
-                    matched_affiliation = affiliation_current['affiliation']
+            if not matched:
+                for affiliation_current in config['affiliations']:
+                    test_names = affiliation_current.get('match', {}).get('name', [])
+                    test_names = test_names if test_names is not None else []
+
+                    if author_current['name'] in test_names:
+                        matched = True
+                        matched_affiliation = affiliation_current['affiliation']
 
             if not matched:
-                print(author_current)
+                for affiliation_current in config['affiliations']:
+                    test_affiliations = affiliation_current.get('match', {}).get('affiliation', [])
+                    test_affiliations = test_affiliations if test_affiliations is not None else []
+
+                    if author_current['affiliation'] in test_affiliations:
+                        matched = True
+                        matched_affiliation = affiliation_current['affiliation']
+
+            if not matched:
+                for affiliation_current in config['affiliations']:
+                    if author_current['affiliation'] == affiliation_current['affiliation']:
+                        matched = True
+
+            if not matched:
+                print(
+                    'No Affiliation Match:  ' + repr(author_current).encode(sys.getdefaultencoding(), 'backslashreplace').decode()
+                )
 
             author_current['affiliation'] = matched_affiliation
 
@@ -234,7 +255,7 @@ def output_yaml(config, items):
     data = {
         'papers': items
     }
-    with open(config['file_output'], 'w') as f:
+    with open(config['file_output'], 'w', encoding='utf-8') as f:
         yaml.safe_dump(
             data,
             stream=f,
@@ -247,7 +268,7 @@ def main():
     parser.add_argument('-f', required=True, dest='file_config')
     args = parser.parse_args()
 
-    with open(args.file_config, 'r') as f:
+    with open(args.file_config, 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
 
     if config['file_input_type'] == 'confer':
