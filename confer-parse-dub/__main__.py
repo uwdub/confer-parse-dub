@@ -1,10 +1,38 @@
 import argparse
 import json
 import operator
+import string
 import sys
 import titlecase
 import xmltodict
 import yaml
+
+
+def parse_config(config):
+    assert(isinstance(config['file_input'], str))
+    assert(isinstance(config['file_input_type'], str))
+    assert(config['file_input_type'] in ['confer', 'proceedings'])
+    assert(isinstance(config['file_output'], str))
+
+    for entry_name in config['names']:
+        assert(isinstance(entry_name['name'], str))
+        if 'match' in entry_name:
+            assert(isinstance(entry_name['match'], list))
+            for entry_name_match in entry_name['match']:
+                assert(isinstance(entry_name_match, str))
+
+    for entry_affiliation in config['affiliations']:
+        assert(isinstance(entry_affiliation['affiliation'], str))
+        if 'match' in entry_affiliation:
+            assert(isinstance(entry_affiliation['match'], dict))
+            if 'affiliation' in entry_affiliation['match']:
+                assert (isinstance(entry_affiliation['match']['affiliation'], list))
+                for entry_affiliation_match in entry_affiliation['match']['affiliation']:
+                    assert(isinstance(entry_affiliation_match, str))
+            if 'name' in entry_affiliation['match']:
+                assert (isinstance(entry_affiliation['match']['name'], list))
+                for entry_affiliation_match in entry_affiliation['match']['name']:
+                    assert(isinstance(entry_affiliation_match, str))
 
 
 def parse_confer(config):
@@ -188,43 +216,52 @@ def normalize_items(config, items):
     for item_current in items:
         for author_current in item_current['authors']:
             # Check our approved affiliations, try to match one for this author
-            matched = False
-            matched_affiliation = author_current['affiliation']
+            # matched = False
+            # matched_affiliation = author_current['affiliation']
 
-            if not matched:
+            matches = []
+
+            if len(matches) == 0:
                 for affiliation_current in config['affiliations']:
                     test_names = affiliation_current.get('match', {}).get('name', [])
                     test_names = test_names if test_names is not None else []
 
                     if author_current['name'] in test_names:
-                        matched = True
-                        matched_affiliation = affiliation_current['affiliation']
+                        matches.append(affiliation_current)
 
-            if not matched:
+            if len(matches) == 0:
                 for affiliation_current in config['affiliations']:
                     test_affiliations = affiliation_current.get('match', {}).get('affiliation', [])
                     test_affiliations = test_affiliations if test_affiliations is not None else []
 
                     if author_current['affiliation'] in test_affiliations:
-                        matched = True
-                        matched_affiliation = affiliation_current['affiliation']
+                        matches.append(affiliation_current)
 
-            if not matched:
+            if len(matches) == 0:
                 for affiliation_current in config['affiliations']:
                     if author_current['affiliation'] == affiliation_current['affiliation']:
-                        matched = True
+                        matches.append(affiliation_current)
 
-            if not matched:
+            if len(matches) == 0:
                 print(
                     'No Affiliation Match:  ' + repr(author_current).encode(sys.getdefaultencoding(), 'backslashreplace').decode()
                 )
+            if len(matches) > 1:
+                print(
+                    'Multiple Affiliation Match:  ' + repr(author_current).encode(sys.getdefaultencoding(), 'backslashreplace').decode()
+                )
 
-            author_current['affiliation'] = matched_affiliation
+            author_current['affiliation'] = matches[0]['affiliation']
 
     # Sort them
+    for item_current in items:
+        item_current['title_sort'] = normalize_title_sort(item_current['title'])
     items.sort(
-        key=operator.itemgetter('title')
+        key=operator.itemgetter('title_sort')
     )
+    for item_current in items:
+        del item_current['title_sort']
+
     items.sort(
         key=operator.itemgetter('hm'),
         reverse=True
@@ -252,6 +289,10 @@ def normalize_title(title):
     return title
 
 
+def normalize_title_sort(title):
+    return ''.join(c for c in title if c in string.ascii_letters + string.digits)
+
+
 def output_yaml(config, items):
     data = {
         'papers': items
@@ -260,6 +301,7 @@ def output_yaml(config, items):
         yaml.safe_dump(
             data,
             stream=f,
+            allow_unicode=True,
             default_flow_style=False
         )
 
@@ -271,6 +313,7 @@ def main():
 
     with open(args.file_config, 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
+        parse_config(config)
 
     if config['file_input_type'] == 'confer':
         items = parse_confer(config)

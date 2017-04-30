@@ -224,11 +224,11 @@ affiliations:
       affiliation:
         - 'Biomedical and Health Informatics, University of Washington'
       name:
+        - 'Uba Backonja'
   - affiliation: 'UW Communication'
     match:
       affiliation:
-        'Department of Communication, University of Washington'
-      name:
+        - 'Department of Communication, University of Washington'
   - affiliation: 'UW Computer Science & Engineering'
     match:
       affiliation:
@@ -249,12 +249,10 @@ affiliations:
         - 'Joshua R Smith'
   - affiliation: 'UW Computer Science & Engineering / UW Human Centered Design & Engineering'
     match:
-      affiliation:
       name:
         - 'Laura R Pina'
   - affiliation: 'UW Computer Science & Engineering / UW Information School'
     match:
-      affiliation:
       name:
         - 'Jennifer H Kang'
   - affiliation: 'UW Electrical Engineering'
@@ -262,7 +260,6 @@ affiliations:
       affiliation:
         - 'Electrical Engineering, University of Washington'
         - 'University of Washington, Electrical Engineering'
-      name:
   - affiliation: 'UW Human Centered Design & Engineering'
     match:
       affiliation:
@@ -292,7 +289,6 @@ affiliations:
     match:
       affiliation:
         - 'Taskar Center for Accessible Technology, University of Washington'
-      name:
   - affiliation: 'UW School of Law'
     match:
       name:
@@ -301,7 +297,6 @@ affiliations:
     match:
       affiliation:
         - 'College of Education, University of Washington'
-      name:
   - affiliation: 'UW School of Medicine'
     match:
       affiliation:
@@ -310,18 +305,14 @@ affiliations:
       name:
         - 'Ari H Pollack'
   - affiliation: 'UW Mechanical Engineering'
-    match:
-      affiliation:
-      name:
   - affiliation: 'UW MHCI+D'
-    match:
-      affiliation:
-      name:
   - affiliation: 'UW Division of Design'
     match:
       affiliation:
         - 'School of Art, Division of Design, University of Washington'
       name:
+        - 'Bridget Weis'
+        - 'Carly Cahill'
 ###
 ### Non-UW Affiliations
 ###
@@ -331,13 +322,11 @@ affiliations:
         - 'DMX, Microsoft Research'
         - 'Microsoft Research, Microsoft Research'
         - 'Microsoft Reserach'
-      name:
   - affiliation: 'University of California Irvine'
     match:
       affiliation:
         - 'University of California, Irvine'
         - 'Informatics, UC Irvine'
-      name:
   - affiliation: 'University of Colorado'
     match:
       affiliation:
@@ -345,18 +334,15 @@ affiliations:
         - 'University of Colorado- Boulder'
         - 'University of Colorado'
         - 'University of Colorado, Boulder'
-      name:
   - affiliation: 'Adobe Systems'
     match:
       affiliation:
         - 'Adobe Systems, Inc.'
         - 'Imagination Lab, Adobe Systems, Inc.'
-      name:
   - affiliation: 'West Virginia University'
     match:
       affiliation:
         - 'West Virginia University'
-      name:
   - affiliation: 'Carnegie Mellon University'
     match:
       affiliation:
@@ -366,7 +352,6 @@ affiliations:
         - 'Human Computer Interaction Institute, Carnegie Mellon University'
         - 'Human-Computer Interaction Institute, School of Computer Science, Carnegie Mellon University'
         - 'Carnegie Mellon University'
-      name:
   - affiliation: 'University of Maryland'
     match:
       affiliation:
@@ -379,39 +364,32 @@ affiliations:
         - 'College of Education, University of Maryland'
         - 'iSchool, Human-Computer Interaction Lab, Makeability Lab, University of Maryland'
         - 'College of Information Studies, University of Maryland'
-      name:
   - affiliation: 'Indiana University'
     match:
       affiliation:
         - 'School of Informatics & Computing, Indiana University'
-      name:
   - affiliation: 'Arizona State University'
     match:
       affiliation:
         - 'School of Nutrition and Health Promotion, Arizona State University'
         - 'CIDSE, ASU'
         - 'Arizona State University'
-      name:
   - affiliation: 'Massachusetts Institute of Technology'
     match:
       affiliation:
         - 'Massachusetts Institute of Technology'
         - 'MIT Media Lab, Massachusetts Institute of Technology'
         - 'Computer Science and Artificial Intelligence Laboratory, MIT'
-      name:
   - affiliation: 'IT University of Copenhagen'
     match:
       affiliation:
         - 'IT University of Copenhagen'
-      name:
   - affiliation: 'University of Minnesota'
     match:
       affiliation:
         - 'GroupLens, University of Minnesota'
-      name:
   - affiliation: 'New York University'
     match:
-      affiliation:
       name:
         - 'Winslow Burleson'
   - affiliation: 'University of Michigan'
@@ -420,20 +398,16 @@ affiliations:
         - 'School of Information, University of Michigan'
         - 'The School of Information, The University of Michigan'
         - 'University of Michigan'
-      name:
   - affiliation: 'University of Iowa'
     match:
-      affiliation:
       name:
         - 'Kyle Rector'
   - affiliation: 'Harvard University'
     match:
       affiliation:
         - 'Harvard University'
-      name:
   - affiliation: 'Duke University'
     match:
-      affiliation:
       name:
         - 'Roger Vilardaga'
   - affiliation: 'Group Health Research Institute'
@@ -441,7 +415,6 @@ affiliations:
       affiliation:
         - 'Group Health Research Institute'
         - 'Group Health Research Institue, Group Health Cooperative'
-      name:
   - affiliation: 'Google'
     match:
       affiliation:
@@ -449,31 +422,25 @@ affiliations:
         - 'Google, Inc.'
         - 'Google Inc.'
         - 'Google Inc'
-      name:
   - affiliation: 'Deloitte'
     match:
       affiliation:
         - 'Deloitte'
-      name:
   - affiliation: 'Community Overcoming Relationship Abuse'
     match:
       affiliation:
         - 'Community Overcoming Relationship Abuse'
-      name:
   - affiliation: 'Tableau Software'
     match:
-      affiliation:
       name:
         - 'Anushka Anand'
         - 'Jock Mackinlay'
   - affiliation: 'Independent Researcher'
     match:
-      affiliation:
       name:
         - 'Nicole B Lee'
   - affiliation: 'University of Kentucky'
     match:
-      affiliation:
       name:
         - 'David Nemer'
   - affiliation: 'Georgia Institute of Technology'
@@ -482,25 +449,20 @@ affiliations:
         - 'Georgia Institute of Technology'
         - 'International Affairs; Interactive Computing, Georgia Tech'
         - 'Computational Linguistics Lab, Georgia Institute of Technology'
-      name:
   - affiliation: 'TU Darmstadt'
     match:
-      affiliation:
       name:
         - 'Oskar Bechtold'
   - affiliation: 'University of Regensburg'
     match:
-      affiliation:
       name:
         - 'Raphael Wimmer'
   - affiliation: 'Nortwestern University'
     match:
-      affiliation:
       name:
         - 'Robin Brewer'
   - affiliation: 'LeadGenius'
     match:
-      affiliation:
       name:
         - 'Anand P Kulkarni'
   - affiliation: 'University of Utah'
