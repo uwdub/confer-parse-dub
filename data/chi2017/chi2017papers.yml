@@ -20,8 +20,8 @@ papers:
     name: Sean A Munson
   award: true
   hm: false
-  title: "Examining Menstrual Tracking to Inform the Design Of\_Personal Informatics\
-    \ Tools"
+  title: Examining Menstrual Tracking to Inform the Design of Personal Informatics
+    Tools
 - authors:
   - affiliation: UW Information School
     name: Yea-Seul Kim
@@ -122,7 +122,7 @@ papers:
   - affiliation: UW Electrical Engineering
     name: Jun Xie
   - affiliation: Adobe Systems
-    name: "Holger Winnem\xF6ller"
+    name: Holger Winnemöller
   - affiliation: Adobe Systems
     name: Wilmot Li
   - affiliation: Adobe Systems
@@ -190,23 +190,6 @@ papers:
   title: 'TummyTrials: A Feasibility Study of Using Self-Experimentation to Detect
     Individualized Food Triggers'
 - authors:
-  - affiliation: UW Human Centered Design & Engineering
-    name: Kiley Sobel
-  - affiliation: UW Human Centered Design & Engineering
-    name: Arpita Bhattacharya
-  - affiliation: UW Human Centered Design & Engineering
-    name: Alexis Hiniker
-  - affiliation: UW Information School
-    name: Jin Ha Lee
-  - affiliation: UW Human Centered Design & Engineering
-    name: Julie A Kientz
-  - affiliation: UW Information School
-    name: Jason C Yip
-  award: false
-  hm: false
-  title: "\"It Wasn't Really About the Pok\xE9mon\": Parents' Perspectives on a Location-Based\
-    \ Mobile Game"
-- authors:
   - affiliation: Microsoft Research
     name: Justin B Cranshaw
   - affiliation: Microsoft Research
@@ -253,6 +236,24 @@ papers:
   hm: false
   title: Citizen Science Opportunities in Volunteer-Based Online Experiments
 - authors:
+  - affiliation: Group Health Research Institute
+    name: Andrea Hartzler
+  - affiliation: UW Division of Design
+    name: Bridget Weis
+  - affiliation: UW Division of Design
+    name: Carly Cahill
+  - affiliation: UW Information School
+    name: Wanda Pratt
+  - affiliation: University of Utah
+    name: Albert Park
+  - affiliation: UW Biomedical and Health Informatics
+    name: Uba Backonja
+  - affiliation: UW Human Centered Design & Engineering
+    name: David McDonald
+  award: false
+  hm: false
+  title: Design and Usability of Interactive User Profiles for Online Health Communities
+- authors:
   - affiliation: Microsoft Research
     name: Tobias Grosse-Puppendahl
   - affiliation: Microsoft Research
@@ -265,9 +266,9 @@ papers:
     name: Oskar Bechtold
   - affiliation: Microsoft Research
     name: Steve Hodges
-  - affiliation: UW Electrical Engineering
+  - affiliation: UW Computer Science & Engineering / UW Electrical Engineering
     name: Matthew S Reynolds
-  - affiliation: UW Electrical Engineering
+  - affiliation: UW Computer Science & Engineering / UW Electrical Engineering
     name: Joshua R Smith
   award: false
   hm: false
@@ -313,7 +314,7 @@ papers:
   - affiliation: Group Health Research Institute
     name: Catherine Lim
   - affiliation: Group Health Research Institute
-    name: Andrea L Hartzler
+    name: Andrea Hartzler
   - affiliation: UW Division of Design
     name: Tad Hirsch
   - affiliation: Group Health Research Institute
@@ -353,6 +354,23 @@ papers:
   hm: false
   title: Interaction Proxies for Runtime Repair and Enhancement of Mobile Application
     Accessibility
+- authors:
+  - affiliation: UW Human Centered Design & Engineering
+    name: Kiley Sobel
+  - affiliation: UW Human Centered Design & Engineering
+    name: Arpita Bhattacharya
+  - affiliation: UW Human Centered Design & Engineering
+    name: Alexis Hiniker
+  - affiliation: UW Information School
+    name: Jin Ha Lee
+  - affiliation: UW Human Centered Design & Engineering
+    name: Julie A Kientz
+  - affiliation: UW Information School
+    name: Jason C Yip
+  award: false
+  hm: false
+  title: '"It Wasn''t Really About the Pokémon": Parents'' Perspectives on a Location-Based
+    Mobile Game'
 - authors:
   - affiliation: UW Human Centered Design & Engineering
     name: Arpita Bhattacharya
@@ -522,7 +540,7 @@ papers:
   title: 'Toward Usable Evidence: Optimizing Knowledge Accumulation in HCI Research
     on Health Behavior Change'
 - authors:
-  - affiliation: UW Tech Policy Lab
+  - affiliation: UW School of Law
     name: Emily McReynolds
   - affiliation: UW Information School
     name: Sarah Hubbard
