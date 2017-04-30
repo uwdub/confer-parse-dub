@@ -236,6 +236,16 @@ papers:
   hm: false
   title: Citizen Science Opportunities in Volunteer-Based Online Experiments
 - authors:
+  - affiliation: UW Human Centered Design & Engineering
+    name: Alexis Hiniker
+  - affiliation: UW Human Centered Design & Engineering
+    name: Kiley Sobel
+  - affiliation: Microsoft Research
+    name: Bongshin Lee
+  award: false
+  hm: false
+  title: Co-Designing With Preschoolers Using Fictional Inquiry and Comicboarding
+- authors:
   - affiliation: Group Health Research Institute
     name: Andrea Hartzler
   - affiliation: UW Division of Design

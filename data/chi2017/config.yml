@@ -7,6 +7,7 @@ include:
     affiliation: 'Washington'
   - type: 'TOCHI'
     affiliation: 'Washington'
+  - id: 'pn1650'
   - id: 'pn3220'
 
 exclude:
@@ -44,6 +45,7 @@ names:
   - name: 'Bernd Huber'
   - name: 'Bill Howe'
   - name: 'Bolin Ding'
+  - name: 'Bongshin Lee'
   - name: 'Bowen Yu'
   - name: 'Bridget Weis'
   - name: 'Caitlin L Kelleher'
