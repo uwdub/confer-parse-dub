@@ -11,131 +11,105 @@ import yaml
 def parse_config(config):
     assert(isinstance(config['file_input'], str))
     assert(isinstance(config['file_input_type'], str))
-    assert(config['file_input_type'] in ['confer', 'proceedings'])
+    assert(config['file_input_type'] in ['confer'])
     assert(isinstance(config['file_output'], str))
 
-    for entry_name in config['names']:
-        assert(isinstance(entry_name['name'], str))
-        if 'match' in entry_name:
-            assert(isinstance(entry_name['match'], list))
-            for entry_name_match in entry_name['match']:
-                assert(isinstance(entry_name_match, str))
-
-    for entry_affiliation in config['affiliations']:
-        assert(isinstance(entry_affiliation['affiliation'], str))
-        if 'match' in entry_affiliation:
-            assert(isinstance(entry_affiliation['match'], dict))
-            if 'affiliation' in entry_affiliation['match']:
-                assert (isinstance(entry_affiliation['match']['affiliation'], list))
-                for entry_affiliation_match in entry_affiliation['match']['affiliation']:
-                    assert(isinstance(entry_affiliation_match, str))
-            if 'name' in entry_affiliation['match']:
-                assert (isinstance(entry_affiliation['match']['name'], list))
-                for entry_affiliation_match in entry_affiliation['match']['name']:
-                    assert(isinstance(entry_affiliation_match, str))
+    # for entry_name in config['names']:
+    #     assert(isinstance(entry_name['name'], str))
+    #     if 'match' in entry_name:
+    #         assert(isinstance(entry_name['match'], list))
+    #         for entry_name_match in entry_name['match']:
+    #             assert(isinstance(entry_name_match, str))
+    #
+    # for entry_affiliation in config['affiliations']:
+    #     assert(isinstance(entry_affiliation['affiliation'], str))
+    #     if 'match' in entry_affiliation:
+    #         assert(isinstance(entry_affiliation['match'], dict))
+    #         if 'affiliation' in entry_affiliation['match']:
+    #             assert (isinstance(entry_affiliation['match']['affiliation'], list))
+    #             for entry_affiliation_match in entry_affiliation['match']['affiliation']:
+    #                 assert(isinstance(entry_affiliation_match, str))
+    #         if 'name' in entry_affiliation['match']:
+    #             assert (isinstance(entry_affiliation['match']['name'], list))
+    #             for entry_affiliation_match in entry_affiliation['match']['name']:
+    #                 assert(isinstance(entry_affiliation_match, str))
 
 
 def parse_confer(config):
     # Parse the json.
     #
-    # Currently requires the file start with an opening bracket, manually stripping any 'entities ='
+    # Currently requires the file start with an opening bracket, manually stripping any 'entities=' before that.
     with open(config['file_input'], 'r', encoding='utf-8') as f:
         parsed_json = json.load(f)
 
-    # Organize the file into a list as expected
-    items = parsed_json.items()
-    filtered_items = []
-    for key_current, item_current in items:
-        # Store the id on the item
+    # Convert into a list of items
+    items = []
+    for key_current, item_current in parsed_json.items():
         item_current['id'] = key_current
+        items.append(item_current)
 
-        filtered_items.append(item_current)
-
-    items = filtered_items
+    # There are a bunch of completely empty affiliations to remove
+    for item_current in items:
+        for author_current in item_current['authors']:
+            author_current['affiliations'] = [
+                affiliation_current
+                for affiliation_current
+                in author_current['affiliations']
+                if (
+                    affiliation_current['dept'] != '' or
+                    affiliation_current['institution'] != '' or
+                    affiliation_current['city'] != '' or
+                    affiliation_current['country'] != ''
+                )
+            ]
 
     # Apply our includes and excludes
     items = match_include(config, items)
     items = match_exclude(config, items)
 
-    # Remove fields we do not use which could be confusing
+    # Normalize strings we care about to address Unicode, title case, and other consistency / format issues
     for item_current in items:
-        del item_current['id']
+        item_current['title'] = normalize_title(item_current['title'])
+        for author_current in item_current['authors']:
+            author_current['name'] = normalize_text(author_current['name'])
+            for affiliation_current in author_current['affiliations']:
+                affiliation_current['dept'] = normalize_text(affiliation_current['dept'])
+                affiliation_current['institution'] = normalize_text(affiliation_current['institution'])
+                affiliation_current['city'] = normalize_text(affiliation_current['city'])
+                affiliation_current['country'] = normalize_text(affiliation_current['country'])
+
+    items = normalize_names(config=config, items=items)
+    items = normalize_affiliation(config=config, items=items)
+    items = sort_items(config=config, items=items)
+
+    # Remove fields we do not further use which could be confusing
+    for item_current in items:
+    #     del item_current['id']
         del item_current['abstract']
-        del item_current['cAndB']
+        del item_current['acmLink']
+        del item_current['cbStatement']
+        del item_current['communities']
+        del item_current['contactFirstName']
+        del item_current['contactLastName']
         del item_current['keywords']
+        del item_current['session']
         del item_current['subtype']
-        del item_current['type']
+        del item_current['venue']
 
         for author_current in item_current['authors']:
             del author_current['familyName']
             del author_current['givenName']
             del author_current['middleInitial']
 
-            del author_current['city']
-            del author_current['country']
-            del author_current['dept']
-            del author_current['institution']
-            del author_current['location']
-
-    # Normalize strings to deal with Unicode, title case, and other issues
-    for item_current in items:
-        item_current['title'] = normalize_title(item_current['title'])
-        for author_current in item_current['authors']:
-            author_current['name'] = normalize_text(author_current['name'])
-            author_current['affiliation'] = normalize_text(author_current['affiliation'])
-
-    return items
-
-
-def parse_proceedings(config):
-    # Parse the proceedings xml file.
-    with open(config['file_input'], 'rb') as f:
-        parsed_xml = xmltodict.parse(f, encoding='utf-8')
-
-    # Get our paper list from the XML
-    items = parsed_xml['proceedings']['paper_list']['paper']
-
-    # Organize the file into a list as expected
-    filtered_items = []
-    for item_current in items:
-        # Rename @id to id for consistency
-        item_current['id'] = item_current['@id']
-        del item_current['@id']
-
-        # Rename author to authors for consistency
-        item_current['authors'] = item_current['author']
-        del item_current['author']
-        # Make single-author papers still have a list of authors
-        if isinstance(item_current['authors'], dict):
-            item_current['authors'] = [item_current['authors']]
-        # Convert the ordereddict to a base dict
-        item_current['authors'] = [dict(author_current) for author_current in item_current['authors']]
-
-        # No award info in this file
-        item_current['award'] = False
-        item_current['hm'] = False
-
-        # Convert the ordereddict to a base dict
-        filtered_items.append(dict(item_current))
-
-    items = filtered_items
-
-    # Apply our includes and excludes
-    items = match_include(config, items)
-    items = match_exclude(config, items)
-
-    # Remove fields we do not use which could be confusing
-    for item_current in items:
-        del item_current['id']
-        del item_current['abstract']
-        del item_current['startpage']
-
-    # Normalize strings to deal with Unicode, title case, and other issues
-    for item_current in items:
-        item_current['title'] = normalize_title(item_current['title'])
-        for author_current in item_current['authors']:
-            author_current['name'] = normalize_text(author_current['name'])
-            author_current['affiliation'] = normalize_text(author_current['affiliation'])
+            del author_current['affiliations']
+            del author_current['authorId']
+            del author_current['id']
+            del author_current['primary']
+            del author_current['rank']
+            del author_current['role']
+            del author_current['secondary']
+            del author_current['type']
+            del author_current['venue']
 
     return items
 
@@ -167,21 +141,21 @@ def match_include(config, items):
     for item_current in items:
         match_found = False
 
-        if config['include']:
-            for include_current in config['include']:
-                match_current = True
-                if 'type' in include_current:
-                    match_current &= include_current['type'] == item_current['type']
-                if 'affiliation' in include_current:
-                    match_affiliation = False
-                    for author_current in item_current['authors']:
-                        if include_current['affiliation'] in author_current['affiliation']:
+        for include_current in config['include']:
+            match_current = True
+            if 'affiliation' in include_current:
+                match_affiliation = False
+                for author_current in item_current['authors']:
+                    for affiliation_current in author_current['affiliations']:
+                        if include_current['affiliation'].casefold() in affiliation_current['institution'].casefold():
                             match_affiliation = True
-                    match_current &= match_affiliation
-                if 'id' in include_current:
-                    match_current &= include_current['id'] == item_current['id']
+                match_current &= match_affiliation
+            if 'venue' in include_current:
+                match_current &= include_current['venue'] == item_current['venue']
+            if 'id' in include_current:
+                match_current &= include_current['id'] == item_current['id']
 
-                match_found |= match_current
+            match_found |= match_current
 
         if match_found:
             filtered_items.append(item_current)
@@ -189,70 +163,112 @@ def match_include(config, items):
     return filtered_items
 
 
-def normalize_items(config, items):
+def normalize_names(config, items):
     # Clean up author names
     for item_current in items:
         for author_current in item_current['authors']:
             # Check our approved authors, try to match one for this author
-            matched = False
-            matched_name = author_current['name']
+            matches_found = []
 
-            for name_current in config['names']:
-                if author_current['name'] == name_current['name']:
-                    matched = True
-                if name_current.get('match', None) and \
-                   author_current['name'] in name_current['match']:
-                    matched = True
-                    matched_name = name_current['name']
+            for standard_name_current in config['names']:
+                if author_current['name'] == standard_name_current['name']:
+                    matches_found.append(standard_name_current)
+                elif 'match' in standard_name_current:
+                    for match_current in standard_name_current['match']:
+                        if author_current['name'] == match_current['name']:
+                            matches_found.append(standard_name_current)
 
-            if not matched:
+            if len(matches_found) == 1:
+                author_current['name'] = matches_found[0]['name']
+            elif len(matches_found) == 0:
                 print(
                     'No Name Match:  ' + author_current['name'].encode(sys.getdefaultencoding(), 'backslashreplace').decode()
                 )
+            else:
+                print(
+                    'Multiple Name Matches:  ' + author_current['name'].encode(sys.getdefaultencoding(), 'backslashreplace').decode()
+                )
 
-            author_current['name'] = matched_name
+    return items
 
+
+def normalize_affiliation(config, items):
     # Clean up author affiliations
     for item_current in items:
         for author_current in item_current['authors']:
-            # Check our approved affiliations, try to match one for this author
-            # matched = False
-            # matched_affiliation = author_current['affiliation']
+            standardized_affiliations = []
 
-            matches = []
+            for affiliation_current in author_current['affiliations']:
+                # Check our approved affiliations, try to match one for this author
+                matches_found = []
 
-            if len(matches) == 0:
-                for affiliation_current in config['affiliations']:
-                    test_names = affiliation_current.get('match', {}).get('name', [])
-                    test_names = test_names if test_names is not None else []
+                for standard_affiliation_current in config['affiliations']:
+                    exclude_found = False
+                    if 'exclude' in standard_affiliation_current:
+                        for exclude_current in standard_affiliation_current['exclude']:
+                            exclude_current_matches = True
 
-                    if author_current['name'] in test_names:
-                        matches.append(affiliation_current)
+                            if 'name' in exclude_current:
+                                exclude_current_matches &= author_current['name'] == exclude_current['name']
 
-            if len(matches) == 0:
-                for affiliation_current in config['affiliations']:
-                    test_affiliations = affiliation_current.get('match', {}).get('affiliation', [])
-                    test_affiliations = test_affiliations if test_affiliations is not None else []
+                            exclude_found |= exclude_current_matches
 
-                    if author_current['affiliation'] in test_affiliations:
-                        matches.append(affiliation_current)
+                    if not exclude_found:
+                        match_found = False
 
-            if len(matches) == 0:
-                for affiliation_current in config['affiliations']:
-                    if author_current['affiliation'] == affiliation_current['affiliation']:
-                        matches.append(affiliation_current)
+                        for match_current in standard_affiliation_current['match']:
+                            match_current_matches = True
 
-            if len(matches) == 0:
-                print(
-                    'No Affiliation Match:  ' + repr(author_current).encode(sys.getdefaultencoding(), 'backslashreplace').decode()
-                )
-            if len(matches) > 1:
-                print(
-                    'Multiple Affiliation Match:  ' + repr(author_current).encode(sys.getdefaultencoding(), 'backslashreplace').decode()
-                )
+                            if 'name' in match_current:
+                                match_current_matches &= author_current['name'] == match_current['name']
+                            if 'affiliation' in match_current:
+                                if 'dept' in match_current['affiliation']:
+                                    match_current_matches &= affiliation_current['dept'] == match_current['affiliation']['dept']
+                                if 'institution' in match_current['affiliation']:
+                                    match_current_matches &= affiliation_current['institution'] == match_current['affiliation']['institution']
 
-            author_current['affiliation'] = matches[0]['affiliation']
+                            match_found |= match_current_matches
 
+                        if match_found:
+                            matches_found.append(standard_affiliation_current)
+
+                if len(matches_found) == 1:
+                    standard_affiliation_current = matches_found[0]['affiliation']
+                    if standard_affiliation_current != '--ignore--':
+                        standardized_affiliations.append(standard_affiliation_current)
+                elif len(matches_found) == 0:
+                    print(
+                        'No Affiliation Match:  ' + author_current['name'] + ' ' + repr(affiliation_current).encode(sys.getdefaultencoding(), 'backslashreplace').decode()
+                    )
+                elif len(matches_found) > 1:
+                    print(
+                        'Multiple Affiliation Match:  ' + author_current['name'] + ' ' + repr(affiliation_current).encode(sys.getdefaultencoding(), 'backslashreplace').decode() + ' ' + repr(matches_found)
+                    )
+
+            if len(standardized_affiliations) > 1:
+                for multiple_affiliation_current in config['multiple_affiliations']:
+                    for match_current in multiple_affiliation_current['match']:
+                        match_current_matches = True
+
+                        if 'name' in match_current:
+                            match_current_matches &= author_current['name'] == match_current['name']
+                        if 'affiliations' in match_current:
+                            match_current_matches &= set(standardized_affiliations) == set(match_current['affiliations'])
+
+                        if match_current_matches:
+                            standardized_affiliations = [multiple_affiliation_current['affiliation']]
+
+            if len(standardized_affiliations) == 1:
+                author_current['affiliation'] = standardized_affiliations[0]
+            elif len(standardized_affiliations) == 0:
+                print('No Standardized Affiliation:  ' + author_current['name'])
+            elif len(standardized_affiliations) > 1:
+                print('Multiple Standardized Affiliations:  ' + author_current['name'] + ' ' + repr(standardized_affiliations))
+
+    return items
+
+
+def sort_items(config, items):
     # Sort them
     for item_current in items:
         item_current['title_sort'] = normalize_title_sort(item_current['title'])
@@ -290,7 +306,7 @@ def normalize_title(title):
 
 
 def normalize_title_sort(title):
-    return ''.join(c for c in title if c in string.ascii_letters + string.digits)
+    return (''.join(c for c in title if c in string.ascii_letters + string.digits)).casefold()
 
 
 def output_yaml(config, items):
@@ -317,15 +333,13 @@ def main():
 
     if config['file_input_type'] == 'confer':
         items = parse_confer(config)
-    elif config['file_input_type'] == 'proceedings':
-        items = parse_proceedings(config)
 
-    items = normalize_items(config, items)
+#    items = normalize_items(config, items)
     output_yaml(config, items)
 
-    # print('{} papers'.format(len(items)))
-    # print('{} best paper award'.format(len([item for item in items if item['award'] == True])))
-    # print('{} best paper honorable mention'.format(len([item for item in items if item['hm'] == True])))
+    print('{} papers'.format(len(items)))
+    print('{} best paper award'.format(len([item for item in items if item['award'] == True])))
+    print('{} best paper honorable mention'.format(len([item for item in items if item['hm'] == True])))
 
 
 if __name__ == '__main__':
