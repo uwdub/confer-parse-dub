@@ -1,0 +1,421 @@
+file_input: 'data/chi2016/chi2016papers.json'
+file_input_type: 'confer'
+file_output: 'data/chi2016/chi2016papers.yml'
+
+include:
+  - type: 'paper'
+    affiliation: 'Washington'
+
+exclude:
+  - id: 'pn1007'
+
+names:
+  - name: 'Afsaneh Doryab'
+  - name: 'Alannah Oleson'
+  - name: 'Alanson P Sample'
+  - name: 'Alexis Hiniker'
+  - name: 'An Ping'
+  - name: 'Andrew D Miller'
+  - name: 'Andrew J Ko'
+  - name: 'Andres Monroy-Hernandez'
+    match:
+      - 'Andrs Monroy-Hernndez'
+  - name: 'Anind K Dey'
+  - name: 'Annuska Perkins'
+  - name: 'Ari H Pollack'
+  - name: 'Austin Beck'
+  - name: 'Batya Friedman'
+  - name: 'Benjamin Mako Hill'
+    match:
+      - 'Benjamin M Hill'
+  - name: 'Benjamin V Hanrahan'
+  - name: 'Brett D Roads'
+  - name: 'Brian T Gill'
+  - name: 'Carol Moser'
+  - name: 'Catherine Yao'
+  - name: 'Charles Kiene'
+  - name: 'Christopher Brooks'
+  - name: 'Christopher J Mendez'
+  - name: 'Christy Ballweber'
+  - name: 'Chuck Johnston'
+  - name: 'Cynthia L Bennett'
+  - name: 'Daisy Yoo'
+  - name: 'Dan Turner'
+  - name: 'Daniel A Epstein'
+  - name: 'Daniel Avrahami'
+  - name: 'Daniel Pauw'
+  - name: 'Daniela K Rosner'
+  - name: 'Dastyni Loksa'
+  - name: 'David R Flatla'
+  - name: 'Dean Leitersdorf'
+  - name: 'Desney Tan'
+  - name: 'Dun-Yu Hsiao'
+  - name: 'Elena Agapie'
+  - name: 'Elizabeth Bonsignore'
+  - name: 'Elizabeth J Carter'
+  - name: 'Elliot Saba'
+  - name: 'Emma S Spiro'
+  - name: 'Eric B Hekler'
+    match:
+      - 'Eric Hekler'
+  - name: 'Eric Brockmeyer'
+  - name: 'Eric C Larson'
+  - name: 'Eric Whitmire'
+  - name: 'Felicia Cordeiro'
+  - name: 'Gaetano Borriello'
+  - name: 'Gary Hsieh'
+  - name: 'Gregory L Nelson'
+  - name: 'Hanchuan Li'
+  - name: 'Hidekazu Saegusa'
+  - name: 'Hyewon Suh'
+  - name: 'Hyunggu Jung'
+  - name: 'Isabelle Edwards'
+  - name: 'Jacob O Wobbrock'
+    match:
+      - 'Jacob Wobbrock'
+  - name: 'Jacob T Biehl'
+  - name: 'James Fogarty'
+  - name: 'Jason C Yip'
+  - name: 'Jean Hakizimana'
+  - name: 'Jeffrey P Bigham'
+  - name: 'Jennifer Marlow'
+  - name: 'Jessica R Hullman'
+    match:
+      - 'Jessica Hullman'
+  - name: 'Jiawei Chen'
+  - name: 'Jim Maddock'
+  - name: 'John M Carroll'
+  - name: 'Jorge N Matias'
+  - name: 'Josh Fromm'
+  - name: 'Judith O Uchidiuno'
+  - name: 'Julie A Kientz'
+  - name: 'June Ahn'
+  - name: 'Kaitlyn Zhou'
+  - name: 'Kate Starbird'
+  - name: 'Katharina Reinecke'
+  - name: 'Katherine M Steele'
+  - name: 'Katie Derthick'
+  - name: 'Ke-Yu Chen'
+  - name: 'Kelly Mills'
+  - name: 'Keting Cen'
+  - name: 'Kiley Sobel'
+  - name: 'Kyle Rector'
+  - name: 'Laewoo Kang'
+  - name: 'Lara Houston'
+  - name: 'Laura R Pina'
+    match:
+      - 'Laura Pina'
+  - name: 'Logan Kendall'
+  - name: 'Lucas Colusso'
+  - name: 'Maher Khelifi'
+  - name: 'Maia Stiber'
+  - name: 'Maneesh Agrawala'
+  - name: 'Margaret M Burnett'
+  - name: 'Martez E Mott'
+  - name: 'Matthew Kay'
+  - name: 'Mayank Goel'
+  - name: 'Meg Young'
+  - name: 'Meredith R Morris'
+  - name: 'Michael C Mozer'
+  - name: 'Min Sun'
+  - name: 'Minhyang (Mia) Suh'
+  - name: 'Mohammad M Khajah'
+  - name: 'Monica Caraway'
+  - name: 'Nina Shahriaree'
+  - name: 'Peijin Zhang'
+  - name: 'Radu-Daniel Vatavu'
+  - name: 'Rajalakshmi Nandakumar'
+  - name: 'Robert V Lindsey'
+  - name: 'Sabina Cao'
+  - name: 'Samer Al Moubayed'
+  - name: 'Sarah Fox'
+  - name: 'Sarita Schoenebeck'
+  - name: 'Sayamindu Dasgupta'
+  - name: 'Scott E Hudson'
+  - name: 'Sean A Munson'
+  - name: 'Sean Keller'
+  - name: 'Seth Cooper'
+  - name: 'Shaghayegh Ghassemian'
+  - name: 'Shaun K Kane'
+  - name: 'Shefali Haldar'
+  - name: 'Shwetak N Patel'
+  - name: 'Shyamnath Gollakota'
+  - name: 'Sina Bahram'
+  - name: 'Sindhuja Narasimhan'
+  - name: 'Sonali R Mishra'
+  - name: 'Sooyeon Lee'
+  - name: 'Steven J Jackson'
+  - name: 'Sungsoo (Ray) Hong'
+  - name: 'Susan Evans'
+  - name: 'Syed Ishtiaque Ahmed'
+  - name: 'Tadayoshi Kohno'
+  - name: 'Tamara L Clegg'
+  - name: 'Tara Kola'
+  - name: 'Thomas Tran'
+  - name: 'Uba Backonja'
+  - name: 'Victoria M Bellotti'
+  - name: 'Vikram Iyer'
+  - name: 'Wanda Pratt'
+  - name: 'William Jernigan'
+  - name: 'Xiaoyi Zhang'
+  - name: 'Yea-Seul Kim'
+  - name: 'Yun-En Liu'
+  - name: 'Zoran Popovic'
+
+affiliations:
+  - affiliation: 'UW Biomedical and Health Informatics'
+    match:
+      affiliation:
+        - 'Biomedical and Health Informatics, University of Washington'
+        - 'Biomedical Informatics and Medical Education, University of Washington'
+      name:
+        - 'Andrew D Miller'
+  - affiliation: 'UW Communication'
+    match:
+      affiliation:
+        - 'Department of Communication, University of Washington'
+      name:
+        - 'Charles Kiene'
+  - affiliation: 'UW Computer Science & Engineering'
+    match:
+      affiliation:
+        - 'Computer Science & Engineering , DUB Group'
+        - 'Computer Science & Engineering, University of Washington'
+        - 'Computer Science and Engineering, University of Washington'
+        - 'UW Computer Science & Engineering'
+        - 'Center for Game Science, Department of Computer Science & Engineering, University of Washington'
+      name:
+        - 'Christy Ballweber'
+        - 'Gaetano Borriello'
+        - 'James Fogarty'
+        - 'Mayank Goel'
+        - 'Tadayoshi Kohno'
+        - 'Zoran Popovic'
+        - 'Eric Whitmire'
+        - 'Xiaoyi Zhang'
+  - affiliation: 'UW Computer Science & Engineering / UW Electrical Engineering'
+    match:
+      affiliation:
+        - 'UW Computer Science & Engineering / UW Electrical Engineering'
+      name:
+        - 'Shwetak N Patel'
+  - affiliation: 'UW Computer Science & Engineering / UW Human Centered Design & Engineering'
+    match:
+      affiliation:
+      name:
+        - 'Laura R Pina'
+  - affiliation: 'UW Division of Design'
+    match:
+      affiliation:
+      name:
+        - 'Shaghayegh Ghassemian'
+  - affiliation: 'UW Electrical Engineering'
+    match:
+      affiliation:
+        - 'Electrical Engineering, University of Washington'
+      name:
+        - 'Ke-Yu Chen'
+        - 'Josh Fromm'
+        - 'Elliot Saba'
+  - affiliation: 'UW Environmental Science'
+    match:
+      affiliation:
+      name:
+        - 'Thomas Tran'
+  - affiliation: 'UW Human Centered Design & Engineering'
+    match:
+      affiliation:
+        - 'Department of Human Centered Design and Engineering, University of Washington'
+        - 'Human Centered Design & Engineering, University of Washington'
+        - 'Human Centered Design & Engineering, University of Washington, UW'
+        - 'Human Centered Design and Engineering, University of Washington'
+        - 'TAT Lab, University of Washington'
+        - 'UW Human Centered Design & Engineering'
+        - 'Human Centered Design & Engineering, University of Washington, Seattle, Washington, United States, University of Washington'
+        - 'University of Washington , Human Centered Design and Engineering'
+      name:
+        - 'Hyewon Suh'
+  - affiliation: 'UW Information School'
+    match:
+      affiliation:
+        - 'Information School, University of Washington'
+        - 'Information School , University of Washington'
+        - 'School of Information, University of Washington'
+        - 'UW Information School'
+        - 'The Information School, University of Washington'
+      name:
+        - 'Martez E Mott'
+        - 'Jacob Wobbrock'
+        - 'Jacob O Wobbrock'
+        - 'Wanda Pratt'
+  - affiliation: 'UW Mechanical Engineering'
+    match:
+      affiliation:
+        - 'Mechanical Engineering, University of Washington'
+      name:
+  - affiliation: 'UW MHCI+D'
+    match:
+      affiliation:
+      name:
+        - 'Nina Shahriaree'
+  - affiliation: 'UW School of Medicine'
+    match:
+      affiliation:
+        - 'Department of Pediatrics - School of Medicine, University of Washington'
+      name:
+        - 'Ari H Pollack'
+  - affiliation: 'Arizona State University'
+    match:
+      affiliation:
+        - 'Arizona State University'
+      name:
+  - affiliation: 'Carnegie Mellon University'
+    match:
+      affiliation:
+        - 'Human Computer Interaction, Carnegie Mellon University'
+        - 'Human-Computer Interaction Institute, Carnegie Mellon'
+        - 'Human-Computer Interaction Institute, Carnegie Mellon University'
+        - 'Human Computer Interaction Institute, Carnegie Mellon University'
+        - 'Human-Computer Interaction Institute, School of Computer Science, Carnegie Mellon University'
+      name:
+  - affiliation: 'Cornell University'
+    match:
+      affiliation:
+        - 'Cornell University'
+        - 'Information Science, Cornell University'
+      name:
+  - affiliation: 'Disney Research'
+    match:
+      affiliation:
+        - 'Disney Research'
+        - 'Disney Research Pittsburgh, Disney Research'
+      name:
+  - affiliation: 'FX Palo Alto Laboratory'
+    match:
+      affiliation:
+        - 'FXPAL'
+        - 'FX Palo Alto Laboratory, Inc.'
+      name:
+  - affiliation: 'Global Solidarity Corporation'
+    match:
+      affiliation:
+        - 'Global Solidarity Corporation'
+      name:
+  - affiliation: 'Inglemoor High School'
+    match:
+      affiliation:
+        - 'Inglemoor High School'
+      name:
+  - affiliation: 'Massachusetts Institute of Technology'
+    match:
+      affiliation:
+        - 'Massachusetts Institute of Technology'
+      name:
+  - affiliation: 'North Carolina State University'
+    match:
+      affiliation:
+        - 'North Carolina State University'
+      name:
+  - affiliation: 'Massachusetts Institute of Technology'
+    match:
+      affiliation:
+        - 'Massachusetts Institute of Technology'
+        - 'MIT Media Lab, Massachusetts Institute of Technology'
+      name:
+  - affiliation: 'Microsoft Research'
+    match:
+      affiliation:
+        - 'Microsoft Research'
+      name:
+  - affiliation: 'National Tsing Hua Unversity'
+    match:
+      affiliation:
+        - 'Electrical Engineering, National Tsing Hua Unversity'
+      name:
+  - affiliation: 'Northeastern University'
+    match:
+      affiliation:
+        - 'CCIS, Northeastern University'
+      name:
+  - affiliation: 'Oculus Research'
+    match:
+      affiliation:
+        - 'Oculus Research'
+      name:
+  - affiliation: 'Oregon State University'
+    match:
+      affiliation:
+        - 'Oregon State University'
+        - 'School of EECS, Oregon State University'
+      name:
+  - affiliation: 'Palo Alto Research Center'
+    match:
+      affiliation:
+        - 'Palo Alto Research Center'
+        - 'Palo Alto Research Center (PARC)'
+      name:
+  - affiliation: 'Pennsylvania State University'
+    match:
+      affiliation:
+        - 'College of Information Sciences and Technology, The Pennsylvania State University'
+        - 'College of Information Sciences and Technology, Pennsylvania State University'
+        - 'Information Sciences and Technology/HCI, The Pennsylvania State University'
+        - 'College of Information Sciences and Technology, Penn State'
+      name:
+  - affiliation: 'Seattle Pacific University'
+    match:
+      affiliation:
+        - 'Seattle Pacific University'
+      name:
+  - affiliation: 'Stanford University'
+    match:
+      affiliation:
+        - 'Computer Science, Stanford University'
+      name:
+  - affiliation: 'Southern Methodist University'
+    match:
+      affiliation:
+        - 'Computer Science and Engineering, Southern Methodist University'
+      name:
+  - affiliation: 'Technion'
+    match:
+      affiliation:
+        - 'Technion - Israel Institute of Technology'
+      name:
+  - affiliation: 'Tufts University'
+    match:
+      affiliation:
+        - 'Tufts University'
+      name:
+  - affiliation: 'University of Colorado'
+    match:
+      affiliation:
+        - 'University of Colorado Boulder'
+        - 'Department of Computer Science, University of Colorado'
+      name:
+  - affiliation: 'University of Dundee'
+    match:
+      affiliation:
+        - 'School of Computing, University of Dundee'
+      name:
+  - affiliation: 'University of Maryland'
+    match:
+      affiliation:
+        - 'University of Maryland'
+        - 'College of Education, University of Maryland'
+        - 'College of Information Studies, University of Maryland'
+        - 'Human-Computer Interaction Lab, University of Maryland'
+        - 'Department of Teaching and Learning, Policy and Leadership, University of Maryland'
+      name:
+        - 'Elizabeth Bonsignore'
+  - affiliation: 'University of Michigan'
+    match:
+      affiliation:
+        - 'School of Information , University of Michigan'
+        - 'School of Information, University of Michigan'
+      name:
+  - affiliation: 'University Stefan cel Mare of Suceava'
+    match:
+      affiliation:
+        - 'University Stefan cel Mare of Suceava'
+      name:
