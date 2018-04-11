@@ -26,6 +26,7 @@ names:
   - name: 'Aditya Vishwanath'
   - name: 'Albert Park'
   - name: 'Alex Mariakakis'
+  - name: 'Alex S Taylor'
   - name: 'Alexander Fiannaca'
   - name: 'Alexis Hiniker'
   - name: 'Alisha Pradhan'
@@ -51,6 +52,7 @@ names:
     match:
       - name: 'Andrew Ko'
   - name: 'Angelisa C Plane'
+  - name: 'Anja Thieme'
   - name: 'Anna Turner'
   - name: 'Anne S Ross'
     match:
@@ -91,6 +93,7 @@ names:
   - name: 'Cecilia R Aragon'
     match:
       - name: 'Cecilia Aragon'
+  - name: 'Cecily Morrison'
   - name: 'Cedric Festin'
   - name: 'Chanda Phelan'
   - name: 'Chelly Jin'
@@ -501,6 +504,7 @@ affiliations:
           institution: 'University of Washington'
   - affiliation: 'UW Computer Science & Engineering'
     exclude:
+      - name: 'Daniela K Rosner'
       - name: 'Laura R Pina'
       - name: 'Shwetak N Patel'
     match:
@@ -537,6 +541,8 @@ affiliations:
       - affiliation:
           dept: 'Department of Computer Science & Engineering'
           institution: 'University of Washington'
+      - affiliation:
+          dept: 'Computer Science & Engineering, University of Washington, Seattle, Washington, United States'
       - name: 'Jennifer Webster'
         affiliation:
           institution: 'University of Washington'
@@ -743,6 +749,10 @@ affiliations:
     match:
       - affiliation:
           institution: 'Carnegie Mellon University'
+  - affiliation: 'City University London'
+    match:
+      - affiliation:
+          institution: 'City University London'
   - affiliation: 'Cornell Tech'
     match:
       - affiliation:
@@ -823,6 +833,8 @@ affiliations:
           dept: 'Microsoft Research'
       - affiliation:
           institution: 'Microsoft Research'
+      - affiliation:
+          institution: 'Microsoft Resarch'
   - affiliation: 'New York University'
     match:
       - affiliation:
