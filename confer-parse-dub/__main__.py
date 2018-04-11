@@ -147,6 +147,8 @@ def match_include(config, items):
                 match_affiliation = False
                 for author_current in item_current['authors']:
                     for affiliation_current in author_current['affiliations']:
+                        if include_current['affiliation'].casefold() in affiliation_current['dept'].casefold():
+                            match_affiliation = True
                         if include_current['affiliation'].casefold() in affiliation_current['institution'].casefold():
                             match_affiliation = True
                 match_current &= match_affiliation
