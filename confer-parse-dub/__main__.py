@@ -38,7 +38,7 @@ def parse_config(config):
 def parse_confer(config):
     # Parse the json.
     #
-    # Currently requires the file start with an opening bracket, manually stripping any 'entities=' before that.
+    # Currently requires the file start with an opening bracket, need to manually strip any 'entities=' before that.
     with open(config['file_input'], 'r', encoding='utf-8') as f:
         parsed_json = json.load(f)
 
@@ -49,23 +49,36 @@ def parse_confer(config):
         items.append(item_current)
 
     # There are a bunch of completely empty affiliations to remove
+    #
+    # In the CHI 2019 data, every author has a empty 'secondary', their affiliation is in 'primary'
     for item_current in items:
         for author_current in item_current['authors']:
-            author_current['affiliations'] = [
-                affiliation_current
-                for affiliation_current
-                in author_current['affiliations']
-                if (
-                    affiliation_current['dept'] != '' or
-                    affiliation_current['institution'] != '' or
-                    affiliation_current['city'] != '' or
-                    affiliation_current['country'] != ''
-                )
-            ]
+            author_current['affiliations'] = [author_current['primary']]
+            if(
+                author_current['secondary']['dept'] != '' or
+                author_current['secondary']['institution'] != '' or
+                author_current['secondary']['city'] != '' or
+                author_current['secondary']['state'] != '' or
+                author_current['secondary']['country'] != ''
+            ):
+                author_current['affiliations'].append(author_current['secondary'])
+
+    # The CHI 2019 does not include a 'name' field, so construct it from components
+    for item_current in items:
+        for author_current in item_current['authors']:
+            author_current['name'] = author_current['givenName']
+            if author_current['middleInitial'] != '':
+                author_current['name'] = '{} {}'.format(author_current['name'], author_current['middleInitial'])
+            author_current['name'] = '{} {}'.format(author_current['name'], author_current['familyName'])
+            author_current['name'] = author_current['name'].strip()
 
     # Apply our includes and excludes
     items = match_include(config, items)
+    print('Matched {} includes'.format(len(items)))
+
+    len_before_excludes = len(items)
     items = match_exclude(config, items)
+    print('Matched {} excludes'.format(len_before_excludes - len(items)))
 
     # Normalize strings we care about to address Unicode, title case, and other consistency / format issues
     for item_current in items:
@@ -78,19 +91,19 @@ def parse_confer(config):
                 affiliation_current['city'] = normalize_text(affiliation_current['city'])
                 affiliation_current['country'] = normalize_text(affiliation_current['country'])
 
+    # Do our main work
     items = normalize_names(config=config, items=items)
     items = normalize_affiliation(config=config, items=items)
     items = sort_items(config=config, items=items)
 
     # Remove fields we do not further use which could be confusing
     for item_current in items:
-    #     del item_current['id']
         del item_current['abstract']
         del item_current['acmLink']
         del item_current['cbStatement']
         del item_current['communities']
-        del item_current['contactFirstName']
-        del item_current['contactLastName']
+        del item_current['contactEmail']
+        del item_current['contactName']
         del item_current['keywords']
         del item_current['session']
         del item_current['subtype']
@@ -103,13 +116,10 @@ def parse_confer(config):
 
             del author_current['affiliations']
             del author_current['authorId']
-            del author_current['id']
             del author_current['primary']
             del author_current['rank']
             del author_current['role']
             del author_current['secondary']
-            del author_current['type']
-            del author_current['venue']
 
     return items
 
@@ -181,14 +191,27 @@ def normalize_names(config, items):
                             matches_found.append(standard_name_current)
 
             if len(matches_found) == 1:
+                # print(
+                #     'Name Match:  "{}" matched to known name "{}"'.format(
+                #         author_current['name'],
+                #         matches_found[0]['name']
+                #     )
+                # )
+
                 author_current['name'] = matches_found[0]['name']
             elif len(matches_found) == 0:
                 print(
-                    'No Name Match:  ' + author_current['name'].encode(sys.getdefaultencoding(), 'backslashreplace').decode()
+                    'No Name Match:'
+                )
+                print(
+                    author_current['name'].encode(sys.getdefaultencoding(), 'backslashreplace').decode()
                 )
             else:
                 print(
-                    'Multiple Name Matches:  ' + author_current['name'].encode(sys.getdefaultencoding(), 'backslashreplace').decode()
+                    'Multiple Name Matches:'
+                )
+                print(
+                    author_current['name'].encode(sys.getdefaultencoding(), 'backslashreplace').decode()
                 )
 
     return items
@@ -304,6 +327,7 @@ def normalize_title(title):
     title = titlecase.titlecase(title)
     title = title.strip()
     title = title.replace('in Situ', 'In Situ')
+    title = title.replace('Human-Ai', 'Human-AI')
     return title
 
 
