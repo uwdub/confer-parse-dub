@@ -267,7 +267,7 @@ def normalize_affiliation(config, items):
                     )
                 elif len(matches_found) > 1:
                     print(
-                        'Multiple Affiliation Match:  ' + author_current['name'] + ' ' + repr(affiliation_current).encode(sys.getdefaultencoding(), 'backslashreplace').decode() + ' ' + repr(matches_found)
+                        'Multiple Affiliation Match:  ' + author_current['name'] + ' ' + json.dumps(affiliation_current, indent=2).encode(sys.getdefaultencoding(), 'backslashreplace').decode() + ' ' + json.dumps(matches_found, indent=2)
                     )
 
             if len(standardized_affiliations) > 1:

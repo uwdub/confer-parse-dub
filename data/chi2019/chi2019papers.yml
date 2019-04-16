@@ -331,6 +331,20 @@ papers:
   thirdPartyMaterial: false
   title: 'Beyond the Patient Portal: Supporting Needs of Hospitalized Patients'
 - authors:
+  - affiliation: University of Copenhagen
+    name: Karim Jabbar
+  - affiliation: UW Human Centered Design & Engineering / University of Copenhagen
+    name: Pernille Bjørn
+  award: false
+  doi: https://doi.org/10.1145/3290605.3300496
+  hm: false
+  id: pn6234
+  programmeId: paper266
+  recordingGranted: true
+  thirdPartyMaterial: false
+  title: 'Blockchain Assemblages: Whiteboxing Technology and Transforming Infrastructural
+    Imaginaries'
+- authors:
   - affiliation: University of Michigan
     name: Gabriela Marcu
   - affiliation: University of Michigan

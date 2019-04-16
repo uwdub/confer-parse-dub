@@ -7,7 +7,7 @@ include:
     venue: 'journals'
   - affiliation: 'Washington'
     venue: 'paper'
-#  - id: 'pn1650'
+  - id: 'pn6234'
 
 exclude:
   - id: 'pn3659'
@@ -353,6 +353,7 @@ names:
   - name: 'Kanika Mehta'
   - name: 'Kanit Wongsuphasawat'
   - name: 'Kari Nasu'
+  - name: 'Karim Jabbar'
   - name: 'Kate Krontiris'
   - name: 'Kate Starbird'
   - name: 'Katharina Reinecke'
@@ -927,6 +928,9 @@ affiliations:
     match:
       - name: 'Pernille Bjørn'
         affiliation:
+          institution: 'University of Copenhagen'
+      - name: 'Pernille Bjørn'
+        affiliation:
           institution: 'University of Copenhagen & University of Washington'
   - affiliation: 'UW Industrial & Systems Engineering'
     match:
@@ -1485,6 +1489,12 @@ affiliations:
           institution: 'University of Colorado'
       - affiliation:
           institution: 'University of Colorado Boulder'
+  - affiliation: 'University of Copenhagen'
+    exclude:
+      - name: 'Pernille Bjørn'
+    match:
+      - affiliation:
+          institution: 'University of Copenhagen'
   - affiliation: 'University of Iowa'
     match:
       - affiliation:
