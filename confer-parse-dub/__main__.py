@@ -31,6 +31,22 @@ def parse_sigchi_program(config):
         del content_current['keywords']
         del content_current['tags']
 
+        if 'award' in content_current:
+            if content_current['award'] == 'BEST_PAPER':
+                content_current['bestpaper'] = True
+            else:
+                content_current['bestpaper'] = False
+
+            if content_current['award'] == 'HONORABLE_MENTION':
+                content_current['honorablemention'] = True
+            else:
+                content_current['honorablemention'] = False
+
+            del content_current['award']
+        else:
+            content_current['bestpaper'] = False
+            content_current['honorablemention'] = False
+
     # Go through content to see which match our criteria
     filtered_items = []
     for content_current in items:
@@ -207,6 +223,9 @@ def normalize_names(config, items):
     # Clean up author names
     for item_current in items:
         for author_current in item_current['authors']:
+            # Clean it up
+            author_current['name'] = normalize_text(author_current['name'])
+
             # Check our approved authors, try to match one for this author
             matches_found = []
 
@@ -284,6 +303,9 @@ def normalize_institutions(config, items):
 
 
 def normalize_text(text):
+    while '  ' in text:
+        text = text.replace('  ', ' ')
+
     text = text.replace('\u2019', '\'')
     text = text.replace('\u201C', '"')
     text = text.replace('\u201D', '"')
@@ -313,14 +335,14 @@ def sort_items(config, items):
     for item_current in items:
         del item_current['title_sort']
 
-    # items.sort(
-    #     key=operator.itemgetter('hm'),
-    #     reverse=True
-    # )
-    # items.sort(
-    #     key=operator.itemgetter('award'),
-    #     reverse=True
-    # )
+    items.sort(
+        key=operator.itemgetter('honorablemention'),
+        reverse=True
+    )
+    items.sort(
+        key=operator.itemgetter('bestpaper'),
+        reverse=True
+    )
 
     return items
 
@@ -353,8 +375,8 @@ def main():
     output_yaml(config, items)
 
     print('{} papers'.format(len(items)))
-    # print('{} best paper award'.format(len([item for item in items if item['award'] == True])))
-    # print('{} best paper honorable mention'.format(len([item for item in items if item['hm'] == True])))
+    print('{} best paper award'.format(len([item for item in items if item['bestpaper']])))
+    print('{} best paper honorable mention'.format(len([item for item in items if item['honorablemention']])))
 
 
 if __name__ == '__main__':
