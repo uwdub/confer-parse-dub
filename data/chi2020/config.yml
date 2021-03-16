@@ -4,9 +4,9 @@ file_output: 'data/chi2020/chi2020papers.yml'
 
 include:
   - institution: 'Washington'
-    trackId: 10953
+    trackId: 10967
   - institution: 'Washington'
-    trackId: 10960
+    trackId: 10974
 
 exclude:
   - id: 32080

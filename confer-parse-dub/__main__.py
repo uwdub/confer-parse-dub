@@ -1,6 +1,7 @@
 import argparse
 import json
 import operator
+import re
 import string
 import sys
 import titlecase
@@ -27,9 +28,12 @@ def parse_sigchi_program(config):
 
     # Simplify for our needs
     for content_current in items:
-        del content_current['abstract']
-        del content_current['keywords']
-        del content_current['tags']
+        if 'abstract' in content_current:
+            del content_current['abstract']
+        if 'keywords' in content_current:
+            del content_current['keywords']
+        if 'tags' in content_current:
+            del content_current['tags']
 
         if 'award' in content_current:
             if content_current['award'] == 'BEST_PAPER':
@@ -46,6 +50,18 @@ def parse_sigchi_program(config):
         else:
             content_current['bestpaper'] = False
             content_current['honorablemention'] = False
+
+        if 'doi' in content_current:
+            match = re.search('https://doi.org/(.+)', content_current['doi'])
+            if match:
+                content_current['doi'] = 'https://dl.acm.org/doi/abs/' + match.group(1)
+
+        if 'videos' in content_current:
+            for video_current in content_current['videos']:
+                if video_current['type'] == 'Video preview':
+                    content_current['videopreview'] = video_current['url']
+
+            del content_current['videos']
 
     # Go through content to see which match our criteria
     filtered_items = []
