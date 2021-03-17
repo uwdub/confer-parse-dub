@@ -1,0 +1,1079 @@
+file_input: 'data/chi2021/CHI_2021_program.json'
+file_input_type: 'sigchi program'
+file_output: 'data/chi2021/chi2021papers.yml'
+
+include:
+  - affiliation: 'Washington'
+    trackId: 11066 # Papers
+  - affiliation: 'Washington'
+    trackId: 11077 # Journals
+
+exclude:
+  - id: 47535
+  - id: 47662
+names:
+  - name: 'Abdullah Ali'
+  - name: 'Adam Bell'
+  - name: 'Adam Fourney'
+#  - name: 'Adam Summers'
+  - name: 'Afsaneh Doryab'
+#  - name: 'Akane Sano'
+#  - name: 'Akli Amrous'
+#  - name: 'Alannah Oleson'
+#  - name: 'Alex Mariakakis'
+#  - name: 'Alex S Taylor'
+#  - name: 'Alexander Bock'
+  - name: 'Alexis Hiniker'
+#  - name: 'Alison Smith-Renner'
+#  - name: 'Allison Marie Hishikawa'
+  - name: 'Allison Sauppe'
+  - name: 'Alvin Cheung'
+  - name: 'Amanda Baughan'
+  - name: 'Amanda Swearngin'
+  - name: 'Amy J Ko'
+#  - name: 'Amy X Zhang'
+  - name: 'Anastasia Schaadhardt'
+  - name: 'Andrés Monroy-Hernández'
+#  - name: 'Andrew B L Berry'
+#  - name: 'Andrew Campbell'
+  - name: 'Andrew Head'
+  - name: 'Anind K Dey'
+  - name: 'Anupriya Tuli'
+  - name: 'Ao Yu'
+  - name: 'Ari Hock'
+#  - name: 'Arpita Bhattacharya'
+#  - name: 'Ashley Boone'
+  - name: 'Ather Sharif'
+  - name: 'Audrey Desjardins'
+  - name: 'Aws Albarghouthi'
+#  - name: 'Ayse G Buyuktur'
+  - name: 'Azra Ismail'
+  - name: 'Barbara Barbosa Neves'
+#  - name: 'Batya Friedman'
+  - name: 'Benjamin R Cowan'
+  - name: 'Besmira Nushi'
+  - name: 'Bilge Mutlu'
+#  - name: 'Blase Ur'
+  - name: 'Blair Kaneshiro'
+  - name: 'Brandon Guthrie'
+  - name: 'Brandyn S Boyd'
+  - name: 'Britnie Chin'
+  - name: 'Camille Cobb'
+#  - name: 'Caro Williams-Pierce'
+  - name: 'Caroline Pitt'
+#  - name: 'Cassandra Donatelli'
+#  - name: 'Cayla Key'
+  - name: 'Chen Liang'
+  - name: 'Chenglong Wang'
+#  - name: 'Chris DuBois'
+  - name: 'Christian Sturm'
+#  - name: 'Christine Geeng'
+#  - name: 'Christopher Frauenberger'
+  - name: 'Chun Yu'
+  - name: 'Chunjong Park'
+#  - name: 'Cláudio T Silva'
+  - name: 'Cosmin Munteanu'
+#  - name: 'Cynthia L Bennett'
+  - name: 'Cyrus Mugo'
+#  - name: 'Dallas Card'
+#  - name: 'Daniel Vogel'
+  - name: 'Daniella Villalba'
+  - name: 'Daniel McDuff'
+  - name: 'Daniel S Weld'
+    match:
+      - name: 'Dan Weld'
+      - name: 'Daniel Weld'
+#  - name: 'Daniela K Rosner'
+#  - name: 'Daniele Panozzo'
+  - name: 'Danilo Gasques'
+  - name: 'David Creswell'
+  - name: 'David J Porfirio'
+  - name: 'David Odhiambo Seeh'
+  - name: 'David W McDonald'
+  - name: 'Deepali Aneja'
+  - name: 'Derek DeBellis'
+#  - name: 'Ding Wang'
+  - name: 'Dhruv Jain'
+#  - name: 'Divya Ramesh'
+#  - name: 'Dominik Moritz'
+#  - name: 'Donghao Ren'
+  - name: 'Dongyeop Kang'
+#  - name: 'Dror Ben-Zeev'
+  - name: 'Ece Kamar'
+#  - name: 'Echo Zhang'
+  - name: 'Eman Abdullah AlOmar'
+    match:
+      - name: 'Eman AlOmar'
+#  - name: 'Ekta Shokeen'
+  - name: 'Emma J McDonnell'
+#  - name: 'Elizabeth Bonsignore'
+#  - name: 'Elizabeth Kupferstein'
+#  - name: 'Elizabeth L Murnane'
+  - name: 'Emily E Bascom'
+#  - name: 'Emily Scherer'
+  - name: 'Eric Zeng'
+#  - name: 'Erin Beneteau'
+  - name: 'Evan Schmitz'
+  - name: 'Evelyn Yang'
+  - name: 'Fannie Liu'
+  - name: 'Florian Brühlmann'
+#  - name: 'Francis Williams'
+  - name: 'Franziska Roesner'
+  - name: 'Gabrielle Benabdallah'
+#  - name: 'Gabriella Harari'
+#  - name: 'Geraldine Fitzpatrick'
+  - name: 'Gagan Bansal'
+  - name: 'Gang Li'
+  - name: 'Gary Hsieh'
+  - name: 'Geoff Kaufman'
+#  - name: 'Géry Casiez'
+  - name: 'Grace John-Stewart'
+  - name: 'Gyuwon Jung'
+  - name: 'Ha-Kyung Kong'
+#  - name: 'Haitian Shi'
+#  - name: 'Halden Lin'
+#  - name: 'Hanchuan Li'
+  - name: 'Hannah Rose Twigg-Smith'
+  - name: 'Harkiran Kaur Saluja'
+#  - name: 'Harish Doraiswamy'
+  - name: 'Hasti Seifi'
+#  - name: 'Hathaitorn Rojnirun'
+  - name: 'Heidi R Biggs'
+#  - name: 'Helena Webb'
+#  - name: 'Hongyi Wen'
+#  - name: 'Huiyi Luo'
+#  - name: 'Hyeryoung Kim'
+  - name: 'Himanshu Zade'
+  - name: 'Irene Inwani'
+  - name: 'Ishan Chatterjee'
+  - name: 'Isil Dillig'
+  - name: 'J Vera Liao'
+    match:
+      - name: 'J. Vera Liao'
+#  - name: "Jacki O'Neill"
+  - name: 'Jacob O Wobbrock'
+#  - name: 'Jaime Snyder'
+  - name: 'Jaime Teevan'
+  - name: 'James Choi'
+  - name: 'James Fogarty'
+  - name: 'James Pierce'
+  - name: 'Jan Cao'
+#  - name: 'Jane Hoffswell'
+  - name: 'Janet G Johnson'
+  - name: 'Janine M Dutcher'
+  - name: 'Jaisie Sin'
+  - name: 'Jason Yip'
+  - name: "Jasper Tran O'Leary"
+#  - name: 'Jean-Baptiste Beau'
+#  - name: 'Jeffrey Heer'
+#  - name: 'Jennifer D Rubin'
+  - name: 'Jennifer Jacobs'
+  - name: 'Jennifer Mankoff'
+#  - name: 'Jenny Fan'
+#  - name: 'Jeremy E Viny'
+  - name: 'Jessica Hodgins'
+#  - name: 'Jessica J Good'
+  - name: 'Jessica Schroeder'
+#  - name: 'Jialing Wu'
+  - name: 'Jiahao Li'
+  - name: 'Jin Ha Lee'
+  - name: 'Jio Oh'
+  - name: 'John Kane'
+#  - name: 'John Raiti'
+  - name: 'John Zoshak'
+  - name: 'Jon E Froehlich'
+#  - name: 'Jordan Boyd-Graber'
+#  - name: 'Joshua Vasquez'
+  - name: 'Joyce Zhou'
+  - name: 'Juho Sun'
+#  - name: 'Julia Hanson'
+#  - name: 'Julie A Kientz'
+#  - name: 'Jun Zhao'
+#  - name: 'Justin Petelka'
+  - name: 'Kai Lukoff'
+  - name: 'Kaiyue Fan'
+#  - name: 'Kanit Wongsuphasawat'
+  - name: 'Kasey Creswell'
+  - name: 'Katharina Reinecke'
+#  - name: 'Katherine M Steele'
+  - name: 'Kathryn J Lum'
+  - name: 'Katie Davis'
+#  - name: 'Katta Spiel'
+#  - name: 'Kayla Hall'
+#  - name: 'Kayur Patel'
+#  - name: 'Ke Ou'
+  - name: 'Kelly Mack'
+  - name: 'Kentrell Owens'
+  - name: 'Keri Mallari'
+  - name: 'Keshet Ronen'
+#  - name: 'Kimberly A Bourne'
+#  - name: 'Kizito Masaba'
+  - name: 'Klaus Opwis'
+#  - name: 'Kori Inkpen'
+#  - name: 'Kori Inkpen'
+  - name: 'Kristin Dew'
+  - name: 'Kyle Lo'
+  - name: 'Kyle Sorstokke'
+  - name: 'Kung Jin Lee'
+  - name: 'Laura Dabbish'
+  - name: 'Laura Stegner'
+  - name: 'Leah Findlater'
+  - name: 'Leila Zelnick'
+#  - name: 'Leyla Norooz'
+#  - name: 'Liam Albright'
+  - name: 'Liang He'
+#  - name: 'Lisa A Elkin'
+#  - name: 'Lindsay Blackwell'
+#  - name: 'Lior Strahilevitz'
+  - name: 'Lorrie Cranor'
+  - name: 'Lucy Lu Wang'
+#  - name: 'Lucy Simko'
+#  - name: 'Lucy Van Kleunen'
+  - name: 'Mania Orand'
+  - name: 'Mar Gonzalez-Franco'
+  - name: 'Marco Tulio Ribeiro'
+  - name: 'Mark Encarnación'
+  - name: 'Mary Czerwinski'
+#  - name: 'Marika Cifor'
+#  - name: 'Marina Jirotka'
+#  - name: 'Marta Hauser'
+  - name: 'Marti Hearst'
+  - name: 'Massimiliano Di Luca'
+#  - name: 'Matt Wright'
+  - name: 'Matthew K Hong'
+#  - name: 'Matthew Kugler'
+#  - name: 'Max Van Kleek'
+  - name: 'Maya Cakmak'
+  - name: 'Mayank Goel'
+  - name: 'Megan Hofmann'
+  - name: 'Megan A Moreno'
+  - name: 'Mehrnaz Sabet'
+#  - name: 'Melissa Birchfield'
+#  - name: 'Meron Solomon'
+  - name: 'Meredith Ringel Morris'
+  - name: 'Michael J Tumminia'
+  - name: 'Mingrui Ray Zhang'
+  - name: 'Mingyuan Zhong'
+#  - name: 'Miranda Wei'
+  - name: 'Mohamed Wiem Mkaouer'
+#  - name: 'Momona Yamagami'
+  - name: 'Murtaza Tamjeed'
+  - name: 'Nadir Weibel'
+  - name: 'Nadya Peek'
+  - name: 'Naomi Yamashita'
+  - name: 'Naveena Karusala'
+  - name: 'Neha Kumar'
+#  - name: 'Nick Logler'
+  - name: 'Nicole S Kuhn'
+    match:
+      - name: 'Nicole S. Kuhn'
+  - name: 'Nicole K Santero'
+#  - name: 'Nigel Shadbolt'
+  - name: 'Nigini Oliveira'
+  - name: 'Nikki Demmel'
+#  - name: 'Noah A Smith'
+#  - name: 'Os Keyes'
+#  - name: 'Patricia Garcia'
+  - name: 'Paul N Bennett'
+#  - name: 'Petr Slovák'
+  - name: 'Prerna Chikersal'
+  - name: 'Prerna Juneja'
+#  - name: 'Rachel Brian'
+  - name: 'Qisheng Li'
+  - name: 'Rachel L Franz'
+  - name: 'Raina Langevin'
+  - name: 'Rastislav Bodik'
+  - name: 'Raymond Fok'
+  - name: 'Rens Hoegen'
+  - name: 'Richard Anderson'
+#  - name: 'Ron Fan'
+  - name: 'Rosa I Arriaga'
+#  - name: 'Rose Guttman'
+  - name: 'Ross J Lordon'
+#  - name: 'Rui Wang'
+  - name: 'Ruolin Wang'
+  - name: 'Ruotong Wang'
+  - name: 'Saba Kawas'
+  - name: 'Saleema Amershi'
+  - name: 'Sam Bourgault'
+  - name: 'Sam Skjonsberg'
+#  - name: 'Samuel A Burden'
+#  - name: 'Sanya Verma'
+#  - name: 'Sarah Tan'
+#  - name: 'Savanna Yee'
+  - name: 'Sebastian Linxen'
+  - name: 'Scott E Hudson'
+  - name: 'Sean A Munson'
+#  - name: 'Seokbin Kang'
+#    match:
+#      - name: 'Seokbin kang'
+  - name: 'Shamsi Iqbal'
+#  - name: 'Shayan Mirjafari'
+  - name: 'Sheldon Cohen'
+#  - name: 'Shiri Azenkot'
+  - name: 'Shwetak N Patel'
+    match:
+      - name: 'Shwetak Patel'
+  - name: 'Shumin Zhai'
+  - name: 'Simon Egan'
+  - name: 'So Yeon Park'
+#  - name: 'Sophie Veys'
+  - name: 'Spencer Williams'
+#  - name: 'Stephen Voida'
+#  - name: 'Steven Goodman'
+#  - name: 'Subigya Nepal'
+#  - name: 'Sun Young Park'
+#  - name: 'Sung Won Choi'
+  - name: 'Sungmin Na'
+  - name: 'Susanne Kirchner'
+  - name: 'Svetlana Yarosh'
+#  - name: 'Tabitha C Peck'
+  - name: 'Tad Hirsch'
+  - name: 'Tadashi E Grindeland'
+  - name: 'Tadayoshi Kohno'
+  - name: 'Tal August'
+  - name: 'Tanushree Mitra'
+#  - name: 'Tanzeem Choudhury'
+  - name: 'Taylor Gotfrid'
+#  - name: 'Tengxiang Zhang'
+#  - name: 'Terri D Conley'
+  - name: 'Thi Avrahami'
+  - name: 'Tian Qi Zhu'
+  - name: 'Tianyi Yuan'
+  - name: 'Tianyuan Zou'
+#  - name: 'Tiffany Ku'
+#  - name: 'Tim Althoff'
+  - name: 'Tommy Sharkey'
+  - name: 'Tong Wei'
+  - name: 'Tongshuang Wu'
+  - name: 'Tsung-Yu Tsai'
+  - name: 'Udaya Lakshmi'
+  - name: 'Uichin Lee'
+  - name: 'Ulrik Lyngs'
+  - name: 'Venkatesh Potluri'
+  - name: 'Victor Poznanski'
+  - name: 'Vincent Cassau'
+#  - name: 'Vincent Tseng'
+#  - name: 'Virginia L Byrne'
+  - name: 'Wajdi M Aljedaani'
+#  - name: 'Weichen Wang'
+  - name: 'Wendy Roldan'
+#  - name: 'WenJia Liu'
+  - name: 'William Catzin'
+#  - name: 'William Seymour'
+#  - name: 'Wilmot Li'
+#  - name: 'Woosuk Seo'
+  - name: "Xiang 'Anthony' Chen"
+  - name: 'Xiaoying Wei'
+#  - name: 'Xin Gao'
+  - name: 'Xin Liu'
+  - name: 'Xin Yi'
+  - name: 'Xinwen Liu'
+  - name: 'Xuhai Xu'
+  - name: 'Yang Li'
+#  - name: 'Yang Liu'
+  - name: 'Yasmine N El-Glaly'
+  - name: 'Ye Yuan'
+  - name: 'Yilin Zeng'
+  - name: 'Yongquan Hu'
+#  - name: 'Yoojung Kim'
+  - name: 'Youjin Jung'
+  - name: 'Yu Feng'
+  - name: 'Yu Jiang Tham'
+  - name: 'Yuanchun Shi'
+  - name: 'Yuanwei Zhang'
+  - name: 'Yue Qin'
+#  - name: 'Yuhang Zhao'
+  - name: 'Yukang Yan'
+  - name: 'Yuntao Wang'
+#  - name: 'Yuxing Wu'
+  - name: 'Zhaoheng Li'
+#  - name: 'Zhengyi Cao'
+#  - name: 'Zhicheng Liu'
+  - name: 'Zhixiu Liu'
+  - name: 'Zihan Dang'
+  - name: 'Zihan Wu'
+#  - name: 'Zichao (Tyson) Chen'
+#  - name: 'Ziyue Li'
+  - name: 'Zixuan Chen'
+
+affiliations:
+  ###
+  ### UW Affiliations with Large DUB Presences
+  ###
+#  - canonical: "UW Biology"
+#    match:
+#      - name: 'Kayla Hall'
+#        affiliations: [ "University of Washington" ]
+  - canonical: 'UW Computer Science & Engineering'
+    match:
+      #
+      # Complete institutional names
+      #
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Allen School of Computer Science and Engineering'
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Computer Science & Engineering'
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Paul G. Allen School of Computer Science'
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Paul G. Allen School of Computer Science & Engineering'
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Paul G Allen School of Computer Science and Engineering'
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Paul G. Allen School of Computer Science and Engineering'
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'School of Computer Science and Engineering'
+      #
+      # Individuals, including institution to be more robust to change
+      #
+      - name: 'Evelyn Yang'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Gagan Bansal'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: "Jasper Tran O'Leary"
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Kathryn J Lum'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Kelly Mack'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Maya Cakmak'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Naveena Karusala'
+        affiliations:
+        - institution: 'University of Washington'
+          dsl: ''
+      - name: 'Richard Anderson'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Taylor Gotfrid'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Tongshuang Wu'
+        affiliations:
+        - institution: 'University of Washington'
+
+#      - name: 'Alex Mariakakis'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Amanda Baughan'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Amanda Swearngin'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Amy X Zhang'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Chenglong Wang'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Christine Geeng'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Daniel S Weld'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Dhruv Jain'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Dominik Moritz'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Franziska Roesner'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Halden Lin'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'James Fogarty'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Jane Hoffswell'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Jeffrey Heer'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Jennifer Mankoff'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Jon E Froehlich'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Katharina Reinecke'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Kelly Mack'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Lucy Simko'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Naveena Karusala'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Savanna Yee'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Tadayoshi Kohno'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Tal August'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Tim Althoff'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Tongshuang Wu'
+#        affiliations: [ "University of Washington & Apple Inc." ]
+#      - name: 'Yang Liu'
+#        affiliations: [ "University of Washington" ]
+#  - canonical: "UW Electrical Engineering"
+#    match:
+#      - name: 'Momona Yamagami'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Samuel A Burden'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'John Raiti'
+#        affiliations: [ "University of Washington" ]
+
+  - canonical: 'UW Human Centered Design & Engineering'
+    match:
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Human Centered Design & Engineering'
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Human Centered Design and Engineering'
+      - affiliations:
+        - institution: 'University Of Washington' # Typo
+          dsl: 'Human Centered Design & Engineering'
+      - affiliations:
+        - institution: 'University of Washignton' # Typo
+          dsl: 'Human-Centered Design & Engineering'
+      #
+      # Individuals, including institution to be more robust to change
+      #
+      - name: 'Gabrielle Benabdallah'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Hannah Rose Twigg-Smith'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Kaiyue Fan'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Nadya Peek'
+        affiliations:
+        - institution: 'University of Washington'
+#    match:
+#      - name: 'Allison Marie Hishikawa'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Arpita Bhattacharya'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Ashley Boone'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Daniela K Rosner'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Gary Hsieh'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Joshua Vasquez'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Julie A Kientz'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Kai Lukoff'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Keri Mallari'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Leah Findlater'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Melissa Birchfield'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Nadya Peek'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Os Keyes'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Ron Fan'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Rose Guttman'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Steven Goodman'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Susanne Kirchner'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Wendy Roldan'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Xin Gao'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Ziyue Li'
+#        affiliations: [ "University of Washington" ]
+
+  - canonical: "UW Information School"
+    match:
+      #
+      # Complete institutional names
+      #
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Information School'
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'The Information School'
+      - affiliations:
+        - institution: 'University of Washinton' # Typo
+          dsl: 'Information School'
+      #
+      # Individuals, including institution to be more robust to change
+      #
+      - name: 'Alexis Hiniker'
+        affiliations:
+        - institution: 'University of Washington'
+          dsl: ''
+      - name: 'Anastasia Schaadhardt'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Caroline Pitt'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Emily E Bascom'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Katie Davis'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Kyle Sorstokke'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Nicole S Kuhn'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Nikki Demmel'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Prerna Juneja'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Saba Kawas'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Tanushree Mitra'
+        affiliations:
+        - institution: 'University of Washington'
+#    match:
+#      - name: 'Alannah Oleson'
+#        affiliations: [ "University of Washington" ]
+#      - name: ''
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Amy J Ko'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Anind K Dey'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Batya Friedman'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Echo Zhang'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Erin Beneteau'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Jaime Snyder'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Jason Yip'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Jason Yip'
+#        affiliations: [ "University of Washinton" ] ## Typo affiliation
+#      - name: 'Jin Ha Lee'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Justin Petelka'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Liam Albright'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Marika Cifor'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Meron Solomon'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Nick Logler'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Tiffany Ku'
+#        affiliations: [ "University of Washington" ]
+#  - canonical: "UW Mechanical Engineering"
+#    match:
+#      - name: 'Katherine M Steele'
+#        affiliations: [ "University of Washington" ]
+#  - canonical: "UW Psychiatry and Behavioral Sciences"
+#    match:
+#      - name: 'Dror Ben-Zeev'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Rachel Brian'
+#        affiliations: [ "University of Washington" ]
+#  - canonical: "UW Psychology"
+#    match:
+#      - name: 'Kimberly A Bourne'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Jennifer D Rubin'
+#        affiliations: [ "University of Washington" ]
+#  - canonical: "UW Art + Art History + Design"
+#    match:
+#      - name: 'Audrey Desjardins'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Jeremy E Viny'
+#        affiliations: [ "University of Washington" ]
+#      - name: 'Matt Wright'
+#        affiliations: [ "University of Washington" ]
+
+  - canonical: 'UW Art + Art History + Design'
+    match:
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'School of Art + Art History + Design'
+
+  - canonical: "UW Global Innovation Exchange"
+    match:
+      - name: 'Yuanwei Zhang'
+        affiliations: [ "University of Washington" ]
+
+  ###
+  ### UW Affiliations
+  ###
+  - canonical: 'UW Biomedical Informatics and Medical Education'
+    match:
+      #
+      # Individuals, including institution to be more robust to change
+      #
+      - name: 'Matthew K Hong'
+        affiliations:
+        - institution: 'University of Washington'
+  - canonical: 'UW Education'
+    match:
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'College of Education'
+  - canonical: 'UW Global Health'
+    match:
+      #
+      # Individuals, including institution to be more robust to change
+      #
+      - name: 'Brandon Guthrie'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Grace John-Stewart'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Keshet Ronen'
+        affiliations:
+        - institution: 'University of Washington'
+  - canonical: 'UW Mathematics'
+    match:
+      #
+      # Individuals, including institution to be more robust to change
+      #
+      - name: 'Jiahao Li'
+        affiliations:
+        - institution: 'University of Washington'
+  - canonical: 'UW Nephrology'
+    match:
+      #
+      # Individuals, including institution to be more robust to change
+      #
+      - name: 'Leila Zelnick'
+        affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Department of Medicine'
+  - canonical: 'UW Sociology'
+    match:
+      - affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Department of Sociology'
+
+  ###
+  ### UW Dual Appointments
+  ###
+  - canonical: 'Adobe / UW Computer Science & Engineering'
+    match:
+      - name: 'Deepali Aneja'
+        affiliations:
+        - institution: 'Adobe Research'
+        - institution: 'University of Washington'
+  - canonical: 'UW Communication / UW Psychology'
+    match:
+      - name: 'J Vera Liao'
+        affiliations:
+        - institution: 'University of Washington'
+          dsl: ''
+  - canonical: 'UW Computer Science & Engineering / Carnegie Mellon University'
+    match:
+      - name: 'Kentrell Owens'
+        affiliations:
+        - institution: 'University of Washington'
+          dsl: ''
+        - institution: 'Carnegie Mellon University'
+          dsl: ''
+  - canonical: 'UW Computer Science & Engineering / Allen Institute for Artificial Intelligence'
+    match:
+      - name: 'Daniel S Weld'
+        affiliations:
+        - institution: 'University of Washington'
+        - institution: 'Allen Institute for Artificial Intelligence'
+  - canonical: 'UW Art + Art History + Design / University of California Berkeley'
+    match:
+      - name: 'James Pierce'
+        affiliations:
+        - institution: 'University of Washington Seattle'
+        - institution: 'UC Berkeley'
+  - canonical: "UW Computer Science & Engineering / UW Electrical Engineering"
+    match:
+      - name: 'Shwetak N Patel'
+        affiliations:
+        - institution: 'University of Washington'
+  - canonical: "Tsinghua University / UW Computer Science & Engineering"
+    match:
+      - name: 'Yuntao Wang'
+        affiliations:
+        - institution: 'Tsinghua University'
+        - institution: 'University of Washington'
+
+  ###
+  ### Generic UW Affiliation when Individual has no Identifiable Precise Affiliation
+  ###
+  - canonical: 'University of Washington'
+    match:
+      #
+      # Individuals, including institution to be more robust to change
+      #
+      - name: 'Simon Egan'
+        affiliations:
+        - institution: 'University of Washington'
+          dsl: ''
+      - name: 'Youjin Jung'
+        affiliations:
+        - institution: 'University of Washington'
+          dsl: ''
+
+  ###
+  ### Non-UW Affiliations
+  ###
+  - canonical: 'Adobe'
+    match:
+      - affiliations:
+        - institution: 'Adobe Research'
+  - canonical: 'Allen Institute for Artificial Intelligence'
+    match:
+      - affiliations:
+        - institution: 'Allen Institute for AI'
+      - affiliations:
+        - institution: 'Allen Institute for Artificial Intelligence'
+#  - canonical: "Apple"
+#    match:
+#      - affiliations: [ "Apple Inc." ]
+#  - canonical: "Beijing University of Posts and Telecommunications"
+#  - canonical: "Bishop Blanchet High School"
+  - canonical: 'Carnegie Mellon University'
+    match:
+      - affiliations:
+        - institution: 'Carnegie Mellon University'
+      - affiliations:
+        - institution: 'Carnegie Mellon Universtiy' ## Typo
+#  - canonical: "Chinese Academy of Sciences"
+#  - canonical: "City, University of London"
+#  - canonical: "Cornell Tech"
+  - canonical: 'Cornell University'
+#  - canonical: "Dartmouth College"
+#  - canonical: "Davidson College"
+  - canonical: 'Georgia Institute of Technology'
+    match:
+      - affiliations:
+        - institution: 'Georgia Institute of Technology'
+      - affiliations:
+        - institution: 'Georgia Tech'
+  - canonical: 'Google'
+    match:
+      - affiliations:
+        - institution: 'Google'
+      - affiliations:
+        - institution: 'Google Research'
+  - canonical: 'Hamm-Lippstadt University of Applied Sciences'
+    match:
+      - affiliations:
+        - institution: 'Hamm-Lippstadt University of Applied Sciences'
+      - affiliations:
+        - institution: 'Hochschule Hamm- Lippstadt'
+#  - canonical: "Harvard University"
+#  - canonical: "Indiana University Bloomington"
+  - canonical: 'Indraprastha Institute of Information Technology Delhi'
+    match:
+      - affiliations:
+        - institution: 'IIIT-Delhi'
+  - canonical: 'KAIST'
+  - canonical: 'Kenyatta National Hospital'
+#  - canonical: "King's College London"
+#  - canonical: "Linköping University"
+  - canonical: 'Microsoft'
+    match:
+      - affiliations:
+        - institution: 'Microsoft'
+      - affiliations:
+        - institution: 'Microsoft Corporation'
+      - affiliations:
+        - institution: 'Microsoft Research'
+  - canonical: 'Nippon Telegraph and Telephone Corporation'
+    match:
+      - affiliations:
+        - institution: 'NTT'
+#  - canonical: "New York University"
+#  - canonical: "Northwell Health"
+  - canonical: 'Northeastern University'
+  - canonical: 'Northwestern University'
+#  - canonical: "NTT Communication"
+#    match:
+#      - affiliations: [ "NTT Communication Science Laboratories" ]
+  - canonical: 'Pennsylvania State University'
+    match:
+      - affiliations:
+        - institution: 'Penn State University'
+#  - canonical: "Rice University"
+  - canonical: 'Rochester Institute of Technology'
+  - canonical: 'Rulai'
+#  - canonical: "Seoul National University"
+  - canonical: 'Seattle University'
+  - canonical: 'Snap'
+    match:
+      - affiliations:
+        - institution: 'Snap Inc.'
+  - canonical: 'Stanford University'
+  - canonical: 'Tsinghua University'
+    match:
+      - affiliations:
+        - institution: 'Tsinghua University'
+      - name: 'Tianyi Yuan'
+        affiliations:
+        - dsl: 'Tsinghua University' # Typo
+#    match:
+#      - affiliations: [ "Tsinghua University & Key Laboratory of Pervasive Computing, Ministry of Education" ]
+#  - canonical: "TU Wien"
+  - canonical: 'Tufts University'
+  - canonical: 'University of Basel'
+  - canonical: 'University of Birmingham'
+  - canonical: 'University College Dublin'
+  - canonical: 'University of California Berkeley'
+    match:
+      - affiliations:
+        - institution: 'UC Berkeley'
+      - affiliations:
+        - institution: 'University of California, Berkeley'
+      - name: 'Andrew Head'
+        affiliations:
+        - institution: 'UC Berkeley'
+        - institution: 'UC Berkeley'
+  - canonical: 'University of California Los Angeles'
+    match:
+      - affiliations:
+        - institution: 'UCLA'
+  - canonical: 'University of California San Diego'
+    match:
+      - affiliations:
+        - institution: 'University of California San Diego'
+      - affiliations:
+        - institution: 'UC San Diego'
+  - canonical: 'University of California Santa Barbara'
+    match:
+      - affiliations:
+        - institution: 'University of California Santa Barbara'
+      - affiliations:
+        - institution: 'University of California, Santa Barbara'
+#  - canonical: "University of Chicago"
+#  - canonical: "University of Colorado Boulder"
+  - canonical: 'University of Copenhagen'
+#  - canonical: "University of Dundee"
+#  - canonical: "University of Maryland"
+  - canonical: 'University of Melbourne'
+    match:
+      - affiliations:
+        - institution: 'The University of Melbourne'
+  - canonical: 'University of Michigan'
+#    match:
+#      - affiliations: [ "University of Michigan \x96 Ann Arbor" ]
+  - canonical: 'University of Minnesota'
+  - canonical: 'University of Nevada Las Vegas'
+    match:
+      - affiliations:
+        - institution: 'University of Nevada, Las Vegas'
+  - canonical: 'University of North Texas'
+  - canonical: 'University of Oxford'
+  - canonical: 'University of Pittsburgh'
+  - canonical: 'University of Southern California'
+    match:
+      - affiliations:
+        - institution: 'Institute for Creative Technologies' # Typo
+          dsl: 'University of Southern California'
+  - canonical: 'University of Texas'
+    match:
+      - affiliations:
+        - institution: 'University of Texas, Austin'
+  - canonical: 'University of Toronto'
+    match:
+      - affiliations:
+        - institution: 'University of Toronto'
+      - name: 'Cosmin Munteanu'
+        affiliations:
+        - institution: 'University of Toronto'
+        - institution: 'University of Toronto Mississauga'
+#  - canonical: "University of Waterloo"
+  - canonical: 'University of Wisconsin'
+    match:
+      - affiliations:
+        - institution: 'University of Wisconsin-Madison'
+  - canonical: 'University of Wisconsin La Crosse'
+    match:
+      - affiliations:
+        - institution: 'University of Wisconsin-La Crosse'
+  - canonical: 'University of Virginia'
+    match:
+      - affiliations:
+        - institution: 'University of Virginia (SSO)'
+  - canonical: 'Western Washington University'
+
+  ###
+  ### Multiple Affiliations
+  ###
+  - canonical: 'Snap / Carnegie Mellon University'
+    match:
+      - name: 'Fannie Liu'
+        affiliations:
+        - institution: 'Snap Inc.'
+        - institution: 'Carnegie Mellon University'
+  - canonical: 'Tsinghua University / Ministry of Education'
+    match:
+      - # name: 'Chun Yu', 'Yuanchun Shi', 'Yue Qin'
+        affiliations:
+        - institution: 'Tsinghua University'
+        - institution: 'Ministry of Education'
+  - canonical: 'Tsinghua University / University of Michigan'
+    match:
+      - affiliations:
+        - institution: 'Tsinghua University'
+        - institution: 'University of Michigan'
+
+#  - canonical: "Université de Lille / University of Waterloo"
+#    match:
+#      - name: 'Géry Casiez'
+#        affiliations: [ "Univ. Lille, UMR 9189 - CRIStAL & Inria & Institut Universitaire de France (IUF) &  University of Waterloo" ]
+#  - canonical: "UW Computer Science & Engineering / Allen Institute for Artificial Intelligence"
+#    match:
+#      - name: 'Noah A Smith'
+#        affiliations: [ "University of Washington & Allen Institute for Artificial Intelligence" ]
+#  - canonical: "UW Computer Science & Engineering / University of Chicago"
+#    match:
+#      - name: 'Miranda Wei'
+#        affiliations: [ "University of Washington & University of Chicago" ]
+#  - canonical: "UW Computer Science & Engineering / University of Waterloo"
+#    match:
+#      - name: 'Lisa A Elkin'
+#        affiliations: [ "University of Washington & University of Waterloo" ]
+#  - canonical: "UW Computer Science & Engineering / UW Global Innovation Exchange / Tsinghua University"
+#    match:
+#      - name: 'Yuntao Wang'
+#        affiliations: [ "Tsinghua University & University of Washington" ]
+#  - canonical: "UW Computer Science & Engineering / Tsinghua University"
+#    match:
+#      - name: 'Haitian Shi'
+#        affiliations: [ "Tsinghua University & University of Washington" ]
+#  - canonical: "UW Global Innovation Exchange / Tsinghua University"
+#    match:
+#      - name: 'Zichao (Tyson) Chen'
+#        affiliations: [ "Tsinghua University & University of Washington" ]
+#  - canonical: "UW Human Centered Design & Engineering / Carnegie Mellon University"
+#    match:
+#      - name: 'Cynthia L Bennett'
+#        affiliations: [ "Carnegie Mellon University & University of Washington" ]
+#  - canonical: "UW Information School / Tsinghua University"
+#    match:
+#      - name: 'Xuhai Xu'
+#        affiliations: [ "University of Washington & Tsinghua University" ]
