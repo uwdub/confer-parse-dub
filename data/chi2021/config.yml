@@ -11,6 +11,9 @@ include:
 exclude:
   - id: 47535
   - id: 47662
+  - id: 47714 # Unsure about claiming Simon Egan
+  - id: 47529 # Unsure about claiming Youjin Jung
+
 names:
   - name: 'Abdullah Ali'
   - name: 'Adam Bell'
@@ -820,22 +823,22 @@ affiliations:
         - institution: 'Tsinghua University'
         - institution: 'University of Washington'
 
-  ###
-  ### Generic UW Affiliation when Individual has no Identifiable Precise Affiliation
-  ###
-  - canonical: 'University of Washington'
-    match:
-      #
-      # Individuals, including institution to be more robust to change
-      #
-      - name: 'Simon Egan'
-        affiliations:
-        - institution: 'University of Washington'
-          dsl: ''
-      - name: 'Youjin Jung'
-        affiliations:
-        - institution: 'University of Washington'
-          dsl: ''
+#  ###
+#  ### Generic UW Affiliation when Individual has no Identifiable Precise Affiliation
+#  ###
+#  - canonical: 'University of Washington'
+#    match:
+#      #
+#      # Individuals, including institution to be more robust to change
+#      #
+#      - name: 'Simon Egan'
+#        affiliations:
+#        - institution: 'University of Washington'
+#          dsl: ''
+#      - name: 'Youjin Jung'
+#        affiliations:
+#        - institution: 'University of Washington'
+#          dsl: ''
 
   ###
   ### Non-UW Affiliations
