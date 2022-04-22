@@ -1,6 +1,7 @@
 import argparse
 import json
 import operator
+import pprint
 import re
 import string
 import sys
@@ -98,6 +99,10 @@ def parse_sigchi_program(config):
 
     # Normalize affiliations
     items = normalize_affiliations(config, items)
+
+    # Normalize title
+    for content_current in items:
+        content_current['title'] = normalize_title(content_current['title'])
 
     # Sort publications
     items = sort_items(config, items)
@@ -324,7 +329,10 @@ def normalize_affiliations(config, items):
 
                         # Track how many we match
                         if match_current:
-                            matches_found.append(normalized_affiliation_current)
+                            # If we match the same affiliation via multiple patterns,
+                            # that only counts as one match
+                            if normalized_affiliation_current not in matches_found:
+                                matches_found.append(normalized_affiliation_current)
 
                 # If no match field exists, treat this as a shortcut
                 # It can match if there is exactly one affiliation with an exactly matching institution
@@ -342,11 +350,11 @@ def normalize_affiliations(config, items):
                 author_current['affiliation'] = matches_found[0]['canonical']
             elif len(matches_found) == 0:
                 print('No Affiliation Match:')
-                print(author_current)
+                pprint.pprint(author_current)
             else:
                 print('Multiple Affiliation Match:')
-                print(json.dumps(author_current, indent=2))
-                print(matches_found)
+                pprint.pprint(author_current)
+                pprint.pprint(matches_found)
 
     return items
 
