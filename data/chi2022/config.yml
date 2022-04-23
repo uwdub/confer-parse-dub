@@ -7,6 +7,8 @@ include:
     trackId: 11750 # CHI 2022 Papers
   - affiliation: 'Washington'
     trackId: 11757 # CHI 2022 Journals
+  - id: 68912
+  - id: 72026
 
 exclude:
   - id: 68823
@@ -50,6 +52,7 @@ names:
 #  - name: 'Andrew B L Berry'
 #  - name: 'Andrew Campbell'
   - name: 'Andrew Head'
+  - name: 'Anhong Guo'
   - name: 'Aniket Kittur'
   - name: 'Anind K Dey'
   - name: 'Anne Spencer Ross'
@@ -71,6 +74,7 @@ names:
 #  - name: 'Azra Ismail'
 #  - name: 'Barbara Barbosa Neves'
 #  - name: 'Batya Friedman'
+  - name: 'Behrooz Shahsavari'
   - name: 'Benjamin Mako Hill'
   - name: 'Benjamin R Cowan'
 #  - name: 'Besmira Nushi'
@@ -79,6 +83,7 @@ names:
 #  - name: 'Blase Ur'
 #  - name: 'Blair Kaneshiro'
   - name: 'Bo Zhang'
+  - name: 'Bongsoo Suh'
 #  - name: 'Brandon Guthrie'
 #  - name: 'Brandyn S Boyd'
   - name: 'Brian Kinnee'
@@ -91,12 +96,15 @@ names:
 #  - name: 'Camille Cobb'
   - name: 'Carlos Augusto Bautista Isaza'
 #  - name: 'Caro Williams-Pierce'
+  - name: 'Carolina Brum'
 #  - name: 'Caroline Pitt'
   - name: 'Carrie J Cai'
 #  - name: 'Cassandra Donatelli'
 #  - name: 'Cayla Key'
+  - name: 'Charlie Maalouf'
 #  - name: 'Chen Liang'
 #  - name: 'Chenglong Wang'
+  - name: 'Cheuk Yin Phipson Lee'
 #  - name: 'Chris DuBois'
   - name: 'Chris Horng'
 #  - name: 'Christian Sturm'
@@ -190,6 +198,7 @@ names:
 #  - name: 'Geoff Kaufman'
   - name: 'Georgia Kenderova'
 #  - name: 'Géry Casiez'
+  - name: 'Gierad Laput'
   - name: 'Gonzalo Ramos'
 #  - name: 'Grace John-Stewart'
 #  - name: 'Gyuwon Jung'
@@ -205,6 +214,7 @@ names:
 #  - name: 'Hathaitorn Rojnirun'
 #  - name: 'Heidi R Biggs'
 #  - name: 'Helena Webb'
+  - name: 'Heriberto Nieto'
 #  - name: 'Himanshu Zade'
   - name: 'Hongnan Lin'
 #  - name: 'Hongyi Wen'
@@ -243,6 +253,8 @@ names:
   - name: 'Jason Yip'
 #  - name: "Jasper Tran O'Leary"
   - name: 'Javier Hernandez'
+  - name: 'Jax Seyed Mousavi'
+  - name: 'Jaylin Herskovitz'
   - name: 'Jazz Rui Xia Ang'
 #  - name: 'Jean-Baptiste Beau'
   - name: 'Jed R Brubaker'
@@ -278,6 +290,7 @@ names:
   - name: 'Jon E Froehlich'
   - name: 'Jonathan Bragg'
   - name: 'Jonathan Womack'
+  - name: 'JooYoung Seo'
 #  - name: 'Jordan Boyd-Graber'
   - name: 'Joseph Gildner'
 #  - name: 'Joshua Vasquez'
@@ -286,6 +299,7 @@ names:
 #  - name: 'Julia Hanson'
   - name: 'Julia Woodward'
   - name: 'Julie A Kientz'
+  - name: 'Jun Gong'
   - name: 'Jun Rekimoto'
 #  - name: 'Jun Zhao'
 #  - name: 'Justin Petelka'
@@ -320,6 +334,7 @@ names:
 #  - name: 'Kung Jin Lee'
 #  - name: 'Laura Dabbish'
 #  - name: 'Laura Stegner'
+  - name: 'Laurence Lindsey'
   - name: 'Leah Findlater'
   - name: 'Leigh Clark'
 #  - name: 'Leila Zelnick'
@@ -327,6 +342,7 @@ names:
 #  - name: 'Leyla Norooz'
 #  - name: 'Liam Albright'
   - name: 'Liang He'
+  - name: 'Lilian Liang'
   - name: 'Lindah Kotut'
   - name: 'Lisa Anthony'
   - name: 'Lisa D Butler'
@@ -453,6 +469,7 @@ names:
 #  - name: 'Ross J Lordon'
 #  - name: 'Rui Wang'
   - name: 'Ruijia Cheng'
+  - name: 'Runchang Kang'
   - name: 'Ruofei Du'
   - name: 'Ruolin Wang'
 #  - name: 'Ruotong Wang'
@@ -486,6 +503,7 @@ names:
 #  - name: 'Shayan Mirjafari'
 #  - name: 'Sheldon Cohen'
 #  - name: 'Shiri Azenkot'
+  - name: 'Shivam Kumar Gupta'
   - name: 'Shriya Kurpad'
   - name: 'Shwetak N Patel'
     match:
@@ -537,6 +555,7 @@ names:
   - name: 'Tongshuang Wu'
   - name: 'Tracy Tran'
 #  - name: 'Tsung-Yu Tsai'
+  - name: 'Tu Nguyen'
 #  - name: 'Udaya Lakshmi'
   - name: 'Uma Pal'
 #  - name: 'Uichin Lee'
@@ -568,6 +587,7 @@ names:
 #  - name: 'Yang Liu'
   - name: 'Yanhao Wang'
   - name: 'Yanzhang Li'
+  - name: 'Yash Agarwal'
 #  - name: 'Yasmine N El-Glaly'
 #  - name: 'Ye Yuan'
   - name: 'Yifan Li'
@@ -598,6 +618,7 @@ names:
 #  - name: 'Zhengyi Cao'
 #  - name: 'Zhicheng Liu'
 #  - name: 'Zhixiu Liu'
+  - name: 'Zhuohao Zhang'
 #  - name: 'Zihan Dang'
 #  - name: 'Zihan Wu'
 #  - name: 'Zichao (Tyson) Chen'
@@ -1140,9 +1161,12 @@ affiliations:
       - affiliations:
         - institution: 'Allen Institute for Artificial Intelligence'
   - canonical: 'Allen Institute for Brain Science'
-#  - canonical: "Apple"
-#    match:
-#      - affiliations: [ "Apple Inc." ]
+  - canonical: "Apple"
+    match:
+      - affiliations:
+        - institution: 'Apple Inc.'
+    reject:
+      - name: 'Xuhai Xu'
   - canonical: "Beijing University of Posts and Telecommunications"
 #  - canonical: "Bishop Blanchet High School"
   - canonical: 'Bucknell University'
@@ -1332,6 +1356,11 @@ affiliations:
 #  - canonical: "University of Dundee"
   - canonical: "University of Florida"
   - canonical: 'University of Illinois at Urbana-Champaign'
+    match:
+      - affiliations:
+        - institution: 'University of Illinois at Urbana-Champaign'
+    reject:
+      - name: 'Zhuohao Zhang'
   - canonical: 'University of Maryland'
   - canonical: 'University of Massachusetts Amherst'
   - canonical: 'University of Melbourne'
@@ -1404,6 +1433,12 @@ affiliations:
   ###
   ### Multiple Affiliations
   ###
+  - canonical: "Carnegie Mellon University / Apple"
+    match:
+      - name: 'Scott E Hudson'
+        affiliations:
+        - institution: 'Apple Inc.'
+        - institution: 'Carnegie Mellon University'
   - canonical: "Northwestern University / Allen Institute for Artificial Intelligence"
     match:
       - name: 'Doug Downey'
@@ -1475,6 +1510,18 @@ affiliations:
         affiliations:
         - institution: 'University of Washington'
         - institution: 'Microsoft Research'
+  - canonical: "UW Information School / Apple"
+    match:
+      - name: 'Xuhai Xu'
+        affiliations:
+        - institution: 'Apple Inc.'
+  - canonical: "UW Information School / University of Illinois at Urbana-Champaign"
+    match:
+      - name: 'Zhuohao Zhang'
+        affiliations:
+        - institution: 'University of Illinois at Urbana-Champaign'
+
+
 
 #  - canonical: "Université de Lille / University of Waterloo"
 #    match:

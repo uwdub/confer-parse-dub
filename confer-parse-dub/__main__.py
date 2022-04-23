@@ -207,6 +207,10 @@ def match_exclude(config, parsed_json, content_current):
 def match_include(config, parsed_json, content_current):
     for include_current in config['include']:
         match_current = True
+
+        if match_current and 'id' in include_current:
+            match_current &= 'id' in content_current and include_current['id'] == content_current['id']
+
         if match_current and 'affiliation' in include_current:
             match_affiliation = False
             for author_current in content_current['authors']:
@@ -222,8 +226,9 @@ def match_include(config, parsed_json, content_current):
 
         if match_current and 'trackId' in include_current:
             match_current &= 'trackId' in content_current and include_current['trackId'] == content_current['trackId']
-        if match_current and 'typeId' in include_current:
-            match_current &= 'typeId' in content_current and include_current['typeId'] == content_current['typeId']
+
+        # if match_current and 'typeId' in include_current:
+        #     match_current &= 'typeId' in content_current and include_current['typeId'] == content_current['typeId']
 
         if match_current:
             return True
@@ -344,6 +349,14 @@ def normalize_affiliations(config, items):
                     # Track how many we match
                     if match_current:
                         matches_found.append(normalized_affiliation_current)
+
+            # Apply any exclusion
+            for match_current in matches_found:
+                if "reject" in match_current:
+                    for reject_pattern_current in match_current["reject"]:
+                        if "name" in reject_pattern_current:
+                            if author_current["name"] == reject_pattern_current["name"]:
+                                matches_found.remove(match_current)
 
             if len(matches_found) == 1:
                 del author_current['affiliations']
