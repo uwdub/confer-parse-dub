@@ -775,6 +775,8 @@ affiliations:
           dsl: 'Electrical and Computer Engineering'
 
   - canonical: 'UW Human Centered Design & Engineering'
+    reject:
+      - name: 'Raveena Rao'
     match:
       - affiliations:
         - institution: 'University of Washington'
@@ -815,6 +817,9 @@ affiliations:
         affiliations:
         - institution: 'University of Washington'
       - name: 'Hannah Rose Twigg-Smith'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Kai Lukoff'
         affiliations:
         - institution: 'University of Washington'
       - name: 'Kaiyue Fan'
@@ -872,6 +877,8 @@ affiliations:
 #        affiliations: [ "University of Washington" ]
 
   - canonical: "UW Information School"
+    reject:
+      - name: 'Kai Lukoff'
     match:
       #
       # Complete institutional names
@@ -917,6 +924,9 @@ affiliations:
         affiliations:
         - institution: 'University of Washington'
       - name: 'Prerna Juneja'
+        affiliations:
+        - institution: 'University of Washington'
+      - name: 'Raveena Rao'
         affiliations:
         - institution: 'University of Washington'
       - name: 'Richard McGovern'
