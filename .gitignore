@@ -1,5 +1,6 @@
 # virtualenv directory
 env38
+env39
 
 # Python compiled files
 *.pyc

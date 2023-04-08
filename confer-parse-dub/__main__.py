@@ -1,6 +1,8 @@
 import argparse
 import json
 import operator
+import pprint
+import re
 import string
 import sys
 import titlecase
@@ -27,9 +29,12 @@ def parse_sigchi_program(config):
 
     # Simplify for our needs
     for content_current in items:
-        del content_current['abstract']
-        del content_current['keywords']
-        del content_current['tags']
+        if 'abstract' in content_current:
+            del content_current['abstract']
+        if 'keywords' in content_current:
+            del content_current['keywords']
+        if 'tags' in content_current:
+            del content_current['tags']
 
         if 'award' in content_current:
             if content_current['award'] == 'BEST_PAPER':
@@ -46,6 +51,18 @@ def parse_sigchi_program(config):
         else:
             content_current['bestpaper'] = False
             content_current['honorablemention'] = False
+
+        if 'doi' in content_current:
+            match = re.search('https://doi.org/(.+)', content_current['doi'])
+            if match:
+                content_current['doi'] = 'https://dl.acm.org/doi/abs/' + match.group(1)
+
+        if 'videos' in content_current:
+            for video_current in content_current['videos']:
+                if video_current['type'] == 'Video preview':
+                    content_current['videopreview'] = video_current['url']
+
+            del content_current['videos']
 
     # Go through content to see which match our criteria
     filtered_items = []
@@ -80,8 +97,12 @@ def parse_sigchi_program(config):
     # Normalize names
     items = normalize_names(config, items)
 
-    # Normalize institutions
-    items = normalize_institutions(config, items)
+    # Normalize affiliations
+    items = normalize_affiliations(config, items)
+
+    # Normalize title
+    for content_current in items:
+        content_current['title'] = normalize_title(content_current['title'])
 
     # Sort publications
     items = sort_items(config, items)
@@ -186,35 +207,36 @@ def match_exclude(config, parsed_json, content_current):
 def match_include(config, parsed_json, content_current):
     for include_current in config['include']:
         match_current = True
-        if match_current and 'institution' in include_current:
-            match_institution = False
+
+        if match_current and 'id' in include_current:
+            match_current &= 'id' in content_current and include_current['id'] == content_current['id']
+
+        if match_current and 'affiliation' in include_current:
+            match_affiliation = False
             for author_current in content_current['authors']:
-                for institution_current in author_current['institutions']:
-                    if include_current['institution'].casefold() in institution_current.casefold():
-                        match_institution = True
-            match_current &= match_institution
+                for affiliation_current in author_current['affiliations']:
+                    if include_current['affiliation'].casefold() in affiliation_current['institution'].casefold():
+                        match_affiliation = True
+            match_current &= match_affiliation
+
+        # For debugging, print content that matches affiliation
+        # if match_affiliation:
+        #     print('Content matched affiliation:')
+        #     print(json.dumps(content_current, indent=2))
 
         if match_current and 'trackId' in include_current:
             match_current &= 'trackId' in content_current and include_current['trackId'] == content_current['trackId']
-        if match_current and 'typeId' in include_current:
-            match_current &= 'typeId' in content_current and include_current['typeId'] == content_current['typeId']
+
+        # if match_current and 'typeId' in include_current:
+        #     match_current &= 'typeId' in content_current and include_current['typeId'] == content_current['typeId']
 
         if match_current:
             return True
 
-    # # For debugging, print any content that matches an institution and was then rejected
-    # match_institution = False
-    # for include_current in config['include']:
-    #     if 'institution' in include_current:
-    #         for author_current in content_current['authors']:
-    #             for institution_current in author_current['institutions']:
-    #                 if include_current['institution'].casefold() in institution_current.casefold():
-    #                     match_institution = True
-    #
-    # if match_institution:
-    #     print('Rejected after institution match')
-    #     print(json.dumps(content_current, indent=2))
-    #     print(json.dumps(include_current, indent=2))
+        # For debugging, print content that matches affiliation but was then rejected
+        # if match_affiliation:
+        #     print('Content matched affiliation but was then rejected:')
+        #     print(json.dumps(content_current, indent=2))
 
     return False
 
@@ -240,6 +262,7 @@ def normalize_names(config, items):
                             matches_found.append(standard_name_current)
 
             if len(matches_found) == 1:
+                # For debugging, print name matches
                 # print(
                 #     'Name Match:  "{}" matched to known name "{}"'.format(
                 #         author_current['name'],
@@ -259,45 +282,92 @@ def normalize_names(config, items):
     return items
 
 
-def normalize_institutions(config, items):
+def normalize_affiliations(config, items):
     for item_current in items:
         for author_current in item_current['authors']:
-            # Check for a canonical institution for this author
+            # Check for a canonical affiliation for this author
             matches_found = []
 
-            for standard_institution_current in config['institutions']:
-                # Single-institution exact match
-                if [standard_institution_current['canonical']] == author_current['institutions']:
-                    matches_found.append(standard_institution_current)
+            # Normalize strings before normalizing structure
+            for affiliation_author_current in author_current['affiliations']:
+                affiliation_author_current['institution'] = normalize_text(affiliation_author_current['institution'])
+                affiliation_author_current['dsl'] = normalize_text(affiliation_author_current['dsl'])
 
-                # Check matches
-                if 'match' in standard_institution_current:
-                    for match_pattern_current in standard_institution_current['match']:
-                        # Require a match on everything
+            for normalized_affiliation_current in config['affiliations']:
+                # # Single-affiliation exact match (can't happen anymore, multiple fields in the json)
+                # if [normalized_affiliation_current['canonical']] == author_current['affiliations']:
+                #     matches_found.append(normalized_affiliation_current)
+
+                # If a match field exists, match to any pattern found in the list
+                if 'match' in normalized_affiliation_current:
+                    for match_pattern_current in normalized_affiliation_current['match']:
+                        # Within a particular pattern, match everything that is specified
                         match_current = True
 
                         # Match to a specific person
                         if 'name' in match_pattern_current:
                             match_current &= match_pattern_current['name'] == author_current['name']
 
-                        # Match to an institution list
-                        if 'institutions' in match_pattern_current:
-                            match_current &= sorted(match_pattern_current['institutions']) == author_current['institutions']
+                        # Match to an affiliation list, requires matching all affiliations in both lists
+                        if 'affiliations' in match_pattern_current:
+                            matched_affiliations = []
 
+                            for affiliation_author_current in author_current['affiliations']:
+                                for affiliation_pattern_current in match_pattern_current['affiliations']:
+                                    # Require a match on everything
+                                    affiliation_match_current = True
+
+                                    if 'institution' in affiliation_pattern_current:
+                                        affiliation_match_current &= affiliation_pattern_current['institution'] == affiliation_author_current['institution']
+                                    if 'dsl' in affiliation_pattern_current:
+                                        affiliation_match_current &= affiliation_pattern_current['dsl'] == affiliation_author_current['dsl']
+
+                                    # If we match this pattern, track that and stop further matching of it
+                                    if affiliation_match_current:
+                                        matched_affiliations.append(affiliation_author_current)
+                                        break
+
+                            match_current &= (
+                                len(matched_affiliations) == len(match_pattern_current['affiliations']) and
+                                len(matched_affiliations) == len(author_current['affiliations'])
+                            )
+
+                        # Track how many we match
                         if match_current:
-                            matches_found.append(standard_institution_current)
+                            # If we match the same affiliation via multiple patterns,
+                            # that only counts as one match
+                            if normalized_affiliation_current not in matches_found:
+                                matches_found.append(normalized_affiliation_current)
+
+                # If no match field exists, treat this as a shortcut
+                # It can match if there is exactly one affiliation with an exactly matching institution
+                else:
+                    match_current = True
+                    match_current &= len(author_current['affiliations']) == 1
+                    match_current &= normalized_affiliation_current['canonical'] == author_current['affiliations'][0]['institution']
+
+                    # Track how many we match
+                    if match_current:
+                        matches_found.append(normalized_affiliation_current)
+
+            # Apply any exclusion
+            for match_current in matches_found:
+                if "reject" in match_current:
+                    for reject_pattern_current in match_current["reject"]:
+                        if "name" in reject_pattern_current:
+                            if author_current["name"] == reject_pattern_current["name"]:
+                                matches_found.remove(match_current)
 
             if len(matches_found) == 1:
-                del author_current['institutions']
-                author_current['institution'] = matches_found[0]['canonical']
-
+                del author_current['affiliations']
+                author_current['affiliation'] = matches_found[0]['canonical']
             elif len(matches_found) == 0:
-                print('No Institution Match:')
-                print(author_current)
+                print('No Affiliation Match:')
+                pprint.pprint(author_current)
             else:
-                print('Multiple Institution Match:')
-                print(author_current)
-                print(matches_found)
+                print('Multiple Affiliation Match:')
+                pprint.pprint(author_current)
+                pprint.pprint(matches_found)
 
     return items
 
@@ -306,18 +376,25 @@ def normalize_text(text):
     while '  ' in text:
         text = text.replace('  ', ' ')
 
+    text = text.replace('–', '-')
+
     text = text.replace('\u2019', '\'')
     text = text.replace('\u201C', '"')
     text = text.replace('\u201D', '"')
+
+    text = text.strip()
+
     return text
 
 
 def normalize_title(title):
     title = normalize_text(title)
+
     title = titlecase.titlecase(title)
-    title = title.strip()
+
     title = title.replace('in Situ', 'In Situ')
     title = title.replace('Human-Ai', 'Human-AI')
+
     return title
 
 
