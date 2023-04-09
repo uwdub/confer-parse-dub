@@ -12,10 +12,9 @@ include:
 #  - id: 68912
 #  - id: 72026
 
-exclude: []
-#  - id: 68823
-#  - id: 68965
-#  - id: 71925
+exclude:
+  - id: 96455 # George Washington University
+  - id: 96358 # Washington University in St. Louis
 
 names:
   - name: 'Aakanksha Naik'
@@ -549,6 +548,10 @@ affiliations:
       - name: 'Jacob O Wobbrock'
         affiliations:
         - institution: 'University of Washington'
+      - name: 'Jason C Young'
+        affiliations:
+        - institution: 'University of Washington'
+
 
       - name: 'Justin Petelka'
         affiliations:
@@ -653,13 +656,10 @@ affiliations:
 #        - institution: 'University of Washington'
 
   - canonical: 'UW Geography'
-    match:
+    match: []
       #
       # Individuals, including institution to be more robust to change
       #
-    - name: 'Jason C Young'
-      affiliations:
-      - institution: 'University of Washington'
 
 #      - name: 'Feben Alemu'
 #        affiliations:

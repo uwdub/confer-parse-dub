@@ -561,37 +561,6 @@ papers:
   trackId: 12104
   typeId: 12529
 - authors:
-  - affiliation: Ruhr University Bochum
-    name: Franziska Herbert
-  - affiliation: Ruhr University Bochum / Max Planck Institute for Security and Privacy
-    name: Steffen Becker
-  - affiliation: Ruhr University Bochum
-    name: Leonie Schaewitz
-  - affiliation: Ruhr University Bochum
-    name: Jonas Hielscher
-  - affiliation: Ruhr University Bochum
-    name: Marvin Kowalewski
-  - affiliation: Ruhr University Bochum
-    name: Angela Sasse
-  - affiliation: George Washington University
-    name: Yasemin Acar
-  - affiliation: Leibniz University Hannover
-    name: Markus Dürmuth
-  bestpaper: false
-  eventIds: []
-  honorablemention: false
-  id: 96455
-  importedId: chi23b-2472
-  isBreak: false
-  recognitionIds: []
-  sessionIds:
-  - 97434
-  source: PCS
-  title: A World Full of Privacy and Security (Mis)conceptions? Findings of a Representative
-    Survey in 12 Countries
-  trackId: 12104
-  typeId: 12529
-- authors:
   - affiliation: Microsoft
     name: John R Thompson
   - affiliation: UW Computer Science & Engineering
@@ -1014,7 +983,7 @@ papers:
     name: Kayo Mimizuka
   - affiliation: The University of Texas at Austin
     name: Ayesha Bhimdiwala
-  - affiliation: UW Geography
+  - affiliation: UW Information School
     name: Jason C Young
   - affiliation: The University of Texas at Austin
     name: Ahmer Arif
@@ -1668,31 +1637,6 @@ papers:
   - 97360
   source: PCS
   title: 'What Is in the Cards: Exploring Uses, Patterns, and Trends in Design Cards'
-  trackId: 12104
-  typeId: 12529
-- authors:
-  - affiliation: Washington University in St. Louis
-    name: Melanie Bancilhon
-  - affiliation: Washington University in St. Louis
-    name: Amanda Wright
-  - affiliation: Washington University in St. Louis
-    name: Sunwoo Ha
-  - affiliation: Smith College
-    name: R Jordan Crouser
-  - affiliation: Washington University in St. Louis
-    name: Alvitta Ottley
-  bestpaper: false
-  eventIds: []
-  honorablemention: false
-  id: 96358
-  importedId: chi23b-9801
-  isBreak: false
-  recognitionIds: []
-  sessionIds:
-  - 97371
-  source: PCS
-  title: 'Why Combining Text and Visualization Could Improve Bayesian Reasoning: A
-    Cognitive Load Perspective'
   trackId: 12104
   typeId: 12529
 - authors:
