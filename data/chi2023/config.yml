@@ -635,6 +635,9 @@ affiliations:
   ### Non-UW Affiliations
   ###
   - canonical: 'Allen Institute for Artificial Intelligence'
+    reject:
+      # Will instead match on dual appointment
+      - name: 'Daniel S Weld'
     match:
       - affiliations:
         - institution: 'Allen Institute for Artificial Intelligence'
@@ -907,7 +910,7 @@ affiliations:
         - institution: 'Northwestern University'
   - canonical: 'UW Computer Science & Engineering / Allen Institute for Artificial Intelligence'
     match:
-#      - name: 'Daniel S Weld'
+      - name: 'Daniel S Weld'
 #        affiliations:
 #        - institution: 'University of Washington'
 #        - institution: 'Allen Institute for Artificial Intelligence'
