@@ -413,7 +413,6 @@ affiliations:
       - institution: 'University of Washington'
         dsl: 'Paul G. Allen School of Computer Science & Engineering'
 
-
       #
       # Individuals, including institution to be more robust to change
       #
@@ -454,8 +453,6 @@ affiliations:
 #          dsl: 'Electrical and Computer Engineering'
 
   - canonical: 'UW Human Centered Design & Engineering'
-#    reject:
-#      - name: 'Raveena Rao'
     match:
     - affiliations:
       - institution: 'University of Washington'
@@ -474,31 +471,6 @@ affiliations:
     - affiliations:
       - institution: 'University of Washington'
         dsl: 'Human-Centered Design and Engineering'
-
-
-#      - affiliations:
-#        - institution: 'University of Washington'
-#          dsl: 'HCDE'
-#      - affiliations:
-#        - institution: 'University of Washington'
-#          dsl: 'Human Centered Design & Engineering'
-#      - affiliations:
-#        - institution: 'University of Washington'
-#          dsl: 'Human-centered Design & Engineering'
-#      - affiliations:
-#        - institution: 'University of Washington'
-#          dsl: 'Human Centered Design and Engineering'
-#      - affiliations:
-#        - institution: 'University of Washington'
-#          dsl: 'Department of Human Centered Design'
-#      - affiliations:
-#        - institution: 'Human Centered Design and Engineering, University of Washington'
-#      - affiliations:
-#        - institution: 'University Of Washington' # Typo
-#          dsl: 'Human Centered Design & Engineering'
-#      - affiliations:
-#        - institution: 'University of Washignton' # Typo
-#          dsl: 'Human-Centered Design & Engineering'
 
       #
       # Individuals, including institution to be more robust to change
@@ -520,8 +492,6 @@ affiliations:
         dsl: 'Microsoft Research'
 
   - canonical: "UW Information School"
-#    reject:
-#      - name: 'Kai Lukoff'
     match:
       #
       # Complete institutional names
@@ -614,81 +584,29 @@ affiliations:
       # Individuals, including institution to be more robust to change
       #
 
-
-#      - name: 'Matthew K Hong'
-#        affiliations:
-#        - institution: 'University of Washington'
   - canonical: 'UW Communication'
     match: []
       #
       # Individuals, including institution to be more robust to change
       #
-#      - name: 'Benjamin Mako Hill'
-#        affiliations:
-#        - institution: 'University of Washington'
-#          dsl: 'Community Data Science Collective'
-#      - name: 'Dayton Kelly'
-#        affiliations:
-#        - institution: 'University of Washington'
-#      - name: 'Martina Povolo'
-#        affiliations:
-#        - institution: 'University of Washington'
 
   - canonical: 'UW Education'
     match: []
-#      - affiliations:
-#        - institution: 'University of Washington'
-#          dsl: 'College of Education'
 
   - canonical: 'UW Global Health'
     match: []
-      #
-      # Individuals, including institution to be more robust to change
-      #
-#      - name: 'Brandon Guthrie'
-#        affiliations:
-#        - institution: 'University of Washington'
-#      - name: 'Grace John-Stewart'
-#        affiliations:
-#        - institution: 'University of Washington'
-#      - name: 'Keshet Ronen'
-#        affiliations:
-#        - institution: 'University of Washington'
 
   - canonical: 'UW Geography'
     match: []
-      #
-      # Individuals, including institution to be more robust to change
-      #
-
-#      - name: 'Feben Alemu'
-#        affiliations:
-#        - institution: 'University of Washington'
 
   - canonical: 'UW Mathematics'
     match: []
-      #
-      # Individuals, including institution to be more robust to change
-      #
-#      - name: 'Jiahao Li'
-#        affiliations:
-#        - institution: 'University of Washington'
 
   - canonical: 'UW Nephrology'
     match: []
-      #
-      # Individuals, including institution to be more robust to change
-      #
-#      - name: 'Leila Zelnick'
-#        affiliations:
-#        - institution: 'University of Washington'
-#          dsl: 'Department of Medicine'
 
   - canonical: 'UW Sociology'
     match: []
-#      - affiliations:
-#        - institution: 'University of Washington'
-#          dsl: 'Department of Sociology'
 
   - canonical: 'UW Social Work'
     match:
@@ -696,7 +614,6 @@ affiliations:
       affiliations:
       - institution: 'University of Washington'
         dsl: 'School of Social Work'
-
 
   ###
   ### UW Dual Appointments
@@ -707,91 +624,27 @@ affiliations:
         affiliations:
         - institution: 'University of Washington'
 
-
-#  - canonical: 'Adobe / UW Computer Science & Engineering'
-#    match:
-#      - name: 'Deepali Aneja'
-#        affiliations:
-#        - institution: 'Adobe Research'
-#        - institution: 'University of Washington'
-#  - canonical: 'UW Communication / UW Psychology'
-#    match:
-#      - name: 'J Vera Liao'
-#        affiliations:
-#        - institution: 'University of Washington'
-#          dsl: ''
-#  - canonical: 'UW Computer Science & Engineering / Carnegie Mellon University'
-#    match:
-#      - name: 'Kentrell Owens'
-#        affiliations:
-#        - institution: 'University of Washington'
-#          dsl: ''
-#        - institution: 'Carnegie Mellon University'
-#          dsl: ''
-#  - canonical: 'UW Computer Science & Engineering / Allen Institute for Artificial Intelligence'
-#    match:
-#      - name: 'Daniel S Weld'
-#        affiliations:
-#        - institution: 'University of Washington'
-#        - institution: 'Allen Institute for Artificial Intelligence'
-#  - canonical: 'UW Art + Art History + Design / University of California Berkeley'
-#    match:
-#      - name: 'James Pierce'
-#        affiliations:
-#        - institution: 'University of Washington Seattle'
-#        - institution: 'UC Berkeley'
-#  - canonical: "UW Computer Science & Engineering / UW Electrical Engineering"
-#    match:
-#      - name: 'Shwetak N Patel'
-#        affiliations:
-#        - institution: 'University of Washington'
-#  - canonical: "Tsinghua University / UW Computer Science & Engineering"
-#    match:
-#      - name: 'Yuntao Wang'
-#        affiliations:
-#        - institution: 'Tsinghua University'
-#        - institution: 'University of Washington'
-
-#  ###
-#  ### Generic UW Affiliation when Individual has no Identifiable Precise Affiliation
-#  ###
-#  - canonical: 'University of Washington'
-#    match:
-#      #
-#      # Individuals, including institution to be more robust to change
-#      #
-#      - name: 'Simon Egan'
-#        affiliations:
-#        - institution: 'University of Washington'
-#          dsl: ''
-#      - name: 'Youjin Jung'
-#        affiliations:
-#        - institution: 'University of Washington'
-#          dsl: ''
+  - canonical: "UW Information School / University of Chicago"
+    match:
+      - name: 'Alex Kale'
+        affiliations:
+        - institution: 'University of Washington'
+          dsl: 'Interactive Data Lab, Information School'
 
   ###
   ### Non-UW Affiliations
   ###
-#  - canonical: 'Adobe'
-#    match:
-#      - affiliations:
-#        - institution: 'Adobe Research'
   - canonical: 'Allen Institute for Artificial Intelligence'
     match:
       - affiliations:
         - institution: 'Allen Institute for Artificial Intelligence'
       - affiliations:
         - institution: 'Allen Institute for AI'
-#      - affiliations:
-#        - institution: 'Allen Institute for Artificial Intelligence'
-#  - canonical: 'Allen Institute for Brain Science'
 
       - name: 'Joseph Chee Chang'
         affiliations:
         - institution: 'Semantic Scholar'
           dsl: 'AI2'
-
-
   - canonical: "Apple"
     match:
       - affiliations:
@@ -800,8 +653,6 @@ affiliations:
         - institution: 'Apple Inc'
       - affiliations:
         - institution: 'Apple Inc.'
-#    reject:
-#      - name: 'Xuhai Xu'
   - canonical: "Anhalt University of Applied Sciences"
   - canonical: "Beijing University of Posts and Telecommunications"
     match:
@@ -809,22 +660,12 @@ affiliations:
       affiliations:
       - institution: 'School of Digital Media & Design Arts'
         dsl: 'Beijing University of Posts and Telecommunications'
-
-
-##  - canonical: "Bishop Blanchet High School"
-#  - canonical: 'Bucknell University'
   - canonical: 'Aurora Health Innovations'
     match:
       - affiliations:
         - institution: 'Aurora Health Innovations LLP'
   - canonical: 'Brown University'
   - canonical: 'Carnegie Mellon University'
-#    match:
-#      - affiliations:
-#        - institution: 'Carnegie Mellon University'
-#      - affiliations:
-#        - institution: 'Carnegie Mellon Universtiy' ## Typo
-##  - canonical: "Chinese Academy of Sciences"
   - canonical: "City, University of London"
     match:
     - affiliations:
@@ -832,19 +673,11 @@ affiliations:
         dsl: 'Centre for HCI Design'
     - affiliations:
       - institution: 'City University London'
-#  - canonical: 'Co-Risk Labs'
-#  - canonical: "Cornell Tech"
   - canonical: 'Cornell University'
-##  - canonical: "Dartmouth College"
-##  - canonical: "Davidson College"
   - canonical: 'Duke University'
   - canonical: 'EDI Global'
   - canonical: 'Gallaudet University'
-#  - canonical: 'George Mason University'
   - canonical: 'George Washington University'
-#    match:
-#      - affiliations:
-#        - institution: 'The George Washington University'
   - canonical: 'Georgia Institute of Technology'
     match:
       - affiliations:
@@ -852,15 +685,6 @@ affiliations:
       - affiliations:
         - institution: 'Interactive Computing'
           dsl: 'Georgia Institute of Technology'
-
-#      - affiliations:
-#        - institution: 'Georgia Tech'
-#      - affiliations:
-#        - institution: 'Interactive Computing'
-#          dsl: 'Georgia Institute of Technology'
-#      - affiliations:
-#        - institution: 'School of design'
-#          dsl: 'Georgia Institute of Technology'
   - canonical: 'Google'
     match:
       - affiliations:
@@ -869,13 +693,6 @@ affiliations:
         - institution: 'Google Brain'
       - affiliations:
         - institution: 'Google Research'
-#      - affiliations:
-#        - institution: 'Google Inc.'
-#      - affiliations:
-#        - institution: 'Google'
-#        - institution: 'Google'
-#      - affiliations:
-#        - institution: 'Google Research'
 
       # Updated by request from Amanda
       - name: 'Xiao Ma'
@@ -883,48 +700,18 @@ affiliations:
         - institution: 'Cornell Tech'
 
   - canonical: 'Grinnell College'
-#  - canonical: 'Hamm-Lippstadt University of Applied Sciences'
-#    match:
-#      - affiliations:
-#        - institution: 'Hamm-Lippstadt University of Applied Sciences'
-#      - affiliations:
-#        - institution: 'Hochschule Hamm- Lippstadt'
-##  - canonical: "Harvard University"
-#  - canonical: 'Hebrew University of Jerusalem'
-#    match:
-#      - affiliations:
-#        - institution: 'Hebrew University of Jerusalem'
-#      - affiliations:
-#        - institution: 'The Hebrew University of Jerusalem'
-#  - canonical: "Hunan University"
   - canonical: 'Human Computation Institute'
   - canonical: 'ID.me'
   - canonical: 'Institute of Rural Development Planning'
     match:
     - affiliations:
       - institution: 'Institute of Rural Development Planning (IRDP)'
-
-##  - canonical: "Indiana University Bloomington"
-#  - canonical: 'IBM'
-#    match:
-#      - affiliations:
-#        - institution: 'IBM Research'
-#  - canonical: 'Independent Researcher'
-#    match:
-#      - affiliations:
-#        - institution: 'Independent researcher'
-#  - canonical: 'Indraprastha Institute of Information Technology Delhi'
-#    match:
-#      - affiliations:
-#        - institution: 'IIIT-Delhi'
   - canonical: 'Johns Hopkins University'
   - canonical: 'julija.works'
     match:
     - name: 'Julija Rukanskaitė'
       affiliations:
       - institution: 'Julija.Works'
-        dsl: ''
-
   - canonical: 'KAIST'
   - canonical: 'Kaiser Permanente'
     match:
@@ -939,12 +726,6 @@ affiliations:
   - canonical: 'Ludwig-Maximilians-Universität München'
   - canonical: 'Max Planck Institute for Research on Collective Goods'
   - canonical: 'Max Planck Institute for Security and Privacy'
-
-#  - canonical: "King's College London"
-#  - canonical: 'Latin School of Chicago'
-##  - canonical: "Linköping University"
-#  - canonical: 'Max Planck Institute for Informatics'
-#  - canonical: 'National University of Singapore'
   - canonical: 'Meta'
     match:
       - affiliations:
@@ -976,7 +757,6 @@ affiliations:
   - canonical: 'National Tsing Hua University'
   - canonical: 'National University of Singapore'
   - canonical: 'New York University'
-
   - canonical: 'Niantic'
     match:
     - affiliations:
@@ -985,33 +765,12 @@ affiliations:
     match:
     - affiliations:
       - institution: 'Noora Health'
-
-#  - canonical: 'Nippon Telegraph and Telephone Corporation'
-#    match:
-#      - affiliations:
-#        - institution: 'NTT'
-##  - canonical: "New York University"
-##  - canonical: "Northwell Health"
   - canonical: 'Northeastern University'
   - canonical: 'Northwestern University'
-##  - canonical: "NTT Communication"
-##    match:
-##      - affiliations: [ "NTT Communication Science Laboratories" ]
-#  - canonical: 'Pantheon'
-#  - canonical: 'Pennsylvania State University'
-#    match:
-#      - affiliations:
-#        - institution: 'Penn State University'
-#  - canonical: 'Pomona College'
-#  - canonical: "Rensselaer Polytechnic Institute"
-##  - canonical: "Rice University"
   - canonical: 'Riiid'
   - canonical: 'Rochester Institute of Technology'
-#  - canonical: 'Rulai'
   - canonical: "Ruhr University Bochum"
   - canonical: 'Santa Clara University'
-#  - canonical: 'Rutgers University'
-#  - canonical: 'Seattle University'
   - canonical: 'Seattle Academy'
   - canonical: "Seoul National University"
   - canonical: 'Smith College'
@@ -1023,14 +782,6 @@ affiliations:
         - institution: 'Snap, Inc.'
   - canonical: 'Southeast University'
   - canonical: 'Stanford University'
-#  - canonical: 'Ștefan cel Mare University of Suceava'
-#  - canonical: 'Stony Brook University'
-#  - canonical: 'Swansea University'
-#  - canonical: 'Syracuse University'
-#  - canonical: 'Tableau'
-#    match:
-#      - affiliations:
-#        - institution: 'Tableau Software'
   - canonical: 'Tampere University'
   - canonical: 'The Hebrew University of Jerusalem'
   - canonical: 'The Pennsylvania State University'
@@ -1055,70 +806,21 @@ affiliations:
         - institution: 'Academy of Arts & Design'
           dsl: 'Tsinghua University'
   - canonical: 'University College London'
-
-#      - name: 'Tianyi Yuan'
-#        affiliations:
-#        - dsl: 'Tsinghua University' # Typo
-##    match:
-##      - affiliations: [ "Tsinghua University & Key Laboratory of Pervasive Computing, Ministry of Education" ]
-##  - canonical: "TU Wien"
-#  - canonical: 'Tufts University'
-#  - canonical: 'University at Buffalo'
-#  - canonical: 'University College Dublin'
-#  - canonical: 'University of Basel'
-#  - canonical: 'University of Birmingham'
   - canonical: 'University of California, Berkeley'
-#    match:
-#      - affiliations:
-#        - institution: 'UC Berkeley'
-#      - affiliations:
-#        - institution: 'University of California Berkeley'
-#      - affiliations:
-#        - institution: 'University of California, Berkeley'
-#      - name: 'Andrew Head'
-#        affiliations:
-#        - institution: 'UC Berkeley'
-#        - institution: 'UC Berkeley'
   - canonical: 'University of California, Irvine'
   - canonical: 'University of California, San Diego'
-#    match:
-#      - affiliations:
-#        - institution: 'University of California, Irvine'
-#  - canonical: 'University of California Los Angeles'
-#    match:
-#      - affiliations:
-#        - institution: 'UCLA'
-#  - canonical: 'University of California San Diego'
-#    match:
-#      - affiliations:
-#        - institution: 'University of California San Diego'
-#      - affiliations:
-#        - institution: 'UC San Diego'
-#  - canonical: 'University of California Santa Barbara'
-#    match:
-#      - affiliations:
-#        - institution: 'University of California Santa Barbara'
-#      - affiliations:
-#        - institution: 'University of California, Santa Barbara'
-#  - canonical: "University of Chicago"
   - canonical: "University of Colorado"
     match:
       - affiliations:
         - institution: 'University of Colorado'
       - affiliations:
         - institution: 'University of Colorado Boulder'
-#  - canonical: 'University of Copenhagen'
-##  - canonical: "University of Dundee"
-#  - canonical: "University of Florida"
   - canonical: 'University of Illinois Urbana-Champaign'
     match:
       - affiliations:
         - institution: 'University of Illinois at Urbana Champaign'
       - affiliations:
         - institution: 'University of Illinois at Urbana-Champaign'
-
-#    reject:
-#      - name: 'Zhuohao Zhang'
   - canonical: 'University of Maryland, College Park'
     match:
       - affiliations:
@@ -1134,12 +836,6 @@ affiliations:
       - affiliations:
         - institution: 'University of Maryland'
         - institution: 'University of Maryland'
-
-#  - canonical: 'University of Massachusetts Amherst'
-#  - canonical: 'University of Melbourne'
-#    match:
-#      - affiliations:
-#        - institution: 'The University of Melbourne'
   - canonical: 'University of Michigan'
     match:
     - affiliations:
@@ -1156,35 +852,8 @@ affiliations:
     match:
     - affiliations:
       - institution: 'University of Nebraska at Omaha'
-
-##    match:
-##      - affiliations: [ "University of Michigan \x96 Ann Arbor" ]
-#  - canonical: 'University of Minnesota'
-#  - canonical: 'University of Nevada Las Vegas'
-#    match:
-#      - affiliations:
-#        - institution: 'University of Nevada, Las Vegas'
-#  - canonical: 'University of North Texas'
-#  - canonical: 'University of Notre Dame'
-#  - canonical: 'University of Nottingham'
   - canonical: 'University of Oxford'
   - canonical: 'University of Pennsylvania'
-#  - canonical: 'University of Pittsburgh'
-#  - canonical: 'University of Puerto Rico'
-#  - canonical: 'University of Southern California'
-#    match:
-#      - affiliations:
-#        - institution: 'University of Southern California'
-#      - affiliations:
-#        - institution: 'Institute for Creative Technologies' # Typo
-#          dsl: 'University of Southern California'
-#        dsl: 'School of Information'
-#  - canonical: 'University of Tokyo'
-#    match:
-#      - affiliations:
-#        - institution: 'The University of Tokyo'
-#      - affiliations:
-#        - institution: 'the University of Tokyo'
   - canonical: 'University of Toronto'
   - canonical: 'University of Twente'
     match:
@@ -1205,28 +874,6 @@ affiliations:
       affiliations:
       - institution: 'University of California'
         dsl: 'Department of Computer Science'
-
-
-#    match:
-#      - affiliations:
-#        - institution: 'University of Toronto'
-#      - name: 'Cosmin Munteanu'
-#        affiliations:
-#        - institution: 'University of Toronto'
-#        - institution: 'University of Toronto Mississauga'
-##  - canonical: "University of Waterloo"
-#  - canonical: 'University of Wisconsin'
-#    match:
-#      - affiliations:
-#        - institution: 'University of Wisconsin-Madison'
-#  - canonical: 'University of Wisconsin La Crosse'
-#    match:
-#      - affiliations:
-#        - institution: 'University of Wisconsin-La Crosse'
-#  - canonical: 'University of Virginia'
-#    match:
-#      - affiliations:
-#        - institution: 'University of Virginia (SSO)'
   - canonical: 'US Army Research Laboratory'
     match:
     - name: 'Stephanie M Lukin'
@@ -1240,7 +887,6 @@ affiliations:
       - affiliations:
         - institution: 'Washington University in St Louis'
   - canonical: 'Western Washington University'
-#  - canonical: 'Vanderbilt University'
   - canonical: 'Virginia Tech'
     match:
       - affiliations:
@@ -1249,18 +895,6 @@ affiliations:
         affiliations:
         - institution: 'Virginia Tech'
         - institution: 'Reality Labs Research'
-
-#  - canonical: 'VMWare'
-#
-
-
-  - canonical: "UW Information School / University of Chicago"
-    match:
-      - name: 'Alex Kale'
-        affiliations:
-        - institution: 'University of Washington'
-          dsl: 'Interactive Data Lab, Information School'
-
 
   ###
   ### Multiple Affiliations via AI2
@@ -1302,7 +936,6 @@ affiliations:
         affiliations:
         - institution: 'Apple'
         - institution: 'Carnegie Mellon University'
-
   - canonical: 'UW Human Centered Design & Engineering / Apple'
     match:
       - name: 'Leah Findlater'
@@ -1382,121 +1015,9 @@ affiliations:
         dsl: ''
       - institution: 'University of Cambridge'
         dsl: 'Department of Engineering'
-
-
-#  - canonical: "Carnegie Mellon University / Apple"
-#    match:
-#      - name: 'Scott E Hudson'
-#        affiliations:
-#        - institution: 'Apple Inc.'
-#        - institution: 'Carnegie Mellon University'
-#  - canonical: 'Carnegie Mellon University / Snap'
-#    match:
-#      - name: 'Fannie Liu'
-#        affiliations:
-#        - institution: 'Snap Inc.'
-#        - institution: 'Carnegie Mellon University'
-#  - canonical: 'Georgia Institute of Technology / Microsoft'
-#    match:
-#      - name: 'Mehrab Bin Morshed'
-#        affiliations:
-#        - institution: 'Microsoft Research'
-#        - institution: 'Georgia Institute of Technology'
-#  - canonical: 'Tsinghua University / Ministry of Education'
-#    match:
-#      - # name: 'Chun Yu', 'Yuanchun Shi', 'Yue Qin'
-#        affiliations:
-#        - institution: 'Tsinghua University'
-#        - institution: 'Ministry of Education'
-#  - canonical: 'Tsinghua University / University of Michigan'
-#    match:
-#      - affiliations:
-#        - institution: 'Tsinghua University'
-#        - institution: 'University of Michigan'
-#  - canonical: 'University of California Berkeley / Microsoft'
-#    match:
-#      - name: 'Esther Howe'
-#        affiliations:
-#        - institution: 'Microsoft Research'
-#        - institution: 'University of California, Berkeley'
-#  - canonical: "UW Communication / Harvard University"
-#    match:
-#      - name: 'Benjamin Mako Hill'
-#        affiliations:
-#        - institution: 'University of Washington'
-#        - institution: 'Harvard University'
-#  - canonical: "UW Human Centered Design & Engineering / University of North Carolina at Chapel Hill"
-#    match:
-#      - name: 'Sayamindu Dasgupta'
-#        affiliations:
-#        - institution: 'University of North Carolina at Chapel Hill'
-#  - canonical: "UW Computer Science & Engineering / Allen Institute for Artificial Intelligence"
-#    match:
-#      - name: 'Tom Hope'
-#        affiliations:
-#        - institution: 'University of Washington'
-#          dsl: 'CSE'
-#        - institution: 'Allen Institute'
-#  - canonical: "UW Computer Science & Engineering / Google"
-#    match:
-#      - name: 'Dhruv Jain'
-#        affiliations:
-#        - institution: 'University of Washington'
-#        - institution: 'Google'
-#  - canonical: "UW Information School / Apple"
-#    match:
-#      - name: 'Xuhai Xu'
-#        affiliations:
-#        - institution: 'Apple Inc.'
-#  - canonical: "UW Information School / University of Illinois at Urbana-Champaign"
-#    match:
-#      - name: 'Zhuohao Zhang'
-#        affiliations:
-#        - institution: 'University of Illinois at Urbana-Champaign'
-
   - canonical: 'Ruhr University Bochum / Max Planck Institute for Security and Privacy'
     match:
     - name: 'Steffen Becker'
       affiliations:
       - institution: 'Ruhr University Bochum'
-        dsl: ''
       - institution: 'Max Planck Institute for Security and Privacy'
-        dsl: ''
-
-
-#  - canonical: "Université de Lille / University of Waterloo"
-#    match:
-#      - name: 'Géry Casiez'
-#        affiliations: [ "Univ. Lille, UMR 9189 - CRIStAL & Inria & Institut Universitaire de France (IUF) &  University of Waterloo" ]
-#  - canonical: "UW Computer Science & Engineering / Allen Institute for Artificial Intelligence"
-#    match:
-#      - name: 'Noah A Smith'
-#        affiliations: [ "University of Washington & Allen Institute for Artificial Intelligence" ]
-#  - canonical: "UW Computer Science & Engineering / University of Chicago"
-#    match:
-#      - name: 'Miranda Wei'
-#        affiliations: [ "University of Washington & University of Chicago" ]
-#  - canonical: "UW Computer Science & Engineering / University of Waterloo"
-#    match:
-#      - name: 'Lisa A Elkin'
-#        affiliations: [ "University of Washington & University of Waterloo" ]
-#  - canonical: "UW Computer Science & Engineering / UW Global Innovation Exchange / Tsinghua University"
-#    match:
-#      - name: 'Yuntao Wang'
-#        affiliations: [ "Tsinghua University & University of Washington" ]
-#  - canonical: "UW Computer Science & Engineering / Tsinghua University"
-#    match:
-#      - name: 'Haitian Shi'
-#        affiliations: [ "Tsinghua University & University of Washington" ]
-#  - canonical: "UW Global Innovation Exchange / Tsinghua University"
-#    match:
-#      - name: 'Zichao (Tyson) Chen'
-#        affiliations: [ "Tsinghua University & University of Washington" ]
-#  - canonical: "UW Human Centered Design & Engineering / Carnegie Mellon University"
-#    match:
-#      - name: 'Cynthia L Bennett'
-#        affiliations: [ "Carnegie Mellon University & University of Washington" ]
-#  - canonical: "UW Information School / Tsinghua University"
-#    match:
-#      - name: 'Xuhai Xu'
-#        affiliations: [ "University of Washington & Tsinghua University" ]
