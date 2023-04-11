@@ -833,7 +833,7 @@ affiliations:
     - affiliations:
       - institution: 'City University London'
 #  - canonical: 'Co-Risk Labs'
-  - canonical: "Cornell Tech"
+#  - canonical: "Cornell Tech"
   - canonical: 'Cornell University'
 ##  - canonical: "Dartmouth College"
 ##  - canonical: "Davidson College"
@@ -876,6 +876,12 @@ affiliations:
 #        - institution: 'Google'
 #      - affiliations:
 #        - institution: 'Google Research'
+
+      # Updated by request from Amanda
+      - name: 'Xiao Ma'
+        affiliations:
+        - institution: 'Cornell Tech'
+
   - canonical: 'Grinnell College'
 #  - canonical: 'Hamm-Lippstadt University of Applied Sciences'
 #    match:
