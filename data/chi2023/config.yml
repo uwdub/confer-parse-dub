@@ -179,7 +179,9 @@ names:
   - name: 'Junxiao Shen'
   - name: 'Justin Petelka'
   - name: 'Kai Lukoff'
-  - name: 'Kai Ji Kevin Feng'
+  - name: 'K J Kevin Feng'
+    match:
+      - name: 'K. J. Kevin Feng'
   - name: 'Karina Shirokova'
   - name: 'Kashyap Todi'
   - name: 'Katharina Reinecke'
