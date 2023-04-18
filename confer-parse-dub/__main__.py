@@ -2,6 +2,7 @@ import argparse
 import json
 import operator
 import pprint
+import pyperclip
 import re
 import string
 import sys
@@ -242,6 +243,8 @@ def match_include(config, parsed_json, content_current):
 
 
 def normalize_names(config, items):
+    unmatched_authors = []
+
     # Clean up author names
     for item_current in items:
         for author_current in item_current['authors']:
@@ -274,15 +277,38 @@ def normalize_names(config, items):
             elif len(matches_found) == 0:
                 print('No Author Match:')
                 print(author_current)
+
+                unmatched_authors.append(author_current)
             else:
                 print('Multiple Author Match:')
                 print(author_current)
                 print(matches_found)
 
+                assert False
+
+    if unmatched_authors:
+        unmatched_authors = sorted(
+            unmatched_authors,
+            key=lambda author_sort: author_sort["name"],
+        )
+
+        pyperclip.copy(
+            '\n'.join(
+                [
+                    "  - name: '{}'".format(author_current['name'])
+                    for author_current in unmatched_authors
+                ]
+            )
+        )
+
+    assert len(unmatched_authors) == 0
+
     return items
 
 
 def normalize_affiliations(config, items):
+    unmatched_authors = []
+
     for item_current in items:
         for author_current in item_current['authors']:
             # Check for a canonical affiliation for this author
@@ -364,10 +390,49 @@ def normalize_affiliations(config, items):
             elif len(matches_found) == 0:
                 print('No Affiliation Match:')
                 pprint.pprint(author_current)
+
+                unmatched_authors.append(author_current)
             else:
                 print('Multiple Affiliation Match:')
                 pprint.pprint(author_current)
                 pprint.pprint(matches_found)
+
+                assert False
+
+    if unmatched_authors:
+        unmatched_authors = sorted(
+            unmatched_authors,
+            key=lambda author_sort: author_sort["affiliations"][0]["institution"],
+        )
+
+        pyperclip.copy(
+            '\n'.join(
+                [
+                    '\n'.join(
+                        [
+                            "  - canonical: '{}'".format(author_current["affiliations"][0]["institution"]),
+                            "    match:",
+                            "    - name: '{}'".format(author_current['name']),
+                            "      affiliations:",
+                            "\n".join(
+                                [
+                                    "\n".join(
+                                        [
+                                            "      - institution: '{}'".format(affiliation_current["institution"]),
+                                            "        dsl: '{}'".format(affiliation_current["dsl"]),
+                                        ]
+                                    )
+                                    for affiliation_current in author_current["affiliations"]
+                                ]
+                            )
+                        ]
+                    )
+                    for author_current in unmatched_authors
+                ]
+            )
+        )
+
+    assert len(unmatched_authors) == 0
 
     return items
 
