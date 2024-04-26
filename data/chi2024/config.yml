@@ -1159,6 +1159,12 @@ affiliations:
     match:
     - affiliations:
       - institution: 'TU Delft'
+  - canonical: 'Designer Security'
+    match:
+    - name: 'Josiah Dykstra'
+      affiliations:
+      - institution: 'Designer Security, LLC'
+        dsl: ''
   - canonical: 'Duke University'
   - canonical: 'Easterseals'
 #  - canonical: 'EDI Global'
