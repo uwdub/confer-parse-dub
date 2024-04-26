@@ -9,8 +9,8 @@ include:
     trackId: 12614 # CHI 2024 Journals
 
 # Papers that do not match on search can be manually added by ID
-#  - id: 68912
-#  - id: 72026
+  - id: 147659
+  - id: 148122
 
 exclude:
   - id: 147022 # Washington University in St. Louis
@@ -297,6 +297,7 @@ names:
   - name: 'Jon E Froehlich'
 #  - name: 'Jonas Hielscher'
   - name: 'Jonathan Bragg'
+  - name: 'Joo Young Park'
 #  - name: 'Joonhwan Lee'
   - name: 'Joonsuk Park'
 #  - name: 'Joseph Breda'
@@ -379,6 +380,7 @@ names:
   - name: 'Lucy Lu Wang'
   - name: 'Lynn Dombrowski'
   - name: 'Madeleine Grunde-McLaughlin'
+  - name: 'Madeline Balaam'
   - name: 'Madiha Zahrah Choksi'
   - name: 'Maia B. Song'
 #  - name: 'Maitraye Das'
@@ -387,6 +389,7 @@ names:
   - name: 'Mare Hirsch'
 #  - name: 'Margaret E Morris'
 #  - name: 'Margaret Ellen Seehorn'
+  - name: 'Marianela Ciolfi Felice'
 #  - name: 'Markus Dürmuth'
   - name: 'Marshini Chetty'
   - name: 'Martez E Mott'
@@ -427,6 +430,7 @@ names:
   - name: 'Morva Saaty'
   - name: 'Mustafa Doga Dogan'
   - name: 'Myung Jin Kim'
+  - name: 'Nadia Campo Woytuk'
   - name: 'Nadir Weibel'
   - name: 'Nadya Peek'
 #  - name: 'Narine Kokhlikyan'
@@ -511,6 +515,7 @@ names:
   - name: 'Sanchari Das'
 #  - name: 'Sang Won Lee'
   - name: 'Sarah Borsotto'
+  - name: 'Sarah Fdili Alaoui'
   - name: 'Sarah Sterman'
   - name: 'Sasa Junuzovic'
 #  - name: 'Savanna Yee'
@@ -553,6 +558,7 @@ names:
 #  - name: 'Steffen Becker'
 #  - name: 'Stephanie M Lukin'
 #  - name: 'Steve Hodges'
+  - name: 'Stacy Hsueh'
   - name: 'Steven M Drucker'
 #  - name: 'Steven M Goodman'
 #    match:
@@ -610,6 +616,7 @@ names:
   - name: 'Wanda Pratt'
 #  - name: 'Wei Dai'
 #  - name: 'Wendy Guo'
+  - name: 'Wendy E Mackay'
   - name: 'Wesley Willett'
 #  - name: 'William A S Buxton'
   - name: 'Wyatt Olson'
@@ -627,6 +634,7 @@ names:
   - name: 'Xuhai "Orson" Xu'
 #  - name: 'Xun Qian'
   - name: 'XunMei Liu'
+  - name: 'Xuni Huang'
 #  - name: 'Yan Kong'
   - name: 'Yang Wang'
   - name: 'Yasaman S Sefidgar'
@@ -1250,6 +1258,32 @@ affiliations:
       - institution: 'Kaiser Permanente Washington'
   - canonical: 'King Abdulaziz University'
   - canonical: "King's College London"
+  - canonical: 'KTH Royal Institute of Technology'
+    match:
+    - name: 'Joo Young Park'
+      affiliations:
+      - institution: 'KTH Royal Institute of Technology'
+    - name: 'Nadia Campo Woytuk'
+      affiliations:
+      - institution: 'KTH Royal Institute of Technology'
+        dsl: ''
+    - name: 'Xuni Huang'
+      affiliations:
+      - institution: 'KTH Royal Institute of Technology'
+        dsl: ''
+    - name: 'Marianela Ciolfi Felice'
+      affiliations:
+      - institution: 'KTH Royal Institute of Technology'
+        dsl: ''
+    - name: 'Madeline Balaam'
+      affiliations:
+      - institution: 'KTH Royal Institute of Technology'
+        dsl: ''
+    - name: 'Marianela Ciolfi Felice'
+      affiliations:
+      - institution: 'KTH Royal Institute of Technology'
+        dsl: ''
+
 #  - canonical: 'Lancaster University'
 #  - canonical: 'Leibniz University Hannover'
   - canonical: 'Lighthouse Trust'
@@ -1548,6 +1582,12 @@ affiliations:
 #    - name: 'Stephanie M Lukin'
 #      affiliations:
 #      - institution: 'U.S. Army Research Laboratory'
+  - canonical: 'Université Paris Saclay'
+    match:
+    - name: 'Sarah Fdili Alaoui'
+      affiliations:
+      - institution: 'Université Paris Saclay'
+        dsl: 'LISN, CNRS, INRIA'
   - canonical: 'Utrecht University'
   - canonical: 'Washington University in St. Louis'
     match:
@@ -1756,6 +1796,12 @@ affiliations:
       - institution: 'University of Texas at Austin'
         dsl: 'School of Information'
 
+  - canonical: 'KTH Royal Institute of Technology / UW Computer Science & Engineering'
+    match:
+    - name: 'Stacy Hsueh'
+      affiliations:
+      - institution: 'KTH Royal Institute of Technology'
+
   - canonical: 'UW Computer Science & Engineering / Google'
     match:
     - name: 'Avery Mack'
@@ -1782,3 +1828,12 @@ affiliations:
         dsl: 'Department of Computer Science'
       - institution: 'Parkview Research Center'
         dsl: ''
+
+  - canonical: 'Inria / Université Paris-Saclay'
+    match:
+    - name: 'Wendy E Mackay'
+      affiliations:
+      - institution: 'Inria'
+        dsl: 'ExSitu'
+      - institution: 'Université Paris-Saclay'
+        dsl: 'LRI'
