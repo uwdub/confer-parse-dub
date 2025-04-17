@@ -1,9 +1,12 @@
-# virtualenv directory
+# IDE configurations.
+/.idea/
+
+# OS files.
+**/.DS_Store
+
+# Virtualenv directories.
 env38
 env39
 
-# Python compiled files
-*.pyc
-
-# Pycharm files
-.idea
+# Python caches
+__pycache__
