@@ -144,38 +144,6 @@ papers:
   trackId: 13412
   typeId: 13945
 - authors:
-  - affiliation: Carnegie Mellon University
-    name: Jane Hsieh
-  - affiliation: The University of Texas at Austin
-    name: Angie Zhang
-  - affiliation: Bowdoin College
-    name: Sajel Surati
-  - affiliation: Carnegie Mellon University
-    name: Sijia Xie
-  - affiliation: Washington University in St. Louis
-    name: Yeshua Ayala
-  - affiliation: The University of Texas at Austin
-    name: Nithila Sathiya
-  - affiliation: Carnegie Mellon University
-    name: Tzu-Sheng Kuo
-  - affiliation: The University of Texas at Austin
-    name: Min Kyung Lee
-  - affiliation: Carnegie Mellon University
-    name: Haiyi Zhu
-  bestpaper: false
-  eventIds: []
-  honorablemention: true
-  id: 188645
-  importedId: chi25b-4207
-  isBreak: false
-  recognitionIds: []
-  sessionIds:
-  - 195008
-  source: PCS
-  title: 'Gig2Gether: Datasharing to Empower, Unify and Demistify Gig Work'
-  trackId: 13412
-  typeId: 13945
-- authors:
   - affiliation: UW Computer Science & Engineering
     name: Zachary Englhardt
   - affiliation: UW Computer Science & Engineering
@@ -628,35 +596,6 @@ papers:
   trackId: 13412
   typeId: 13945
 - authors:
-  - affiliation: University of Chicago
-    name: Van Hong Tran
-  - affiliation: University of Chicago
-    name: Aarushi Mehrotra
-  - affiliation: University of Chicago
-    name: Ranya Sharma
-  - affiliation: University of Chicago
-    name: Marshini Chetty
-  - affiliation: University of Chicago
-    name: Nick Feamster
-  - affiliation: Washington University in St. Louis
-    name: Jens Frankenreiter
-  - affiliation: University of Chicago
-    name: Lior Strahilevitz
-  bestpaper: false
-  eventIds: []
-  honorablemention: false
-  id: 188990
-  importedId: chi25b-7242
-  isBreak: false
-  recognitionIds: []
-  sessionIds:
-  - 195026
-  source: PCS
-  title: Dark Patterns in the Opt-Out Process and Compliance With the California Consumer
-    Privacy Act (CCPA)
-  trackId: 13412
-  typeId: 13945
-- authors:
   - affiliation: UW Computer Science & Engineering
     name: Madeleine Grunde-McLaughlin
   - affiliation: Stanford University
@@ -779,33 +718,6 @@ papers:
     and Voice Assistants'
   trackId: 13412
   typeId: 13945
-- authors:
-  - affiliation: Max Planck Institute for Security and Privacy
-    name: Yixin Zou
-  - affiliation: University of Michigan
-    name: Khue Le
-  - affiliation: University of Southern Denmark
-    name: Peter Mayer
-  - affiliation: Carnegie Mellon University
-    name: Alessandro Acquisti
-  - affiliation: The George Washington University
-    name: Adam J Aviv
-  - affiliation: University of Michigan
-    name: Florian Schaub
-  bestpaper: false
-  eventIds: []
-  honorablemention: false
-  id: 188370
-  importedId: chi25s-1032
-  isBreak: false
-  recognitionIds: []
-  sessionIds:
-  - 191706
-  source: PCS
-  title: Encouraging Users to Change Breached Passwords Using the Protection Motivation
-    Theory
-  trackId: 13414
-  typeId: 14039
 - authors:
   - affiliation: UW Computer Science & Engineering
     name: Leijie Wang
@@ -1466,45 +1378,6 @@ papers:
   trackId: 13412
   typeId: 13945
 - authors:
-  - affiliation: École Polytechnique Fédérale de Lausanne / University of Lausanne
-    name: Kavous Salehzadeh Niksirat
-  - affiliation: The George Washington University
-    name: Collins W Munyendo
-  - affiliation: University of Arizona
-    name: Onicio Batista Leal Neto
-  - affiliation: Essential Tech
-    name: Muswagha Katya
-  - affiliation: Centre Suisse de Recherches Scientifiques
-    name: Cyrille Kouassi
-  - affiliation: Center for Public Health and Development
-    name: Kevin Ochieng
-  - affiliation: Centre Suisse de Recherches Scientifiques
-    name: Angoa Georgina
-  - affiliation: Center for Public Health and Development
-    name: Bernard Olayo
-  - affiliation: Infineon Technologies
-    name: Jean-Philippe Barras
-  - affiliation: Institute for Scientific Interchange
-    name: Ciro Cattuto
-  - affiliation: The George Washington University
-    name: Adam J Aviv
-  - affiliation: École Polytechnique Fédérale de Lausanne
-    name: Carmela Troncoso
-  bestpaper: false
-  eventIds: []
-  honorablemention: false
-  id: 188352
-  importedId: chi25b-7334
-  isBreak: false
-  recognitionIds: []
-  sessionIds:
-  - 195138
-  source: PCS
-  title: 'Reimagining Wearable-Based Digital Contact Tracing: Insights From Kenya
-    and Côte d''Ivoire'
-  trackId: 13412
-  typeId: 13945
-- authors:
   - affiliation: UW Computer Science & Engineering
     name: Mingyuan Zhong
   - affiliation: UW Information School
@@ -1743,27 +1616,6 @@ papers:
   trackId: 13412
   typeId: 13945
 - authors:
-  - affiliation: US Army Research Laboratory
-    name: Melanie Bancilhon
-  - affiliation: Washington University in St. Louis
-    name: Alvitta Ottley
-  - affiliation: Washington University in St. Louis
-    name: Andrew Jordan
-  bestpaper: false
-  eventIds: []
-  honorablemention: false
-  id: 188733
-  importedId: chi25b-6945
-  isBreak: false
-  recognitionIds: []
-  sessionIds:
-  - 191342
-  source: PCS
-  title: 'The Anatomy of a Plea: How Uncertainty, Visualizations & Individual Differences
-    Shape Plea Bargain Decisions'
-  trackId: 13412
-  typeId: 13945
-- authors:
   - affiliation: UW Human Centered Design & Engineering
     name: Samuel So
   - affiliation: UW Information School
@@ -1927,26 +1779,6 @@ papers:
   source: PCS
   title: 'Translating HCI Research to Broader Audiences: Motivation, Inspiration,
     and Critical Factors on Alternative Research Outcomes'
-  trackId: 13412
-  typeId: 13945
-- authors:
-  - affiliation: Washington University in St. Louis
-    name: Oen G McKinley
-  - affiliation: Washington University in St. Louis
-    name: Saugat Pandey
-  - affiliation: Washington University in St. Louis
-    name: Alvitta Ottley
-  bestpaper: false
-  eventIds: []
-  honorablemention: false
-  id: 189204
-  importedId: chi25b-6565
-  isBreak: false
-  recognitionIds: []
-  sessionIds:
-  - 191342
-  source: PCS
-  title: 'Trustworthy by Design: The Viewer''s Perspective on Trust in Data Visualization'
   trackId: 13412
   typeId: 13945
 - authors:

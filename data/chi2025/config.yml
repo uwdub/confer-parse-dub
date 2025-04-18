@@ -8,15 +8,16 @@ include:
   - affiliation: 'Washington'
     trackId: 13414 # CHI 2025 Journals
 
-## Papers that do not match on search can be manually added by ID
-#  - id: 147659
-#  - id: 148122
-
-exclude: []
-#  - id: 147022 # Washington University in St. Louis
-#  - id: 147035 # Washington University in St. Louis
+exclude:
+  - id: 188645 # Washington University in St. Louis
+  - id: 188733 # Washington University in St. Louis
+  - id: 188990 # Washington University in St. Louis
+  - id: 189204 # Washington University in St. Louis
 #  - id: 147853 # Western Washington University
-#  - id: 150899 # George Washington University
+  - id: 188352 # George Washington University
+  - id: 188370 # George Washington University
+
+
 
 names:
   - name: 'Aaleyah Lewis'
