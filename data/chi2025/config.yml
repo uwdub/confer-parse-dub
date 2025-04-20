@@ -7,6 +7,8 @@ include:
     trackId: 13412 # CHI 2025 Papers
   - affiliation: 'Washington'
     trackId: 13414 # CHI 2025 Journals
+  - id: 188978
+  - id: 189657
 
 exclude:
   - id: 188645 # Washington University in St. Louis
@@ -20,6 +22,14 @@ exclude:
 
 
 names:
+  - name: 'Tamanna Motahar'
+  - name: 'YeonJae Kim'
+  - name: 'Ananya Prashant Kasi'
+  - name: 'Anindya Das Antar'
+  - name: 'Anmol Mansingh'
+  - name: 'Nikola Banovic'
+  - name: 'Snehal Prabhudesai'
+
   - name: 'Aaleyah Lewis'
   - name: 'Aarushi Mehrotra'
   - name: 'Aashaka Desai'
@@ -224,6 +234,7 @@ names:
   - name: 'Donghoon Shin'
   - name: 'Doug Downey'
   - name: 'Dung Tien Tran'
+  - name: 'Eden Laurel Fisher'
   - name: 'Edward Cutrell'
   - name: 'Edward Misback'
   - name: 'Eleanor R Burgess'
@@ -351,6 +362,7 @@ names:
   - name: 'Janice Teoh'
   - name: 'Jaron Mink'
   - name: 'Jason C Young'
+  - name: 'Jason Wiese'
   - name: 'Jason Yip'
   - name: "Jasper Tran O'Leary"
   - name: 'Jatin Sharma'
@@ -1334,6 +1346,12 @@ affiliations:
         - institution: 'University of Washington'
           dsl: ''
 
+      - name: 'Hua Shen'
+        affiliations:
+        - institution: 'University of Michigan'
+          dsl: 'School of Information; Department of Computer Science & Engineering'
+
+
 #      - name: 'Jason C Young'
 #        affiliations:
 #        - institution: 'University of Washington'
@@ -1622,6 +1640,10 @@ affiliations:
         dsl: 'Scientific Computing and Imaging Institute'
       - institution: 'University of Washington'
         dsl: 'Paul G. Allen School of Computer Science & Engineering'
+    - name: 'Tamanna Motahar'
+      affiliations:
+      - institution: 'University of Utah'
+        dsl: 'School of Computing'
 
   - canonical: "UW Architecture / UW Landscape Architecture"
     match:
@@ -2278,6 +2300,13 @@ affiliations:
       - institution: 'University of Massachusetts Amherst'
         dsl: 'Manning College of Information & Computer Sciences'
   - canonical: 'University of Michigan'
+    reject:
+
+      - name: 'Hua Shen'
+        affiliations:
+        - institution: 'University of Michigan'
+          dsl: 'School of Information; Department of Computer Science & Engineering'
+
 #    match:
 #    - affiliations:
 #      - institution: 'University of Michigan'
@@ -2322,6 +2351,8 @@ affiliations:
 #        dsl: 'Department of Philosophy'
 #      - institution: 'Lancaster University'
   - canonical: 'University of Utah'
+    reject:
+      - name: 'Tamanna Motahar'
 #  - canonical: 'University of Virginia'
 #    match:
 #    - name: 'Shreya Chappidi'

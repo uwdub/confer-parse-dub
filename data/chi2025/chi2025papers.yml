@@ -347,6 +347,28 @@ papers:
   trackId: 13412
   typeId: 13945
 - authors:
+  - affiliation: University of Utah / UW Computer Science & Engineering
+    name: Tamanna Motahar
+  - affiliation: University of Utah
+    name: YeonJae Kim
+  - affiliation: University of Utah
+    name: Eden Laurel Fisher
+  - affiliation: University of Utah
+    name: Jason Wiese
+  bestpaper: false
+  eventIds: []
+  honorablemention: true
+  id: 189657
+  importedId: chi25b-9693
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 196426
+  source: PCS
+  title: Understanding the Training Experiences of Competitive Skiers With Tetraplegia
+  trackId: 13412
+  typeId: 13945
+- authors:
   - affiliation: UW Computer Science & Engineering
     name: Miranda Wei
   - affiliation: UW Computer Science & Engineering
@@ -854,6 +876,33 @@ papers:
   source: PCS
   title: 'From Camera-Eye to AI: Exploring the Interplay of Cinematography and Computational
     Visual Storytelling'
+  trackId: 13412
+  typeId: 13945
+- authors:
+  - affiliation: University of Michigan
+    name: Snehal Prabhudesai
+  - affiliation: University of Michigan
+    name: Ananya Prashant Kasi
+  - affiliation: University of Michigan
+    name: Anmol Mansingh
+  - affiliation: University of Michigan
+    name: Anindya Das Antar
+  - affiliation: UW Information School
+    name: Hua Shen
+  - affiliation: University of Michigan
+    name: Nikola Banovic
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 188978
+  importedId: chi25b-1853
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 195134
+  source: PCS
+  title: '"Here the GPT Made a Choice, and Every Choice Can Be Biased": How Students
+    Critically Engage With LLMs Through End-User Auditing Activity'
   trackId: 13412
   typeId: 13945
 - authors:
