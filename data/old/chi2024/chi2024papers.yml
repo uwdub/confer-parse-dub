@@ -1,0 +1,2784 @@
+papers:
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'From Text to Self: Users’ Perception of AIMC Tools on Interpersonal
+        Communication and Self'
+      type: video
+      url: https://www.youtube.com/watch?v=DwLyV1f_G4I
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'From Text to Self: Users’ Perception of AIMC Tools on Interpersonal
+        Communication and Self'
+      type: video
+      url: https://www.youtube.com/watch?v=MVGRDfHe-w8
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3641955
+  authors:
+  - affiliation: UW Information School
+    name: Yue Fu
+  - affiliation: UW Information School
+    name: Sami Foell
+  - affiliation: UW Information School
+    name: Xuhai "Orson" Xu
+  - affiliation: UW Information School
+    name: Alexis Hiniker
+  bestpaper: true
+  eventIds: []
+  honorablemention: false
+  id: 146970
+  importedId: chi24a-7234
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156140
+  source: PCS
+  title: 'From Text to Self: Users'' Perception of AIMC Tools on Interpersonal Communication
+    and Self'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'MigraineTracker: Examining Patient Experiences with Goal-Directed Self-Tracking
+        for a Chronic Health Condition'
+      type: video
+      url: https://www.youtube.com/watch?v=6rhX0_0KLNo
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642075
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Yasaman S Sefidgar
+  - affiliation: UW Human Centered Design & Engineering
+    name: Carla L Castillo
+  - affiliation: UW Computer Science & Engineering
+    name: Shaan Chopra
+  - affiliation: UW Computer Science & Engineering
+    name: Liwei Jiang
+  - affiliation: UW Computer Science & Engineering
+    name: Tae Jones
+  - affiliation: UW Computer Science & Engineering
+    name: Anant Mittal
+  - affiliation: UW Information School
+    name: Hyeyoung Ryu
+  - affiliation: UW Computer Science & Engineering
+    name: Jessica Schroeder
+  - affiliation: UW Family Medicine
+    name: Allison Cole
+  - affiliation: UW Neurology
+    name: Natalia Murinova
+  - affiliation: UW Human Centered Design & Engineering
+    name: Sean A Munson
+  - affiliation: UW Computer Science & Engineering
+    name: James Fogarty
+  bestpaper: true
+  eventIds: []
+  honorablemention: false
+  id: 147528
+  importedId: chi24a-2673
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156099
+  source: PCS
+  title: 'MigraineTracker: Examining Patient Experiences With Goal-Directed Self-Tracking
+    for a Chronic Health Condition'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: Mitigating Barriers to Public Social Interaction with Meronymous Communication
+      type: video
+      url: https://www.youtube.com/watch?v=0RcGq3-pDxg
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642241
+  authors:
+  - affiliation: Massachusetts Institute of Technology
+    name: Nouran Soliman
+  - affiliation: Carnegie Mellon University
+    name: Hyeonsu B Kang
+  - affiliation: Allen Institute for Artificial Intelligence
+    name: Matt Latzke
+  - affiliation: Allen Institute for Artificial Intelligence
+    name: Jonathan Bragg
+  - affiliation: Allen Institute for Artificial Intelligence
+    name: Joseph Chee Chang
+  - affiliation: UW Computer Science & Engineering
+    name: Amy X Zhang
+  - affiliation: Massachusetts Institute of Technology
+    name: David R Karger
+  bestpaper: true
+  eventIds: []
+  honorablemention: false
+  id: 147447
+  importedId: chi24a-6400
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156019
+  source: PCS
+  title: Mitigating Barriers to Public Social Interaction With Meronymous Communication
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'rTisane: Externalizing conceptual models for data analysis increases
+        engagement with domain knowledge and improves statistical model quality'
+      type: video
+      url: https://www.youtube.com/watch?v=dUJx_dmZ1-o
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642267
+  authors:
+  - affiliation: University of California, Los Angeles
+    name: Eunice Jun
+  - affiliation: UW Computer Science & Engineering
+    name: Edward Misback
+  - affiliation: UW Computer Science & Engineering
+    name: Jeffrey Heer
+  - affiliation: UW Computer Science & Engineering
+    name: Rene Just
+  bestpaper: true
+  eventIds: []
+  honorablemention: false
+  id: 147809
+  importedId: chi24a-2175
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156210
+  source: PCS
+  title: 'rTisane: Externalizing Conceptual Models for Data Analysis Increases Engagement
+    With Domain Knowledge and Improves Statistical Model Quality'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: What Counts as ‘Creative’ Work? Articulating Four Epistemic Positions
+        in Creativity-Oriented HCI Research
+      type: video
+      url: https://www.youtube.com/watch?v=huArG8uqkz4
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642854
+  authors:
+  - affiliation: KTH Royal Institute of Technology / UW Computer Science & Engineering
+    name: Stacy Hsueh
+  - affiliation: KTH Royal Institute of Technology
+    name: Marianela Ciolfi Felice
+  - affiliation: Université Paris Saclay
+    name: Sarah Fdili Alaoui
+  - affiliation: Inria / Université Paris-Saclay
+    name: Wendy E Mackay
+  bestpaper: true
+  durationOverride: 500
+  eventIds: []
+  honorablemention: false
+  id: 148122
+  importedId: chi24a-8044
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156383
+  source: PCS
+  title: What Counts as ‘Creative' Work? Articulating Four Epistemic Positions in
+    Creativity-Oriented HCI Research
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Big or Small, It’s All in Your Head: Visuo-Haptic Illusion of Size-Change
+        Using Finger-Repositioning'
+      type: video
+      url: https://www.youtube.com/watch?v=6Ox0sQZNouU
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Big or Small, It’s All in Your Head: Visuo-Haptic Illusion of Size-Change
+        Using Finger-Repositioning'
+      type: video
+      url: https://www.youtube.com/watch?v=gZFaWT8emGo
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642254
+  authors:
+  - affiliation: KAIST
+    name: Myung Jin Kim
+  - affiliation: Microsoft
+    name: Eyal Ofek
+  - affiliation: Microsoft
+    name: Michel Pahud
+  - affiliation: UW Electrical & Computer Engineering
+    name: Mike J Sinclair
+  - affiliation: KAIST
+    name: Andrea Bianchi
+  bestpaper: false
+  eventIds: []
+  honorablemention: true
+  id: 147073
+  importedId: chi24a-4122
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156125
+  source: PCS
+  title: 'Big or Small, It''s All in Your Head: Visuo-Haptic Illusion of Size-Change
+    Using Finger-Repositioning'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: Critiquing Menstrual Pain Technologies through the Lens of Feminist Disability
+        Studies
+      type: video
+      url: https://www.youtube.com/watch?v=SPOFbrspHgY
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642691
+  authors:
+  - affiliation: KTH Royal Institute of Technology
+    name: Joo Young Park
+  - affiliation: KTH Royal Institute of Technology / UW Computer Science & Engineering
+    name: Stacy Hsueh
+  - affiliation: KTH Royal Institute of Technology
+    name: Nadia Campo Woytuk
+  - affiliation: KTH Royal Institute of Technology
+    name: Xuni Huang
+  - affiliation: KTH Royal Institute of Technology
+    name: Marianela Ciolfi Felice
+  - affiliation: KTH Royal Institute of Technology
+    name: Madeline Balaam
+  bestpaper: false
+  eventIds: []
+  honorablemention: true
+  id: 147659
+  importedId: chi24a-9268
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156046
+  source: PCS
+  title: Critiquing Menstrual Pain Technologies Through the Lens of Feminist Disability
+    Studies
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'HCI Contributions in Mental Health: A Modular Framework to Guide Psychosocial
+        Intervention Design'
+      type: video
+      url: https://www.youtube.com/watch?v=Oyt2KJ0JJM4
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642624
+  authors:
+  - affiliation: King's College London
+    name: Petr Slovak
+  - affiliation: UW Human Centered Design & Engineering
+    name: Sean A Munson
+  bestpaper: false
+  eventIds: []
+  honorablemention: true
+  id: 148036
+  importedId: chi24a-7160
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156128
+  source: PCS
+  title: 'HCI Contributions in Mental Health: A Modular Framework to Guide Psychosocial
+    Intervention Design'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: HIV Client Perspectives on Digital Health in Malawi
+      type: video
+      url: https://www.youtube.com/watch?v=4mor4qcdKrg
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: HIV Client Perspectives on Digital Health in Malawi
+      type: video
+      url: https://www.youtube.com/watch?v=7q-Gf8Ew-uM
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642245
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Lisa Orii
+  - affiliation: UW Global Health
+    name: Caryl Feldacker
+  - affiliation: Lighthouse Trust
+    name: Jacqueline Madalitso Huwa
+  - affiliation: Lighthouse Trust
+    name: Agness Thawani
+  - affiliation: Lighthouse Trust
+    name: Evelyn Viola
+  - affiliation: Lighthouse Trust
+    name: Christine Kiruthu-Kamamia
+  - affiliation: Lighthouse Trust
+    name: Odala Sande
+  - affiliation: UW Global Health
+    name: Hannock Tweya
+  - affiliation: UW Computer Science & Engineering
+    name: Richard Anderson
+  bestpaper: false
+  eventIds: []
+  honorablemention: true
+  id: 147847
+  importedId: chi24a-7884
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156100
+  source: PCS
+  title: HIV Client Perspectives on Digital Health in Malawi
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: '"I want it to talk like Darth Vader": Helping Children Construct Creative
+        Self-Efficacy with Generative AI'
+      type: video
+      url: https://www.youtube.com/watch?v=RKcH9yJ5nNg
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642492
+  authors:
+  - affiliation: UW Information School
+    name: Michele Newman
+  - affiliation: University of Michigan
+    name: Kaiwen Sun
+  - affiliation: UW Human Centered Design & Engineering
+    name: Ilena B Dalla Gasperina
+  - affiliation: UW Information School
+    name: Grace Y Shin
+  - affiliation: UW Human Centered Design & Engineering
+    name: Matthew Kyle Pedraja
+  - affiliation: UW Computer Science & Engineering
+    name: Ritesh Kanchi
+  - affiliation: UW Human Centered Design & Engineering
+    name: Maia B. Song
+  - affiliation: UW Art + Art History + Design
+    name: Rannie Li
+  - affiliation: UW Information School
+    name: Jin Ha Lee
+  - affiliation: UW Information School
+    name: Jason Yip
+  bestpaper: false
+  eventIds: []
+  honorablemention: true
+  id: 147049
+  importedId: chi24a-6799
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156162
+  source: PCS
+  title: '"I Want It to Talk Like Darth Vader": Helping Children Construct Creative
+    Self-Efficacy With Generative AI'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Look Once to Hear: Target Speech Hearing with Noisy Examples'
+      type: video
+      url: https://www.youtube.com/watch?v=V-XCfnjfQmM
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642057
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Bandhav Veluri
+  - affiliation: UW Computer Science & Engineering
+    name: Malek Itani
+  - affiliation: UW Computer Science & Engineering
+    name: Tuochao Chen
+  - affiliation: Microsoft
+    name: Takuya Yoshioka
+  - affiliation: UW Computer Science & Engineering
+    name: Shyamnath Gollakota
+  bestpaper: false
+  eventIds: []
+  honorablemention: true
+  id: 147319
+  importedId: chi24a-4288
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156024
+  source: PCS
+  title: 'Look Once to Hear: Target Speech Hearing With Noisy Examples'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: A Design Space for Intelligent and Interactive Writing Assistants
+      type: video
+      url: https://www.youtube.com/watch?v=7qI2RxWKhsc
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642697
+  authors:
+  - affiliation: Microsoft
+    name: Mina Lee
+  - affiliation: Harvard University
+    name: Katy Ilonka Gero
+  - affiliation: Midjourney
+    name: John Joon Young Chung
+  - affiliation: University of Technology Sydney
+    name: Simon Buckingham Shum
+  - affiliation: Grammarly
+    name: Vipul Raheja
+  - affiliation: University of Michigan
+    name: Hua Shen
+  - affiliation: Google
+    name: Subhashini Venugopalan
+  - affiliation: Bern University of Applied Sciences
+    name: Thiemo Wambsganss
+  - affiliation: University of Illinois Urbana-Champaign
+    name: David Zhou
+  - affiliation: King Abdulaziz University
+    name: Emad A Alghamdi
+  - affiliation: UW Computer Science & Engineering
+    name: Tal August
+  - affiliation: McGill University
+    name: Avinash Bhat
+  - affiliation: Cornell Tech
+    name: Madiha Zahrah Choksi
+  - affiliation: University of Tennessee, Knoxville
+    name: Senjuti Dutta
+  - affiliation: McGill University
+    name: Jin L C Guo
+  - affiliation: University of Maryland, College Park
+    name: Md Naimul Hoque
+  - affiliation: KAIST
+    name: Yewon Kim
+  - affiliation: University of Technology Sydney
+    name: Simon Knight
+  - affiliation: EPFL
+    name: Seyed Parsa Neshaei
+  - affiliation: University of Technology Sydney
+    name: Antonette Shibani
+  - affiliation: Google
+    name: Disha Shrivastava
+  - affiliation: Stanford University
+    name: Lila Shroff
+  - affiliation: JetBrains
+    name: Agnia Sergeyuk
+  - affiliation: University of Toronto
+    name: Jessi Stark
+  - affiliation: University of Illinois Urbana-Champaign
+    name: Sarah Sterman
+  - affiliation: Columbia University
+    name: Sitong Wang
+  - affiliation: EPFL
+    name: Antoine Bosselut
+  - affiliation: University of Bayreuth
+    name: Daniel Buschek
+  - affiliation: Allen Institute for Artificial Intelligence
+    name: Joseph Chee Chang
+  - affiliation: Google
+    name: Sherol Chen
+  - affiliation: Midjourney
+    name: Max Kreminski
+  - affiliation: University of Richmond
+    name: Joonsuk Park
+  - affiliation: Stanford University
+    name: Roy Pea
+  - affiliation: Virginia Tech
+    name: Eugenia H Rho
+  - affiliation: Massachusetts Institute of Technology
+    name: Zejiang Shen
+  - affiliation: B12
+    name: Pao Siangliulue
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 146994
+  importedId: chi24a-3217
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156146
+  source: PCS
+  title: A Design Space for Intelligent and Interactive Writing Assistants
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'A Game of Love for Women: Social Support in Otome Game Mr. Love: Queen’s
+        Choice in China'
+      type: video
+      url: https://www.youtube.com/watch?v=rm7_Sgguu_4
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642306
+  authors:
+  - affiliation: City University of Hong Kong / Southern University of Science and
+      Technology
+    name: Qinyuan Lei
+  - affiliation: UW Communication
+    name: Ran Tang
+  - affiliation: The Hong Kong Polytechnic University
+    name: Hiu Man Ho
+  - affiliation: University of Wisconsin-Madison
+    name: Han Zhou
+  - affiliation: The Pennsylvania State University
+    name: Jingyi Guo
+  - affiliation: Southern University of Science and Technology
+    name: Zilu Tang
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147914
+  importedId: chi24a-1467
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156176
+  source: PCS
+  title: 'A Game of Love for Women: Social Support in Otome Game Mr. Love: Queen''s
+    Choice in China'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: AI-Assisted Causal Pathway Diagram for Human-Centered Design
+      type: video
+      url: https://www.youtube.com/watch?v=AxZX0rXy8To
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642179
+  authors:
+  - affiliation: UW Human Centered Design & Engineering
+    name: Ruican Zhong
+  - affiliation: UW Human Centered Design & Engineering
+    name: Donghoon Shin
+  - affiliation: Kaiser Permanente
+    name: Rosemary Meza
+  - affiliation: University of Michigan
+    name: Predrag Klasnja
+  - affiliation: Microsoft
+    name: Lucas Colusso
+  - affiliation: UW Human Centered Design & Engineering
+    name: Gary Hsieh
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147483
+  importedId: chi24a-6424
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156157
+  source: PCS
+  title: AI-Assisted Causal Pathway Diagram for Human-Centered Design
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: Analyzing User Engagement with TikTok's Short Format Video Recommendations
+        using Data Donations
+      type: video
+      url: https://www.youtube.com/watch?v=kKu5jlk7rdo
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642433
+  authors:
+  - affiliation: Delft University of Technology
+    name: Savvas Zannettou
+  - affiliation: Max Planck Institute for Software Systems
+    name: Olivia Nemes-Nemeth
+  - affiliation: Max Planck Institute for Software Systems
+    name: Oshrat Ayalon
+  - affiliation: Max Planck Institute for Software Systems
+    name: Angelica Goetzen
+  - affiliation: Max Planck Institute for Software Systems
+    name: Krishna P. Gummadi
+  - affiliation: Max Planck Institute for Software Systems
+    name: Elissa M Redmiles
+  - affiliation: UW Computer Science & Engineering
+    name: Franziska Roesner
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147650
+  importedId: chi24a-4816
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156151
+  source: PCS
+  title: Analyzing User Engagement With TikTok's Short Format Video Recommendations
+    Using Data Donations
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'An Emotion Translator: Speculative Design By Neurodiverse Dyads'
+      type: video
+      url: https://www.youtube.com/watch?v=m75GLQkPjoI
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642210
+  authors:
+  - affiliation: UW Bothell Computing & Software Systems
+    name: Annuska Zolyomi
+  - affiliation: UW Information School
+    name: Jaime Snyder
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 148281
+  importedId: chi24a-5770
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156160
+  source: PCS
+  title: 'An Emotion Translator: Speculative Design by Neurodiverse Dyads'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: Approaches for tailoring between-session mental health therapy activities
+      type: video
+      url: https://www.youtube.com/watch?v=Yx0d_kR0TDM
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642856
+  authors:
+  - affiliation: University of California, Irvine
+    name: Bruna Oewel
+  - affiliation: UW Psychiatry and Behavioral Sciences
+    name: Patricia Anne Arean
+  - affiliation: University of California, Irvine
+    name: Elena Agapie
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147860
+  importedId: chi24a-8720
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156038
+  source: PCS
+  title: Approaches for Tailoring Between-Session Mental Health Therapy Activities
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: A temporal vocabulary of Design Events for Research through Design
+      type: video
+      url: https://www.youtube.com/watch?v=ASVkjat9hsQ
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: A temporal vocabulary of Design Events for Research through Design
+      type: video
+      url: https://www.youtube.com/watch?v=eeizhz-6RPo
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642560
+  authors:
+  - affiliation: Eindhoven University of Technology
+    name: Doenja Oogjes
+  - affiliation: UW Art + Art History + Design
+    name: Audrey Desjardins
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 148024
+  importedId: chi24a-6286
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156168
+  source: PCS
+  title: A Temporal Vocabulary of Design Events for Research Through Design
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'A Virtual Reality Scene Taxonomy: Identifying and Designing Accessible
+        Scene-Viewing Techniques'
+      type: video
+      url: https://www.youtube.com/watch?v=5Dy2lfaIlGg
+  authors:
+  - affiliation: UW Information School
+    name: Rachel L Franz
+  - affiliation: Microsoft
+    name: Sasa Junuzovic
+  - affiliation: Microsoft
+    name: Martez E Mott
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 150645
+  importedId: chi24g-1055
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156040
+  source: PCS
+  title: 'A Virtual Reality Scene Taxonomy: Identifying and Designing Accessible Scene-Viewing
+    Techniques'
+  trackId: 12614
+  typeId: 13341
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Better Little People Pictures: Generative Creation of Demographically
+        Diverse Anthropographics'
+      type: video
+      url: https://www.youtube.com/watch?v=dCEFvx4AqIo
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3641957
+  authors:
+  - affiliation: UW Human Centered Design & Engineering / University of Calgary
+    name: Priya Dhawka
+  - affiliation: University of Calgary
+    name: Lauren Perera
+  - affiliation: University of Calgary
+    name: Wesley Willett
+  bestpaper: false
+  durationOverride: 500
+  eventIds: []
+  honorablemention: false
+  id: 147622
+  importedId: chi24a-6184
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156373
+  source: PCS
+  title: 'Better Little People Pictures: Generative Creation of Demographically Diverse
+    Anthropographics'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'BLIP: Facilitating the Exploration of Undesirable Consequences of Digital
+        Technologies'
+      type: video
+      url: https://www.youtube.com/watch?v=rBtdpaWlTWU
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642054
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Rock Yuren Pang
+  - affiliation: UW Computer Science & Engineering
+    name: Sebastin Santy
+  - affiliation: UW Computer Science & Engineering
+    name: Rene Just
+  - affiliation: UW Computer Science & Engineering
+    name: Katharina Reinecke
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 146666
+  importedId: chi24a-1128
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156111
+  source: PCS
+  title: 'BLIP: Facilitating the Exploration of Undesirable Consequences of Digital
+    Technologies'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: '"Caption it in an Accessible Way That is Also Enjoyable": Characterizing
+        User-Driven Captioning Practices on TikTok'
+      type: video
+      url: https://www.youtube.com/watch?v=-HocrtKtUz4
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642177
+  authors:
+  - affiliation: UW Human Centered Design & Engineering
+    name: Emma J McDonnell
+  - affiliation: University of California, Santa Cruz
+    name: Tessa Eagle
+  - affiliation: UW Human Centered Design & Engineering
+    name: Pitch Sinlapanuntakul
+  - affiliation: UW Human Centered Design & Engineering
+    name: Soo Hyun Moon
+  - affiliation: UW Computer Science & Engineering
+    name: Jon E Froehlich
+  - affiliation: University of California, Santa Cruz
+    name: Kathryn E Ringland
+  - affiliation: UW Human Centered Design & Engineering
+    name: Leah Findlater
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147777
+  importedId: chi24a-3455
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156062
+  source: PCS
+  title: '"Caption It in an Accessible Way That Is Also Enjoyable": Characterizing
+    User-Driven Captioning Practices on TikTok'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: Charting the COVID Long Haul Experience - A Longitudinal Exploration
+        of Symptoms, Activity, and Clinical Adherence
+      type: video
+      url: https://www.youtube.com/watch?v=c8r-N5pEZRw
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642827
+  authors:
+  - affiliation: Parkview Health
+    name: Jessica Pater
+  - affiliation: UW Computer Science & Engineering / Parkview Health
+    name: Shaan Chopra
+  - affiliation: Parkview Health
+    name: Jeanne Carroll
+  - affiliation: University of Toronto
+    name: Juliette Zaccour
+  - affiliation: Simon Fraser University
+    name: Taha Liaqat
+  - affiliation: Parkview Health
+    name: Fayika Farhat Nova
+  - affiliation: Parkview Health
+    name: Tammy Toscos
+  - affiliation: University of Toronto / Parkview Health
+    name: Shion Guha
+  - affiliation: Parkview Health
+    name: Fen Lei Chang
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147234
+  importedId: chi24a-3824
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156034
+  source: PCS
+  title: Charting the COVID Long Haul Experience - A Longitudinal Exploration of Symptoms,
+    Activity, and Clinical Adherence
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: Co-Designing Situated Displays for Family Co-Regulation with ADHD Children
+      type: video
+      url: https://www.youtube.com/watch?v=GYzj2l8GLvk
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642745
+  authors:
+  - affiliation: University of California, Irvine
+    name: Lucas M Silva
+  - affiliation: Chapman University
+    name: Franceli L Cibrian
+  - affiliation: University of California, Irvine
+    name: Clarisse Bonang
+  - affiliation: UW Human Centered Design & Engineering
+    name: Arpita
+  - affiliation: University of California, Irvine
+    name: Aehong Min
+  - affiliation: University of California, Riverside
+    name: Elissa M Monteiro
+  - affiliation: University of California, Irvine
+    name: Jesus Armando Beltran
+  - affiliation: University of California, Irvine
+    name: Sabrina Schuck
+  - affiliation: University of California, Riverside
+    name: Kimberley D Lakes
+  - affiliation: University of California, Irvine
+    name: Gillian R Hayes
+  - affiliation: University of California, Irvine
+    name: Daniel A Epstein
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 148144
+  importedId: chi24a-6696
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156628
+  source: PCS
+  title: Co-Designing Situated Displays for Family Co-Regulation With ADHD Children
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Concept Induction: Analyzing Unstructured Text with High-Level Concepts
+        Using LLooM'
+      type: video
+      url: https://www.youtube.com/watch?v=fe4N8pad8Ek
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Concept Induction: Analyzing Unstructured Text with High-Level Concepts
+        Using LLooM'
+      type: video
+      url: https://www.youtube.com/watch?v=E7Qxz711q7Q
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642830
+  authors:
+  - affiliation: Stanford University
+    name: Michelle S Lam
+  - affiliation: Stanford University
+    name: Janice Teoh
+  - affiliation: Stanford University
+    name: James A Landay
+  - affiliation: UW Computer Science & Engineering
+    name: Jeffrey Heer
+  - affiliation: Stanford University
+    name: Michael S Bernstein
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147161
+  importedId: chi24a-3446
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156153
+  source: PCS
+  title: 'Concept Induction: Analyzing Unstructured Text With High-Level Concepts
+    Using LLooM'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'ConverSense: An Automated Approach to Assess Patient-Provider Interactions
+        using Social Signals'
+      type: video
+      url: https://www.youtube.com/watch?v=MobGqjeWE98
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3641998
+  authors:
+  - affiliation: University of California, San Diego
+    name: Manas Satish Bedmutha
+  - affiliation: University of California, San Diego
+    name: Anuujin Tsedenbal
+  - affiliation: University of California, San Diego
+    name: Kelly Tobar
+  - affiliation: University of California, San Diego
+    name: Sarah Borsotto
+  - affiliation: University of California, San Diego
+    name: Kimberly R Sladek
+  - affiliation: University of California, San Diego
+    name: Deepansha Singh
+  - affiliation: UW Biomedical Informatics and Medical Education
+    name: Reggie Casanova-Perez
+  - affiliation: UW Information School
+    name: Emily Bascom
+  - affiliation: UW Medicine
+    name: Brian Wood
+  - affiliation: UW Biomedical Informatics and Medical Education
+    name: Janice Sabin
+  - affiliation: UW Information School
+    name: Wanda Pratt
+  - affiliation: UW Biomedical Informatics and Medical Education
+    name: Andrea Hartzler
+  - affiliation: University of California, San Diego
+    name: Nadir Weibel
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 148138
+  importedId: chi24a-8871
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156082
+  source: PCS
+  title: 'ConverSense: An Automated Approach to Assess Patient-Provider Interactions
+    Using Social Signals'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Data Probes as Boundary Objects for Technology Policy Design: Demystifying
+        Technology for Policymakers and Aligning Stakeholder Objectives in Rideshare
+        Gig Work'
+      type: video
+      url: https://www.youtube.com/watch?v=epphJ75woqM
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642000
+  authors:
+  - affiliation: The University of Texas at Austin
+    name: Angie Zhang
+  - affiliation: The University of Texas at Austin
+    name: Rocita Rana
+  - affiliation: UW Human Centered Design & Engineering / The University of Texas
+      at Austin
+    name: Alexander Boltz
+  - affiliation: University of California, Irvine
+    name: Veena Dubal
+  - affiliation: The University of Texas at Austin
+    name: Min Kyung Lee
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 146997
+  importedId: chi24a-1034
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156155
+  source: PCS
+  title: 'Data Probes as Boundary Objects for Technology Policy Design: Demystifying
+    Technology for Policymakers and Aligning Stakeholder Objectives in Rideshare Gig
+    Work'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: Designing Accessible Obfuscation Support for Blind Individuals’ Visual
+        Privacy Management
+      type: video
+      url: https://www.youtube.com/watch?v=asKTBNtNuSc
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642713
+  authors:
+  - affiliation: UW Human Centered Design & Engineering
+    name: Lotus Zhang
+  - affiliation: UW Human Centered Design & Engineering
+    name: Abigale Stangl
+  - affiliation: University of Illinois Urbana-Champaign
+    name: Tanusree Sharma
+  - affiliation: University of Colorado
+    name: Yu-Yun Tseng
+  - affiliation: University of California, Santa Cruz
+    name: Inan Xu
+  - affiliation: University of Colorado
+    name: Danna Gurari
+  - affiliation: University of Illinois Urbana-Champaign
+    name: Yang Wang
+  - affiliation: UW Human Centered Design & Engineering
+    name: Leah Findlater
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147347
+  importedId: chi24a-5151
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156054
+  source: PCS
+  title: Designing Accessible Obfuscation Support for Blind Individuals' Visual Privacy
+    Management
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: Designing Communication Feedback Systems To Reduce Healthcare Providers’
+        Implicit Biases In Patient Encounters
+      type: video
+      url: https://www.youtube.com/watch?v=x6mRZ7a_Glg
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642756
+  authors:
+  - affiliation: UW Information School
+    name: Emily Bascom
+  - affiliation: UW Biomedical Informatics and Medical Education
+    name: Reggie Casanova-Perez
+  - affiliation: University of California, San Diego
+    name: Kelly Tobar
+  - affiliation: University of California, San Diego
+    name: Manas Satish Bedmutha
+  - affiliation: University of California, San Diego
+    name: Harshini Ramaswamy
+  - affiliation: UW Information School
+    name: Wanda Pratt
+  - affiliation: UW Biomedical Informatics and Medical Education
+    name: Janice Sabin
+  - affiliation: UW Medicine
+    name: Brian Wood
+  - affiliation: University of California, San Diego
+    name: Nadir Weibel
+  - affiliation: UW Biomedical Informatics and Medical Education
+    name: Andrea Hartzler
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147797
+  importedId: chi24a-1291
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156119
+  source: PCS
+  title: Designing Communication Feedback Systems to Reduce Healthcare Providers'
+    Implicit Biases in Patient Encounters
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'DiaryMate: Understanding User Perceptions and Experience in Human-AI
+        Collaboration for Personal Journaling'
+      type: video
+      url: https://www.youtube.com/watch?v=kSkZiEvPxyw
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642693
+  authors:
+  - affiliation: KAIST
+    name: Taewan Kim
+  - affiliation: UW Human Centered Design & Engineering
+    name: Donghoon Shin
+  - affiliation: Naver
+    name: Young-Ho Kim
+  - affiliation: KAIST
+    name: Hwajung Hong
+  bestpaper: false
+  durationOverride: 500
+  eventIds: []
+  honorablemention: false
+  id: 148343
+  importedId: chi24a-5330
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156386
+  source: PCS
+  title: 'DiaryMate: Understanding User Perceptions and Experience in Human-AI Collaboration
+    for Personal Journaling'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'eKichabi v2: Designing and Scaling a Dual-Platform Technology in Rural
+        Tanzania'
+      type: video
+      url: https://www.youtube.com/watch?v=qh7gS5xBmJc
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642099
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Ananditha Raghunath
+  - affiliation: UW Computer Science & Engineering
+    name: Alexander Le Metzger
+  - affiliation: UW Computer Science & Engineering
+    name: Hans Easton
+  - affiliation: UW Computer Science & Engineering
+    name: XunMei Liu
+  - affiliation: UW Computer Science & Engineering
+    name: Fanchong Wang
+  - affiliation: UW Computer Science & Engineering
+    name: Yunqi Wang
+  - affiliation: UW Computer Science & Engineering
+    name: Yunwei Zhao
+  - affiliation: Institute of Rural Development Planning
+    name: Hosea Mpogole
+  - affiliation: UW Computer Science & Engineering
+    name: Richard Anderson
+  bestpaper: false
+  durationOverride: 500
+  eventIds: []
+  honorablemention: false
+  id: 147861
+  importedId: chi24a-5695
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156384
+  source: PCS
+  title: 'eKichabi V2: Designing and Scaling a Dual-Platform Technology in Rural Tanzania'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Facilitating Self-Guided Mental Health Interventions Through Human-Language
+        Model Interaction: A Case Study of Cognitive Restructuring'
+      type: video
+      url: https://www.youtube.com/watch?v=S307McA5Xfo
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642761
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Ashish Sharma
+  - affiliation: Mental Health America
+    name: Kevin Rushton
+  - affiliation: UW Computer Science & Engineering
+    name: Inna Wanyin Lin
+  - affiliation: Mental Health America
+    name: Theresa Nguyen
+  - affiliation: UW Computer Science & Engineering
+    name: Tim Althoff
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147699
+  importedId: chi24a-8774
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156129
+  source: PCS
+  title: 'Facilitating Self-Guided Mental Health Interventions Through Human-Language
+    Model Interaction: A Case Study of Cognitive Restructuring'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'From Concept to Community: Unpacking the Work of Designing Educational
+        and Activist Toolkits'
+      type: video
+      url: https://www.youtube.com/watch?v=pFqujH4iiqk
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642681
+  authors:
+  - affiliation: The University of Texas at Austin
+    name: Tamar Wilner
+  - affiliation: The University of Texas at Austin
+    name: Krishna Akhil Kumar Adavi
+  - affiliation: The University of Texas at Austin
+    name: Sreehana Mandava
+  - affiliation: The University of Texas at Austin
+    name: Ayesha Bhimdiwala
+  - affiliation: The University of Texas at Austin
+    name: Hana Frluckaj
+  - affiliation: UW Human Centered Design & Engineering
+    name: Jennifer Turns
+  - affiliation: The University of Texas at Austin
+    name: Ahmer Arif
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147784
+  importedId: chi24a-6998
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156169
+  source: PCS
+  title: 'From Concept to Community: Unpacking the Work of Designing Educational and
+    Activist Toolkits'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'From Paper to Card: Transforming Design Implications with Generative
+        AI'
+      type: video
+      url: https://www.youtube.com/watch?v=SIMd-79PYHo
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642266
+  authors:
+  - affiliation: UW Human Centered Design & Engineering
+    name: Donghoon Shin
+  - affiliation: UW Information School / Allen Institute for Artificial Intelligence
+    name: Lucy Lu Wang
+  - affiliation: UW Human Centered Design & Engineering
+    name: Gary Hsieh
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147713
+  importedId: chi24a-8798
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156159
+  source: PCS
+  title: 'From Paper to Card: Transforming Design Implications With Generative AI'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'GazePointAR: A Context-Aware Multimodal Voice Assistant for Pronoun
+        Disambiguation in Wearable Augmented Reality'
+      type: video
+      url: https://www.youtube.com/watch?v=HqONUCJM6Zg
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'GazePointAR: A Context-Aware Multimodal Voice Assistant for Pronoun
+        Disambiguation in Wearable Augmented Reality'
+      type: video
+      url: https://www.youtube.com/watch?v=sH_JA9x2slo
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642230
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Jaewook Lee
+  - affiliation: UW Computer Science & Engineering
+    name: Jun Wang
+  - affiliation: UW Linguistics
+    name: Elizabeth Brown
+  - affiliation: UW Applied and Computational Mathematical Sciences
+    name: Liam Chu
+  - affiliation: University of Illinois Urbana-Champaign
+    name: Sebastian S Rodriguez
+  - affiliation: UW Computer Science & Engineering
+    name: Jon E Froehlich
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147184
+  importedId: chi24a-1603
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156013
+  source: PCS
+  title: 'GazePointAR: A Context-Aware Multimodal Voice Assistant for Pronoun Disambiguation
+    in Wearable Augmented Reality'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Griot-Style Methodology: Longitudinal Study of Navigating Design With
+        Unwritten Stories'
+      type: video
+      url: https://www.youtube.com/watch?v=5phLDmWL3j4
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642682
+  authors:
+  - affiliation: UW Information School
+    name: Lindah Kotut
+  - affiliation: Virginia Tech
+    name: Neelma Bhatti
+  - affiliation: Virginia Tech
+    name: Taha Hassan
+  - affiliation: Virginia Tech
+    name: Derek Haqq
+  - affiliation: Virginia Tech
+    name: Morva Saaty
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147144
+  importedId: chi24a-3412
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156048
+  source: PCS
+  title: 'Griot-Style Methodology: Longitudinal Study of Navigating Design With Unwritten
+    Stories'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: How Do Analysts Understand and Verify AI-Assisted Data Analyses?
+      type: video
+      url: https://www.youtube.com/watch?v=iMR_mpKAYYw
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: How Do Analysts Understand and Verify AI-Assisted Data Analyses?
+      type: video
+      url: https://www.youtube.com/watch?v=xnG8MGjHLVw
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642497
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Ken Gu
+  - affiliation: UW Human Centered Design & Engineering
+    name: Ruoxi Shang
+  - affiliation: UW Computer Science & Engineering
+    name: Tim Althoff
+  - affiliation: Microsoft
+    name: Chenglong Wang
+  - affiliation: Microsoft
+    name: Steven M Drucker
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 148040
+  importedId: chi24a-1861
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156131
+  source: PCS
+  title: How Do Analysts Understand and Verify AI-Assisted Data Analyses?
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: How Do Data Analysts Respond to AI Assistance? A Wizard-of-Oz Study
+      type: video
+      url: https://www.youtube.com/watch?v=7WVNpP8Qg10
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: How Do Data Analysts Respond to AI Assistance? A Wizard-of-Oz Study
+      type: video
+      url: https://www.youtube.com/watch?v=gqwLu275RDw
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3641891
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Ken Gu
+  - affiliation: UW Computer Science & Engineering
+    name: Madeleine Grunde-McLaughlin
+  - affiliation: UW Computer Science & Engineering
+    name: Andrew M McNutt
+  - affiliation: UW Computer Science & Engineering
+    name: Jeffrey Heer
+  - affiliation: UW Computer Science & Engineering
+    name: Tim Althoff
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 146787
+  importedId: chi24a-9452
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156028
+  source: PCS
+  title: How Do Data Analysts Respond to AI Assistance? A Wizard-of-Oz Study
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: '“I never realized sidewalks were a big deal”: A Case Study of a Community-Driven
+        Sidewalk Accessibility Assessment using Project Sidewalk'
+      type: video
+      url: https://www.youtube.com/watch?v=uOYujgtQam0
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: '“I never realized sidewalks were a big deal”: A Case Study of a Community-Driven
+        Sidewalk Accessibility Assessment using Project Sidewalk'
+      type: video
+      url: https://www.youtube.com/watch?v=8IHfroNVmqY
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642003
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Chu Li
+  - affiliation: UW Human Centered Design & Engineering
+    name: Katrina Oi Yau Ma
+  - affiliation: UW Computer Science & Engineering
+    name: Michael Saugstad
+  - affiliation: Hackensack Meridian School of Medicine
+    name: Kie Fujii
+  - affiliation: University of Illinois Chicago
+    name: Molly Delaney
+  - affiliation: University of Illinois Chicago
+    name: Yochai Eisenberg
+  - affiliation: University of Illinois Chicago
+    name: Delphine Labbé
+  - affiliation: Easterseals
+    name: Judy L Shanley
+  - affiliation: University of Illinois Chicago
+    name: Devon Snyder
+  - affiliation: Hackensack Meridian School of Medicine
+    name: Florian P P Thomas
+  - affiliation: UW Computer Science & Engineering
+    name: Jon E Froehlich
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147783
+  importedId: chi24a-7845
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156040
+  source: PCS
+  title: '"I Never Realized Sidewalks Were a Big Deal": A Case Study of a Community-Driven
+    Sidewalk Accessibility Assessment Using Project Sidewalk'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'InteractOut: Leveraging Interaction Proxies as Input Manipulation Strategies
+        for Reducing Smartphone Overuse'
+      type: video
+      url: https://www.youtube.com/watch?v=3oU2EcQyeKo
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'InteractOut: Leveraging Interaction Proxies as Input Manipulation Strategies
+        for Reducing Smartphone Overuse'
+      type: video
+      url: https://www.youtube.com/watch?v=ZSXoA4Sjl4A
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642317
+  authors:
+  - affiliation: University of Michigan
+    name: Tao Lu
+  - affiliation: University of Michigan
+    name: Hongxiao Zheng
+  - affiliation: University of Michigan
+    name: Tianying Zhang
+  - affiliation: UW Information School / Massachusetts Institute of Technology
+    name: Xuhai "Orson" Xu
+  - affiliation: University of Michigan
+    name: Anhong Guo
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147313
+  importedId: chi24a-9980
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156108
+  source: PCS
+  title: 'InteractOut: Leveraging Interaction Proxies as Input Manipulation Strategies
+    for Reducing Smartphone Overuse'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: '“It doesn’t tell me anything about how my data is used”: User Perceptions
+        of Data Collection Purposes'
+      type: video
+      url: https://www.youtube.com/watch?v=T82sV_47JfM
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642260
+  authors:
+  - affiliation: Max Planck Institute for Security and Privacy
+    name: Lin Kyi
+  - affiliation: University of Michigan
+    name: Abraham Mhaidli
+  - affiliation: Utrecht University
+    name: Cristiana Teixeira Santos
+  - affiliation: UW Computer Science & Engineering
+    name: Franziska Roesner
+  - affiliation: Max Planck Institute for Security and Privacy
+    name: Asia J Biega
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 148272
+  importedId: chi24a-7956
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156089
+  source: PCS
+  title: '"It Doesn''t Tell Me Anything About How My Data Is Used": User Perceptions
+    of Data Collection Purposes'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'It''s Trying Too Hard To Look Real: Deepfake Moderation Mistakes and
+        Identity-Based Bias'
+      type: video
+      url: https://www.youtube.com/watch?v=KKYy6NyyOqU
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3641999
+  authors:
+  - affiliation: University of Illinois Urbana-Champaign
+    name: Jaron Mink
+  - affiliation: UW Computer Science & Engineering
+    name: Miranda Wei
+  - affiliation: The George Washington University
+    name: Collins W Munyendo
+  - affiliation: Indiana University Bloomington
+    name: Kurt Hugenberg
+  - affiliation: UW Computer Science & Engineering
+    name: Tadayoshi Kohno
+  - affiliation: Georgetown University
+    name: Elissa M Redmiles
+  - affiliation: University of Illinois Urbana-Champaign
+    name: Gang Wang
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147959
+  importedId: chi24a-3655
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156134
+  source: PCS
+  title: 'It''s Trying Too Hard to Look Real: Deepfake Moderation Mistakes and Identity-Based
+    Bias'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Jigsaw: Authoring Immersive Storytelling Experiences with Augmented
+        Reality and Internet of Things'
+      type: video
+      url: https://www.youtube.com/watch?v=uYSYdPZNxlc
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642744
+  authors:
+  - affiliation: University of Michigan
+    name: Lei Zhang
+  - affiliation: University of Waterloo
+    name: Daekun Kim
+  - affiliation: UW Art + Art History + Design
+    name: Youjean Cho
+  - affiliation: Northwestern University
+    name: Ava Robinson
+  - affiliation: Snap
+    name: Yu Jiang Tham
+  - affiliation: Snap
+    name: Rajan Vaish
+  - affiliation: Princeton University
+    name: Andrés Monroy-Hernández
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147993
+  importedId: chi24a-9326
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156098
+  source: PCS
+  title: 'Jigsaw: Authoring Immersive Storytelling Experiences With Augmented Reality
+    and Internet of Things'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'KnitScape: Computational Design and Yarn-Level Simulation of Slip and
+        Tuck Colorwork Knitting Patterns'
+      type: video
+      url: https://www.youtube.com/watch?v=rtc72bLLm6w
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642799
+  authors:
+  - affiliation: UW Human Centered Design & Engineering
+    name: Hannah Twigg-Smith
+  - affiliation: Boston University
+    name: Emily Whiting
+  - affiliation: UW Human Centered Design & Engineering
+    name: Nadya Peek
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147407
+  importedId: chi24a-5549
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156087
+  source: PCS
+  title: 'KnitScape: Computational Design and Yarn-Level Simulation of Slip and Tuck
+    Colorwork Knitting Patterns'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Know Your Audience: The benefits and pitfalls of generating plain language
+        summaries beyond the "general" audience'
+      type: video
+      url: https://www.youtube.com/watch?v=Vrp627Z3SeE
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642289
+  authors:
+  - affiliation: Allen Institute for Artificial Intelligence
+    name: Tal August
+  - affiliation: Allen Institute for Artificial Intelligence
+    name: Kyle Lo
+  - affiliation: UW Computer Science & Engineering / Allen Institute for Artificial
+      Intelligence
+    name: Noah A Smith
+  - affiliation: UW Computer Science & Engineering
+    name: Katharina Reinecke
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147146
+  importedId: chi24a-3894
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156159
+  source: PCS
+  title: 'Know Your Audience: The Benefits and Pitfalls of Generating Plain Language
+    Summaries Beyond the "General" Audience'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'LabelAId: Just-in-time AI Interventions for Improving Human Labeling
+        Quality and Domain Knowledge in Crowdsourcing Systems'
+      type: video
+      url: https://www.youtube.com/watch?v=U8IPWjUagws
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'LabelAId: Just-in-time AI Interventions for Improving Human Labeling
+        Quality and Domain Knowledge in Crowdsourcing Systems'
+      type: video
+      url: https://www.youtube.com/watch?v=NPWkOHt-N2Q
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642089
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Chu Li
+  - affiliation: UW Computer Science & Engineering
+    name: Zhihan Zhang
+  - affiliation: UW Computer Science & Engineering
+    name: Esteban Safranchik
+  - affiliation: UW Computer Science & Engineering
+    name: Michael Saugstad
+  - affiliation: UW Computer Science & Engineering
+    name: Chaitanyashareef Kulkarni
+  - affiliation: University of California, Berkeley
+    name: Xiaoyu Huang
+  - affiliation: UW Computer Science & Engineering / UW Electrical & Computer Engineering
+    name: Shwetak N Patel
+  - affiliation: UW Computer Science & Engineering
+    name: Vikram Iyer
+  - affiliation: UW Computer Science & Engineering
+    name: Tim Althoff
+  - affiliation: UW Computer Science & Engineering
+    name: Jon E Froehlich
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147498
+  importedId: chi24a-4241
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156026
+  source: PCS
+  title: 'LabelAId: Just-in-Time AI Interventions for Improving Human Labeling Quality
+    and Domain Knowledge in Crowdsourcing Systems'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: Mapping the Design Space of Teachable Social Media Feed Experiences
+      type: video
+      url: https://www.youtube.com/watch?v=wXe8L-yZ_XA
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642120
+  authors:
+  - affiliation: UW Human Centered Design & Engineering
+    name: K J Kevin Feng
+  - affiliation: Georgia Institute of Technology
+    name: Xander Koo
+  - affiliation: UW Computer Science & Engineering
+    name: Lawrence Tan
+  - affiliation: Georgia Institute of Technology
+    name: Amy Bruckman
+  - affiliation: UW Human Centered Design & Engineering
+    name: David W McDonald
+  - affiliation: UW Computer Science & Engineering
+    name: Amy X Zhang
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147899
+  importedId: chi24a-4971
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156151
+  source: PCS
+  title: Mapping the Design Space of Teachable Social Media Feed Experiences
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Marco: Supporting Business Document Workflows via Collection-Centric
+        Information Foraging with Large Language Models'
+      type: video
+      url: https://www.youtube.com/watch?v=72-to4gDsOE
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3641969
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Raymond Fok
+  - affiliation: Adobe
+    name: Nedim Lipka
+  - affiliation: Adobe
+    name: Tong Sun
+  - affiliation: Adobe
+    name: Alexa Siu
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147634
+  importedId: chi24a-8395
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156195
+  source: PCS
+  title: 'Marco: Supporting Business Document Workflows via Collection-Centric Information
+    Foraging With Large Language Models'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'MindShift: Leveraging Large Language Models for Mental-States-Based
+        Problematic Smartphone Use Intervention'
+      type: video
+      url: https://www.youtube.com/watch?v=3DQmtPef494
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'MindShift: Leveraging Large Language Models for Mental-States-Based
+        Problematic Smartphone Use Intervention'
+      type: video
+      url: https://www.youtube.com/watch?v=RA9o3GeatPs
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642790
+  authors:
+  - affiliation: Tsinghua University
+    name: Ruolan Wu
+  - affiliation: Tsinghua University
+    name: Chun Yu
+  - affiliation: Tsinghua University
+    name: Xiaole Pan
+  - affiliation: Tsinghua University
+    name: Yujia Liu
+  - affiliation: Tsinghua University
+    name: Ningning Zhang
+  - affiliation: UW Information School
+    name: Yue Fu
+  - affiliation: Beijing University of Posts and Telecommunications
+    name: Yuhan Wang
+  - affiliation: Tsinghua University
+    name: Zhi Zheng
+  - affiliation: Tsinghua University
+    name: Li Chen
+  - affiliation: Tsinghua University
+    name: Qiaolei Jiang
+  - affiliation: UW Information School / Massachusetts Institute of Technology
+    name: Xuhai "Orson" Xu
+  - affiliation: Tsinghua University
+    name: Yuanchun Shi
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 146884
+  importedId: chi24a-4140
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156109
+  source: PCS
+  title: 'MindShift: Leveraging Large Language Models for Mental-States-Based Problematic
+    Smartphone Use Intervention'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'MoiréWidgets: High-Precision, Passive Tangible Interfaces via Moiré
+        Effect'
+      type: video
+      url: https://www.youtube.com/watch?v=qqjvjyvplzM
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'MoiréWidgets: High-Precision, Passive Tangible Interfaces via Moiré
+        Effect'
+      type: video
+      url: https://www.youtube.com/watch?v=gJzyjY12x-c
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642734
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Daniel Campos Zamora
+  - affiliation: Massachusetts Institute of Technology
+    name: Mustafa Doga Dogan
+  - affiliation: Adobe
+    name: Alexa Siu
+  - affiliation: Adobe
+    name: Eunyee Koh
+  - affiliation: Adobe
+    name: Chang Xiao
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147630
+  importedId: chi24a-3947
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156173
+  source: PCS
+  title: 'MoiréWidgets: High-Precision, Passive Tangible Interfaces via Moiré Effect'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Nothing Like Compilation: How Professional Digital Fabrication Workflows
+        Go Beyond Extruding, Milling, and Machines'
+      type: video
+      url: https://www.youtube.com/watch?v=BrpsQ69Ukn8
+  authors:
+  - affiliation: University of California, Santa Barbara
+    name: Mare Hirsch
+  - affiliation: UW Human Centered Design & Engineering
+    name: Gabrielle Benabdallah
+  - affiliation: University of California, Santa Barbara
+    name: Jennifer Jacobs
+  - affiliation: UW Human Centered Design & Engineering
+    name: Nadya Peek
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 156318
+  importedId: chi24g-1063
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156047
+  source: PCS
+  title: 'Nothing Like Compilation: How Professional Digital Fabrication Workflows
+    Go Beyond Extruding, Milling, and Machines'
+  trackId: 12614
+  typeId: 13341
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'PaperPlain: Making Medical Research Papers Approachable to Healthcare
+        Consumers with Natural Language Processing'
+      type: video
+      url: https://www.youtube.com/watch?v=zjQJO4Qga-E
+  authors:
+  - affiliation: Allen Institute for Artificial Intelligence
+    name: Tal August
+  - affiliation: UW Information School / Allen Institute for Artificial Intelligence
+    name: Lucy Lu Wang
+  - affiliation: Allen Institute for Artificial Intelligence
+    name: Jonathan Bragg
+  - affiliation: University of California, Berkeley
+    name: Marti Hearst
+  - affiliation: University of Pennsylvania
+    name: Andrew Head
+  - affiliation: Allen Institute for Artificial Intelligence
+    name: Kyle Lo
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 150900
+  importedId: chi24g-1027
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156043
+  source: PCS
+  title: 'PaperPlain: Making Medical Research Papers Approachable to Healthcare Consumers
+    With Natural Language Processing'
+  trackId: 12614
+  typeId: 13341
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Pika: Empowering Non-Programmers to Author Executable Governance Policies
+        in Online Communities'
+      type: video
+      url: https://www.youtube.com/watch?v=-YiQRDvLIe4
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642012
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Leijie Wang
+  - affiliation: Simon Fraser University
+    name: Nicholas Vincent
+  - affiliation: Julija.Works
+    name: Julija Rukanskaitė
+  - affiliation: UW Computer Science & Engineering
+    name: Amy X Zhang
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 146949
+  importedId: chi24a-5060
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156156
+  source: PCS
+  title: 'Pika: Empowering Non-Programmers to Author Executable Governance Policies
+    in Online Communities'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Playing on Hard Mode: Accessibility, Difficulty and Joy in Video Game
+        Adoption for Gamers with Disabilities'
+      type: video
+      url: https://www.youtube.com/watch?v=RcsooMlIr5o
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642804
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Jesse J Martinez
+  - affiliation: UW Computer Science & Engineering
+    name: Jon E Froehlich
+  - affiliation: UW Computer Science & Engineering
+    name: James Fogarty
+  bestpaper: false
+  durationOverride: 500
+  eventIds: []
+  honorablemention: false
+  id: 146616
+  importedId: chi24a-2891
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156380
+  source: PCS
+  title: 'Playing on Hard Mode: Accessibility, Difficulty and Joy in Video Game Adoption
+    for Gamers With Disabilities'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: Privacy Concerns of Student Data Shared with Instructors in an Online
+        Learning Management System
+      type: video
+      url: https://www.youtube.com/watch?v=lrrRavPNsr8
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642914
+  authors:
+  - affiliation: UW Industrial & Systems Engineering
+    name: Monika Blue Kwapisz
+  - affiliation: Bellevue High School
+    name: Avanya Kohli
+  - affiliation: UW Industrial & Systems Engineering
+    name: Prashanth Rajivan
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 146719
+  importedId: chi24a-9094
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156187
+  source: PCS
+  title: Privacy Concerns of Student Data Shared With Instructors in an Online Learning
+    Management System
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'RASSAR: Room Accessibility and Safety Scanning in Augmented Reality'
+      type: video
+      url: https://www.youtube.com/watch?v=qrsOyKVZVmk
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'RASSAR: Room Accessibility and Safety Scanning in Augmented Reality'
+      type: video
+      url: https://www.youtube.com/watch?v=8Oxf75Bzhu8
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642140
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Xia Su
+  - affiliation: UW Computer Science & Engineering
+    name: Kaiming Cheng
+  - affiliation: UW Computer Science & Engineering
+    name: Han Zhang
+  - affiliation: UW Computer Science & Engineering
+    name: Jaewook Lee
+  - affiliation: Tsinghua University
+    name: Qiaochu Liu
+  - affiliation: UW Art + Art History + Design
+    name: Wyatt Olson
+  - affiliation: UW Computer Science & Engineering
+    name: Jon E Froehlich
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 148045
+  importedId: chi24a-1860
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156040
+  source: PCS
+  title: 'RASSAR: Room Accessibility and Safety Scanning in Augmented Reality'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Sharenting on TikTok: Exploring Parental Sharing Behaviors and the Discourse
+        Around Children''s Online Privacy'
+      type: video
+      url: https://www.youtube.com/watch?v=jgMNCIjoxh8
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642447
+  authors:
+  - affiliation: University of Wisconsin-Madison
+    name: Sophie Stephenson
+  - affiliation: Indiana University Bloomington
+    name: Christopher Nathaniel Page
+  - affiliation: UW Computer Science & Engineering
+    name: Miranda Wei
+  - affiliation: Indiana University Bloomington
+    name: Apu Kapadia
+  - affiliation: UW Computer Science & Engineering
+    name: Franziska Roesner
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147746
+  importedId: chi24a-5290
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156147
+  source: PCS
+  title: 'Sharenting on TikTok: Exploring Parental Sharing Behaviors and the Discourse
+    Around Children''s Online Privacy'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Social Justice in HCI: A Systematic Literature Review'
+      type: video
+      url: https://www.youtube.com/watch?v=XMnUDKRpfyA
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642704
+  authors:
+  - affiliation: UW Information School
+    name: Ishita Chordia
+  - affiliation: University of California, Santa Cruz
+    name: Leya Breanna Baltaxe-Admony
+  - affiliation: Georgia Institute of Technology
+    name: Ashley Boone
+  - affiliation: Georgia Institute of Technology
+    name: Alyssa Sheehan
+  - affiliation: Indiana University–Purdue University Indianapolis
+    name: Lynn Dombrowski
+  - affiliation: Northeastern University
+    name: Christopher A Le Dantec
+  - affiliation: University of California, Santa Cruz
+    name: Kathryn E Ringland
+  - affiliation: The University of Texas at Austin
+    name: Angela D. R. Smith
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 148051
+  importedId: chi24a-2703
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156526
+  source: PCS
+  title: 'Social Justice in HCI: A Systematic Literature Review'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Tandem: Reproducible Digital Fabrication Workflows as Multimodal Programs'
+      type: video
+      url: https://www.youtube.com/watch?v=HKVrpTaOLkw
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Tandem: Reproducible Digital Fabrication Workflows as Multimodal Programs'
+      type: video
+      url: https://www.youtube.com/watch?v=JCkHQ-GEmgQ
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642751
+  authors:
+  - affiliation: UW Computer Science & Engineering
+    name: Jasper Tran O'Leary
+  - affiliation: UW Computer Science & Engineering
+    name: Thrisha Ramesh
+  - affiliation: UW Computer Science & Engineering
+    name: Octi Zhang
+  - affiliation: UW Human Centered Design & Engineering
+    name: Nadya Peek
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 146800
+  importedId: chi24a-2852
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156174
+  source: PCS
+  title: 'Tandem: Reproducible Digital Fabrication Workflows as Multimodal Programs'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Technical Mentality: Principles for HCI Research and Practice'
+      type: video
+      url: https://www.youtube.com/watch?v=xyWWkQp3xLs
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642720
+  authors:
+  - affiliation: UW Human Centered Design & Engineering
+    name: Gabrielle Benabdallah
+  - affiliation: UW Human Centered Design & Engineering
+    name: Nadya Peek
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 148115
+  importedId: chi24a-9372
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156021
+  source: PCS
+  title: 'Technical Mentality: Principles for HCI Research and Practice'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: '“They only care to show us the wheelchair”: disability representation
+        in text-to-image AI models'
+      type: video
+      url: https://www.youtube.com/watch?v=gIvRRJOifi8
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642166
+  authors:
+  - affiliation: UW Computer Science & Engineering / Google
+    name: Avery Mack
+  - affiliation: Google
+    name: Rida Qadri
+  - affiliation: Google
+    name: Remi Denton
+  - affiliation: Google
+    name: Shaun K Kane
+  - affiliation: Google
+    name: Cynthia L Bennett
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147662
+  importedId: chi24a-3956
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156072
+  source: PCS
+  title: '"They Only Care to Show Us the Wheelchair": Disability Representation in
+    Text-to-Image AI Models'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: '"Things on the Ground are Different": Utility, Survival and Ethics in
+        Multi-Device Ownership and Smartphone Sharing'
+      type: video
+      url: https://www.youtube.com/watch?v=BhKHtBTK9Kg
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642874
+  authors:
+  - affiliation: UW Information School
+    name: Lindah Kotut
+  - affiliation: UW Information School
+    name: Hummd Alikhan
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 148190
+  importedId: chi24a-7107
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156085
+  source: PCS
+  title: '"Things on the Ground Are Different": Utility, Survival and Ethics in Multi-Device
+    Ownership and Smartphone Sharing'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Time2Stop: Adaptive and Explainable Human-AI Loop for Smartphone Overuse
+        Intervention'
+      type: video
+      url: https://www.youtube.com/watch?v=GUcXKyjAxNg
+    Video Preview:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Time2Stop: Adaptive and Explainable Human-AI Loop for Smartphone Overuse
+        Intervention'
+      type: video
+      url: https://www.youtube.com/watch?v=QChlTKPE3ZY
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642747
+  authors:
+  - affiliation: KAIST
+    name: Adiba Orzikulova
+  - affiliation: Beijing University of Posts and Telecommunications
+    name: Han Xiao
+  - affiliation: Tsinghua University
+    name: Zhipeng Li
+  - affiliation: Carnegie Mellon University
+    name: Yukang Yan
+  - affiliation: Tsinghua University
+    name: Yuntao Wang
+  - affiliation: Tsinghua University
+    name: Yuanchun Shi
+  - affiliation: Massachusetts Institute of Technology
+    name: Marzyeh Ghassemi
+  - affiliation: KAIST
+    name: Sung-Ju Lee
+  - affiliation: UW Information School
+    name: Anind K Dey
+  - affiliation: UW Information School / Massachusetts Institute of Technology
+    name: Xuhai "Orson" Xu
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 146643
+  importedId: chi24a-1586
+  isBreak: false
+  recognitionIds:
+  - 10084
+  sessionIds:
+  - 156109
+  source: PCS
+  title: 'Time2Stop: Adaptive and Explainable Human-AI Loop for Smartphone Overuse
+    Intervention'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'Viblio: Introducing Credibility Signals and Citations to Video-Sharing
+        Platforms'
+      type: video
+      url: https://www.youtube.com/watch?v=8ogHggJtj1I
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642490
+  authors:
+  - affiliation: University of Notre Dame
+    name: Emelia May Hughes
+  - affiliation: UW Computer Science & Engineering
+    name: Renee Wang
+  - affiliation: Seattle University
+    name: Prerna Juneja
+  - affiliation: University of California, San Diego
+    name: Tony W Li
+  - affiliation: UW Information School
+    name: Tanushree Mitra
+  - affiliation: UW Computer Science & Engineering
+    name: Amy X Zhang
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 148085
+  importedId: chi24a-7170
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156192
+  source: PCS
+  title: 'Viblio: Introducing Credibility Signals and Citations to Video-Sharing Platforms'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: '"We Have No Security Concerns": Understanding the Privacy-Security Nexus
+        in Telehealth for Audiologists and Speech-Language Pathologists'
+      type: video
+      url: https://www.youtube.com/watch?v=_GhWcL5Nh5M
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642208
+  authors:
+  - affiliation: University of Denver
+    name: Faiza Tazi
+  - affiliation: Designer Security
+    name: Josiah Dykstra
+  - affiliation: UW Industrial & Systems Engineering
+    name: Prashanth Rajivan
+  - affiliation: University of Denver
+    name: Sanchari Das
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147706
+  importedId: chi24a-3070
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156053
+  source: PCS
+  title: '"We Have No Security Concerns": Understanding the Privacy-Security Nexus
+    in Telehealth for Audiologists and Speech-Language Pathologists'
+  trackId: 12606
+  typeId: 13269
+- addons:
+    Presentation Video:
+      hideBeforeConference: false
+      hideFromPublicJson: false
+      isAvailableForRegisteredMembersOnly: false
+      title: 'What to the Muslim is Internet search: Digital Borders as Barriers to
+        Information'
+      type: video
+      url: https://www.youtube.com/watch?v=fQPP6b_7oxg
+    doi:
+      hideBeforeConference: true
+      type: doiLink
+      url: doi.org/10.1145/3613904.3642770
+  authors:
+  - affiliation: UW Human Centered Design & Engineering
+    name: Lubna Razaq
+  - affiliation: UW Human Centered Design & Engineering
+    name: Sucheta Ghoshal
+  bestpaper: false
+  eventIds: []
+  honorablemention: false
+  id: 147363
+  importedId: chi24a-9543
+  isBreak: false
+  recognitionIds: []
+  sessionIds:
+  - 156132
+  source: PCS
+  title: 'What to the Muslim Is Internet Search: Digital Borders as Barriers to Information'
+  trackId: 12606
+  typeId: 13269
