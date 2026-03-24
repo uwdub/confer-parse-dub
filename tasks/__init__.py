@@ -3,9 +3,9 @@
 from invoke.collection import Collection
 
 import confer_parse_dub.tasks.conference
-import confer_parse_dub.tasks.format
-import confer_parse_dub.tasks.lint
-import confer_parse_dub.tasks.test
+import fogies.tasks.format
+import fogies.tasks.lint
+import fogies.tasks.test
 from confer_parse_dub.io.conferences_io import load_conferences
 
 # Root namespace for tasks.
@@ -24,6 +24,6 @@ for _conf in _conferences:
         )
 
 # Development tasks.
-namespace.add_task(confer_parse_dub.tasks.format.get_task_format())
-namespace.add_task(confer_parse_dub.tasks.lint.get_task_lint())
-namespace.add_task(confer_parse_dub.tasks.test.get_task_test())
+namespace.add_task(fogies.tasks.format.get_task_format())
+namespace.add_task(fogies.tasks.lint.get_task_lint())
+namespace.add_task(fogies.tasks.test.get_task_test())
