@@ -33,9 +33,8 @@ def test_active_conferences_registered() -> None:
     """Each active conference in conferences.yml must appear as a task collection."""
     import tasks
     from confer_parse_dub.io.conferences_io import load_conferences
-    from paths import PATH_DATA
 
-    conferences = load_conferences(PATH_DATA / "conferences.yml")
+    conferences = load_conferences()
     active = [c for c in conferences if not c.complete]
 
     collections = set[str](
