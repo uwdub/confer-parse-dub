@@ -1,6 +1,8 @@
 """Raw Pydantic models for the SIGCHI program JSON (schemeVersion 7)."""
 
-from pydantic import BaseModel, model_validator
+from typing import Literal
+
+from pydantic import BaseModel
 
 
 class RawAffiliationInput(BaseModel):
@@ -52,21 +54,8 @@ class RawTrackInput(BaseModel):
     name: str = ""
 
 
-SUPPORTED_SCHEME_VERSION = 7
-
-
 class RawProgramInput(BaseModel):
-    schemeVersion: int
+    schemeVersion: Literal[7]
     tracks: list[RawTrackInput] = []
     contents: list[RawContentInput] = []
     people: list[RawPersonInput] = []
-
-    @model_validator(mode="after")
-    def check_scheme_version(self) -> "RawProgramInput":
-        if self.schemeVersion != SUPPORTED_SCHEME_VERSION:
-            raise ValueError(
-                "Unsupported schemeVersion {!r} (expected {!r}).".format(
-                    self.schemeVersion, SUPPORTED_SCHEME_VERSION
-                )
-            )
-        return self
