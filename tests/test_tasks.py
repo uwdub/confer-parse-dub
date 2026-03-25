@@ -6,21 +6,16 @@ from typing import cast
 from invoke.collection import Collection
 
 
-def test_namespace_loads() -> None:
+def test_namespace_has_required_tasks() -> None:
     """
-    Importing the tasks package must succeed without errors.
+    Importing tasks must succeed and the root namespace must expose core tasks.
 
-    This catches syntax errors, bad imports, broken conference registry reads,
-    and any other problem that would cause 'invoke -l' to crash.
+    Catches syntax errors, bad imports, broken conference registry reads, and
+    anything else that would make 'invoke -l' unusable.
     """
     import tasks
 
     assert isinstance(tasks.namespace, Collection)
-
-
-def test_namespace_has_required_tasks() -> None:
-    """Core tasks that must always be present."""
-    import tasks
 
     task_names = set[str](tasks.namespace.task_names.keys())
     assert "conferences" in task_names
