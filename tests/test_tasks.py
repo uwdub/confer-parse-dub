@@ -36,6 +36,6 @@ def test_active_conferences_registered() -> None:
         cast(Iterable[str], tasks.namespace.collections.keys()),
     )
     for conf in active:
-        assert conf.name in collections, (
-            "Active conference '{}' not found as a task collection".format(conf.name)
-        )
+        assert (
+            conf.name in collections
+        ), "Active conference '{}' not found as a task collection".format(conf.name)

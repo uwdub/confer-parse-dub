@@ -1,11 +1,11 @@
 """Invoke tasks for this project."""
 
-from invoke.collection import Collection
-
-import confer_parse_dub.tasks.conference
 import fogies.tasks.format
 import fogies.tasks.lint
 import fogies.tasks.test
+from invoke.collection import Collection
+
+import confer_parse_dub.tasks.conference
 from confer_parse_dub.io.conferences_io import load_conferences
 
 # Root namespace for tasks.
