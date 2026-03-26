@@ -40,7 +40,7 @@ def find_all_matching_affiliations(
             matches_found.append(affil_entry)
             continue
 
-        for match_rule in affil_entry.match:
+        for match_rule in affil_entry.match + affil_entry.match_for_name:
             match_current = True
 
             if match_rule.name is not None:

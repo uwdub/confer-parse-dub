@@ -125,6 +125,7 @@ class RejectRule(CommentedModel):
 class AffiliationEntry(CommentedModel):
     canonical: str
     match: list[AffiliationMatchRule] = []
+    match_for_name: list[AffiliationMatchRule] = []
     reject: list[RejectRule] = []
 
     @override

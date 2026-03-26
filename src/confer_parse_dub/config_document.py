@@ -354,7 +354,11 @@ class ConfigDocument:
                 if internal
                 else config.external_affiliations
             )
-            target.append(AffiliationEntry(canonical=canonical, match=match_rules))
+            named = [r for r in match_rules if r.name is not None]
+            unnamed = [r for r in match_rules if r.name is None]
+            target.append(
+                AffiliationEntry(canonical=canonical, match=unnamed, match_for_name=named)
+            )
 
         self.apply(_mutate, papers)
 
@@ -369,7 +373,10 @@ class ConfigDocument:
                 config.internal_affiliations + config.external_affiliations
             ):
                 if entry.canonical == canonical:
-                    entry.match.append(match_rule)
+                    if match_rule.name is not None:
+                        entry.match_for_name.append(match_rule)
+                    else:
+                        entry.match.append(match_rule)
                     return
             raise ConfigError(f"Affiliation canonical not found: {canonical!r}")
 
