@@ -17,6 +17,7 @@ from invoke.context import Context
 from invoke.tasks import Task, task
 from confer_parse_dub_paths import PATH_DATA
 
+from confer_parse_dub.browser_companion import BrowserCompanion
 from confer_parse_dub.exceptions import QuitRequested
 from confer_parse_dub.io.conferences_io import load_conferences, save_conferences
 from confer_parse_dub.config_document import ConfigDocument
@@ -78,6 +79,7 @@ def get_collection_for_conference(conf: ConferenceEntry) -> Collection:
     def task_run(
         context: Context,
         review_skipped: bool = False,
+        no_browser: bool = False,
     ) -> None:
         """
         Run the full interactive pipeline for this conference.
@@ -87,8 +89,9 @@ def get_collection_for_conference(conf: ConferenceEntry) -> Collection:
 
         Args:
             review_skipped: Re-prompt for items that were previously skipped.
+            no_browser: Disable the browser companion window.
         """
-        run_pipeline(conf, review_skipped=review_skipped)
+        run_pipeline(conf, review_skipped=review_skipped, browser=not no_browser)
 
     task_run.__doc__ = "Run analysis for {}.".format(conf.label)
 
@@ -102,7 +105,11 @@ def get_collection_for_conference(conf: ConferenceEntry) -> Collection:
 # ---------------------------------------------------------------------------
 
 
-def run_pipeline(conf: ConferenceEntry, review_skipped: bool = False) -> None:
+def run_pipeline(
+    conf: ConferenceEntry,
+    review_skipped: bool = False,
+    browser: bool = True,
+) -> None:
     """Execute the full processing pipeline for a conference."""
     path_config = pathlib.Path(conf.config)
     path_state = path_config.parent / "state.json"
@@ -114,6 +121,7 @@ def run_pipeline(conf: ConferenceEntry, review_skipped: bool = False) -> None:
 
     config_doc = ConfigDocument(path_config)
     state = load_state(path_state)
+    companion = BrowserCompanion() if browser else None
 
     context = RunContext(
         config_doc=config_doc,
@@ -121,11 +129,16 @@ def run_pipeline(conf: ConferenceEntry, review_skipped: bool = False) -> None:
         path_state=path_state,
         ui=CliUI(),
         review_skipped=review_skipped,
+        browser=companion,
     )
 
-    completed = run_steps(
-        [LoadPapersStep(conf.label, str(path_config))], context
-    )
+    try:
+        completed = run_steps(
+            [LoadPapersStep(conf.label, str(path_config))], context
+        )
+    finally:
+        if companion is not None:
+            companion.close()
 
     if not completed:
         print()

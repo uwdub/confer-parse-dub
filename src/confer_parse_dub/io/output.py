@@ -54,7 +54,7 @@ def _paper_to_dict(paper: ParsedPaper) -> dict[str, Any]:
         "authors": [
             {
                 "name": author.name,
-                "affiliation": author.canonical_affiliation or "",
+                "affiliation": " / ".join(author.canonical_affiliations),
             }
             for author in paper.authors
         ],

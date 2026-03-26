@@ -54,6 +54,22 @@ class InstitutionRule(CommentedModel):
         return self.name
 
 
+class ManualSplitRule(CommentedModel):
+    """
+    An explicit split of one affiliation value into named parts.
+
+    Used when no delimiter character in the value indicates a split is wanted,
+    so the user manually specifies the resulting parts.
+    """
+
+    name: str
+    parts: list[str]
+
+    @override
+    def sort_key(self) -> Any:
+        return self.name
+
+
 class DslRule(CommentedModel):
     """A DSL value explicitly included or excluded during affiliation review."""
 
@@ -123,8 +139,14 @@ class Config(BaseModel):
     query: list[QueryRule] = []
     include_institution: list[InstitutionRule] = []
     exclude_institution: list[InstitutionRule] = []
+    split_institution: list[InstitutionRule] = []
+    no_split_institution: list[InstitutionRule] = []
+    manual_split_institution: list[ManualSplitRule] = []
     include_dsl: list[DslRule] = []
     exclude_dsl: list[DslRule] = []
+    split_dsl: list[DslRule] = []
+    no_split_dsl: list[DslRule] = []
+    manual_split_dsl: list[ManualSplitRule] = []
     include_paper: list[PaperRule] = []
     exclude_paper: list[PaperRule] = []
     names: list[NameEntry] = []

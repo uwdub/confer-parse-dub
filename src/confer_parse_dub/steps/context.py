@@ -8,6 +8,7 @@ from dataclasses import dataclass, field
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
+    from confer_parse_dub.browser_companion import BrowserCompanion
     from confer_parse_dub.config_document import ConfigDocument
     from confer_parse_dub.models.paper import ParsedPaper
     from confer_parse_dub.models.state import ProcessingState
@@ -68,6 +69,7 @@ class RunContext:
     papers: list[ParsedPaper] = field(default_factory=list)
     total_loaded: int = 0  # set by LoadPapersStep, used by FilterSummaryStep
     review_skipped: bool = False
+    browser: BrowserCompanion | None = None
 
 
 class Step(ABC):

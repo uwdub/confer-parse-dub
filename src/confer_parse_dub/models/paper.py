@@ -15,7 +15,7 @@ class ParsedAuthor(BaseModel):
     name: str
     affiliations: list[Affiliation] = []
     # Set during affiliation normalization.
-    canonical_affiliation: str | None = None
+    canonical_affiliations: list[str] = []
 
 
 class ParsedPaper(BaseModel):

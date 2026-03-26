@@ -77,6 +77,20 @@ def find_all_matching_affiliations(
     ]
 
 
+def is_internal_affiliation(config: Config, affiliations: list[Affiliation]) -> bool:
+    """
+    Return True if any affiliation institution matches an include_institution rule.
+
+    This mirrors the affiliation-review classification: institutions accepted
+    during ReviewAffiliationsStep land in include_institution, so a match here
+    means the affiliation is at our institution.  Everything else is external.
+    """
+    included = {r.name.casefold() for r in config.include_institution}
+    return any(
+        a.institution and a.institution.casefold() in included for a in affiliations
+    )
+
+
 def find_canonical_affiliation(
     config: Config,
     author_name: str,

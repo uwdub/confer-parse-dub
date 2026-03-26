@@ -31,8 +31,5 @@ class ProcessingState(BaseModel):
     skipped_names: list[str] = []
     # Keys (author_name::affiliation_fingerprint) explicitly skipped by the user.
     skipped_affiliations: list[str] = []
-    # Keys auto-skipped because the author listed more than one affiliation.
-    # These are not re-queued by --review-skipped and need dedicated follow-up.
-    skipped_multi_affiliations: list[str] = []
     # Ordered log of decisions made, used for undo.
     history: list[Decision] = []

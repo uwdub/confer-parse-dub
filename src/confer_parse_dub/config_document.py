@@ -16,6 +16,7 @@ from confer_parse_dub.models.config import (
     Config,
     DslRule,
     InstitutionRule,
+    ManualSplitRule,
     NameEntry,
     NameMatch,
     PaperRule,
@@ -113,24 +114,60 @@ def validate_config(
             )
         canonical_affils[entry.canonical] = "external_affiliations"
 
-    # --- include/exclude institution ---
+    # --- include/exclude/split/no_split/manual_split institution ---
     include_inst = [r.name for r in config.include_institution]
     exclude_inst = [r.name for r in config.exclude_institution]
+    split_inst = [r.name for r in config.split_institution]
+    no_split_inst = [r.name for r in config.no_split_institution]
+    manual_split_inst = [r.name for r in config.manual_split_institution]
     _check_unique_strs("include_institution", include_inst)
     _check_unique_strs("exclude_institution", exclude_inst)
+    _check_unique_strs("split_institution", split_inst)
+    _check_unique_strs("no_split_institution", no_split_inst)
+    _check_unique_strs("manual_split_institution", manual_split_inst)
     _check_disjoint_strs(
         "include_institution", set(include_inst),
         "exclude_institution", set(exclude_inst),
     )
+    _check_disjoint_strs(
+        "split_institution", set(split_inst),
+        "no_split_institution", set(no_split_inst),
+    )
+    _check_disjoint_strs(
+        "manual_split_institution", set(manual_split_inst),
+        "split_institution", set(split_inst),
+    )
+    _check_disjoint_strs(
+        "manual_split_institution", set(manual_split_inst),
+        "no_split_institution", set(no_split_inst),
+    )
 
-    # --- include/exclude dsl ---
+    # --- include/exclude/split/no_split/manual_split dsl ---
     include_dsl = [r.name for r in config.include_dsl]
     exclude_dsl = [r.name for r in config.exclude_dsl]
+    split_dsl = [r.name for r in config.split_dsl]
+    no_split_dsl = [r.name for r in config.no_split_dsl]
+    manual_split_dsl = [r.name for r in config.manual_split_dsl]
     _check_unique_strs("include_dsl", include_dsl)
     _check_unique_strs("exclude_dsl", exclude_dsl)
+    _check_unique_strs("split_dsl", split_dsl)
+    _check_unique_strs("no_split_dsl", no_split_dsl)
+    _check_unique_strs("manual_split_dsl", manual_split_dsl)
     _check_disjoint_strs(
         "include_dsl", set(include_dsl),
         "exclude_dsl", set(exclude_dsl),
+    )
+    _check_disjoint_strs(
+        "split_dsl", set(split_dsl),
+        "no_split_dsl", set(no_split_dsl),
+    )
+    _check_disjoint_strs(
+        "manual_split_dsl", set(manual_split_dsl),
+        "split_dsl", set(split_dsl),
+    )
+    _check_disjoint_strs(
+        "manual_split_dsl", set(manual_split_dsl),
+        "no_split_dsl", set(no_split_dsl),
     )
 
     # --- include/exclude paper ---
@@ -176,21 +213,24 @@ def _validate_against_papers(config: Config, papers: "list[ParsedPaper]") -> Non
                     f"Track {track.id} name mismatch: config has {track.name!r}, data has {actual!r}"
                 )
 
-    # Every (author, affiliations) combination must match at most one canonical.
-    # Deduplicate by affiliation key to avoid redundant checks.
+    # Each individual (author, single-affiliation) combination must match at most
+    # one canonical.  Authors may list multiple affiliations; each is checked
+    # independently because match rules are written per individual affiliation.
     checked: set[str] = set()
     for paper in papers:
         for author in paper.authors:
-            key = affiliation_key(author.name, author.affiliations)
-            if key in checked:
-                continue
-            checked.add(key)
-            matches = find_all_matching_affiliations(config, author.name, author.affiliations)
-            if len(matches) > 1:
-                canonicals = ", ".join(repr(m.canonical) for m in matches)
-                raise ConfigError(
-                    f"Author {author.name!r} matches multiple canonical affiliations: {canonicals}"
-                )
+            for affil in author.affiliations:
+                key = affiliation_key(author.name, [affil])
+                if key in checked:
+                    continue
+                checked.add(key)
+                matches = find_all_matching_affiliations(config, author.name, [affil])
+                if len(matches) > 1:
+                    canonicals = ", ".join(repr(m.canonical) for m in matches)
+                    raise ConfigError(
+                        f"Author {author.name!r} affiliation {affil.institution!r}"
+                        f" matches multiple canonical affiliations: {canonicals}"
+                    )
 
 
 # ---------------------------------------------------------------------------
@@ -382,6 +422,12 @@ class ConfigDocument:
             )
         )
 
+    def add_split_institution(self, name: str) -> None:
+        self.apply(lambda config: config.split_institution.append(InstitutionRule(name=name)))
+
+    def add_no_split_institution(self, name: str) -> None:
+        self.apply(lambda config: config.no_split_institution.append(InstitutionRule(name=name)))
+
     def add_include_dsl(self, name: str, comment: str | None = None) -> None:
         self.apply(
             lambda config: config.include_dsl.append(
@@ -395,6 +441,30 @@ class ConfigDocument:
                 DslRule(name=name, comment=comment)
             )
         )
+
+    def add_split_dsl(self, name: str) -> None:
+        self.apply(lambda config: config.split_dsl.append(DslRule(name=name)))
+
+    def add_no_split_dsl(self, name: str) -> None:
+        self.apply(lambda config: config.no_split_dsl.append(DslRule(name=name)))
+
+    def add_manual_split_institution(
+        self,
+        name: str,
+        parts: list[str],
+        papers: "list[ParsedPaper] | None" = None,
+    ) -> None:
+        rule = ManualSplitRule(name=name, parts=list(parts))
+        self.apply(lambda config: config.manual_split_institution.append(rule), papers)
+
+    def add_manual_split_dsl(
+        self,
+        name: str,
+        parts: list[str],
+        papers: "list[ParsedPaper] | None" = None,
+    ) -> None:
+        rule = ManualSplitRule(name=name, parts=list(parts))
+        self.apply(lambda config: config.manual_split_dsl.append(rule), papers)
 
     def add_include_paper(self, id: int, comment: str | None = None) -> None:
         self.apply(

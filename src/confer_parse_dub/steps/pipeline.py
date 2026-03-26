@@ -21,7 +21,7 @@ class LoadPapersStep(Step):
 
     def execute(self, context: RunContext) -> list[Step]:
         from confer_parse_dub.steps.affiliations import ReviewAffiliationsStep
-        from confer_parse_dub.steps.normalize import NormalizePapersStep
+        from confer_parse_dub.steps.normalize import NormalizePapersStep, ReviewSplitsStep
         from confer_parse_dub.steps.output import CheckOutputStep
         from confer_parse_dub.steps.query import ReviewQueryStep
 
@@ -45,6 +45,7 @@ class LoadPapersStep(Step):
             ReviewQueryStep(),
             ReviewAffiliationsStep(),
             FilterSummaryStep(),
+            ReviewSplitsStep(),
             NormalizePapersStep(),
             CheckOutputStep(),
         ]
@@ -108,9 +109,11 @@ class ApplyMappingsStep(Step):
                 canonical_name = find_canonical_name(config, author.name)
                 if canonical_name is not None:
                     author.name = canonical_name
-                    canonical_affil = find_canonical_affiliation(
-                        config, canonical_name, author.affiliations
-                    )
-                    if canonical_affil is not None:
-                        author.canonical_affiliation = canonical_affil
+                    for affil in author.affiliations:
+                        canonical_affil = find_canonical_affiliation(
+                            config, canonical_name, [affil]
+                        )
+                        if canonical_affil is not None:
+                            if canonical_affil not in author.canonical_affiliations:
+                                author.canonical_affiliations.append(canonical_affil)
         return []
