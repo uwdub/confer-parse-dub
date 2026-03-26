@@ -12,10 +12,15 @@ requires-python = ">=3.14,<4.0"
 [tool.poetry]
 packages = [
     {include = "confer_parse_dub", from = "src"},
-    {include = "paths.py", from = "."},
+    {include = "confer_parse_dub_paths.py", from = "."},
 ]
 
 [tool.poetry.dependencies]
+# ^ allows all minor and patch releases.
+#   Example: ^1.2.3 will match 1.x.x versions >=1.2.3 but <2.0.0.
+# ~ allows only patch releases.
+#   Example: ~1.2.3 will match versions >=1.2.3 but <1.3.0.
+playwright = "^1.58.0"
 pydantic = "^2.12.5"
 questionary = "^2.1.0"
 ruamel-yaml = "^0.18.10"
@@ -26,7 +31,7 @@ titlecase = "^2.4.1"
 #   Example: ^1.2.3 will match 1.x.x versions >=1.2.3 but <2.0.0.
 # ~ allows only patch releases.
 #   Example: ~1.2.3 will match versions >=1.2.3 but <1.3.0.
-fogies = {version = "^0.0.0-dev.2", allow-prereleases = true}
+fogies = {version = "^0.0.0-dev.3", allow-prereleases = true}
 basedpyright = "^1.36.1"
 black = "~25.12.0" # Black does not semver.
 invoke = "^2.2.1"
@@ -36,7 +41,7 @@ pytest = "^9.0.2"
 [tool.basedpyright]
 typeCheckingMode = "recommended"
 pythonVersion = "3.14"
-include = ["paths.py", "src", "tasks", "tests"]
+include = ["confer_parse_dub_paths.py", "src", "tasks", "tests"]
 allowedUntypedLibraries = ["invoke"]
 
 [build-system]
