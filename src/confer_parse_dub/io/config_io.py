@@ -1,14 +1,12 @@
 """Pure YAML ↔ Pydantic transformation for conference config files."""
 
 import pathlib
-from typing import Any
+from typing import Any, get_origin
 
 from ruamel.yaml import YAML
 from ruamel.yaml.comments import CommentedMap, CommentedSeq
 
 from confer_parse_dub.models.config import (
-    AffiliationEntry,
-    AffiliationMatchRule,
     CommentedModel,
     Config,
 )
@@ -34,17 +32,14 @@ def _to_plain(obj: Any) -> Any:
 
 
 def _first_key_comment(item: Any) -> str | None:
-    """Return the EOL comment on the first key of a ruamel CommentedMap."""
+    """Return the first EOL comment found on any key of a ruamel CommentedMap."""
     if not hasattr(item, "ca") or not hasattr(item, "keys"):
         return None
-    first_key = next(iter(item), None)
-    if first_key is None:
-        return None
-    tokens = item.ca.items.get(first_key)
-    if not tokens or tokens[2] is None:
-        return None
-    return tokens[2].value.strip().lstrip("#").strip() or None
-
+    for key in item:
+        tokens = item.ca.items.get(key)
+        if tokens and tokens[2] is not None:
+            return tokens[2].value.strip().lstrip("#").strip() or None
+    return None
 
 
 def _attach_comment(item: CommentedMap, model: CommentedModel) -> CommentedMap:
@@ -54,112 +49,74 @@ def _attach_comment(item: CommentedMap, model: CommentedModel) -> CommentedMap:
     return item
 
 
-def _to_commented_item(model: CommentedModel) -> CommentedMap:
-    """Convert a flat CommentedModel to a CommentedMap with its comment attached."""
-    return _attach_comment(CommentedMap(model.model_dump(exclude_none=True)), model)
+def _to_yaml_value(value: Any) -> Any:
+    """Recursively convert a model value to ruamel-yaml structure."""
+    if isinstance(value, CommentedModel):
+        return _model_to_map(value)
+    if isinstance(value, list):
+        return _list_to_seq(value)
+    return value
 
 
+def _list_to_seq(items: list[Any]) -> CommentedSeq:
+    """Convert a list to a CommentedSeq, sorting CommentedModel items by sort_key()
+    and plain strings alphabetically."""
+    if not items:
+        return CommentedSeq()
+    if isinstance(items[0], CommentedModel):
+        return CommentedSeq(
+            [_model_to_map(item) for item in sorted(items, key=lambda x: x.sort_key())]
+        )
+    if isinstance(items[0], str):
+        return CommentedSeq(sorted(items))
+    return CommentedSeq(items)
 
-def _affiliations_to_seq(entries: list[AffiliationEntry]) -> CommentedSeq:
-    """Convert a sorted list of AffiliationEntry models to a CommentedSeq."""
-    seq = CommentedSeq()
-    for entry in sorted(entries, key=lambda e: e.canonical):
-        aff_item = CommentedMap({"canonical": entry.canonical})
-        if entry.match:
 
-            def _match_sort_key(r: AffiliationMatchRule) -> tuple[str, str]:
-                first = r.affiliations[0] if r.affiliations else None
-                return (
-                    first.institution or "" if first else "",
-                    first.dsl or "" if first else "",
-                )
-
-            aff_item["match"] = CommentedSeq(
-                [
-                    _attach_comment(CommentedMap(r.model_dump(exclude_none=True)), r)
-                    for r in sorted(entry.match, key=_match_sort_key)
-                ]
-            )
-        if entry.reject:
-            aff_item["reject"] = CommentedSeq(
-                [_to_commented_item(r) for r in entry.reject]
-            )
-        _attach_comment(aff_item, entry)
-        seq.append(aff_item)
-    return seq
+def _model_to_map(model: CommentedModel) -> CommentedMap:
+    """Convert any CommentedModel to a CommentedMap, skipping None and empty lists."""
+    result = CommentedMap()
+    for field_name in type(model).model_fields:
+        if field_name == "comment":
+            continue
+        value = getattr(model, field_name)
+        if value is None:
+            continue
+        if isinstance(value, list) and not value:
+            continue
+        result[field_name] = _to_yaml_value(value)
+    _attach_comment(result, model)
+    return result
 
 
 def _config_to_doc(config: Config) -> CommentedMap:
-    """
-    Convert a Config model to a ruamel.yaml CommentedMap ready for serialization.
-    All lists are sorted.  Comments stored in model fields are written as inline
-    YAML comments.
-    """
     doc = CommentedMap()
-    doc["version"] = config.version
-    doc["file_input"] = config.file_input
-    doc["file_output"] = config.file_output
-
-    # query — sorted by first keyword then first track id
-    query_seq = CommentedSeq()
-    for rule in sorted(
-        config.query,
-        key=lambda r: (sorted(r.keywords)[:1], sorted(t.id for t in r.tracks)[:1]),
-    ):
-        item = CommentedMap()
-        item["keywords"] = CommentedSeq(sorted(rule.keywords))
-        item["tracks"] = CommentedSeq(
-            [_to_commented_item(t) for t in sorted(rule.tracks, key=lambda t: t.id)]
-        )
-        _attach_comment(item, rule)
-        query_seq.append(item)
-    doc["query"] = query_seq
-
-    # institution / dsl include+exclude — sorted by name
-    for attr in (
-        "include_institution",
-        "exclude_institution",
-        "include_dsl",
-        "exclude_dsl",
-    ):
-        doc[attr] = CommentedSeq(
-            [
-                _to_commented_item(r)
-                for r in sorted(getattr(config, attr), key=lambda r: r.name)
-            ]
-        )
-
-    # include_paper / exclude_paper — sorted by id
-    for attr in ("include_paper", "exclude_paper"):
-        doc[attr] = CommentedSeq(
-            [
-                _to_commented_item(r)
-                for r in sorted(getattr(config, attr), key=lambda r: r.id)
-            ]
-        )
-
-    # names — sorted by name
-    names_seq = CommentedSeq()
-    for entry in sorted(config.names, key=lambda e: e.name):
-        name_item = CommentedMap({"name": entry.name})
-        if entry.match:
-            name_item["match"] = CommentedSeq(
-                [_to_commented_item(m) for m in entry.match]
-            )
-        _attach_comment(name_item, entry)
-        names_seq.append(name_item)
-    doc["names"] = names_seq
-
-    # internal_affiliations / external_affiliations — sorted by canonical
-    doc["internal_affiliations"] = _affiliations_to_seq(config.internal_affiliations)
-    doc["external_affiliations"] = _affiliations_to_seq(config.external_affiliations)
-
+    for field_name in Config.model_fields:
+        value = getattr(config, field_name)
+        doc[field_name] = _list_to_seq(value) if isinstance(value, list) else value
     return doc
 
 
 # ---------------------------------------------------------------------------
 # Public API
 # ---------------------------------------------------------------------------
+
+
+def _inject_comments(raw_obj: Any, plain_obj: Any) -> None:
+    """Recursively walk raw ruamel YAML and inject comments into the plain dict/list."""
+    if isinstance(raw_obj, list) and isinstance(plain_obj, list):
+        for raw_item, plain_item in zip(raw_obj, plain_obj):
+            if isinstance(raw_item, dict) and isinstance(plain_item, dict):
+                comment = _first_key_comment(raw_item)
+                if comment:
+                    plain_item["comment"] = comment
+                # Recurse into nested dict values
+                for key in raw_item:
+                    if key in plain_item:
+                        _inject_comments(raw_item[key], plain_item[key])
+    elif isinstance(raw_obj, dict) and isinstance(plain_obj, dict):
+        for key in raw_obj:
+            if key in plain_obj:
+                _inject_comments(raw_obj[key], plain_obj[key])
 
 
 def load_config(path: pathlib.Path) -> Config:
@@ -172,23 +129,18 @@ def load_config(path: pathlib.Path) -> Config:
 
     plain: dict[str, Any] = _to_plain(raw) if raw else {}
 
-    # Inject comments for all list sections whose items are CommentedModel subclasses.
-    for section in (
-        "query",
-        "include_institution",
-        "exclude_institution",
-        "include_dsl",
-        "exclude_dsl",
-        "include_paper",
-        "exclude_paper",
-        "names",
-        "internal_affiliations",
-        "external_affiliations",
-    ):
-        for i, item in enumerate((raw or {}).get(section, [])):
-            comment = _first_key_comment(item)
-            if comment:
-                plain.setdefault(section, [])[i]["comment"] = comment
+    for field_name, field_info in Config.model_fields.items():
+        if get_origin(field_info.annotation) is list:
+            for i, item in enumerate((raw or {}).get(field_name, [])):
+                comment = _first_key_comment(item)
+                if comment:
+                    plain.setdefault(field_name, [])[i]["comment"] = comment
+                # Recurse into nested lists within this item
+                if isinstance(item, dict) and isinstance(plain.get(field_name, [None] * (i + 1))[i], dict):
+                    plain_item = plain[field_name][i]
+                    for sub_key in item:
+                        if sub_key in plain_item:
+                            _inject_comments(item[sub_key], plain_item[sub_key])
 
     return Config.model_validate(plain)
 

@@ -1,0 +1,49 @@
+version: v1
+file_input: program.json
+file_output: papers.csv
+query:
+  - keywords:
+      - hci
+      - user interface
+    tracks:
+      - id: 201
+        name: Journals
+      - id: 200
+        name: Papers  # main track
+  - keywords:
+      - accessibility
+    tracks:
+      - id: 200
+        name: Papers
+include_institution:
+  - name: Stanford University
+  - name: MIT  # Cambridge
+exclude_institution:
+  - name: Acme Corp
+include_dsl: []
+exclude_dsl: []
+include_paper: []
+exclude_paper:
+  - id: 42  # demo paper
+names:
+  - name: John Doe
+  - name: Jane Smith  # canonical
+    match:
+      - name: J. Smith
+      - name: Smith, Jane
+internal_affiliations:
+  - canonical: Stanford University
+  - canonical: Massachusetts Institute of Technology  # MIT
+    match:
+      - affiliations:
+          - institution: MIT
+          - institution: Massachusetts Institute of Technology
+    reject:
+      - name: Jane Smith
+external_affiliations:
+  - canonical: Google
+    match:
+      - name: John Doe
+        affiliations:
+          - institution: Google
+            dsl: US
