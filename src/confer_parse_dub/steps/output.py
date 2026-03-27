@@ -50,8 +50,22 @@ class WriteOutputStep(Step):
         best = sum(1 for p in papers if p.bestpaper)
         hm = sum(1 for p in papers if p.honorablemention)
 
+        internal_canonicals = {e.canonical for e in config.internal_affiliations}
+        internal_seen: set[str] = set()
+        for paper in papers:
+            for author in paper.authors:
+                for affil in author.canonical_affiliations:
+                    if affil in internal_canonicals:
+                        internal_seen.add(affil)
+
         context.ui.print("=== Output ===")
         context.ui.print("Wrote {} papers to {}.".format(total, path_output))
         context.ui.print("  {} best paper award".format(best))
         context.ui.print("  {} best paper honorable mention".format(hm))
+        context.ui.print()
+        context.ui.print(
+            "  {} internal affiliation(s) represented:".format(len(internal_seen))
+        )
+        for affil in sorted(internal_seen):
+            context.ui.print("    - {}".format(affil))
         return []
