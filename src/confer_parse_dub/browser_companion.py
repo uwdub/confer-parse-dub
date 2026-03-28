@@ -181,15 +181,15 @@ class BrowserCompanion:
                 # Navigate each active tab to its URL in place.
                 for i, url in enumerate(urls):
                     try:
-                        pages[i].goto(url, wait_until="domcontentloaded", timeout=10000)
-                    except Exception:
-                        pass
+                        _ = pages[i].goto(url, wait_until="domcontentloaded", timeout=10000)
+                    except Exception as exc:
+                        print(f"[browser] failed to load {url!r}: {exc}")
 
                 # Clear any extra tabs left over from a larger previous batch.
                 for i in range(len(urls), len(pages)):
                     try:
-                        pages[i].goto("about:blank")
-                    except Exception:
-                        pass
+                        pages[i].close()
+                    except Exception as exc:
+                        print(f"[browser] failed to clear tab {i}: {exc}")
 
             browser.close()
