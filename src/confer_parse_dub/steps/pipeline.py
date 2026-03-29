@@ -1,5 +1,7 @@
 """Top-level pipeline steps: load papers, filter summary, apply mappings."""
 
+from typing import override
+
 from confer_parse_dub.config_document import validate_config
 from confer_parse_dub.io.parse import parse_sigchi_program
 from confer_parse_dub.processing.normalize_affiliations import find_canonical_affiliation
@@ -16,9 +18,10 @@ class LoadPapersStep(Step):
     """
 
     def __init__(self, label: str, config_path: str) -> None:
-        self._label = label
-        self._config_path = config_path
+        self._label: str = label
+        self._config_path: str = config_path
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         from confer_parse_dub.steps.affiliations import ReviewAffiliationsStep
         from confer_parse_dub.steps.normalize import NormalizePapersStep, ReviewSplitsStep
@@ -54,6 +57,7 @@ class LoadPapersStep(Step):
 class FilterSummaryStep(Step):
     """Print a summary of active filter rules and the matched paper count."""
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         ui = context.ui
         config = context.config_doc.config
@@ -102,6 +106,7 @@ class FilterSummaryStep(Step):
 class ApplyMappingsStep(Step):
     """Apply all resolved canonical name and affiliation mappings to papers."""
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         config = context.config_doc.config
         for paper in context.papers:
