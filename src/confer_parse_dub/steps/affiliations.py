@@ -1,11 +1,12 @@
 """Affiliation review steps — prompts for include/exclude decisions."""
 
 from collections import defaultdict
+from typing import override
 
 from confer_parse_dub.exceptions import QuitRequested
 from confer_parse_dub.models.paper import ParsedPaper
 from confer_parse_dub.processing.filter import apply_filters
-from confer_parse_dub.steps.context import RunContext, Step, UIChoice
+from confer_parse_dub.steps.context import RunContext, Step
 
 
 class ReviewAffiliationsStep(Step):
@@ -18,6 +19,7 @@ class ReviewAffiliationsStep(Step):
     an included institution.
     """
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         config = context.config_doc.config
         keywords = [kw for rule in config.query for kw in rule.keywords]
@@ -77,9 +79,10 @@ class ReviewInstitutionStep(Step):
     """Prompt the user to include or exclude one institution."""
 
     def __init__(self, name: str, papers: list[ParsedPaper]) -> None:
-        self._name = name
-        self._papers = papers
+        self._name: str = name
+        self._papers: list[ParsedPaper] = papers
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         ui = context.ui
         _print_review_item(ui, "Institution", self._name, self._papers)
@@ -109,8 +112,9 @@ class ReviewDslSectionStep(Step):
     """
 
     def __init__(self, initial_dsl_groups: dict[str, list[ParsedPaper]]) -> None:
-        self._dsl_groups = initial_dsl_groups
+        self._dsl_groups: dict[str, list[ParsedPaper]] = initial_dsl_groups
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         config = context.config_doc.config
         keywords = [kw for rule in config.query for kw in rule.keywords]
@@ -151,10 +155,11 @@ class ReviewDslStep(Step):
     def __init__(
         self, name: str, papers: list[ParsedPaper], institutions: list[str]
     ) -> None:
-        self._name = name
-        self._papers = papers
-        self._institutions = institutions
+        self._name: str = name
+        self._papers: list[ParsedPaper] = papers
+        self._institutions: list[str] = institutions
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         ui = context.ui
         _print_review_item(
@@ -179,6 +184,7 @@ class ReviewDslStep(Step):
 class ApplyFiltersStep(Step):
     """Apply all configured filters to context.papers."""
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         context.papers = apply_filters(
             context.config_doc.config, context.papers

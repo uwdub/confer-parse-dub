@@ -1,6 +1,7 @@
 """Output steps — validation and YAML writing."""
 
 import pathlib
+from typing import override
 
 from confer_parse_dub.processing.normalize_titles import normalize_titles
 from confer_parse_dub.io.output import check_resolved, write_output
@@ -11,6 +12,7 @@ from confer_parse_dub.steps.context import RunContext, Step
 class CheckOutputStep(Step):
     """Validate all papers are resolved; if so, proceed to write output."""
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         problems = check_resolved(context.papers, context.state)
         if problems:
@@ -37,6 +39,7 @@ class CheckOutputStep(Step):
 class WriteOutputStep(Step):
     """Normalize titles, sort papers, and write the output YAML."""
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         config = context.config_doc.config
         papers = normalize_titles(context.papers)

@@ -1,5 +1,7 @@
 """Interactive query configuration step."""
 
+from typing import override
+
 from confer_parse_dub.exceptions import QuitRequested
 from confer_parse_dub.models.config import Config, QueryRule, TrackRule
 from confer_parse_dub.models.paper import ParsedPaper
@@ -19,6 +21,7 @@ class ReviewQueryStep(Step):
     Applies query filters to context.papers before returning.
     """
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         ui = context.ui
         config_doc = context.config_doc
