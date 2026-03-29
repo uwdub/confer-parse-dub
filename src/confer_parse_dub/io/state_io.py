@@ -17,4 +17,4 @@ def load_state(path: pathlib.Path) -> ProcessingState:
 def save_state(state: ProcessingState, path: pathlib.Path) -> None:
     """Save state to JSON."""
     with open(path, "w", encoding="utf-8") as f:
-        f.write(state.model_dump_json(indent=2))
+        _ = f.write(state.model_dump_json(indent=2))

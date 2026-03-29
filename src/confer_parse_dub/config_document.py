@@ -228,8 +228,7 @@ def _validate_against_papers(config: Config, papers: "list[ParsedPaper]") -> Non
                 if len(matches) > 1:
                     canonicals = ", ".join(repr(m.canonical) for m in matches)
                     raise ConfigError(
-                        f"Author {author.name!r} affiliation {affil.institution!r}"
-                        f" matches multiple canonical affiliations: {canonicals}"
+                        f"Author {author.name!r} affiliation {affil.institution!r} matches multiple canonical affiliations: {canonicals}"
                     )
 
 
