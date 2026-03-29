@@ -4,6 +4,8 @@ from enum import Enum
 
 from pydantic import BaseModel
 
+from confer_parse_dub.models.config import AffiliationMatchRule
+
 
 class DecisionType(str, Enum):
     ADD_NAME = "add_name"
@@ -15,6 +17,23 @@ class DecisionType(str, Enum):
 
 
 class Decision(BaseModel):
+    """
+    One user decision recorded for display and undo.
+
+    `summary` is always set. Other attributes are populated only for undo;
+    which ones apply depends on `type`:
+
+    - add_name: `name`.
+    - add_name_alias: `name`, `canonical`.
+    - skip_name: `name`.
+    - add_affiliation: `canonical`.
+    - add_affiliation_match_rule: `canonical`, `match_rule`.
+    - skip_affiliation: `key`.
+
+    A discriminated union of per-type models would encode this in the type
+    system; we have not pursued that refactor.
+    """
+
     type: DecisionType
     # Human-readable summary shown when reviewing history.
     summary: str
@@ -24,6 +43,8 @@ class Decision(BaseModel):
         None  # canonical name/affiliation (alias and affiliation ops)
     )
     key: str | None = None  # state key (skip_affiliation)
+    # The exact rule added, stored so undo can remove it by content not position.
+    match_rule: AffiliationMatchRule | None = None
 
 
 class ProcessingState(BaseModel):

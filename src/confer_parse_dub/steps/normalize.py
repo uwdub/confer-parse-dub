@@ -553,6 +553,7 @@ class ResolveAffiliationStep(Step):
                         author_name, canonical
                     ),
                     canonical=canonical,
+                    match_rule=match_rule,
                 )
             )
 

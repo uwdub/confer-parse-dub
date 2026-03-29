@@ -1,16 +1,20 @@
 """Undo the most recent decision recorded in processing state."""
 
 import pathlib
+from typing import TypeVar
 
 from confer_parse_dub.config_document import ConfigDocument
+from confer_parse_dub.exceptions import ConfigError
 from confer_parse_dub.io.state_io import save_state
 from confer_parse_dub.models.state import Decision, DecisionType, ProcessingState
 
+T = TypeVar("T")
 
-def _require(value: str | None, field: str, decision_type: DecisionType) -> str:
-    """Return value or raise a clear error if it is missing."""
+
+def _require(value: T | None, field: str, decision_type: DecisionType) -> T:
+    """Return value or raise ConfigError if it is missing."""
     if value is None:
-        raise ValueError(
+        raise ConfigError(
             "Decision of type '{}' is missing required field '{}'.".format(
                 decision_type.value, field
             )
@@ -54,14 +58,15 @@ def undo_last_decision(
 
         case DecisionType.ADD_AFFILIATION_MATCH_RULE:
             canonical = _require(decision.canonical, "canonical", decision.type)
-            config_doc.remove_last_affiliation_match_rule(canonical)
+            match_rule = _require(decision.match_rule, "match_rule", decision.type)
+            config_doc.remove_affiliation_match_rule(canonical, match_rule)
 
         case DecisionType.SKIP_AFFILIATION:
             key = _require(decision.key, "key", decision.type)
             if key in state.skipped_affiliations:
                 state.skipped_affiliations.remove(key)
 
-    state.history.pop()
+    _ = state.history.pop()
     save_state(state, path_state)
 
     return decision

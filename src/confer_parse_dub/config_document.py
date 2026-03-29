@@ -334,6 +334,7 @@ class ConfigDocument:
                 if entry.name == canonical:
                     entry.match = [m for m in entry.match if m.name != alias]
                     return
+            raise ConfigError(f"Name canonical not found: {canonical!r}")
 
         self.apply(_mutate)
 
@@ -393,14 +394,28 @@ class ConfigDocument:
 
         self.apply(_mutate)
 
-    def remove_last_affiliation_match_rule(self, canonical: str) -> None:
+    def remove_affiliation_match_rule(
+        self, canonical: str, rule: AffiliationMatchRule
+    ) -> None:
+        """Remove a specific match rule from the entry identified by canonical.
+
+        Removes by value equality so it is correct regardless of list sort order.
+        """
         def _mutate(config: Config) -> None:
             for entry in (
                 config.internal_affiliations + config.external_affiliations
             ):
-                if entry.canonical == canonical and entry.match:
-                    entry.match = entry.match[:-1]
+                if entry.canonical == canonical:
+                    target = entry.match_for_name if rule.name is not None else entry.match
+                    try:
+                        target.remove(rule)
+                    except ValueError:
+                        list_name = "match_for_name" if rule.name is not None else "match"
+                        raise ConfigError(
+                            f"Match rule not found in {canonical!r} {list_name}"
+                        )
                     return
+            raise ConfigError(f"Affiliation canonical not found: {canonical!r}")
 
         self.apply(_mutate)
 
