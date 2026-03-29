@@ -1,5 +1,7 @@
 """Paper normalization steps — names, affiliations, and apply mappings."""
 
+from typing import override
+
 from confer_parse_dub.exceptions import ConfigError, QuitRequested
 from confer_parse_dub.io.state_io import save_state
 from confer_parse_dub.models.config import AffiliationMatchRule, AffiliationPatternItem
@@ -14,12 +16,12 @@ from confer_parse_dub.processing.normalize_names import find_canonical_name
 from confer_parse_dub.io.parse import parse_tracks
 from confer_parse_dub.io.undo import undo_last_decision
 from confer_parse_dub.steps.context import UI, RunContext, Step, UIChoice
-from confer_parse_dub.steps.pipeline import ApplyMappingsStep
 
 
 class NormalizePapersStep(Step):
     """Compute pending papers and return per-paper normalization steps."""
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         _apply_splits(context)
         pending = [p for p in context.papers if _paper_needs_work(context, p)]
@@ -40,10 +42,10 @@ class NormalizePapersStep(Step):
             skipped_affiliations = len(context.state.skipped_affiliations)
             if skipped_names or skipped_affiliations:
                 context.ui.print(
-                    "  {} name(s) and {} affiliation(s) pending"
-                    " (run with --review-skipped to revisit).".format(
-                        skipped_names, skipped_affiliations
-                    )
+                    (
+                        "  {} name(s) and {} affiliation(s) pending "
+                        "(run with --review-skipped to revisit)."
+                    ).format(skipped_names, skipped_affiliations)
                 )
             context.ui.print()
             return [ApplyMappingsStep()]
@@ -61,6 +63,27 @@ class NormalizePapersStep(Step):
         return steps
 
 
+class ApplyMappingsStep(Step):
+    """Apply all resolved canonical name and affiliation mappings to papers."""
+
+    @override
+    def execute(self, context: RunContext) -> list[Step]:
+        config = context.config_doc.config
+        for paper in context.papers:
+            for author in paper.authors:
+                canonical_name = find_canonical_name(config, author.name)
+                if canonical_name is not None:
+                    author.name = canonical_name
+                    for affil in author.affiliations:
+                        canonical_affil = find_canonical_affiliation(
+                            config, canonical_name, [affil]
+                        )
+                        if canonical_affil is not None:
+                            if canonical_affil not in author.canonical_affiliations:
+                                author.canonical_affiliations.append(canonical_affil)
+        return []
+
+
 class PaperNormalizationStep(Step):
     """Print a paper header and queue name/affiliation resolution steps for it."""
 
@@ -71,20 +94,24 @@ class PaperNormalizationStep(Step):
         total: int,
         tracks: dict[int, str],
     ) -> None:
-        self._paper = paper
-        self._index = index
-        self._total = total
-        self._tracks = tracks
+        self._paper: ParsedPaper = paper
+        self._index: int = index
+        self._total: int = total
+        self._tracks: dict[int, str] = tracks
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         ui = context.ui
         config = context.config_doc.config
         state = context.state
         paper = self._paper
 
-        track_name = self._tracks.get(
-            paper.trackId, "Track {}".format(paper.trackId)
-        )
+        if paper.trackId is None:
+            track_name = "Track (unassigned)"
+        else:
+            track_name = self._tracks.get(
+                paper.trackId, "Track {}".format(paper.trackId)
+            )
         ui.print()
         ui.print("--- Paper {} of {} ---".format(self._index, self._total))
         ui.print('"{}"'.format(paper.title))
@@ -133,8 +160,9 @@ class ResolveAffilsForPaperStep(Step):
     """Compute and queue affiliation resolution steps for one paper."""
 
     def __init__(self, paper: ParsedPaper) -> None:
-        self._paper = paper
+        self._paper: ParsedPaper = paper
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         config = context.config_doc.config
         state = context.state
@@ -159,10 +187,11 @@ class ResolveNameStep(Step):
     """Prompt the user to resolve one unrecognized author name."""
 
     def __init__(self, raw_name: str, affiliations: list[Affiliation] | None = None, paper_title: str | None = None) -> None:
-        self._raw_name = raw_name
-        self._affiliations = affiliations or []
-        self._paper_title = paper_title
+        self._raw_name: str = raw_name
+        self._affiliations: list[Affiliation] = affiliations or []
+        self._paper_title: str | None = paper_title
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         config_doc = context.config_doc
         state = context.state
@@ -311,11 +340,12 @@ class ResolveAffiliationStep(Step):
         key: str,
         paper_title: str | None = None,
     ) -> None:
-        self._author_name = author_name
-        self._affiliations = affiliations
-        self._key = key
-        self._paper_title = paper_title
+        self._author_name: str = author_name
+        self._affiliations: list[Affiliation] = affiliations
+        self._key: str = key
+        self._paper_title: str | None = paper_title
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         config_doc = context.config_doc
         state = context.state
@@ -445,14 +475,15 @@ class ResolveAffiliationStep(Step):
 
         if action == SPLIT:
             split_steps = _do_split(
-                ui, config_doc, affiliations, author_name, self._paper_title, context
+                ui, affiliations, author_name, self._paper_title, context
             )
             if split_steps is None:
                 return [self]  # cancelled — re-prompt
             return split_steps
 
         if action == USE_AS_CANONICAL:
-            canonical = single_institution  # type: ignore[assignment]
+            assert single_institution is not None
+            canonical = single_institution
             match_rules: list[AffiliationMatchRule] = []
             try:
                 config_doc.add_affiliation(canonical, match_rules, internal=internal, papers=context.papers)
@@ -571,6 +602,7 @@ class ReviewSplitsStep(Step):
     Decisions are stored in config so they persist across state resets.
     """
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         config = context.config_doc.config
         already_decided = (
@@ -632,12 +664,13 @@ class ReviewSplitStep(Step):
         author_name: str | None = None,
         papers: list[ParsedPaper] | None = None,
     ) -> None:
-        self._value = value
-        self._parts = parts
-        self._field = field  # "institution" or "dsl"
-        self._author_name = author_name
-        self._papers = papers or []
+        self._value: str = value
+        self._parts: list[str] = parts
+        self._field: str = field  # "institution" or "dsl"
+        self._author_name: str | None = author_name
+        self._papers: list[ParsedPaper] = papers or []
 
+    @override
     def execute(self, context: RunContext) -> list[Step]:
         ui = context.ui
         config_doc = context.config_doc
@@ -778,7 +811,6 @@ def _ask_match_fields(
 
 def _do_split(
     ui: UI,
-    config_doc: object,  # ConfigDocument — avoid circular import at module level
     affiliations: list[Affiliation],
     author_name: str,
     paper_title: str | None,
@@ -876,3 +908,5 @@ def _paper_needs_work(context: RunContext, paper: ParsedPaper) -> bool:
                 if key not in state.skipped_affiliations or context.review_skipped:
                     return True
     return False
+
+
