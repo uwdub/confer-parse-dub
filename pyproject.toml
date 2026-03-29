@@ -42,6 +42,7 @@ pytest = "^9.0.2"
 typeCheckingMode = "recommended"
 pythonVersion = "3.14"
 include = ["confer_parse_dub_paths.py", "src", "tasks", "tests"]
+stubPath = "typings"
 allowedUntypedLibraries = ["invoke"]
 
 [build-system]

@@ -18,7 +18,6 @@ from invoke.tasks import Task, task
 from confer_parse_dub_paths import PATH_DATA
 
 from confer_parse_dub.browser_companion import BrowserCompanion
-from confer_parse_dub.exceptions import QuitRequested
 from confer_parse_dub.io.conferences_io import load_conferences, save_conferences
 from confer_parse_dub.config_document import ConfigDocument
 from confer_parse_dub.io.state_io import load_state
@@ -77,7 +76,7 @@ def get_collection_for_conference(conf: ConferenceEntry) -> Collection:
 
     @task(name="run")  # pyright: ignore[reportUntypedFunctionDecorator]
     def task_run(
-        context: Context,
+        _context: Context,
         review_skipped: bool = False,
         no_browser: bool = False,
     ) -> None:
@@ -96,7 +95,11 @@ def get_collection_for_conference(conf: ConferenceEntry) -> Collection:
     task_run.__doc__ = "Run analysis for {}.".format(conf.label)
 
     col = Collection(conf.name)
-    col.add_task(task_run, name="run", default=True)
+    col.add_task(
+        cast(Task[Callable[..., None]], task_run),
+        name="run",
+        default=True,
+    )
     return col
 
 
@@ -141,11 +144,13 @@ def run_pipeline(
             companion.close()
 
     if not completed:
-        print()
-        print("Stopped. Progress has been saved.")
         print(
-            "Run 'invoke {}' again to continue, "
-            "or use --review-skipped to revisit skipped items.".format(conf.name)
+            (
+                "\n"
+                + "Stopped. Progress has been saved.\n"
+                + "Run 'invoke {}' again to continue, "
+                + "or use --review-skipped to revisit skipped items."
+            ).format(conf.name)
         )
 
 
@@ -173,7 +178,7 @@ def _action_toggle_complete(
         if mark_complete
         else "Which conference do you want to reactivate?"
     )
-    choices = [_conf_label(c) for c in candidates] + ["Cancel"]
+    choices: list[str] = [_conf_label(c) for c in candidates] + ["Cancel"]
     choice = questionary.select(question, choices=choices).ask()
 
     if not choice or choice == "Cancel":
@@ -220,7 +225,7 @@ def _action_undo(
     if len(with_history) == 1:
         conf, state, path_state = with_history[0]
     else:
-        choices = [
+        choices: list[str] = [
             "{} ({} decision(s))".format(c.label, len(s.history))
             for c, s, _ in with_history
         ] + ["Cancel"]
@@ -231,7 +236,7 @@ def _action_undo(
 
     config_doc = ConfigDocument(pathlib.Path(conf.config))
 
-    undo_choices = []
+    undo_choices: list[str] = []
     for i, decision in enumerate(reversed(state.history)):
         steps = i + 1
         if steps == 1:
@@ -319,7 +324,7 @@ def _action_configure(conferences: list[ConferenceEntry]) -> None:
         file_output=str(path_output).replace("\\", "/"),
     )
     with open(path_config, "w", encoding="utf-8") as f:
-        f.write(config_content)
+        _ = f.write(config_content)
 
     conferences.append(
         ConferenceEntry(
@@ -344,7 +349,7 @@ def _action_configure(conferences: list[ConferenceEntry]) -> None:
 
 def get_task_conferences() -> Task[Callable[[Context], None]]:
     @task(name="conferences")  # pyright: ignore[reportUntypedFunctionDecorator]
-    def task_conferences(context: Context) -> None:
+    def task_conferences(_context: Context) -> None:
         """
         Manage conferences: list, configure, complete, reactivate, and more.
         """
@@ -386,7 +391,7 @@ def get_task_conferences() -> Task[Callable[[Context], None]]:
 
             has_history = any(s.history for s in states.values())
 
-            actions = []
+            actions: list[str] = []
             if active:
                 actions.append("Mark a conference as complete")
             if complete:
