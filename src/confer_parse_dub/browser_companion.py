@@ -6,7 +6,9 @@ import urllib.parse
 
 from confer_parse_dub.models.paper import Affiliation
 
-_STOP = object()  # Sentinel value that tells the browser thread to exit.
+
+class _BrowserStop:
+    """Sentinel queued to tell the browser thread to exit."""
 
 
 class BrowserCompanion:
@@ -24,7 +26,7 @@ class BrowserCompanion:
     """
 
     def __init__(self) -> None:
-        self._queue: queue.Queue[list[str] | object] = queue.Queue()
+        self._queue: queue.Queue[list[str] | _BrowserStop] = queue.Queue()
         self._thread: threading.Thread | None = None
 
     # ------------------------------------------------------------------
@@ -132,7 +134,7 @@ class BrowserCompanion:
     def close(self) -> None:
         """Signal the browser thread to stop and wait for it to finish."""
         if self._thread is not None and self._thread.is_alive():
-            self._queue.put(_STOP)
+            self._queue.put(_BrowserStop())
             self._thread.join(timeout=5.0)
         self._thread = None
 
@@ -169,10 +171,10 @@ class BrowserCompanion:
                 except queue.Empty:
                     continue
 
-                if item is _STOP:
+                if isinstance(item, _BrowserStop):
                     break
 
-                urls: list[str] = list(item)  # type: ignore[arg-type]
+                urls: list[str] = item
 
                 # Grow the tab strip if this batch needs more tabs than we have.
                 while len(pages) < len(urls):
