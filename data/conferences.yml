@@ -1,0 +1,5 @@
+conferences:
+- name: chi2026
+  label: CHI 2026
+  config: data/chi2026/config.yml
+  complete: false

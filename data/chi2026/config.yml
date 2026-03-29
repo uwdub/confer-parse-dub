@@ -1,0 +1,926 @@
+version: v1
+file_input: data/chi2026/CHI_2026_program.json
+file_output: data/chi2026/chi2026papers.yml
+query:
+- keywords:
+  - UW
+  - Washington
+  tracks:
+  - id: 13833
+    name: CHI 2026 Papers
+  - id: 13848
+    name: CHI 2026 Journals
+include_institution:
+- name: University of Washington
+- name: University of Washington Information School
+- name: University of Washington, Seattle
+- name: University of Washington-Seattle
+exclude_institution:
+- name: The George Washington University
+- name: University of Moratuwa
+- name: University of the West of England (UWE)
+- name: Washington University in St. Louis
+- name: Washington and Lee University
+split_institution: []
+no_split_institution:
+- name: New York-Presbyterian Hospital/ Weill Cornell Medicine
+manual_split_institution:
+- name: Sorbonne Université, CNRS, Institut des Systèmes Intelligents et de 
+    Robotique, ISIR
+  parts:
+  - CNRS
+  - Sorbonne Université
+include_dsl: []
+exclude_dsl: []
+split_dsl:
+- name: The Information School / HCDE
+no_split_dsl:
+- name: Information School/KidsTeamUW
+manual_split_dsl: []
+include_paper: []
+exclude_paper: []
+names:
+- name: Aaleyah Lewis
+- name: Aayushi Dangol
+- name: Adinawa D Adjagbodjou
+- name: Advait Bhat
+- name: Agathe Balayn
+- name: Aiden Gu
+- name: Ailei Wang
+- name: Aixin Sun
+- name: Alex J Bowers
+- name: Alex Mariakakis
+- name: Alexander Boltz
+- name: Alexander Druzenko
+- name: Alexandra Chesters
+- name: Alexandre L S Filipowicz
+- name: Alexis Hiniker
+- name: Alice Gao
+- name: Alice Guo
+- name: Alicia Guo
+- name: Alissa N Antle
+- name: Alkim Almila Akdag
+- name: Ally Lam
+- name: Alyssa Unell
+- name: Amanda K Hall
+- name: Amelia Lee Dogan
+- name: Amy J Ko
+- name: Amy X Zhang
+- name: Andrew Best
+- name: Angel Hsing-Chi Hwang
+- name: Angie Zhang
+- name: Anika Rajaram
+- name: Anna Kirik
+- name: Anne Marie Albano
+- name: Anosh Ardeni
+- name: Antonio Vigil
+- name: Apoorva Gondimalla
+- name: Arnavi Chheda-Kothary
+- name: Ashley Marie Walker
+- name: Ather Sharif
+- name: Aylin Caliskan
+- name: Baptiste Caramiaux
+- name: Beth Kolko
+- name: Bin Han
+- name: Bingcan Guo
+- name: Bingsheng Yao
+- name: Blair Subbaraman
+- name: Brenna Li
+- name: Brett A Halperin
+- name: Brianna L Wimer
+- name: Brinda Moudgalya
+- name: Calvin A Liang
+- name: Caroline Pitt
+- name: Chankyu Charlie Han
+  match:
+  - name: Chankyu (Charlie) Han
+- name: Chaoran Chen
+- name: Chen Li
+- name: Chengchi Zhou
+- name: Chenyan Jia
+- name: Chris Coward
+- name: Christopher Brooks
+- name: Chu Li
+- name: Chun Yu
+- name: Chunyang Li
+- name: Claire Florence Weizenegger
+- name: Claire L Mitchell
+- name: Cliff Wong
+- name: Cynthia Dong
+- name: Daeun Hwang
+- name: Daeun Yoo
+- name: Dakuo Wang
+- name: Daniel A Adler
+- name: Daniel S Weld
+- name: Daniela E Munoz Lopez
+- name: Darae Kim
+- name: David C Rhew
+- name: David Joseph Mullings
+- name: David Ledo
+- name: Davin Win Kyi
+- name: Dhanaraj Thakur
+- name: Di Liu
+- name: Diyi Yang
+- name: Donghoon Shin
+- name: Elizabeth D Mynatt
+- name: Elizabeth Fetterolf
+- name: Elizabeth L Murnane
+- name: Emilie Yu
+- name: Emily Tseng
+- name: Emily Tuy
+- name: Emily Wall
+- name: Emma Elizabeth McGinty
+- name: Emma J McDonnell
+- name: Emmanuel Azuh Mensah
+- name: Eric Horvitz
+- name: Esther Han Beol Jang
+- name: Eve He
+- name: Florian Schaub
+- name: Francesca Fusco
+- name: Frank Tuan
+- name: Franziska Roesner
+- name: Fraser Anderson
+- name: Gary Hsieh
+- name: George Fitzmaurice
+- name: George Zhang
+- name: Ghadeer A Awwad
+- name: Gijs de Boer
+- name: Haiyi Zhu
+- name: Hallie Xu
+- name: Hannah Yi
+- name: Hanwen Xu
+- name: Hao Qiu
+- name: Hao Zhang
+- name: Hao-Ping Hank Lee
+  match:
+  - name: Hao-Ping (Hank) Lee
+- name: Hariharan Subramonyam
+- name: Henok Assalif
+- name: Hewu Li
+- name: Hexi Wang
+- name: Hoifung Poon
+- name: Hong Shen
+- name: Hongzhou Chen
+- name: Houda Elmimouni
+- name: Hua Shen
+- name: Huaishu Peng
+- name: Huong Nguyen
+- name: Hyeok Kim
+- name: Hyeonjeong Byeon
+- name: Ibrahim Khalilov
+- name: Inyoung Cheong
+- name: Irene Chung
+- name: Isadora Krsek
+- name: Jacob O Wobbrock
+- name: Jade Xiaoyi Li
+- name: James A Landay
+- name: James Fogarty
+- name: Jan Lim
+- name: Jared Hwang
+- name: Jasmine Zhang
+- name: Jason C Young
+- name: Jason Lin
+- name: Jason Yip
+- name: Jazette Johnson
+- name: Jean Costa
+- name: Jeffrey Heer
+- name: Jennifer Jacobs
+- name: Jennifer Mankoff
+- name: Jennifer R Webster
+- name: Jenny Radesky
+- name: Jesse J Martinez
+- name: Jesse Josua Benjamin
+- name: Jiachen Li
+- name: Jiaqi Guo
+- name: Jiaqing Liu
+- name: Jiawen Li
+- name: Jihan Ryu
+- name: Jim Weinstein
+- name: Jin Ha Lee
+- name: Jing Wang
+- name: Jingyi Liu
+- name: Jingyu Tang
+- name: Jodi Forlizzi
+- name: John S O'Meara
+- name: Jon E Froehlich
+- name: Jonathan Bragg
+- name: Jonathan Carlson
+- name: Jose A Guridi
+- name: Joseph Chee Chang
+- name: Joseph S Schafer
+- name: Joseph Seering
+- name: Joyce E Passananti
+- name: Julia Dabrowski
+- name: Julie A Kientz
+- name: Junhan Kong
+- name: K J Kevin Feng
+  match:
+  - name: K. J. Kevin Feng
+- name: Kaija Frierson
+- name: Kaiwen Sun
+- name: Kate Starbird
+- name: Katharina Reinecke
+- name: Kathryn Yurechko
+- name: Katie Claveau
+- name: Katie Davis
+- name: Keke Wu
+- name: Kelly Avery Mack
+- name: Keming Jiao
+- name: Ken Gu
+- name: Kenneth Holstein
+- name: Kevin Huu Vo
+- name: Kevin Pu
+- name: Khai N Truong
+- name: Konstantin Kosta Aal
+- name: Kuan Zou
+- name: Kunsang Choden
+- name: Kurt Thomas
+- name: Kurtis Heimerl
+- name: Kyzyl Monteiro
+- name: Lace M Padilla
+- name: Leah Findlater
+- name: Leijie Wang
+- name: Leilani Battle
+- name: Lena Mamykina
+- name: Leonardo Schettini
+- name: Liam Bakar
+- name: Lin Tian
+- name: Lloyd May
+- name: Lotus Zhang
+- name: Lucy Jiang
+- name: Mahmoud Fawzi
+- name: Maneesh Agrawala
+- name: Margaret E Morris
+- name: Marianne Aubin Le Quéré
+- name: Mariya Dzhimova
+- name: Mark Cartwright
+- name: Maruchi Kim
+- name: Marx Wang
+- name: Mary Gray
+- name: Matt Latzke
+- name: Matt Wang
+- name: Matthew Bilik
+- name: Matthew Kyle Pedraja
+- name: Matthew Lungren
+- name: Matthias Blondeel
+- name: Maurice Jakesch
+- name: Meghan Turchioe
+- name: Meghna Gupta
+- name: Meziah Ruby Cristobal
+- name: Michael S Bernstein
+- name: Michele Newman
+- name: Michelle Kim
+- name: Michelle S Lam
+- name: Michelle Zhang
+- name: Min Kyung Lee
+- name: Mingyao Xu
+- name: Mingyuan Zhong
+- name: Mira Ram
+- name: Miya Natsuhara
+- name: Mo Houtti
+- name: Mor Naaman
+- name: Nadya Peek
+- name: Naiteek Sangani
+- name: Naoto Usuyama
+- name: Natalie C Benda
+- name: Ned Cooper
+- name: Nicholas Allen
+- name: Nikita Soni
+- name: Nils Bonfils
+- name: Nils Gehlenborg
+- name: Nina Lutz
+- name: Nino Migineishvili
+- name: Noel Christopher Codella
+- name: Norah Abokhodair
+- name: Olivia Banner
+- name: Omar Shaikh
+- name: Pao Siangliulue
+- name: Pape Sow Traore
+- name: Patrick Gage Kelley
+- name: Pengcheng An
+- name: Peter Lloyd
+- name: Peter Tolmie
+- name: Petr Slovak
+- name: Phil Tinn
+- name: Priya Dhawka
+- name: Qi Wang
+- name: Qian Yang
+- name: Qing Hu
+- name: Qing Xiao
+- name: Quan Ze Chen
+- name: Randy Auerbach
+- name: Rasya Fawwaz
+- name: Rene Just
+- name: Renee Shelby
+- name: Ritesh Kanchi
+- name: Robert Soden
+- name: Robert Wolfe
+- name: Rock Yuren Pang
+- name: Ronald Metoyer
+- name: Rongjun Ma
+- name: Ruican Zhong
+- name: Ruishi Zou
+- name: Runhua Zhao
+- name: Ruoxi Shang
+- name: Ryan Sultan
+- name: Sahiti Dharmavaram
+- name: Sam Preston
+- name: Sarah Fdili Alaoui
+- name: Sarah Rüller
+- name: Sauvik Das
+- name: Scott Carter
+- name: Scott Saponas
+- name: Sehi L'Yi
+- name: Selin Everett
+- name: Sen Zhang
+- name: Senthil Chandrasegaran
+- name: Seokhyun Hwang
+- name: Seray B Ibrahim
+- name: Sharon Heung
+- name: Shaun K Kane
+- name: Shirin Amouei
+- name: Shivani Agarwal
+- name: Shiyu Xu
+- name: Shrey Jain
+- name: Shuhan Pan
+  match:
+  - name: shuhan pan
+- name: Shuning Zhang
+- name: Shyamnath Gollakota
+- name: Simret Araya Gebreegziabher
+- name: Sixing Tao
+- name: Siyi Wu
+- name: Smriti Kotiyal
+- name: Solon Barocas
+- name: Sooyeon Lee
+- name: Sophia Liu
+- name: Sophie Stephenson
+- name: Srishti Palani
+- name: Stacy Hsueh
+- name: Su Lin Blodgett
+- name: Suleman Shahid
+- name: Sunny Consolvo
+- name: Suya Wu
+- name: Swati Sachdeva
+- name: Tal August
+- name: Taneea S Agrawaal
+- name: Tara Matthews
+- name: Tashfia Fatema
+- name: Thomas Serban von Davier
+- name: Thulasee Jose
+- name: Tianhong Catherine Yu
+- name: Tianshi Li
+- name: Timea Tihanyi
+- name: Timothy D. Becker
+- name: Tingyu Cheng
+- name: Tobias Höllerer
+- name: Toby Jia-Jun Li
+- name: Tom Yeh
+- name: Tony Zhou
+- name: Tristan Naumann
+- name: Tze-Yu Chen
+- name: Tzu-Sheng Kuo
+- name: Téo Sanchez
+- name: Vaishnavi Ranganathan
+- name: Varun Mishra
+- name: Varun Nagaraj Rao
+- name: Vaynee Sungeelee
+- name: Venkatesh Potluri
+- name: Vera van der Burg
+- name: Vidya Setlur
+- name: Vincent Cho
+- name: Volker Wulf
+- name: Vryan Feliciano
+- name: Walid Magdy
+- name: Wei Cai
+- name: Weinan Shi
+- name: Weiwei Guo
+- name: Xia Chen
+- name: Xiaohua Sun
+- name: Xiaotian Daisy Hu
+- name: Xiaoyu Zheng
+- name: Xin Yi
+- name: Xiyuan Shen
+- name: Xueliang Li
+- name: Xuemeng Jiang
+- name: Xuhai Orson Xu
+  match:
+  - name: Xuhai "Orson" Xu
+- name: Yancheng Cao
+- name: Yanfang Ye
+- name: Yarden Skop
+- name: Yate Ge
+- name: Yaxing Yao
+- name: Yeonhee Cho
+- name: Yi Dai
+- name: Yifang Zhou
+- name: Yike Shi
+- name: Ying Ma
+- name: Yishu Ji
+- name: Yitong Ji
+- name: Yiwen Zhang
+- name: Yixin Chen
+- name: Yiyue Luo
+- name: Yu-Ju Yang
+- name: Yuanchun Shi
+- name: Yuanhao Zeng
+- name: Yue Fu
+- name: Yufei Hu
+- name: Yuling Sun
+- name: Yumeng Ma
+- name: Yuting Yang
+- name: Yutong Jiang
+- name: Yuxuan Miao
+- name: Zelalem Gero
+- name: Zelia Gomes Da Costa Lai
+- name: Zeya Chen
+- name: Zeyu Wang
+- name: Zeyu Yan
+- name: Zhe He
+- name: Zhechen Zhao
+- name: Zhenhao Zhang
+- name: Zhi Yang Lim
+- name: Zhihan Zhang
+- name: Zhiping Zhang
+- name: Zhixin Huang
+- name: Zhuohao Jerry Zhang
+  match:
+  - name: Zhuohao (Jerry) Zhang
+- name: Zhuoyi Zhang
+- name: Zhuoyue Lyu
+- name: Ziang Xiao
+- name: Ziwei Dong
+- name: Zixuan Wang
+- name: Zoe Kaputa
+- name: Zoobia Saifullah Syeda
+internal_affiliations:
+- canonical: UW Art + Art History + Design
+  match:
+  - affiliations:
+    - institution: University of Washington
+      dsl: Interaction Design
+  - affiliations:
+    - institution: University of Washington
+      dsl: School of Art + Art History + Design
+  match_for_name:
+  - name: Shuhan Pan
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+- canonical: UW Biomedical Informatics & Medical Education
+  match:
+  - affiliations:
+    - institution: University of Washington
+      dsl: Biomedical Informatics and Medical Education
+  - affiliations:
+    - institution: University of Washington
+      dsl: Department of Biomedical Informatics and Medical Education
+- canonical: UW Computer Science & Engineering
+  match:
+  - affiliations:
+    - institution: Paul G. Allen School of Computer Science and Engineering
+  - affiliations:
+    - institution: University of Washington
+      dsl: Allen School of Computer Science
+  - affiliations:
+    - institution: University of Washington
+      dsl: Allen School of Computer Science & Engineering
+  - affiliations:
+    - institution: University of Washington
+      dsl: Allen School of Computer Science and Engineering
+  - affiliations:
+    - institution: University of Washington
+      dsl: CSE
+  - affiliations:
+    - institution: University of Washington
+      dsl: Computer Science
+  - affiliations:
+    - institution: University of Washington
+      dsl: Computer Science and Engineering
+  - affiliations:
+    - institution: University of Washington
+      dsl: Mobile Intelligence Lab
+  - affiliations:
+    - institution: University of Washington
+      dsl: Paul G. Allen School of Computer Science
+  - affiliations:
+    - institution: University of Washington
+      dsl: Paul G. Allen School of Computer Science & Engineering
+  - affiliations:
+    - institution: University of Washington
+      dsl: Paul G. Allen School of Computer Science & Engineering | DUB Group
+  - affiliations:
+    - institution: University of Washington
+      dsl: Paul G. Allen School of Computer Science & Engineering, ICTD
+  - affiliations:
+    - institution: University of Washington
+      dsl: Paul G. Allen School of Computer Science and Engineering
+  - affiliations:
+    - institution: University of Washington
+      dsl: The Paul G. Allen School of Computer Science & Engineering
+  match_for_name:
+  - name: Mingyuan Zhong
+    affiliations:
+    - institution: University of Washington
+  - name: Davin Win Kyi
+    affiliations:
+    - institution: University of Washington
+  - name: James Fogarty
+    affiliations:
+    - institution: University of Washington
+  - name: Olivia Banner
+    affiliations:
+    - institution: University of Washington
+  - name: Ken Gu
+    affiliations:
+    - institution: University of Washington
+  - name: Stacy Hsueh
+    affiliations:
+    - institution: University of Washington
+  - name: Nino Migineishvili
+    affiliations:
+    - institution: University of Washington
+  - name: Alice Gao
+    affiliations:
+    - institution: University of Washington
+  - name: Rene Just
+    affiliations:
+    - institution: University of Washington
+  - name: Anosh Ardeni
+    affiliations:
+    - institution: University of Washington
+  - name: Henok Assalif
+    affiliations:
+    - institution: University of Washington
+  - name: Zhi Yang Lim
+    affiliations:
+    - institution: University of Washington
+  - name: Tony Zhou
+    affiliations:
+    - institution: University of Washington
+  - name: Alicia Guo
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+- canonical: UW Education
+  match_for_name:
+  - name: Yifang Zhou
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+- canonical: UW Electrical & Computer Engineering
+  match:
+  - affiliations:
+    - institution: University of Washington
+      dsl: ECE
+  - affiliations:
+    - institution: University of Washington
+      dsl: Electrical and Computer Engineering
+  match_for_name:
+  - name: Rasya Fawwaz
+    affiliations:
+    - institution: University of Washington
+  - name: Brinda Moudgalya
+    affiliations:
+    - institution: University of Washington
+  - name: Hexi Wang
+    affiliations:
+    - institution: University of Washington
+  - name: Yuanhao Zeng
+    affiliations:
+    - institution: University of Washington
+  - name: Liam Bakar
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+  - name: Yuxuan Miao
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+- canonical: UW Human Centered Design & Engineering
+  match:
+  - affiliations:
+    - institution: University of Washington
+      dsl: Department of Human Centered Design & Engineering
+  - affiliations:
+    - institution: University of Washington
+      dsl: Department of Human Centered Design and Engineering
+  - affiliations:
+    - institution: University of Washington
+      dsl: HCDE
+  - affiliations:
+    - institution: University of Washington
+      dsl: Human Centered Design & Engineering
+  - affiliations:
+    - institution: University of Washington
+      dsl: Human Centered Design and Engineering
+  - affiliations:
+    - institution: University of Washington
+      dsl: Human-Centered Design and Engineering
+  - affiliations:
+    - institution: University of Washington
+      dsl: Human-centered Design and Engineering
+  - affiliations:
+    - institution: University of Washington-Seattle
+      dsl: Human Centered Design and Engineering
+  match_for_name:
+  - name: Meziah Ruby Cristobal
+    affiliations:
+    - institution: University of Washington
+  - name: Donghoon Shin
+    affiliations:
+    - institution: University of Washington
+  - name: Ruican Zhong
+    affiliations:
+    - institution: University of Washington
+  - name: Blair Subbaraman
+    affiliations:
+    - institution: University of Washington
+  - name: Nadya Peek
+    affiliations:
+    - institution: University of Washington
+  - name: Alexander Boltz
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+  - name: Joseph S Schafer
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+  - name: Matthew Kyle Pedraja
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+- canonical: UW Information School
+  match:
+  - affiliations:
+    - institution: University of Washington
+      dsl: Information School
+  - affiliations:
+    - institution: University of Washington
+      dsl: Information School/KidsTeamUW
+  - affiliations:
+    - institution: University of Washington
+      dsl: The Information School
+  - affiliations:
+    - institution: University of Washington
+      dsl: The Information School | DUB Group
+  - affiliations:
+    - institution: University of Washington
+      dsl: The Information School;
+  - affiliations:
+    - institution: University of Washington Information School
+  - affiliations:
+    - institution: University of Washington, Seattle
+      dsl: Information School
+  match_for_name:
+  - name: Norah Abokhodair
+    affiliations:
+    - institution: University of Washington
+  - name: Katie Davis
+    affiliations:
+    - institution: University of Washington
+  - name: Michelle Zhang
+    affiliations:
+    - institution: University of Washington
+  - name: Aylin Caliskan
+    affiliations:
+    - institution: University of Washington
+  - name: Jacob O Wobbrock
+    affiliations:
+    - institution: University of Washington
+  - name: Hannah Yi
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+  - name: Shirin Amouei
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+  - name: Claire L Mitchell
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+  - name: Junhan Kong
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+  - name: Mingyao Xu
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+- canonical: UW MHCI+D
+  match_for_name:
+  - name: Tze-Yu Chen
+    affiliations:
+    - institution: University of Washington
+- canonical: UW Psychology
+  match:
+  - affiliations:
+    - institution: University of Washington
+      dsl: Department of Psychology
+  - affiliations:
+    - institution: University of Washington
+      dsl: Psychology
+  match_for_name:
+  - name: Xiaotian Daisy Hu
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+- canonical: UW Tacoma Computer Science & Systems
+  match:
+  - affiliations:
+    - institution: University of Washington
+      dsl: Tacoma School of Engineering and Technology
+  match_for_name:
+  - name: Chunyang Li
+    affiliations:
+    - institution: University of Washington
+      dsl: ''
+- canonical: UW Urban Design & Planning
+  match:
+  - affiliations:
+    - institution: University of Washington
+      dsl: Department of Urban Design and Planning
+external_affiliations:
+- canonical: Aalto University
+- canonical: Alibaba
+  match:
+  - affiliations:
+    - institution: Alibaba Digital Media & Entertainment Group
+- canonical: Allen Institute for AI
+  match:
+  - affiliations:
+    - institution: Allen Institute for Artificial Intelligence
+- canonical: Aurora Public Schools
+- canonical: Autodesk
+  match:
+  - affiliations:
+    - institution: Autodesk Research
+- canonical: Bauhaus-Universität Weimar
+  match:
+  - affiliations:
+    - institution: Bauhaus University
+- canonical: Boston College
+- canonical: CKB Eco Fund
+- canonical: Carnegie Mellon University
+  match:
+  - affiliations:
+    - institution: School of Design
+      dsl: Carnegie Mellon University
+- canonical: Center for Democracy & Technology
+- canonical: Centre National de la Recherche Scientifique
+  match:
+  - affiliations:
+    - institution: CNRS
+- canonical: Columbia University
+  match:
+  - affiliations:
+    - institution: Columbia University School of Nursing
+- canonical: Cornell Tech
+- canonical: Cornell University
+  match:
+  - affiliations:
+    - institution: New York-Presbyterian Hospital/ Weill Cornell Medicine
+  - affiliations:
+    - institution: Weill Cornell Medical College
+- canonical: Dartmouth College
+- canonical: Delft University of Technology
+  match:
+  - affiliations:
+    - institution: TU Delft
+  - affiliations:
+    - institution: Technical University Delft
+- canonical: Design Academy Eindhoven
+- canonical: Eindhoven University of Technology
+- canonical: Emory University
+- canonical: Epic Systems
+- canonical: Fudan University
+- canonical: Georgia Institute of Technology
+- canonical: Google
+  match:
+  - affiliations:
+    - institution: Google Research
+- canonical: Hamilton-Madison House
+- canonical: Harvard University
+  match:
+  - affiliations:
+    - institution: Harvard Medical School
+- canonical: Illinois Institute of Technology
+- canonical: Independent Researcher
+- canonical: Indiana University Bloomington
+- canonical: Institut des Systèmes Intelligents et de Robotique
+  match:
+  - affiliations:
+    - institution: Institut Des Systèmes Intelligents et de Robotique
+- canonical: Issaquah High School
+- canonical: Johns Hopkins
+  match:
+  - affiliations:
+    - institution: Johns Hopkins University
+- canonical: KAIST
+- canonical: King's College London
+- canonical: LMU Munich
+  match:
+  - affiliations:
+    - institution: Ludwig Maximilian University of Munich
+- canonical: Lahore University of Management Sciences
+- canonical: Lund University
+- canonical: McGill University
+- canonical: Microsoft
+  match:
+  - affiliations:
+    - institution: Microsoft Nuance
+  - affiliations:
+    - institution: Microsoft Research
+- canonical: Munich University of Applied Sciences
+  match:
+  - affiliations:
+    - institution: Hochschule München University of Applied Sciences
+  - affiliations:
+    - institution: University of Applied Sciences Munich
+- canonical: Nanyang Technological University
+- canonical: New Jersey Institute of Technology
+- canonical: Northeastern University
+- canonical: Northwestern University
+- canonical: Princeton University
+- canonical: Qinghai University
+- canonical: Rutgers University
+- canonical: SINTEF
+- canonical: Shantou University
+- canonical: Simon Fraser University
+- canonical: Sorbonne Université
+- canonical: South London and Maudsley NHS Foundation Trust
+- canonical: Southern University of Science and Technology
+- canonical: Stanford University
+  match:
+  - affiliations:
+    - institution: Stanford University School of Medicine
+- canonical: Tableau
+  match:
+  - affiliations:
+    - institution: Tableau Research
+- canonical: The Harker School
+- canonical: The University of Melbourne
+- canonical: The University of Texas at Austin
+  match:
+  - affiliations:
+    - institution: University of Texas at Austin
+- canonical: Tongji University
+- canonical: Toyota Research Institute
+- canonical: Tsinghua University
+  match:
+  - affiliations:
+    - institution: Department of Computer Science and Technology, Tsinghua 
+        University
+- canonical: University of Applied Sciences and Arts of Southern Switzerland
+  match:
+  - affiliations:
+    - institution: SUPSI
+- canonical: University of Arkansas
+  match:
+  - affiliations:
+    - institution: University of Arkansas, Fayetteville
+- canonical: University of California, Berkeley
+- canonical: University of California, Santa Barbara
+  match:
+  - affiliations:
+    - institution: UCSB
+  - affiliations:
+    - institution: University of California Santa Barbara
+- canonical: University of Cambridge
+- canonical: University of Colorado Boulder
+- canonical: University of Edinburgh
+  match:
+  - affiliations:
+    - institution: The University of Edinburgh
+- canonical: University of Essex
+- canonical: University of Illinois Chicago
+- canonical: University of Illinois Urbana-Champaign
+  match:
+  - affiliations:
+    - institution: School of Information Sciences
+      dsl: University of Illinois Urbana-Champaign
+- canonical: University of Manitoba
+- canonical: University of Maryland
+  match:
+  - affiliations:
+    - institution: University Of Maryland
+      dsl: Department of Computer Science
+- canonical: University of Michigan
+- canonical: University of Minnesota
+- canonical: University of Music and Theatre Munich
+- canonical: University of Notre Dame
+- canonical: University of Oregon
+- canonical: University of Siegen
+- canonical: University of Southern California
+- canonical: University of Toronto
+- canonical: University of Wisconsin
+  match:
+  - affiliations:
+    - institution: University of Wisconsin-Madison
+- canonical: University of the Arts London
+- canonical: Utrecht University
+- canonical: Washington and Lee University
+- canonical: Wuhan University of Technology
+- canonical: Zhongguancun Laboratory
