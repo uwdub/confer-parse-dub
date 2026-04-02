@@ -674,6 +674,9 @@ internal_affiliations:
     - institution: University of Washington, Seattle
       dsl: Information School
   match_for_name:
+  - name: Jade Xiaoyi Li  # CHI 2026, by request of author
+    affiliations:
+    - institution: University of Michigan
   - name: Norah Abokhodair
     affiliations:
     - institution: University of Washington
@@ -751,6 +754,13 @@ external_affiliations:
 - canonical: Allen Institute for AI
   match:
   - affiliations:
+    - institution: Allen Institute for Artificial Intelligence
+  reject:
+  - name: Daniel S Weld  # CHI 2026, by request of author
+- canonical: Allen Institute for AI / UW Computer Science & Engineering  # CHI 2026, hack affiliation for Daniel S Weld, by request of author
+  match_for_name:
+  - name: Daniel S Weld
+    affiliations:
     - institution: Allen Institute for Artificial Intelligence
 - canonical: Aurora Public Schools
 - canonical: Autodesk
@@ -908,6 +918,8 @@ external_affiliations:
     - institution: University Of Maryland
       dsl: Department of Computer Science
 - canonical: University of Michigan
+  reject:
+  - name: Jade Xiaoyi Li  # CHI 2026, by request of author
 - canonical: University of Minnesota
 - canonical: University of Music and Theatre Munich
 - canonical: University of Notre Dame
