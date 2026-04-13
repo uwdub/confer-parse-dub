@@ -39,7 +39,7 @@ def parse_sigchi_program(config: Config) -> list[ParsedPaper]:
     people_by_id = {person.id: person for person in program.people}
     tracks = {t.id: t.name or "(unnamed)" for t in program.tracks}
 
-    papers = []
+    papers: list[ParsedPaper] = []
     for content in program.contents:
         paper = _parse_content(content, people_by_id, tracks)
         if paper is not None:
@@ -58,20 +58,16 @@ def _parse_content(
     bestpaper = content.award == "BEST_PAPER"
     honorablemention = content.award == "HONORABLE_MENTION"
 
-    # Extract addons.
-    addons: dict[str, object] = {}
-    if content.doi is not None:
-        addons["doi"] = {"type": "doiLink", "url": content.doi}
-    for video in content.videos:
-        if video.type == "Video preview":
-            addons["Presentation Video"] = {
-                "title": "Presentation Video",
-                "type": "video",
-                "url": video.url,
-            }
+    # Extract supported paper links from content.addons.
+    doi: str | None = None
+    for addon in content.addons.values():
+        if not addon.url:
+            continue
+        if addon.type == "doiLink":
+            doi = addon.url
 
     # Expand authors from personId.
-    authors = []
+    authors: list[ParsedAuthor] = []
     for raw_author in content.authors:
         person = people_by_id.get(raw_author.personId)
         if person is None:
@@ -112,7 +108,7 @@ def _parse_content(
         importedId=content.importedId,
         source=content.source,
         isBreak=content.isBreak,
-        addons=addons,
+        doi=doi,
         bestpaper=bestpaper,
         honorablemention=honorablemention,
         authors=authors,

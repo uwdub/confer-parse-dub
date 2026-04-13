@@ -30,7 +30,7 @@ class ParsedPaper(BaseModel):
     importedId: str = ""
     source: str = ""
     isBreak: bool = False
-    addons: dict[str, object] = {}
+    doi: str | None = None
     bestpaper: bool = False
     honorablemention: bool = False
     authors: list[ParsedAuthor] = []

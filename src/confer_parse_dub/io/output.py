@@ -46,7 +46,7 @@ def write_output(papers: list[ParsedPaper], path: pathlib.Path) -> None:
 
 
 def _paper_to_dict(paper: ParsedPaper) -> dict[str, Any]:
-    return {
+    data: dict[str, Any] = {
         "id": paper.id,
         "title": paper.title,
         "bestpaper": paper.bestpaper,
@@ -58,7 +58,6 @@ def _paper_to_dict(paper: ParsedPaper) -> dict[str, Any]:
             }
             for author in paper.authors
         ],
-        "addons": paper.addons,
         "trackId": paper.trackId,
         "typeId": paper.typeId,
         "sessionIds": paper.sessionIds,
@@ -68,3 +67,6 @@ def _paper_to_dict(paper: ParsedPaper) -> dict[str, Any]:
         "importedId": paper.importedId,
         "isBreak": paper.isBreak,
     }
+    if paper.doi:
+        data["doi"] = paper.doi
+    return data

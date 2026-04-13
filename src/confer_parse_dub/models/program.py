@@ -32,6 +32,13 @@ class RawVideoInput(BaseModel):
     url: str = ""
 
 
+class RawAddonInput(BaseModel):
+    name: str = ""
+    title: str = ""
+    type: str = ""
+    url: str = ""
+
+
 class RawContentInput(BaseModel):
     id: int
     typeId: int | None = None
@@ -41,12 +48,11 @@ class RawContentInput(BaseModel):
     importedId: str = ""
     source: str = ""
     award: str = ""
-    doi: str | None = None
     sessionIds: list[int] = []
     eventIds: list[int] = []
     recognitionIds: list[int] = []
+    addons: dict[str, RawAddonInput] = {}
     authors: list[RawAuthorInput] = []
-    videos: list[RawVideoInput] = []
 
 
 class RawTrackInput(BaseModel):
