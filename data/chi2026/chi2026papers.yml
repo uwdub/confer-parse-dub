@@ -22,7 +22,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Joseph Chee Chang
     affiliation: Allen Institute for AI
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -32,6 +31,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-2005
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791673
 - id: 223127
   title: '"Families Are Messy": From Parent-Child Tensions to Family-Centered Design
     of Smart Home Technologies'
@@ -52,7 +52,6 @@ papers:
     affiliation: University of Michigan
   - name: Florian Schaub
     affiliation: University of Michigan
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -62,6 +61,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-6893
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790865
 - id: 222566
   title: 'GeoVisA11y: An AI-based Geovisualization Question-Answering System for Screen-Reader
     Users'
@@ -82,7 +82,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Jon E Froehlich
     affiliation: UW Computer Science & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -92,6 +91,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-2323
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790334
 - id: 223456
   title: 'With Visual Integrity and Care: A Framework for Mixed Methods Research on
     Visual Social Data'
@@ -108,7 +108,6 @@ papers:
     affiliation: SINTEF
   - name: Kate Starbird
     affiliation: UW Human Centered Design & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -118,6 +117,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-6936
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791623
 - id: 223465
   title: 'Exploring the Future of AI in Clinical Collaboration: A Study on Tumor Board
     Case Preparation'
@@ -184,7 +184,6 @@ papers:
     affiliation: Microsoft
   - name: Eric Horvitz
     affiliation: Microsoft
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -194,6 +193,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-4748
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790448
 - id: 222114
   title: '"I Need to Find That One Chart": How Data Workers Navigate, Summarize and
     Communicate Analytical Conversations'
@@ -206,7 +206,6 @@ papers:
     affiliation: Tableau
   - name: Vidya Setlur
     affiliation: Tableau
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -216,6 +215,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-4827
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790802
 - id: 222382
   title: 'Just-in-Time Objectives: A General Approach for Specialized AI Interactions'
   bestpaper: false
@@ -237,7 +237,6 @@ papers:
     affiliation: Stanford University
   - name: Michael S Bernstein
     affiliation: Stanford University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -247,6 +246,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-9744
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790713
 - id: 223393
   title: 'Like, Comment & Caption: A Decade of Social Media Video Caption Research
     (2015-2025)'
@@ -267,7 +267,6 @@ papers:
     affiliation: New Jersey Institute of Technology
   - name: Sooyeon Lee
     affiliation: New Jersey Institute of Technology
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -277,6 +276,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-6067
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791868
 - id: 222396
   title: 'MIND: Empowering Mental Health Clinicians With Multimodal Data Insights
     Through a Narrative Dashboard'
@@ -311,7 +311,6 @@ papers:
     affiliation: Columbia University
   - name: Xuhai Orson Xu
     affiliation: Columbia University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -321,6 +320,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-6290
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790529
 - id: 223335
   title: 'Privy: Envisioning and Mitigating Privacy Risks for Consumer-Facing AI Product
     Concepts'
@@ -347,7 +347,6 @@ papers:
     affiliation: Carnegie Mellon University
   - name: Sauvik Das
     affiliation: Carnegie Mellon University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -357,6 +356,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-6031
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791279
 - id: 222350
   title: Quantifying the Novelty Bias When Evaluating Interactive Prototypes
   bestpaper: false
@@ -368,7 +368,6 @@ papers:
     affiliation: UW Information School
   - name: Jacob O Wobbrock
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -378,6 +377,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-3157
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791685
 - id: 222945
   title: 'Sprout: Using a Visual Metaphor to Support Customizable and Collaborative
     Health Tracking'
@@ -392,7 +392,6 @@ papers:
     affiliation: Dartmouth College
   - name: Elizabeth L Murnane
     affiliation: Dartmouth College
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -402,6 +401,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-3744
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791353
 - id: 222070
   title: 'The Siren Song of LLMs: How Users Perceive and Respond to Dark Patterns
     in Large Language Models'
@@ -418,7 +418,6 @@ papers:
     affiliation: Carnegie Mellon University
   - name: Hua Shen
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -428,6 +427,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-2608
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791149
 - id: 221927
   title: 'VueBuds: Visual Intelligence With Wireless Earbuds'
   bestpaper: false
@@ -447,7 +447,6 @@ papers:
     affiliation: UW Electrical & Computer Engineering
   - name: Shyamnath Gollakota
     affiliation: UW Computer Science & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -457,6 +456,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-3040
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791322
 - id: 223323
   title: Ability Heuristics for Conducting Accessibility Inspections
   bestpaper: false
@@ -476,7 +476,6 @@ papers:
     affiliation: UW Information School
   - name: Jacob O Wobbrock
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -486,6 +485,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-2925
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791504
 - id: 222349
   title: A Framework for Adapting in-Car Touchscreen Interfaces to Driver 
     Behaviors, Perception, and Cognition
@@ -508,7 +508,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Jacob O Wobbrock
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -518,6 +517,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-4487
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790434
 - id: 222562
   title: A Framework to Characterize Reporting on Generative AI Use
   bestpaper: false
@@ -533,7 +533,6 @@ papers:
     affiliation: UW Information School
   - name: Solon Barocas
     affiliation: Microsoft
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -543,6 +542,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-2324
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791649
 - id: 222227
   title: 'Artists on a Decade of AI Evolution: An Interview Study of Affordances,
     Culture, and Artistic Practice With Machine Learning'
@@ -563,7 +563,6 @@ papers:
   - name: Baptiste Caramiaux
     affiliation: Centre National de la Recherche Scientifique / Sorbonne 
       Université
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -573,6 +572,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-3558
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790398
 - id: 221882
   title: A Scoping Review and Guidelines on Privacy Policy's Visualization From 
     an HCI Perspective
@@ -595,7 +595,6 @@ papers:
     affiliation: Tsinghua University / Zhongguancun Laboratory
   - name: Hewu Li
     affiliation: Tsinghua University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -605,6 +604,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-2146
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790320
 - id: 222997
   title: Automatic Synthesis of Visualization Design Knowledge Bases
   bestpaper: false
@@ -618,7 +618,6 @@ papers:
     affiliation: Harvard University
   - name: Jeffrey Heer
     affiliation: UW Computer Science & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -628,6 +627,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-1535
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790286
 - id: 222797
   title: "Becoming a Healthy Player: Exploring Teen Esports Players' Perspectives
     on Mental Well-Being Through Participatory Design"
@@ -644,7 +644,6 @@ papers:
     affiliation: UW Information School
   - name: Jason Yip
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -654,6 +653,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-7696
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791938
 - id: 222272
   title: 'Beyond Accuracy: Experts See AI Fact-Checks as Accurate but Less Useful'
   bestpaper: false
@@ -671,7 +671,6 @@ papers:
     affiliation: UW Human Centered Design & Engineering
   - name: Min Kyung Lee
     affiliation: The University of Texas at Austin
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -681,6 +680,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-3128
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791625
 - id: 223352
   title: 'BikeButler: A Personalized, Context-Sensitive Bike Routing Tool Using Open
     Data and VLM-based Analyses of Street View Imagery'
@@ -697,7 +697,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Jon E Froehlich
     affiliation: UW Computer Science & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -707,6 +706,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-9122
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791292
 - id: 221830
   title: 'Botender: Supporting Communities in Collaboratively Designing AI Agents
     Through Case-Based Provocations'
@@ -727,7 +727,6 @@ papers:
     affiliation: Carnegie Mellon University
   - name: Kenneth Holstein
     affiliation: Carnegie Mellon University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -737,6 +736,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-5681
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790500
 - id: 222330
   title: '"Chat, Should I Leave Him?" Risks, Rewards, and Roles for AI in Relationship
     Advice'
@@ -747,7 +747,6 @@ papers:
     affiliation: Microsoft / UW Human Centered Design & Engineering
   - name: Calvin A Liang
     affiliation: Northwestern University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -757,6 +756,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-6679
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790739
 - id: 221847
   title: 'Circuit2Yarn: From Planar Circuits to Electronic Yarns for Textile-Based
     Interactions'
@@ -781,7 +781,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Tingyu Cheng
     affiliation: University of Notre Dame
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -791,6 +790,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-7856
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791650
 - id: 223380
   title: 'Clay ARTools: Precise Machine Toolpath Editing for Clay 3D Printing With
     Craft-Inspired Direct Manipulation Tools in AR'
@@ -807,7 +807,6 @@ papers:
     affiliation: University of California, Santa Barbara
   - name: Jennifer Jacobs
     affiliation: University of California, Santa Barbara
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -817,6 +816,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-6075
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791878
 - id: 222392
   title: 'Consent Under Constraints: Negotiating Photography and Media Sharing in
     Institutionalized Childcare'
@@ -833,7 +833,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Julie A Kientz
     affiliation: UW Human Centered Design & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -843,6 +842,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-9738
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791261
 - id: 223415
   title: 'Dark Patterns Meet GUI Agents: LLM Agent Susceptibility to Manipulative
     Interfaces and the Role of Human Oversight'
@@ -877,7 +877,6 @@ papers:
     affiliation: Johns Hopkins
   - name: Toby Jia-Jun Li
     affiliation: University of Notre Dame
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -887,6 +886,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-9150
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791568
 - id: 221977
   title: "Decoupling of Usefulness and Novelty: Evaluating the Impact of Generative
     AI on Design Outputs and Novice Designers' Creative Thinking"
@@ -913,7 +913,6 @@ papers:
     affiliation: UW Information School
   - name: Alexis Hiniker
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -923,6 +922,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-8771
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791329
 - id: 222632
   title: 'Digitizing the Pre-Consultation Experience: Impacts and Design Recommendations'
   bestpaper: false
@@ -940,7 +940,6 @@ papers:
     affiliation: University of Toronto
   - name: Khai N Truong
     affiliation: University of Toronto
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -950,6 +949,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-2350
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791354
 - id: 223108
   title: 'DOLLama: Fostering Family Anti-Bullying Learning Through AI-Augmented, Toy-Mediated
     Educational Drama'
@@ -970,7 +970,6 @@ papers:
     affiliation: Southern University of Science and Technology
   - name: Pengcheng An
     affiliation: Southern University of Science and Technology
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -980,6 +979,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-9098
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790687
 - id: 222885
   title: Evaluating Behavior Change Interventions for Responsible Data Science
   bestpaper: false
@@ -993,7 +993,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Emily Wall
     affiliation: Emory University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1003,6 +1002,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-9412
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791566
 - id: 222520
   title: 'Framing Responsible Design of AI for Mental Well-Being: AI as Primary Care,
     Nutritional Supplement, or Yoga Instructor?'
@@ -1021,7 +1021,6 @@ papers:
     affiliation: Cornell University
   - name: Qian Yang
     affiliation: Cornell University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1031,6 +1030,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-9392
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791556
 - id: 222408
   title: 'From Copy/Paste to Copying Pastes: Supporting Replication in an Online Digital
     Fabrication Community'
@@ -1041,7 +1041,6 @@ papers:
     affiliation: UW Human Centered Design & Engineering
   - name: Nadya Peek
     affiliation: UW Human Centered Design & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1051,6 +1050,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-6280
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791321
 - id: 223264
   title: 'From Slang to Standards: Consensus-Driven Airdrop Hunter Definition as a
     Baseline for Cryptocurrency Ecosystem Security and Governance'
@@ -1063,7 +1063,6 @@ papers:
     affiliation: CKB Eco Fund
   - name: Wei Cai
     affiliation: UW Tacoma Computer Science & Systems
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1073,6 +1072,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-4290
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790777
 - id: 222942
   title: "Generative AI and Creative Mediums for Youth's Emotion Regulation: An Interview
     Study With Clinicians"
@@ -1089,7 +1089,6 @@ papers:
     affiliation: UW Information School
   - name: Katie Davis
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1099,6 +1098,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-2890
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790909
 - id: 222508
   title: "Generative AI in Children's Creative Collaboration: Impact, Perception,
     and Design Guidelines"
@@ -1121,7 +1121,6 @@ papers:
     affiliation: UW Information School
   - name: Jason Yip
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1131,6 +1130,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-2777
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790907
 - id: 222066
   title: 'GenFaceUI: Meta-Design of Generative Personalized Facial Expression Interfaces
     for Intelligent Agents'
@@ -1154,7 +1154,6 @@ papers:
     affiliation: Tongji University
   - name: Xiaohua Sun
     affiliation: Southern University of Science and Technology
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1164,6 +1163,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-8386
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790653
 - id: 222128
   title: Hesitation and Tolerance in Recommender Systems
   bestpaper: false
@@ -1183,7 +1183,6 @@ papers:
     affiliation: UW Information School
   - name: Xuemeng Jiang
     affiliation: Alibaba
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1193,6 +1192,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-7070
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791865
 - id: 222065
   title: "\"I Don't Trust It, but I Use It\": Navigating Trust, Privacy, and Identity
     in Disabled People's Use of Generative AI"
@@ -1207,7 +1207,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Olivia Banner
     affiliation: UW Computer Science & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1217,6 +1216,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-8384
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790652
 - id: 222379
   title: "‘In a Pinch, if You Have Nothing': An Exploration of Money-Making Apps in
     Homeless Shelters"
@@ -1235,7 +1235,6 @@ papers:
     affiliation: UW Information School
   - name: Kurtis Heimerl
     affiliation: UW Computer Science & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1245,6 +1244,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-9743
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791541
 - id: 222726
   title: Interface Support for Evaluating Disability Bias in AI Generated Images
   bestpaper: false
@@ -1258,7 +1258,6 @@ papers:
     affiliation: UW Human Centered Design & Engineering
   - name: Leah Findlater
     affiliation: UW Human Centered Design & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1268,6 +1267,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-5489
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791922
 - id: 222742
   title: 'MagBall: Magnetic Rollerball for Multi-Scale Contact Interactions on Diverse
     Surfaces'
@@ -1282,7 +1282,6 @@ papers:
     affiliation: UW Electrical & Computer Engineering
   - name: Yiyue Luo
     affiliation: UW Electrical & Computer Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1292,6 +1291,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-3298
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791366
 - id: 222418
   title: "More Than Decision Support: Exploring Patients' Longitudinal Usage of Large
     Language Models in Real-World Healthcare Settings"
@@ -1316,7 +1316,6 @@ papers:
     affiliation: Fudan University
   - name: Xuhai Orson Xu
     affiliation: Columbia University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1326,6 +1325,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-1834
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791946
 - id: 222915
   title: Nonvisual Support for Understanding and Reasoning About Data Structures
   bestpaper: false
@@ -1347,7 +1347,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Matt Wang
     affiliation: UW Computer Science & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1357,6 +1356,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-8144
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791656
 - id: 222269
   title: 'PaperTok: Exploring the Use of Generative AI for Creating Short-Form Videos
     for Research Communication'
@@ -1379,7 +1379,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Gary Hsieh
     affiliation: UW Human Centered Design & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1389,6 +1388,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-6637
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790553
 - id: 221925
   title: 'PolicyPad: Collaborative Prototyping of LLM Policies'
   bestpaper: false
@@ -1406,7 +1406,6 @@ papers:
     affiliation: Carnegie Mellon University
   - name: Amy X Zhang
     affiliation: UW Computer Science & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1416,6 +1415,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-2191
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791689
 - id: 222576
   title: Pringles, Prangles, or Prongles? Negotiating Creative Authorship in 
     Children's Remix Practices
@@ -1438,7 +1438,6 @@ papers:
     affiliation: UW Information School
   - name: Jason Yip
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1448,6 +1447,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-4506
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791311
 - id: 223494
   title: 'PrivWeb: Unobtrusive and Content-Aware Privacy Protection for Web Agents'
   bestpaper: false
@@ -1469,7 +1469,6 @@ papers:
     affiliation: Tsinghua University
   - name: Hewu Li
     affiliation: Tsinghua University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1479,6 +1478,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-1217
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790919
 - id: 223337
   title: 'Promptimizer: User-Led Prompt Optimization for Personal Content Classification'
   bestpaper: false
@@ -1490,7 +1490,6 @@ papers:
     affiliation: Washington and Lee University
   - name: Amy X Zhang
     affiliation: UW Computer Science & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1500,6 +1499,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-7361
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790923
 - id: 223272
   title: 'Protosampling: Enabling Free-Form Convergence of Sampling and Prototyping
     Through Canvas-Driven Visual AI Generation'
@@ -1514,7 +1514,6 @@ papers:
     affiliation: Autodesk
   - name: Fraser Anderson
     affiliation: Autodesk
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1524,6 +1523,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-4298
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791884
 - id: 222222
   title: 'Reactive Writers: How Co-Writing With AI Changes How We Engage With Ideas'
   bestpaper: false
@@ -1537,7 +1537,6 @@ papers:
     affiliation: Cornell Tech
   - name: Maurice Jakesch
     affiliation: Bauhaus-Universität Weimar
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1547,6 +1546,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-1371
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791529
 - id: 222367
   title: 'Reflective AI: A Slow Technology Approach for Design Education'
   bestpaper: false
@@ -1566,7 +1566,6 @@ papers:
     affiliation: Delft University of Technology
   - name: Peter Lloyd
     affiliation: Delft University of Technology
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1576,6 +1575,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-9753
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791691
 - id: 222374
   title: 'Regulating AI: Where U.S. State Policy and HCI (Mis)align'
   bestpaper: false
@@ -1593,7 +1593,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Katharina Reinecke
     affiliation: UW Computer Science & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1603,6 +1602,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-5392
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791424
 - id: 222386
   title: Reimagining Participatory Agile Development in Community-Industry 
     Partnerships
@@ -1617,7 +1617,6 @@ papers:
     affiliation: Stanford University
   - name: Mary Gray
     affiliation: Microsoft
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1627,6 +1626,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-7551
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791312
 - id: 222426
   title: Relief or Displacement? How Teachers Are Negotiating Generative AI's 
     Role in Their Professional Practice
@@ -1655,7 +1655,6 @@ papers:
     affiliation: Boston College
   - name: Katie Davis
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1665,6 +1664,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-9787
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791904
 - id: 223464
   title: 'Rethinking Misinformation: A Holistic Community Model for Youth Resilience
     Through Socioemotional Learning and Sociocultural Design'
@@ -1693,7 +1693,6 @@ papers:
     affiliation: UW Information School
   - name: Jin Ha Lee
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1703,6 +1702,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-3416
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790876
 - id: 222288
   title: 'Silencing \& Surging: A Layered Ecology of Algorithmic Repression and Resistance
     in the Gaza Escalations'
@@ -1731,7 +1731,6 @@ papers:
     affiliation: University of Siegen
   - name: Peter Tolmie
     affiliation: University of Siegen
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1741,6 +1740,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-6621
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790994
 - id: 222246
   title: 'SimStep: Human-in-the-Loop Authoring of Interactive Educational Simulations
     Through Task-Level Abstractions'
@@ -1759,7 +1759,6 @@ papers:
     affiliation: Stanford University
   - name: Hariharan Subramonyam
     affiliation: Stanford University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1769,6 +1768,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-7502
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791514
 - id: 222024
   title: 'TaskAudit: Detecting Functiona11ity Errors in Mobile Apps via Agentic Task
     Execution'
@@ -1787,7 +1787,6 @@ papers:
     affiliation: UW Computer Science & Engineering
   - name: Jacob O Wobbrock
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1797,6 +1796,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-6163
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791415
 - id: 223175
   title: The Engagement-Prolonging Designs Teens Encounter on Very Large Online 
     Platforms
@@ -1813,7 +1813,6 @@ papers:
     affiliation: University of Michigan
   - name: Alexis Hiniker
     affiliation: UW Information School
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1823,6 +1822,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-3351
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790393
 - id: 222472
   title: The Promise and Peril of on-Device AI for Conservation Work
   bestpaper: false
@@ -1836,7 +1836,6 @@ papers:
     affiliation: Microsoft
   - name: Kurtis Heimerl
     affiliation: UW Computer Science & Engineering
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1846,6 +1845,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-2724
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791359
 - id: 223446
   title: 'The Toronto Water Atlas: Staging Encounters With Nature Through Design'
   bestpaper: false
@@ -1861,7 +1861,6 @@ papers:
     affiliation: University of Toronto
   - name: Robert Soden
     affiliation: University of Toronto
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1871,6 +1870,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-3835
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790410
 - id: 223088
   title: Towards Understanding Children's Collaborative Interaction Patterns in 
     Child-Ai Co-Creative Interfaces
@@ -1887,7 +1887,6 @@ papers:
     affiliation: UW Information School
   - name: Nikita Soni
     affiliation: University of Illinois Chicago
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds: []
@@ -1897,6 +1896,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-1159
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791831
 - id: 223277
   title: 'TraceRing: Touchpad-Like Pointing With a Single IMU Ring Through Personalized
     Learning'
@@ -1919,7 +1919,6 @@ papers:
     affiliation: Tsinghua University
   - name: Yuanchun Shi
     affiliation: Tsinghua University / Qinghai University
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1929,6 +1928,7 @@ papers:
   recognitionIds: []
   importedId: chi26c-5147
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3790463
 - id: 225642
   title: 'Uncovering Parental Struggles: Using Digital Probes to Analyse Challenges
     in Applying Online Parenting Content'
@@ -1947,7 +1947,6 @@ papers:
     affiliation: King's College London
   - name: Petr Slovak
     affiliation: King's College London
-  addons: {}
   trackId: 13848
   typeId: 14739
   sessionIds:
@@ -1981,7 +1980,6 @@ papers:
     affiliation: Google
   - name: Ashley Marie Walker
     affiliation: Google
-  addons: {}
   trackId: 13833
   typeId: 14694
   sessionIds:
@@ -1991,3 +1989,4 @@ papers:
   recognitionIds: []
   importedId: chi26c-3218
   isBreak: false
+  doi: https://doi.org/10.1145/3772318.3791463
