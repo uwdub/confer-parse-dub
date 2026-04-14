@@ -36,4 +36,4 @@ def save_conferences(
 
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
-        yaml.dump(doc, f)
+        _ = yaml.dump(doc, f)
