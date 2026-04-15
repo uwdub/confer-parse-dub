@@ -6,10 +6,6 @@ from typing import TYPE_CHECKING
 
 from confer_parse_dub.exceptions import ConfigError
 from confer_parse_dub.io.config_io import load_config, save_config
-from confer_parse_dub.processing.normalize_affiliations import (
-    affiliation_key,
-    find_all_matching_affiliations,
-)
 from confer_parse_dub.models.config import (
     AffiliationEntry,
     AffiliationMatchRule,
@@ -21,6 +17,10 @@ from confer_parse_dub.models.config import (
     NameMatch,
     PaperRule,
     QueryRule,
+)
+from confer_parse_dub.processing.normalize_affiliations import (
+    affiliation_key,
+    find_all_matching_affiliations,
 )
 
 if TYPE_CHECKING:
@@ -66,9 +66,7 @@ def _check_disjoint_ints(
         raise ConfigError(f"Entry appears in both {list_a} and {list_b}: {example}")
 
 
-def validate_config(
-    config: Config, papers: "list[ParsedPaper] | None" = None
-) -> None:
+def validate_config(config: Config, papers: "list[ParsedPaper] | None" = None) -> None:
     """
     Raise ConfigError if any config invariant is violated.
 
@@ -126,20 +124,28 @@ def validate_config(
     _check_unique_strs("no_split_institution", no_split_inst)
     _check_unique_strs("manual_split_institution", manual_split_inst)
     _check_disjoint_strs(
-        "include_institution", set(include_inst),
-        "exclude_institution", set(exclude_inst),
+        "include_institution",
+        set(include_inst),
+        "exclude_institution",
+        set(exclude_inst),
     )
     _check_disjoint_strs(
-        "split_institution", set(split_inst),
-        "no_split_institution", set(no_split_inst),
+        "split_institution",
+        set(split_inst),
+        "no_split_institution",
+        set(no_split_inst),
     )
     _check_disjoint_strs(
-        "manual_split_institution", set(manual_split_inst),
-        "split_institution", set(split_inst),
+        "manual_split_institution",
+        set(manual_split_inst),
+        "split_institution",
+        set(split_inst),
     )
     _check_disjoint_strs(
-        "manual_split_institution", set(manual_split_inst),
-        "no_split_institution", set(no_split_inst),
+        "manual_split_institution",
+        set(manual_split_inst),
+        "no_split_institution",
+        set(no_split_inst),
     )
 
     # --- include/exclude/split/no_split/manual_split dsl ---
@@ -154,20 +160,28 @@ def validate_config(
     _check_unique_strs("no_split_dsl", no_split_dsl)
     _check_unique_strs("manual_split_dsl", manual_split_dsl)
     _check_disjoint_strs(
-        "include_dsl", set(include_dsl),
-        "exclude_dsl", set(exclude_dsl),
+        "include_dsl",
+        set(include_dsl),
+        "exclude_dsl",
+        set(exclude_dsl),
     )
     _check_disjoint_strs(
-        "split_dsl", set(split_dsl),
-        "no_split_dsl", set(no_split_dsl),
+        "split_dsl",
+        set(split_dsl),
+        "no_split_dsl",
+        set(no_split_dsl),
     )
     _check_disjoint_strs(
-        "manual_split_dsl", set(manual_split_dsl),
-        "split_dsl", set(split_dsl),
+        "manual_split_dsl",
+        set(manual_split_dsl),
+        "split_dsl",
+        set(split_dsl),
     )
     _check_disjoint_strs(
-        "manual_split_dsl", set(manual_split_dsl),
-        "no_split_dsl", set(no_split_dsl),
+        "manual_split_dsl",
+        set(manual_split_dsl),
+        "no_split_dsl",
+        set(no_split_dsl),
     )
 
     # --- include/exclude paper ---
@@ -176,8 +190,10 @@ def validate_config(
     _check_unique_ints("include_paper", include_paper)
     _check_unique_ints("exclude_paper", exclude_paper)
     _check_disjoint_ints(
-        "include_paper", set(include_paper),
-        "exclude_paper", set(exclude_paper),
+        "include_paper",
+        set(include_paper),
+        "exclude_paper",
+        set(exclude_paper),
     )
 
     # --- data-dependent checks ---
@@ -357,7 +373,9 @@ class ConfigDocument:
             named = [r for r in match_rules if r.name is not None]
             unnamed = [r for r in match_rules if r.name is None]
             target.append(
-                AffiliationEntry(canonical=canonical, match=unnamed, match_for_name=named)
+                AffiliationEntry(
+                    canonical=canonical, match=unnamed, match_for_name=named
+                )
             )
 
         self.apply(_mutate, papers)
@@ -369,9 +387,7 @@ class ConfigDocument:
         papers: "list[ParsedPaper] | None" = None,
     ) -> None:
         def _mutate(config: Config) -> None:
-            for entry in (
-                config.internal_affiliations + config.external_affiliations
-            ):
+            for entry in config.internal_affiliations + config.external_affiliations:
                 if entry.canonical == canonical:
                     if match_rule.name is not None:
                         entry.match_for_name.append(match_rule)
@@ -400,16 +416,19 @@ class ConfigDocument:
 
         Removes by value equality so it is correct regardless of list sort order.
         """
+
         def _mutate(config: Config) -> None:
-            for entry in (
-                config.internal_affiliations + config.external_affiliations
-            ):
+            for entry in config.internal_affiliations + config.external_affiliations:
                 if entry.canonical == canonical:
-                    target = entry.match_for_name if rule.name is not None else entry.match
+                    target = (
+                        entry.match_for_name if rule.name is not None else entry.match
+                    )
                     try:
                         target.remove(rule)
                     except ValueError:
-                        list_name = "match_for_name" if rule.name is not None else "match"
+                        list_name = (
+                            "match_for_name" if rule.name is not None else "match"
+                        )
                         raise ConfigError(
                             f"Match rule not found in {canonical!r} {list_name}"
                         )
@@ -444,10 +463,16 @@ class ConfigDocument:
         )
 
     def add_split_institution(self, name: str) -> None:
-        self.apply(lambda config: config.split_institution.append(InstitutionRule(name=name)))
+        self.apply(
+            lambda config: config.split_institution.append(InstitutionRule(name=name))
+        )
 
     def add_no_split_institution(self, name: str) -> None:
-        self.apply(lambda config: config.no_split_institution.append(InstitutionRule(name=name)))
+        self.apply(
+            lambda config: config.no_split_institution.append(
+                InstitutionRule(name=name)
+            )
+        )
 
     def add_include_dsl(self, name: str, comment: str | None = None) -> None:
         self.apply(

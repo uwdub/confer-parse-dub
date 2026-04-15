@@ -186,9 +186,7 @@ class ApplyFiltersStep(Step):
 
     @override
     def execute(self, context: RunContext) -> list[Step]:
-        context.papers = apply_filters(
-            context.config_doc.config, context.papers
-        )
+        context.papers = apply_filters(context.config_doc.config, context.papers)
         context.ui.print(
             "{} papers after affiliation review.".format(len(context.papers))
         )

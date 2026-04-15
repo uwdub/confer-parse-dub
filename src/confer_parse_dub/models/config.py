@@ -115,7 +115,10 @@ class AffiliationMatchRule(CommentedModel):
     @override
     def sort_key(self) -> object:
         first = self.affiliations[0] if self.affiliations else None
-        return (first.institution or "" if first else "", first.dsl or "" if first else "")
+        return (
+            first.institution or "" if first else "",
+            first.dsl or "" if first else "",
+        )
 
 
 class RejectRule(CommentedModel):

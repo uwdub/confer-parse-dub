@@ -12,22 +12,22 @@ import pathlib
 from typing import Callable, cast
 
 import questionary
+from confer_parse_dub_paths import PATH_DATA
 from invoke.collection import Collection
 from invoke.context import Context
 from invoke.tasks import Task, task
-from confer_parse_dub_paths import PATH_DATA
 
 from confer_parse_dub.browser_companion import BrowserCompanion
-from confer_parse_dub.io.conferences_io import load_conferences, save_conferences
 from confer_parse_dub.config_document import ConfigDocument
+from confer_parse_dub.io.conferences_io import load_conferences, save_conferences
 from confer_parse_dub.io.state_io import load_state
+from confer_parse_dub.io.undo import undo_last_decision
 from confer_parse_dub.models.conference import ConferenceEntry
 from confer_parse_dub.models.state import ProcessingState
 from confer_parse_dub.steps.cli import CliUI
 from confer_parse_dub.steps.context import RunContext
 from confer_parse_dub.steps.pipeline import LoadPapersStep
 from confer_parse_dub.steps.runner import run_steps
-from confer_parse_dub.io.undo import undo_last_decision
 
 _CONFIG_TEMPLATE = """\
 version: 'v1'
@@ -136,9 +136,7 @@ def run_pipeline(
     )
 
     try:
-        completed = run_steps(
-            [LoadPapersStep(conf.label, str(path_config))], context
-        )
+        completed = run_steps([LoadPapersStep(conf.label, str(path_config))], context)
     finally:
         if companion is not None:
             companion.close()

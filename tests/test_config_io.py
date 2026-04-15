@@ -147,7 +147,9 @@ def test_save_sorts_items(tmp_path: pathlib.Path) -> None:
 
     # In include_institution: MIT comes before Stanford in saved output
     institution_names = [r.name for r in reloaded.include_institution]
-    assert institution_names.index("MIT") < institution_names.index("Stanford University")
+    assert institution_names.index("MIT") < institution_names.index(
+        "Stanford University"
+    )
 
     # In names: Jane Smith comes before John Doe in saved output
     name_list = [e.name for e in reloaded.names]

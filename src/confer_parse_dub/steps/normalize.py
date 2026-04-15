@@ -3,7 +3,9 @@
 from typing import override
 
 from confer_parse_dub.exceptions import ConfigError, QuitRequested
+from confer_parse_dub.io.parse import parse_tracks
 from confer_parse_dub.io.state_io import save_state
+from confer_parse_dub.io.undo import undo_last_decision
 from confer_parse_dub.models.config import AffiliationMatchRule, AffiliationPatternItem
 from confer_parse_dub.models.paper import Affiliation, ParsedPaper
 from confer_parse_dub.models.state import Decision, DecisionType
@@ -13,8 +15,6 @@ from confer_parse_dub.processing.normalize_affiliations import (
     is_internal_affiliation,
 )
 from confer_parse_dub.processing.normalize_names import find_canonical_name
-from confer_parse_dub.io.parse import parse_tracks
-from confer_parse_dub.io.undo import undo_last_decision
 from confer_parse_dub.steps.context import UI, RunContext, Step, UIChoice
 
 
@@ -27,9 +27,9 @@ class NormalizePapersStep(Step):
         pending = [p for p in context.papers if _paper_needs_work(context, p)]
 
         total_names = len(context.config_doc.config.names)
-        total_affiliations = len(
-            context.config_doc.config.internal_affiliations
-        ) + len(context.config_doc.config.external_affiliations)
+        total_affiliations = len(context.config_doc.config.internal_affiliations) + len(
+            context.config_doc.config.external_affiliations
+        )
 
         if not pending:
             context.ui.print("=== Normalization ===")
@@ -132,7 +132,9 @@ class PaperNormalizationStep(Step):
             else:
                 ui.print("    {}".format(name_display))
                 for affil in author.affiliations:
-                    canonical_affil = find_canonical_affiliation(config, canonical_name, [affil])
+                    canonical_affil = find_canonical_affiliation(
+                        config, canonical_name, [affil]
+                    )
                     key = affiliation_key(canonical_name, [affil])
                     inst_label = affil.institution or affil.dsl or "(no institution)"
                     if canonical_affil is not None:
@@ -151,7 +153,9 @@ class PaperNormalizationStep(Step):
                 continue
             if author.name in state.skipped_names and not context.review_skipped:
                 continue
-            name_steps.append(ResolveNameStep(author.name, author.affiliations, paper.title))
+            name_steps.append(
+                ResolveNameStep(author.name, author.affiliations, paper.title)
+            )
 
         return name_steps + [ResolveAffilsForPaperStep(paper)]
 
@@ -172,21 +176,31 @@ class ResolveAffilsForPaperStep(Step):
             if canonical_name is None:
                 continue
             for affil in author.affiliations:
-                if find_canonical_affiliation(config, canonical_name, [affil]) is not None:
+                if (
+                    find_canonical_affiliation(config, canonical_name, [affil])
+                    is not None
+                ):
                     continue
                 key = affiliation_key(canonical_name, [affil])
                 if key in state.skipped_affiliations and not context.review_skipped:
                     continue
-                steps.append(ResolveAffiliationStep(
-                    canonical_name, [affil], key, self._paper.title
-                ))
+                steps.append(
+                    ResolveAffiliationStep(
+                        canonical_name, [affil], key, self._paper.title
+                    )
+                )
         return steps
 
 
 class ResolveNameStep(Step):
     """Prompt the user to resolve one unrecognized author name."""
 
-    def __init__(self, raw_name: str, affiliations: list[Affiliation] | None = None, paper_title: str | None = None) -> None:
+    def __init__(
+        self,
+        raw_name: str,
+        affiliations: list[Affiliation] | None = None,
+        paper_title: str | None = None,
+    ) -> None:
         self._raw_name: str = raw_name
         self._affiliations: list[Affiliation] = affiliations or []
         self._paper_title: str | None = paper_title
@@ -206,7 +220,9 @@ class ResolveNameStep(Step):
             return []
 
         if context.browser is not None:
-            context.browser.navigate_for_name(raw_name, self._affiliations, self._paper_title)
+            context.browser.navigate_for_name(
+                raw_name, self._affiliations, self._paper_title
+            )
 
         ui.print()
         ui.print("  Name: '{}'".format(raw_name))
@@ -292,9 +308,7 @@ class ResolveNameStep(Step):
                 raise QuitRequested()
 
             typed_cf = typed.casefold()
-            canonical = next(
-                (c for c in existing if c.casefold() == typed_cf), None
-            )
+            canonical = next((c for c in existing if c.casefold() == typed_cf), None)
 
             if canonical is None:
                 ui.print("  No valid canonical selected. Skipping.")
@@ -316,9 +330,7 @@ class ResolveNameStep(Step):
             state.history.append(
                 Decision(
                     type=DecisionType.ADD_NAME_ALIAS,
-                    summary="Mapped '{}' as alias for '{}'".format(
-                        raw_name, canonical
-                    ),
+                    summary="Mapped '{}' as alias for '{}'".format(raw_name, canonical),
                     name=raw_name,
                     canonical=canonical,
                 )
@@ -395,9 +407,11 @@ class ResolveAffiliationStep(Step):
             )
 
         ui.print()
-        ui.print("  Affiliation for '{}' ({})".format(
-            author_name, "internal" if internal else "external"
-        ))
+        ui.print(
+            "  Affiliation for '{}' ({})".format(
+                author_name, "internal" if internal else "external"
+            )
+        )
         for affil in affiliations:
             if affil.institution:
                 ui.print("    institution: '{}'".format(affil.institution))
@@ -486,7 +500,9 @@ class ResolveAffiliationStep(Step):
             canonical = single_institution
             match_rules: list[AffiliationMatchRule] = []
             try:
-                config_doc.add_affiliation(canonical, match_rules, internal=internal, papers=context.papers)
+                config_doc.add_affiliation(
+                    canonical, match_rules, internal=internal, papers=context.papers
+                )
             except ConfigError as exc:
                 ui.print("  Error: {}".format(exc))
                 return [self]
@@ -526,7 +542,9 @@ class ResolveAffiliationStep(Step):
                 if match_rule is None:
                     raise QuitRequested()
             try:
-                config_doc.add_affiliation(canonical, [match_rule], internal=internal, papers=context.papers)
+                config_doc.add_affiliation(
+                    canonical, [match_rule], internal=internal, papers=context.papers
+                )
             except ConfigError as exc:
                 ui.print("  Error: {}".format(exc))
                 return [self]
@@ -539,9 +557,7 @@ class ResolveAffiliationStep(Step):
             )
 
         elif action == ALIAS_TO_ANOTHER:
-            typed = ui.autocomplete(
-                "  Canonical affiliation:", existing_canonicals
-            )
+            typed = ui.autocomplete("  Canonical affiliation:", existing_canonicals)
             if typed is None:
                 raise QuitRequested()
 
@@ -573,7 +589,9 @@ class ResolveAffiliationStep(Step):
                 if match_rule is None:
                     raise QuitRequested()
             try:
-                config_doc.add_affiliation_match_rule(canonical, match_rule, papers=context.papers)
+                config_doc.add_affiliation_match_rule(
+                    canonical, match_rule, papers=context.papers
+                )
             except ConfigError as exc:
                 ui.print("  Error: {}".format(exc))
                 return [self]
@@ -644,7 +662,9 @@ class ReviewSplitsStep(Step):
 
         steps: list[Step] = [
             ReviewSplitStep(
-                value, parts, field,
+                value,
+                parts,
+                field,
                 author_name=first_author.get((value, field)),
                 papers=papers_seen.get((value, field), []),
             )
@@ -676,21 +696,25 @@ class ReviewSplitStep(Step):
         config_doc = context.config_doc
 
         if context.browser is not None:
-            context.browser.navigate_for_split(self._value, self._parts, self._author_name)
+            context.browser.navigate_for_split(
+                self._value, self._parts, self._author_name
+            )
 
         ui.print()
-        ui.print("  {} '{}' contains '/' ({} paper(s))".format(
-            self._field.capitalize(), self._value, len(self._papers)
-        ))
+        ui.print(
+            "  {} '{}' contains '/' ({} paper(s))".format(
+                self._field.capitalize(), self._value, len(self._papers)
+            )
+        )
         if self._author_name:
             ui.print("  First seen for: {}".format(self._author_name))
         for paper in self._papers[:3]:
             ui.print("    - {}".format(paper.title[:72]))
         if len(self._papers) > 3:
             ui.print("    ... and {} more.".format(len(self._papers) - 3))
-        ui.print("  Split into: {}".format(
-            ", ".join("'{}'".format(p) for p in self._parts)
-        ))
+        ui.print(
+            "  Split into: {}".format(", ".join("'{}'".format(p) for p in self._parts))
+        )
 
         split = ui.confirm("Split?", default=True)
         if split is None:
@@ -722,19 +746,30 @@ def _apply_splits(context: RunContext) -> None:
     split_dsls = {r.name for r in config.split_dsl}
     manual_split_inst = {r.name: r.parts for r in config.manual_split_institution}
     manual_split_dsl = {r.name: r.parts for r in config.manual_split_dsl}
-    if not split_institutions and not split_dsls and not manual_split_inst and not manual_split_dsl:
+    if (
+        not split_institutions
+        and not split_dsls
+        and not manual_split_inst
+        and not manual_split_dsl
+    ):
         return
     for paper in context.papers:
         for author in paper.authors:
             new_affiliations: list[Affiliation] = []
             for affil in author.affiliations:
                 if affil.institution in split_institutions:
-                    parts = [p.strip() for p in affil.institution.split("/") if p.strip()]
+                    parts = [
+                        p.strip() for p in affil.institution.split("/") if p.strip()
+                    ]
                     for part in parts:
-                        new_affiliations.append(affil.model_copy(update={"institution": part}))
+                        new_affiliations.append(
+                            affil.model_copy(update={"institution": part})
+                        )
                 elif affil.institution in manual_split_inst:
                     for part in manual_split_inst[affil.institution]:
-                        new_affiliations.append(affil.model_copy(update={"institution": part}))
+                        new_affiliations.append(
+                            affil.model_copy(update={"institution": part})
+                        )
                 elif affil.dsl in split_dsls:
                     parts = [p.strip() for p in affil.dsl.split("/") if p.strip()]
                     for part in parts:
@@ -869,9 +904,13 @@ def _do_split(
 
     try:
         if split_field == "institution":
-            context.config_doc.add_manual_split_institution(original_value, parts, context.papers)
+            context.config_doc.add_manual_split_institution(
+                original_value, parts, context.papers
+            )
         else:
-            context.config_doc.add_manual_split_dsl(original_value, parts, context.papers)
+            context.config_doc.add_manual_split_dsl(
+                original_value, parts, context.papers
+            )
     except ConfigError as exc:
         ui.print("  Error: {}".format(exc))
         return None
@@ -887,8 +926,15 @@ def _do_split(
     steps: list[Step] = []
     for new_affil in new_affils:
         new_key = affiliation_key(author_name, [new_affil])
-        if find_canonical_affiliation(context.config_doc.config, author_name, [new_affil]) is None:
-            steps.append(ResolveAffiliationStep(author_name, [new_affil], new_key, paper_title))
+        if (
+            find_canonical_affiliation(
+                context.config_doc.config, author_name, [new_affil]
+            )
+            is None
+        ):
+            steps.append(
+                ResolveAffiliationStep(author_name, [new_affil], new_key, paper_title)
+            )
     return steps
 
 
@@ -908,5 +954,3 @@ def _paper_needs_work(context: RunContext, paper: ParsedPaper) -> bool:
                 if key not in state.skipped_affiliations or context.review_skipped:
                     return True
     return False
-
-

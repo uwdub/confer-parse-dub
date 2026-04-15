@@ -53,8 +53,7 @@ def find_all_matching_affiliations(
                         affil_match = True
                         if pattern.institution is not None:
                             affil_match = (
-                                affil_match
-                                and pattern.institution == affil.institution
+                                affil_match and pattern.institution == affil.institution
                             )
                         if pattern.dsl is not None:
                             affil_match = affil_match and pattern.dsl == affil.dsl

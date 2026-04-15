@@ -3,10 +3,10 @@
 from typing import override
 
 from confer_parse_dub.exceptions import QuitRequested
+from confer_parse_dub.io.parse import count_papers_by_track, parse_tracks
 from confer_parse_dub.models.config import Config, QueryRule, TrackRule
 from confer_parse_dub.models.paper import ParsedPaper
 from confer_parse_dub.processing.filter import apply_filters
-from confer_parse_dub.io.parse import count_papers_by_track, parse_tracks
 from confer_parse_dub.steps.context import UI, RunContext, Step, UIChoice
 
 
@@ -33,10 +33,7 @@ class ReviewQueryStep(Step):
         counts = count_papers_by_track(config_doc.config)
 
         track_list = sorted(
-            [
-                (tid, tracks.get(tid, "(unnamed)"), counts.get(tid, 0))
-                for tid in tracks
-            ],
+            [(tid, tracks.get(tid, "(unnamed)"), counts.get(tid, 0)) for tid in tracks],
             key=lambda x: -x[2],
         )
         track_list = [row for row in track_list if row[2] > 0]
@@ -118,8 +115,7 @@ class ReviewQueryStep(Step):
         new_rule = QueryRule(
             keywords=keywords,
             tracks=[
-                TrackRule(id=tid, name=tracks.get(tid, str(tid)))
-                for tid in track_ids
+                TrackRule(id=tid, name=tracks.get(tid, str(tid))) for tid in track_ids
             ],
         )
 
@@ -144,9 +140,7 @@ def _print_query_state(
     ui: UI, keywords: list[str], track_ids: list[int], tracks: dict[int, str]
 ) -> None:
     if keywords:
-        ui.print(
-            "Keywords: {}".format(", ".join("'{}'".format(k) for k in keywords))
-        )
+        ui.print("Keywords: {}".format(", ".join("'{}'".format(k) for k in keywords)))
     else:
         ui.print("Keywords: (none)")
     if track_ids:

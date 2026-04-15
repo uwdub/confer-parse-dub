@@ -52,7 +52,8 @@ class BrowserCompanion:
         ]
         if paper_title:
             urls.append(
-                "https://scholar.google.com/scholar?q=" + urllib.parse.quote_plus(paper_title)
+                "https://scholar.google.com/scholar?q="
+                + urllib.parse.quote_plus(paper_title)
             )
         self._navigate_urls(urls)
 
@@ -103,7 +104,9 @@ class BrowserCompanion:
 
         if internal:
             # We know the institution — find the person's department/lab.
-            person_inst = (author_name + " " + institution) if author_name else institution
+            person_inst = (
+                (author_name + " " + institution) if author_name else institution
+            )
             urls = [
                 ddg + urllib.parse.quote_plus(person_inst),
                 scholar + urllib.parse.quote_plus(person_inst),
@@ -124,7 +127,9 @@ class BrowserCompanion:
                 wiki + urllib.parse.quote_plus(institution),
             ]
             if author_name:
-                urls.append(ddg + urllib.parse.quote_plus(author_name + " " + institution))
+                urls.append(
+                    ddg + urllib.parse.quote_plus(author_name + " " + institution)
+                )
 
         if paper_title:
             urls.append(scholar + urllib.parse.quote_plus(paper_title))
@@ -156,7 +161,10 @@ class BrowserCompanion:
         with sync_playwright() as pw:
             browser = pw.chromium.launch(
                 headless=False,
-                args=["--start-maximized", "--disable-blink-features=AutomationControlled"],
+                args=[
+                    "--start-maximized",
+                    "--disable-blink-features=AutomationControlled",
+                ],
                 ignore_default_args=["--enable-automation"],
             )
             # One context = one window; all pages are tabs within it.
@@ -183,7 +191,9 @@ class BrowserCompanion:
                 # Navigate each active tab to its URL in place.
                 for i, url in enumerate(urls):
                     try:
-                        _ = pages[i].goto(url, wait_until="domcontentloaded", timeout=10000)
+                        _ = pages[i].goto(
+                            url, wait_until="domcontentloaded", timeout=10000
+                        )
                     except Exception as exc:
                         print(f"[browser] failed to load {url!r}: {exc}")
 

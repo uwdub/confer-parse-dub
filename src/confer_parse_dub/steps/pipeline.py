@@ -4,7 +4,9 @@ from typing import override
 
 from confer_parse_dub.config_document import validate_config
 from confer_parse_dub.io.parse import parse_sigchi_program
-from confer_parse_dub.processing.normalize_affiliations import find_canonical_affiliation
+from confer_parse_dub.processing.normalize_affiliations import (
+    find_canonical_affiliation,
+)
 from confer_parse_dub.processing.normalize_names import find_canonical_name
 from confer_parse_dub.steps.context import RunContext, Step
 
@@ -24,7 +26,10 @@ class LoadPapersStep(Step):
     @override
     def execute(self, context: RunContext) -> list[Step]:
         from confer_parse_dub.steps.affiliations import ReviewAffiliationsStep
-        from confer_parse_dub.steps.normalize import NormalizePapersStep, ReviewSplitsStep
+        from confer_parse_dub.steps.normalize import (
+            NormalizePapersStep,
+            ReviewSplitsStep,
+        )
         from confer_parse_dub.steps.output import CheckOutputStep
         from confer_parse_dub.steps.query import ReviewQueryStep
 
@@ -35,9 +40,7 @@ class LoadPapersStep(Step):
 
         papers = parse_sigchi_program(context.config_doc.config)
         track_count = len({p.trackId for p in papers})
-        ui.print(
-            "Loaded {} items across {} track(s).".format(len(papers), track_count)
-        )
+        ui.print("Loaded {} items across {} track(s).".format(len(papers), track_count))
 
         context.papers = papers
         context.total_loaded = len(papers)
@@ -68,9 +71,7 @@ class FilterSummaryStep(Step):
         ui.print("=== Filter ===")
         if keywords:
             ui.print(
-                "Keywords: {}".format(
-                    ", ".join("'{}'".format(k) for k in keywords)
-                )
+                "Keywords: {}".format(", ".join("'{}'".format(k) for k in keywords))
             )
         if track_count:
             ui.print("Tracks: {}".format(track_count))
@@ -87,17 +88,11 @@ class FilterSummaryStep(Step):
         if config.exclude_dsl:
             ui.print("DSL values excluded: {}".format(len(config.exclude_dsl)))
         if config.include_paper:
-            ui.print(
-                "Papers force-included: {}".format(len(config.include_paper))
-            )
+            ui.print("Papers force-included: {}".format(len(config.include_paper)))
         if config.exclude_paper:
-            ui.print(
-                "Papers force-excluded: {}".format(len(config.exclude_paper))
-            )
+            ui.print("Papers force-excluded: {}".format(len(config.exclude_paper)))
         ui.print(
-            "Matched {} of {} items.".format(
-                len(context.papers), context.total_loaded
-            )
+            "Matched {} of {} items.".format(len(context.papers), context.total_loaded)
         )
         ui.print()
         return []

@@ -3,8 +3,8 @@
 import pathlib
 from typing import override
 
-from confer_parse_dub.processing.normalize_titles import normalize_titles
 from confer_parse_dub.io.output import check_resolved, write_output
+from confer_parse_dub.processing.normalize_titles import normalize_titles
 from confer_parse_dub.processing.sort import sort_papers
 from confer_parse_dub.steps.context import RunContext, Step
 
@@ -24,9 +24,7 @@ class CheckOutputStep(Step):
             for problem in problems[:20]:
                 context.ui.print("  - {}".format(problem))
             if len(problems) > 20:
-                context.ui.print(
-                    "  ... and {} more.".format(len(problems) - 20)
-                )
+                context.ui.print("  ... and {} more.".format(len(problems) - 20))
             context.ui.print()
             context.ui.print(
                 "Run again to continue, or add --review-skipped to revisit skipped items."
