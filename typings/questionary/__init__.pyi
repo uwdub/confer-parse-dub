@@ -12,10 +12,8 @@ from typing import Generic, TypeVar
 
 _T = TypeVar("_T")
 
-
 class Question(Generic[_T]):
     def ask(self, patch_stdout: bool = False, kbi_msg: str = ...) -> _T | None: ...
-
 
 class Choice:
     title: str | list[tuple[str, str]] | None
@@ -33,7 +31,6 @@ class Choice:
         shortcut_key: str | bool | None = True,
         description: str | None = None,
     ) -> None: ...
-
 
 def select(
     message: str,
@@ -53,8 +50,6 @@ def select(
     show_description: bool = True,
     instruction: str | None = None,
 ) -> Question[str]: ...
-
-
 def confirm(
     message: str,
     default: bool = True,
@@ -64,8 +59,6 @@ def confirm(
     auto_enter: bool = True,
     instruction: str | None = None,
 ) -> Question[bool]: ...
-
-
 def text(
     message: str,
     default: str = "",
@@ -77,8 +70,6 @@ def text(
     instruction: str | None = None,
     lexer: object | None = None,
 ) -> Question[str]: ...
-
-
 def autocomplete(
     message: str,
     choices: list[str],
@@ -93,8 +84,6 @@ def autocomplete(
     validate: Callable[[str], bool | str] | None = None,
     style: object | None = None,
 ) -> Question[str]: ...
-
-
 def checkbox(
     message: str,
     choices: Sequence[str | Choice | dict[str, object]],
