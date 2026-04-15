@@ -1,6 +1,6 @@
 """Pydantic models for the conference configuration file."""
 
-from typing import Any, Literal, override
+from typing import Literal, override
 
 from pydantic import BaseModel, Field
 
@@ -10,7 +10,7 @@ class CommentedModel(BaseModel):
 
     comment: str | None = Field(default=None, exclude=True)
 
-    def sort_key(self) -> Any:
+    def sort_key(self) -> object:
         """Return a sort key for stable ordering in serialized output."""
         return ()
 
@@ -22,7 +22,7 @@ class TrackRule(CommentedModel):
     name: str
 
     @override
-    def sort_key(self) -> Any:
+    def sort_key(self) -> object:
         return self.id
 
 
@@ -40,7 +40,7 @@ class QueryRule(CommentedModel):
     tracks: list[TrackRule] = []
 
     @override
-    def sort_key(self) -> Any:
+    def sort_key(self) -> object:
         return (sorted(self.keywords)[:1], sorted(t.id for t in self.tracks)[:1])
 
 
@@ -50,7 +50,7 @@ class InstitutionRule(CommentedModel):
     name: str
 
     @override
-    def sort_key(self) -> Any:
+    def sort_key(self) -> object:
         return self.name
 
 
@@ -66,7 +66,7 @@ class ManualSplitRule(CommentedModel):
     parts: list[str]
 
     @override
-    def sort_key(self) -> Any:
+    def sort_key(self) -> object:
         return self.name
 
 
@@ -76,7 +76,7 @@ class DslRule(CommentedModel):
     name: str
 
     @override
-    def sort_key(self) -> Any:
+    def sort_key(self) -> object:
         return self.name
 
 
@@ -86,7 +86,7 @@ class PaperRule(CommentedModel):
     id: int
 
     @override
-    def sort_key(self) -> Any:
+    def sort_key(self) -> object:
         return self.id
 
 
@@ -99,7 +99,7 @@ class NameEntry(CommentedModel):
     match: list[NameMatch] = []
 
     @override
-    def sort_key(self) -> Any:
+    def sort_key(self) -> object:
         return self.name
 
 
@@ -113,7 +113,7 @@ class AffiliationMatchRule(CommentedModel):
     affiliations: list[AffiliationPatternItem] = []
 
     @override
-    def sort_key(self) -> Any:
+    def sort_key(self) -> object:
         first = self.affiliations[0] if self.affiliations else None
         return (first.institution or "" if first else "", first.dsl or "" if first else "")
 
@@ -129,7 +129,7 @@ class AffiliationEntry(CommentedModel):
     reject: list[RejectRule] = []
 
     @override
-    def sort_key(self) -> Any:
+    def sort_key(self) -> object:
         return self.canonical
 
 

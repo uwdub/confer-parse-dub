@@ -22,7 +22,7 @@ def apply_filters(config: Config, papers: list[ParsedPaper]) -> list[ParsedPaper
     exclude_dsl = {r.name.casefold() for r in config.exclude_dsl}
     all_keywords = [kw for rule in config.query for kw in rule.keywords]
 
-    result = []
+    result: list[ParsedPaper] = []
     for paper in papers:
         if paper.id in include_ids:
             result.append(paper)

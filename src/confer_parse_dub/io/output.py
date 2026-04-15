@@ -1,7 +1,6 @@
 """Write processed papers to a YAML output file."""
 
 import pathlib
-from typing import Any
 
 from ruamel.yaml import YAML
 
@@ -22,7 +21,7 @@ def check_resolved(papers: list[ParsedPaper], state: ProcessingState) -> list[st
     affiliations were not normalised should not prevent the paper from
     appearing.
     """
-    problems = []
+    problems: list[str] = []
 
     for paper in papers:
         for author in paper.authors:
@@ -42,11 +41,11 @@ def write_output(papers: list[ParsedPaper], path: pathlib.Path) -> None:
     yaml.default_flow_style = False
 
     with open(path, "w", encoding="utf-8") as f:
-        yaml.dump({"papers": papers_data}, f)
+        _ = yaml.dump({"papers": papers_data}, f)
 
 
-def _paper_to_dict(paper: ParsedPaper) -> dict[str, Any]:
-    data: dict[str, Any] = {
+def _paper_to_dict(paper: ParsedPaper) -> dict[str, object]:
+    data: dict[str, object] = {
         "id": paper.id,
         "title": paper.title,
         "bestpaper": paper.bestpaper,
