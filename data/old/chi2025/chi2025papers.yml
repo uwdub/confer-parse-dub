@@ -1,0 +1,2196 @@
+papers:
+- id: 189311
+  title: Deploying and Examining Beacon for at-Home Patient Self-Monitoring With
+    Critical Flicker Frequency
+  bestpaper: true
+  honorablemention: false
+  authors:
+  - name: Richard Li
+    affiliation: UW Computer Science & Engineering
+  - name: Philip Vutien
+    affiliation: UW Gastroenterology / Veterans Affairs Puget Sound Health Care 
+      System
+  - name: Sabrina Omer
+    affiliation: UW Gastroenterology
+  - name: Michael Yacoub
+    affiliation: UW Gastroenterology
+  - name: George Ioannou
+    affiliation: UW Gastroenterology / Veterans Affairs Puget Sound Health Care 
+      System
+  - name: Ravi Karkar
+    affiliation: University of Massachusetts Amherst
+  - name: Sean A Munson
+    affiliation: UW Human Centered Design & Engineering
+  - name: James Fogarty
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195024
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4347
+  isBreak: false
+- id: 189007
+  title: 'TelePulse: Enhancing the Teleoperation Experience Through Biomechanical
+    Simulation-Based Electrical Muscle Stimulation in Virtual Reality'
+  bestpaper: true
+  honorablemention: false
+  authors:
+  - name: Seokhyun Hwang
+    affiliation: UW Information School
+  - name: Seongjun Kang
+    affiliation: Gwangju Institute of Science and Technology
+  - name: Jeongseok Oh
+    affiliation: Gwangju Institute of Science and Technology
+  - name: Jeongju Park
+    affiliation: Gwangju Institute of Science and Technology
+  - name: Semoo Shin
+    affiliation: Gwangju Institute of Science and Technology
+  - name: Yiyue Luo
+    affiliation: UW Electrical & Computer Engineering
+  - name: Joseph DelPreto
+    affiliation: Massachusetts Institute of Technology
+  - name: Sangbeom Lee
+    affiliation: Gwangju Institute of Science and Technology
+  - name: Kyoobin Lee
+    affiliation: Gwangju Institute of Science and Technology
+  - name: Wojciech Matusik
+    affiliation: Massachusetts Institute of Technology
+  - name: Daniela Rus
+    affiliation: Massachusetts Institute of Technology
+  - name: SeungJun Kim
+    affiliation: Gwangju Institute of Science and Technology
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195043
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8342
+  isBreak: false
+- id: 188927
+  title: '"A Tool for Freedom": Co-Designing Mobility Aid Improvements Using Personal
+    Fabrication and Physical Interface Modules With Primarily Young Adults'
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Jerry Cao
+    affiliation: UW Computer Science & Engineering
+  - name: Krish Jain
+    affiliation: UW Computer Science & Engineering
+  - name: Julie Zhang
+    affiliation: UW Computer Science & Engineering
+  - name: Yuecheng Peng
+    affiliation: UW Global Innovation Exchange
+  - name: Shwetak N Patel
+    affiliation: UW Computer Science & Engineering / UW Electrical & Computer 
+      Engineering
+  - name: Jennifer Mankoff
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195054
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9116
+  isBreak: false
+- id: 189570
+  title: 'Building the Beloved Community: Designing Technologies for Neighborhood
+    Safety'
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Ishita Chordia
+    affiliation: UW Information School
+  - name: Robert Wolfe
+    affiliation: UW Information School
+  - name: Jason Yip
+    affiliation: UW Information School
+  - name: Alexis Hiniker
+    affiliation: UW Information School
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195109
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-3709
+  isBreak: false
+- id: 189632
+  title: Exploring Reduced Feature Sets for American Sign Language Dictionaries
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Ben Kosa
+    affiliation: University of Wisconsin-Madison
+  - name: Aashaka Desai
+    affiliation: UW Computer Science & Engineering
+  - name: Alex X Lu
+    affiliation: Microsoft
+  - name: Richard E Ladner
+    affiliation: UW Computer Science & Engineering
+  - name: Danielle Bragg
+    affiliation: Microsoft
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195103
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9444
+  isBreak: false
+- id: 188715
+  title: 'Incorporating Sustainability in Electronics Design: Obstacles and Opportunities'
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Zachary Englhardt
+    affiliation: UW Computer Science & Engineering
+  - name: Felix Hähnlein
+    affiliation: UW Computer Science & Engineering
+  - name: Yuxuan Mei
+    affiliation: UW Computer Science & Engineering
+  - name: Tong Lin
+    affiliation: UW Computer Science & Engineering
+  - name: Connor Masahiro Sun
+    affiliation: Oregon State University
+  - name: Zhihan Zhang
+    affiliation: UW Computer Science & Engineering
+  - name: Shwetak N Patel
+    affiliation: UW Computer Science & Engineering / UW Electrical & Computer 
+      Engineering
+  - name: Adriana Schulz
+    affiliation: UW Computer Science & Engineering
+  - name: Vikram Iyer
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195133
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4992
+  isBreak: false
+- id: 188257
+  title: "It's Not the Shape, It's the Settings: Tools for Exploring, Documenting,
+    and Sharing Physical Fabrication Parameters in 3D Printing"
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Blair Subbaraman
+    affiliation: UW Human Centered Design & Engineering
+  - name: Nathaneal Bursch
+    affiliation: UW Mechanical Engineering
+  - name: Nadya Peek
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195054
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9318
+  isBreak: false
+- id: 189083
+  title: "Micro-Narratives: A Scalable Method for Eliciting Stories of People's Lived
+    Experience"
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Amira Skeggs
+    affiliation: University of Cambridge
+  - name: Ashish Mehta
+    affiliation: Stanford University
+  - name: Valerie Yap
+    affiliation: University of Cambridge
+  - name: Seray B Ibrahim
+    affiliation: King's College London
+  - name: Charla "Aubrey" Rhodes
+    affiliation: King's College London
+  - name: James J Gross
+    affiliation: Stanford University
+  - name: Sean A Munson
+    affiliation: UW Human Centered Design & Engineering
+  - name: Predrag Klasnja
+    affiliation: University of Michigan
+  - name: Amy Orben
+    affiliation: University of Cambridge
+  - name: Petr Slovak
+    affiliation: King's College London
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195040
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-7452
+  isBreak: false
+- id: 188908
+  title: 'Slowness, Politics, and Joy: Values That Guide Technology Choices in Creative
+    Coding Classrooms'
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Andrew M McNutt
+    affiliation: University of Utah / UW Computer Science & Engineering
+  - name: Sam Cohen
+    affiliation: University of Chicago
+  - name: Ravi Chugh
+    affiliation: University of Chicago
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195001
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-3831
+  isBreak: false
+- id: 189018
+  title: 'Technical Responses to Critique: The Case of Skin Tone'
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Sayan Bhattacharjee
+    affiliation: UW Human Centered Design & Engineering
+  - name: David Ribes
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 196451
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-7016
+  isBreak: false
+- id: 188338
+  title: 'The End of "Trust and Safety"?: Examining the Future of Content Moderation
+    and Upheavals in Professional Online Safety Efforts'
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Rachel Elizabeth Moran
+    affiliation: UW Information School
+  - name: Joseph S Schafer
+    affiliation: UW Human Centered Design & Engineering
+  - name: Mert Bayar
+    affiliation: UW Information School
+  - name: Kate Starbird
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195019
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9507
+  isBreak: false
+- id: 189050
+  title: 'The Social Construction of Visualizations: Practitioner Challenges and Experiences
+    of Visualizing Race and Gender'
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Priya Dhawka
+    affiliation: UW Human Centered Design & Engineering
+  - name: Sayamindu Dasgupta
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195086
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-6143
+  isBreak: false
+- id: 189085
+  title: Towards AI-driven Sign Language Generation With Non-Manual Markers
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Han Zhang
+    affiliation: UW Computer Science & Engineering
+  - name: Rotem Shalev-Arkushin
+    affiliation: Tel Aviv University
+  - name: Vasileios Baltatzis
+    affiliation: Apple
+  - name: Connor Gillis
+    affiliation: Apple
+  - name: Gierad Laput
+    affiliation: Apple
+  - name: Raja Kushalnagar
+    affiliation: Gallaudet University
+  - name: Lorna C Quandt
+    affiliation: Gallaudet University
+  - name: Leah Findlater
+    affiliation: Apple
+  - name: Abdelkareem Bedri
+    affiliation: Apple
+  - name: Colin Lea
+    affiliation: Apple
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195033
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-5030
+  isBreak: false
+- id: 189657
+  title: Understanding the Training Experiences of Competitive Skiers With 
+    Tetraplegia
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Tamanna Motahar
+    affiliation: University of Utah / UW Computer Science & Engineering
+  - name: YeonJae Kim
+    affiliation: University of Utah
+  - name: Eden Laurel Fisher
+    affiliation: University of Utah
+  - name: Jason Wiese
+    affiliation: University of Utah
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 196426
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9693
+  isBreak: false
+- id: 188654
+  title: "\"We're Utterly Ill-Prepared to Deal With Something Like This\": Teachers'
+    Perspectives on Student Generation of Synthetic Nonconsensual Explicit Imagery"
+  bestpaper: false
+  honorablemention: true
+  authors:
+  - name: Miranda Wei
+    affiliation: UW Computer Science & Engineering
+  - name: Christina Yeung
+    affiliation: UW Computer Science & Engineering
+  - name: Franziska Roesner
+    affiliation: UW Computer Science & Engineering
+  - name: Tadayoshi Kohno
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195019
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-3680
+  isBreak: false
+- id: 188983
+  title: Accessibility for Whom? Perceptions of Mobility Barriers Across 
+    Disability Groups and Implications for Designing Personalized Maps
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Chu Li
+    affiliation: UW Computer Science & Engineering
+  - name: Rock Yuren Pang
+    affiliation: UW Computer Science & Engineering
+  - name: Delphine Labbé
+    affiliation: University of Illinois Chicago
+  - name: Yochai Eisenberg
+    affiliation: University of Illinois Chicago
+  - name: Maryam Hosseini
+    affiliation: University of California, Berkeley
+  - name: Jon E Froehlich
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195000
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9421
+  isBreak: false
+- id: 191700
+  title: "'AI Is Soulless': Hollywood Film Workers Strike and Emerging Perceptions
+    of Generative Cinema"
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Brett A Halperin
+    affiliation: UW Human Centered Design & Engineering
+  - name: Daniela Rosner
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13414
+  typeId: 14039
+  sessionIds:
+  - 191701
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25s-1200
+  isBreak: false
+- id: 188708
+  title: A Stakeholder Value Framework for Augmentative and Alternative 
+    Communication
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Annuska Zolyomi
+    affiliation: UW Bothell Computing & Software Systems
+  - name: Varsha Koushik
+    affiliation: Colorado College
+  - name: Dinara Asyet
+    affiliation: UW Bothell Computing & Software Systems
+  - name: Linh H Huynh
+    affiliation: UW Bothell Computing & Software Systems
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 191343
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4516
+  isBreak: false
+- id: 188946
+  title: Autoethnographic Insights From Neurodivergent GAI "Power Users"
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Kate S Glazko
+    affiliation: UW Computer Science & Engineering
+  - name: JunHyeok Cha
+    affiliation: University of Wisconsin-Madison
+  - name: Aaleyah Lewis
+    affiliation: UW Computer Science & Engineering
+  - name: Ben Kosa
+    affiliation: University of Wisconsin-Madison
+  - name: Brianna L Wimer
+    affiliation: University of Notre Dame
+  - name: Andrew Zheng
+    affiliation: Independent Researcher
+  - name: Roy Zheng
+    affiliation: National Coalition of Independent Scholars
+  - name: Jennifer Mankoff
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195033
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8473
+  isBreak: false
+- id: 189545
+  title: 'Beliefs Trump Facts: Effect of Frequent Corrections on Misinformation Beliefs
+    During Extended Extreme Events'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Archana Nandakumar
+    affiliation: UW Industrial & Systems Engineering
+  - name: Prashanth Rajivan
+    affiliation: UW Industrial & Systems Engineering
+  addons: {}
+  trackId: 13414
+  typeId: 14039
+  sessionIds:
+  - 191706
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25s-1100
+  isBreak: false
+- id: 189374
+  title: 'BioTube: Designing and Fabricating Biodegradable Hollow Tubular Devices
+    Through Progressive Crosslinking Alginate'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Yuecheng Peng
+    affiliation: University of California, Berkeley / UW Global Innovation 
+      Exchange
+  - name: Mako Miyatake
+    affiliation: University of California, Berkeley
+  - name: Tyler L Peng
+    affiliation: University of California, Berkeley
+  - name: Qiuyu Lu
+    affiliation: University of California, Berkeley
+  - name: Yue Yang
+    affiliation: University of California, Berkeley
+  - name: Lining Yao
+    affiliation: University of California, Berkeley
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195053
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4652
+  isBreak: false
+- id: 188988
+  title: 'Canvil: Designerly Adaptation for LLM-Powered User Experiences'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: K J Kevin Feng
+    affiliation: UW Human Centered Design & Engineering
+  - name: Q Vera Liao
+    affiliation: Microsoft
+  - name: Ziang Xiao
+    affiliation: Johns Hopkins University
+  - name: Jennifer Wortman Vaughan
+    affiliation: Microsoft
+  - name: Amy X Zhang
+    affiliation: UW Computer Science & Engineering
+  - name: David W McDonald
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195122
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-6156
+  isBreak: false
+- id: 188581
+  title: 'Children Using Tabletop Telepresence Robots for Collaboration: A Longitudinal
+    Case Study of Hybrid and Online Intergenerational Participatory Design'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Casey Lee Hunt
+    affiliation: University of Colorado
+  - name: Kaiwen Sun
+    affiliation: University of Michigan
+  - name: Zahra Dhuliawala
+    affiliation: University of Maryland, College Park
+  - name: Fumi Tsukiyama
+    affiliation: UW Human Centered Design & Engineering
+  - name: Allison J Druin
+    affiliation: J S Bryant School
+  - name: Amanda Huynh
+    affiliation: The Ohio State University
+  - name: Daniel Leithinger
+    affiliation: University of Colorado
+  - name: Jason Yip
+    affiliation: UW Information School
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195142
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9913
+  isBreak: false
+- id: 189578
+  title: Cultivating Computational Thinking and Social Play Among Neurodiverse 
+    Preschoolers in Inclusive Classrooms
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Maitraye Das
+    affiliation: Northeastern University
+  - name: Megan Tran
+    affiliation: UW Art + Art History + Design / UW Information School
+  - name: Amanda Chih-han Ong
+    affiliation: UW Human Centered Design & Engineering
+  - name: Julie A Kientz
+    affiliation: UW Human Centered Design & Engineering
+  - name: Heather Feldner
+    affiliation: UW Rehabilitation Medicine
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195069
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9498
+  isBreak: false
+- id: 195255
+  title: Designing LLM Chains by Adapting Techniques From Crowdsourcing 
+    Workflows
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Madeleine Grunde-McLaughlin
+    affiliation: UW Computer Science & Engineering
+  - name: Michelle S Lam
+    affiliation: Stanford University
+  - name: Ranjay Krishna
+    affiliation: UW Computer Science & Engineering / Allen Institute for 
+      Artificial Intelligence
+  - name: Daniel S Weld
+    affiliation: UW Computer Science & Engineering / Allen Institute for 
+      Artificial Intelligence
+  - name: Jeffrey Heer
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13414
+  typeId: 14039
+  sessionIds:
+  - 195259
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25s-1205
+  isBreak: false
+- id: 189251
+  title: Does the Story Matter? Applying Narrative Theory to an Educational 
+    Misinformation Escape Room Game
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Nisha Devasia
+    affiliation: UW Human Centered Design & Engineering / UW Information School
+  - name: Runhua Zhao
+    affiliation: UW Information School
+  - name: Jin Ha Lee
+    affiliation: UW Information School
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195126
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-5214
+  isBreak: false
+- id: 189633
+  title: 'Domain Experts, Design Novices: How Community Practitioners Enact Participatory
+    Design Values'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Eunhye Grace Ko
+    affiliation: The University of Texas at Austin
+  - name: Rotem Landesman
+    affiliation: UW Information School
+  - name: Jason C Young
+    affiliation: UW Information School
+  - name: Ahmer Arif
+    affiliation: The University of Texas at Austin
+  - name: Katie Davis
+    affiliation: UW Information School
+  - name: Angela D R Smith
+    affiliation: The University of Texas at Austin
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195104
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8355
+  isBreak: false
+- id: 189155
+  title: 'ECG Necklace: Low-Power Wireless Necklace for Continuous ECG Monitoring'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Qiuyue "Shirley" Xue
+    affiliation: UW Computer Science & Engineering
+  - name: Eric Steven Martin
+    affiliation: UW Electrical & Computer Engineering
+  - name: Jiaqing Liu
+    affiliation: UW Electrical & Computer Engineering
+  - name: Ruiqing Wang
+    affiliation: UW Global Innovation Exchange
+  - name: Antonio Glenn
+    affiliation: UW Computer Science & Engineering
+  - name: Richard Li
+    affiliation: UW Computer Science & Engineering
+  - name: Vikram Iyer
+    affiliation: UW Computer Science & Engineering
+  - name: Shwetak N Patel
+    affiliation: UW Computer Science & Engineering / UW Electrical & Computer 
+      Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195010
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9856
+  isBreak: false
+- id: 189233
+  title: 'Echoes of Care: Unveiling the Intertwined Tensions Between Childcare Work
+    and Voice Assistants'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Meghna Gupta
+    affiliation: UW Human Centered Design & Engineering
+  - name: Audrey Desjardins
+    affiliation: UW Art + Art History + Design
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195066
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-7864
+  isBreak: false
+- id: 189315
+  title: 'End User Authoring of Personalized Content Classifiers: Comparing Example
+    Labeling, Rule Writing, and LLM Prompting'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Leijie Wang
+    affiliation: UW Computer Science & Engineering
+  - name: Kathryn Yurechko
+    affiliation: Washington and Lee University
+  - name: Pranati Dani
+    affiliation: UW Computer Science & Engineering
+  - name: Quan Ze Chen
+    affiliation: UW Computer Science & Engineering
+  - name: Amy X Zhang
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195160
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-5882
+  isBreak: false
+- id: 188342
+  title: "\"Even Though I Went Through Everything, I Didn't Feel Like I Learned a
+    Lot\": Insights From Experiences of Non-Computer Science Students Learning to
+    Code"
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Murtaza Ali
+    affiliation: UW Human Centered Design & Engineering
+  - name: Sayamindu Dasgupta
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195001
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9744
+  isBreak: false
+- id: 189063
+  title: Exploring AI-Based Support in Speech-Language Pathology for Culturally 
+    and Linguistically Diverse Children
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Aaleyah Lewis
+    affiliation: UW Computer Science & Engineering
+  - name: Aayushi Dangol
+    affiliation: UW Human Centered Design & Engineering
+  - name: Hyewon Suh
+    affiliation: UW Human Centered Design & Engineering
+  - name: Abbie Olszewski
+    affiliation: University of Nevada, Reno
+  - name: James Fogarty
+    affiliation: UW Computer Science & Engineering
+  - name: Julie A Kientz
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195069
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8531
+  isBreak: false
+- id: 189186
+  title: Exploring the Use of Speculative Concept Films for Co-Speculation 
+    Around Data Ethics
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Wyatt Olson
+    affiliation: UW Art + Art History + Design
+  - name: James Pierce
+    affiliation: UW Art + Art History + Design
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195028
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8976
+  isBreak: false
+- id: 188847
+  title: 'FIP: Endowing Robust Motion Capture on Daily Garment by Fusing Flex and
+    Inertial Sensors'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Ruonan Zheng
+    affiliation: Xiamen University
+  - name: Jiawei Fang
+    affiliation: Xiamen University
+  - name: Yuan Yao
+    affiliation: Xiamen University
+  - name: Xiaoxia Gao
+    affiliation: Xiamen University
+  - name: Chengxu Zuo
+    affiliation: Xiamen University
+  - name: Shihui Guo
+    affiliation: Xiamen University
+  - name: Yiyue Luo
+    affiliation: UW Electrical & Computer Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195121
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-1664
+  isBreak: false
+- id: 188294
+  title: 'From Camera-Eye to AI: Exploring the Interplay of Cinematography and Computational
+    Visual Storytelling'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Brett A Halperin
+    affiliation: UW Human Centered Design & Engineering
+  - name: Stephanie M Lukin
+    affiliation: US Army Research Laboratory
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195040
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4081
+  isBreak: false
+- id: 188978
+  title: '"Here the GPT Made a Choice, and Every Choice Can Be Biased": How Students
+    Critically Engage With LLMs Through End-User Auditing Activity'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Snehal Prabhudesai
+    affiliation: University of Michigan
+  - name: Ananya Prashant Kasi
+    affiliation: University of Michigan
+  - name: Anmol Mansingh
+    affiliation: University of Michigan
+  - name: Anindya Das Antar
+    affiliation: University of Michigan
+  - name: Hua Shen
+    affiliation: UW Information School
+  - name: Nikola Banovic
+    affiliation: University of Michigan
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195134
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-1853
+  isBreak: false
+- id: 189175
+  title: 'IdeaSynth: Iterative Research Idea Development Through Evolving and Composing
+    Idea Facets With Literature-Grounded Feedback'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Kevin Pu
+    affiliation: University of Toronto
+  - name: K J Kevin Feng
+    affiliation: UW Human Centered Design & Engineering
+  - name: Tovi Grossman
+    affiliation: University of Toronto
+  - name: Tom Hope
+    affiliation: Allen Institute for Artificial Intelligence
+  - name: Bhavana Dalvi Mishra
+    affiliation: Allen Institute for Artificial Intelligence
+  - name: Matt Latzke
+    affiliation: Allen Institute for Artificial Intelligence
+  - name: Jonathan Bragg
+    affiliation: Allen Institute for Artificial Intelligence
+  - name: Joseph Chee Chang
+    affiliation: Allen Institute for Artificial Intelligence
+  - name: Pao Siangliulue
+    affiliation: Allen Institute for Artificial Intelligence
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195015
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-7649
+  isBreak: false
+- id: 189109
+  title: Identifying Opportunities and Envisioning Ecological Momentary 
+    Interoceptive Awareness Interventions With Young Women
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Phoebe A Staab
+    affiliation: King's College London
+  - name: Arpita
+    affiliation: UW Human Centered Design & Engineering
+  - name: Petr Slovak
+    affiliation: King's College London
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 191346
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4150
+  isBreak: false
+- id: 189173
+  title: 'Immersive Biography: Supporting Intercultural Empathy and Understanding
+    for Displaced Cultural Objects in Virtual Reality'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Ke Zhao
+    affiliation: Wuhan University / Duke Kunshan University
+  - name: Ruiqi Chen
+    affiliation: UW Human Centered Design & Engineering / Duke Kunshan 
+      University
+  - name: Xiaziyu Zhang
+    affiliation: Wuhan University
+  - name: Chenxi Wang
+    affiliation: Politecnico di Milano
+  - name: Siling Chen
+    affiliation: Wuhan University
+  - name: Xiaoguang Wang
+    affiliation: Wuhan University
+  - name: Yujue Wang
+    affiliation: Wuhan University
+  - name: Xin Tong
+    affiliation: Hong Kong University of Science and Technology, Guangzhou / 
+      Duke Kunshan University
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195152
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4136
+  isBreak: false
+- id: 189009
+  title: 'Inaccessible and Deceptive: Examining Experiences of Deceptive Design With
+    People Who Use Visual Accessibility Technology'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Aaleyah Lewis
+    affiliation: UW Computer Science & Engineering
+  - name: Jesse J Martinez
+    affiliation: UW Computer Science & Engineering
+  - name: Maitraye Das
+    affiliation: Northeastern University
+  - name: James Fogarty
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195000
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-1709
+  isBreak: false
+- id: 189540
+  title: 'Incloodle-Classroom: Technology for Inclusive Joint Media Engagement in
+    a Neurodiverse Kindergarten Classroom'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Kiley Sobel
+    affiliation: UW Human Centered Design & Engineering
+  - name: Maitraye Das
+    affiliation: Northeastern University
+  - name: Sara M Behbakht
+    affiliation: IDEO
+  - name: Julie A Kientz
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13414
+  typeId: 14039
+  sessionIds:
+  - 191704
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25s-1108
+  isBreak: false
+- id: 188845
+  title: '"It Brought Me Joy": Opportunities for Spatial Browsing in Desktop Screen
+    Readers'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Arnavi Chheda-Kothary
+    affiliation: UW Computer Science & Engineering
+  - name: Ather Sharif
+    affiliation: UW Computer Science & Engineering
+  - name: David Angel Rios
+    affiliation: Columbia University
+  - name: Brian A Smith
+    affiliation: Columbia University
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195128
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-2993
+  isBreak: false
+- id: 188641
+  title: '"I Use Video Calling in All Areas of My Life": Understanding the Video Calling
+    Experiences of Chronically Ill People'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Humphrey Curtis
+    affiliation: King's College London
+  - name: Erin Beneteau
+    affiliation: UW Information School
+  - name: Edward Cutrell
+    affiliation: Microsoft
+  - name: Denae Ford
+    affiliation: Microsoft
+  - name: Sasa Junuzovic
+    affiliation: Microsoft
+  - name: Ann Paradiso
+    affiliation: Microsoft
+  - name: John Tang
+    affiliation: Microsoft
+  - name: Martez E Mott
+    affiliation: Microsoft
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195034
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-5774
+  isBreak: false
+- id: 189254
+  title: 'I Want to Break Free: Enabling User-Applied Active Locomotion in in-Car
+    VR Through Contextual Cues'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Bocheon Gim
+    affiliation: Gwangju Institute of Science and Technology
+  - name: Seokhyun Hwang
+    affiliation: UW Information School
+  - name: Seongjun Kang
+    affiliation: Gwangju Institute of Science and Technology
+  - name: Gwangbin Kim
+    affiliation: Gwangju Institute of Science and Technology
+  - name: Dohyeon Yeo
+    affiliation: Gwangju Institute of Science and Technology
+  - name: SeungJun Kim
+    affiliation: Gwangju Institute of Science and Technology
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195005
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-7637
+  isBreak: false
+- id: 188213
+  title: "``I Want to Think Like an SLP'': A Design Exploration of AI-Supported Home
+    Practice in Speech Therapy"
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Aayushi Dangol
+    affiliation: UW Human Centered Design & Engineering
+  - name: Aaleyah Lewis
+    affiliation: UW Computer Science & Engineering
+  - name: Hyewon Suh
+    affiliation: UW Human Centered Design & Engineering
+  - name: Xuesi Hong
+    affiliation: UW Global Innovation Exchange
+  - name: Hedda Meadan
+    affiliation: University of North Carolina at Charlotte
+  - name: James Fogarty
+    affiliation: UW Computer Science & Engineering
+  - name: Julie A Kientz
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195045
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8454
+  isBreak: false
+- id: 188237
+  title: 'Jupybara: Operationalizing a Design Space for Actionable Data Analysis and
+    Storytelling With LLMs'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Huichen Will Wang
+    affiliation: UW Computer Science & Engineering / Tableau
+  - name: Larry Birnbaum
+    affiliation: Northwestern University
+  - name: Vidya Setlur
+    affiliation: Tableau
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195132
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8466
+  isBreak: false
+- id: 188860
+  title: 'Leaky Cups: Tinkering With Hydrofeminist Temporalities for HCI'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Cayla Key
+    affiliation: UW Human Centered Design & Engineering / Northumbria University
+  - name: Cally Gatehouse
+    affiliation: Northumbria University
+  - name: Stevie Koepp
+    affiliation: UW Architecture / UW Landscape Architecture
+  - name: Nick Taylor
+    affiliation: Newcastle University
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195049
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4701
+  isBreak: false
+- id: 188515
+  title: 'LuxKnit: Fabricating Interactive Display Textiles Integrated With Sensing
+    by Machine Knitting'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Tongyan Wang
+    affiliation: Purdue University
+  - name: Mohan Chi
+    affiliation: Purdue University
+  - name: Yue Yu
+    affiliation: UW Electrical & Computer Engineering
+  - name: Kedi Yan
+    affiliation: UW Electrical & Computer Engineering
+  - name: Mo Li
+    affiliation: UW Electrical & Computer Engineering
+  - name: Yiyue Luo
+    affiliation: UW Electrical & Computer Engineering
+  - name: Rua Mae Williams
+    affiliation: Purdue University
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195053
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-6656
+  isBreak: false
+- id: 188737
+  title: 'Mediating the Marginal: A Quantitative Analysis of Curated LGBTQ+ Content
+    on Instagram'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Garrett Souza
+    affiliation: Massachusetts Institute of Technology
+  - name: Nina Lutz
+    affiliation: UW Human Centered Design & Engineering
+  - name: Katlyn M Turner
+    affiliation: Massachusetts Institute of Technology
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 196451
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-2584
+  isBreak: false
+- id: 189089
+  title: 'NightLight: Passively Mapping Nighttime Sidewalk Light Data for Improved
+    Pedestrian Routing'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Joseph Breda
+    affiliation: UW Computer Science & Engineering
+  - name: Daniel Campos Zamora
+    affiliation: UW Computer Science & Engineering
+  - name: Shwetak N Patel
+    affiliation: UW Computer Science & Engineering / UW Electrical & Computer 
+      Engineering
+  - name: Jon E Froehlich
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195124
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9632
+  isBreak: false
+- id: 189035
+  title: 'OmniQuery: Contextually Augmenting Captured Multimodal Memories to Enable
+    Personal Question Answering'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Jiahao Nick Li
+    affiliation: University of California, Los Angeles
+  - name: Zhuohao "Jerry" Zhang
+    affiliation: UW Information School
+  - name: Jiaju Ma
+    affiliation: Stanford University
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195080
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-6138
+  isBreak: false
+- id: 189466
+  title: 'Ontologies in Design: How Imagining a Tree Reveals Possibilities and Assumptions
+    in Large Language Models'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Nava Haghighi
+    affiliation: Stanford University
+  - name: Sunny Yu
+    affiliation: Stanford University
+  - name: James A Landay
+    affiliation: Stanford University
+  - name: Daniela Rosner
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195029
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-3772
+  isBreak: false
+- id: 188833
+  title: 'PolicyCraft: Supporting Collaborative and Participatory Policy Design Through
+    Case-Grounded Deliberation'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Tzu-Sheng Kuo
+    affiliation: Carnegie Mellon University
+  - name: Quan Ze Chen
+    affiliation: UW Computer Science & Engineering
+  - name: Amy X Zhang
+    affiliation: UW Computer Science & Engineering
+  - name: Jane Hsieh
+    affiliation: Carnegie Mellon University
+  - name: Haiyi Zhu
+    affiliation: Carnegie Mellon University
+  - name: Kenneth Holstein
+    affiliation: Carnegie Mellon University
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195104
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9381
+  isBreak: false
+- id: 188406
+  title: 'PPG Earring: Wireless Smart Earring for Heart Health Monitoring'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Qiuyue "Shirley" Xue
+    affiliation: UW Computer Science & Engineering
+  - name: Dilini Nissanka
+    affiliation: UW Computer Science & Engineering
+  - name: Jiachen Tammy Yan
+    affiliation: UW Human Centered Design & Engineering
+  - name: Ruiqing Wang
+    affiliation: UW Global Innovation Exchange
+  - name: Shwetak N Patel
+    affiliation: UW Computer Science & Engineering / UW Electrical & Computer 
+      Engineering
+  - name: Vikram Iyer
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195010
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-3194
+  isBreak: false
+- id: 189076
+  title: 'Promoting Prosociality via Micro-Acts of Joy: A Large-Scale Well-Being Intervention
+    Study'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Hitesh Goel
+    affiliation: International Institute of Information Technology, Hyderabad
+  - name: Yoobin Park
+    affiliation: University of California, San Francisco
+  - name: Jin Liou
+    affiliation: University of California, San Francisco
+  - name: Darwin A Guevarra
+    affiliation: University of California, San Francisco
+  - name: Peggy Callahan
+    affiliation: Voices4Freedom
+  - name: Jolene Smith
+    affiliation: Voices4Freedom
+  - name: Bingsheng Yao
+    affiliation: Northeastern University
+  - name: Dakuo Wang
+    affiliation: Northeastern University
+  - name: Xin Liu
+    affiliation: UW Computer Science & Engineering
+  - name: Daniel McDuff
+    affiliation: UW Computer Science & Engineering
+  - name: Noemie Elhadad
+    affiliation: Columbia University
+  - name: Emiliana Simon-Thomas
+    affiliation: University of California, Berkeley
+  - name: Elissa Epel
+    affiliation: University of California, San Francisco
+  - name: Xuhai "Orson" Xu
+    affiliation: Columbia University
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195092
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-6114
+  isBreak: false
+- id: 188725
+  title: 'ProxiCycle : Passively Mapping Cyclist Safety Using Smart Handlebars for
+    Near-Miss Detection'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Joseph Breda
+    affiliation: UW Computer Science & Engineering
+  - name: Keyu Chen
+    affiliation: Apple
+  - name: Thomas Ploetz
+    affiliation: Georgia Institute of Technology
+  - name: Shwetak N Patel
+    affiliation: UW Computer Science & Engineering / UW Electrical & Computer 
+      Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195096
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-5843
+  isBreak: false
+- id: 189327
+  title: 'ScreenAudit: Detecting Screen Reader Accessibility Errors in Mobile Apps
+    Using Large Language Models'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Mingyuan Zhong
+    affiliation: UW Computer Science & Engineering
+  - name: Ruolin Chen
+    affiliation: UW Information School
+  - name: Xia Chen
+    affiliation: Carnegie Mellon University
+  - name: James Fogarty
+    affiliation: UW Computer Science & Engineering
+  - name: Jacob O Wobbrock
+    affiliation: UW Information School
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195154
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-5644
+  isBreak: false
+- id: 189481
+  title: 'Shifting the Focus: Exploring Video Accessibility Strategies and Challenges
+    for People With ADHD'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Lucy Jiang
+    affiliation: UW Human Centered Design & Engineering
+  - name: Woojin Ko
+    affiliation: Cornell Tech
+  - name: Shirley Yuan
+    affiliation: Cornell University
+  - name: Tanisha Shende
+    affiliation: Oberlin College
+  - name: Shiri Azenkot
+    affiliation: Cornell Tech
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195069
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8191
+  isBreak: false
+- id: 188986
+  title: 'Social-Rag: Retrieving From Group Interactions to Socially Ground AI Generation'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Ruotong Wang
+    affiliation: UW Computer Science & Engineering
+  - name: Xinyi Zhou
+    affiliation: UW Computer Science & Engineering
+  - name: Lin Qiu
+    affiliation: UW Computer Science & Engineering
+  - name: Joseph Chee Chang
+    affiliation: Allen Institute for Artificial Intelligence
+  - name: Jonathan Bragg
+    affiliation: Allen Institute for Artificial Intelligence
+  - name: Amy X Zhang
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195017
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-6398
+  isBreak: false
+- id: 189450
+  title: 'Spatial Speech Translation: Translating Across Space With Binaural Hearables'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Tuochao Chen
+    affiliation: UW Computer Science & Engineering
+  - name: Qirui Wang
+    affiliation: UW Computer Science & Engineering
+  - name: Runlin He
+    affiliation: UW Computer Science & Engineering
+  - name: Shyamnath Gollakota
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 191344
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-1341
+  isBreak: false
+- id: 189442
+  title: 'SPECTRA: Personalizable Sound Recognition for Deaf and Hard of Hearing Users
+    Through Interactive Machine Learning'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Steven M Goodman
+    affiliation: UW Human Centered Design & Engineering
+  - name: Emma J McDonnell
+    affiliation: UW Human Centered Design & Engineering
+  - name: Jon E Froehlich
+    affiliation: UW Computer Science & Engineering
+  - name: Leah Findlater
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195004
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4887
+  isBreak: false
+- id: 188573
+  title: 'Stills From the Inner Ear Shorts: Collecting and Living With Data'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Wyatt Olson
+    affiliation: UW Art + Art History + Design
+  - name: Freesoul El Shabazz-Thompson
+    affiliation: UW Art + Art History + Design
+  - name: Melanie Wells
+    affiliation: UW Art + Art History + Design
+  - name: Chuanzhe Xiong
+    affiliation: UW Art + Art History + Design
+  - name: Janey Yee
+    affiliation: UW Art + Art History + Design
+  - name: Julia R Saimo
+    affiliation: UW Art + Art History + Design
+  - name: Ocean Vu
+    affiliation: UW Art + Art History + Design
+  - name: Jonathan Narita
+    affiliation: UW Art + Art History + Design
+  - name: Brock Craft
+    affiliation: UW Human Centered Design & Engineering
+  - name: Timea Tihanyi
+    affiliation: UW Art + Art History + Design
+  - name: Audrey Desjardins
+    affiliation: UW Art + Art History + Design
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195027
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-2281
+  isBreak: false
+- id: 189373
+  title: Supporting Contraceptive Decision-Making in the Intermediated Pharmacy 
+    Setting in Kenya
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Lisa Orii
+    affiliation: UW Computer Science & Engineering
+  - name: Elizabeth K Harrington
+    affiliation: UW Obstetrics and Gynecology
+  - name: Serah Gitome
+    affiliation: Kenya Medical Research Institute
+  - name: Nelson Kiprotich Cheruiyot
+    affiliation: Independent Design Consultant
+  - name: Elizabeth Anne Bukusi
+    affiliation: Kenya Medical Research Institute
+  - name: Sandy Cheng
+    affiliation: UW Computer Science & Engineering
+  - name: Ariel Fu
+    affiliation: UW Computer Science & Engineering
+  - name: Khushi Khandelwal
+    affiliation: UW Computer Science & Engineering
+  - name: Shrimayee Narasimhan
+    affiliation: UW Computer Science & Engineering
+  - name: Richard Anderson
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195135
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-1384
+  isBreak: false
+- id: 188671
+  title: Supporting Mobile Reading While Walking With Automatic and Customized 
+    Font Size Adaptations
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Junhan Kong
+    affiliation: UW Information School
+  - name: Jacob O Wobbrock
+    affiliation: UW Information School
+  - name: Tianyuan Cai
+    affiliation: Adobe
+  - name: Zoya Bylinskii
+    affiliation: Adobe
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195132
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-7804
+  isBreak: false
+- id: 189000
+  title: 'Tangible-MakeCode: Bridging Physical Coding Blocks With a Web-Based Programming
+    Interface for Collaborative and Extensible Learning'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Jin Yu
+    affiliation: Georgia Institute of Technology
+  - name: Poojita Garg
+    affiliation: UW Computer Science & Engineering
+  - name: DoangJoo Synn
+    affiliation: Georgia Institute of Technology
+  - name: HyunJoo Oh
+    affiliation: Georgia Institute of Technology
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195012
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8581
+  isBreak: false
+- id: 189619
+  title: "The Cruel Optimism of Tech Work: Tech Workers' Affective Attachments in
+    the Aftermath of 2022-23 Tech Layoffs"
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Samuel So
+    affiliation: UW Human Centered Design & Engineering
+  - name: Vannary Sou
+    affiliation: UW Information School
+  - name: Sean A Munson
+    affiliation: UW Human Centered Design & Engineering
+  - name: Sucheta Ghoshal
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195092
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8140
+  isBreak: false
+- id: 189472
+  title: The Role of ICTs in the Maintenance and Reproduction of Digital Border 
+    Assemblages
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Lubna Razaq
+    affiliation: UW Human Centered Design & Engineering
+  - name: Sucheta Ghoshal
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 196451
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-2444
+  isBreak: false
+- id: 189266
+  title: "\"They've Over-Emphasized That One Search\": Controlling Unwanted Content
+    on TikTok's for You Page"
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Julie A Vera
+    affiliation: UW Human Centered Design & Engineering
+  - name: Sourojit Ghosh
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195026
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8938
+  isBreak: false
+- id: 188868
+  title: 'Toward Human-Quantum Computer Interaction: Interface Techniques for Usable
+    Quantum Computing'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Hyeok Kim
+    affiliation: Northwestern University / UW Computer Science & Engineering
+  - name: Kaitlin Smith
+    affiliation: Northwestern University
+  - name: Mingyoung Jessica Jeng
+    affiliation: Northwestern University
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195072
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8031
+  isBreak: false
+- id: 188786
+  title: 'Toward Language Justice: Exploring Multilingual Captioning for Accessibility'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Aashaka Desai
+    affiliation: UW Computer Science & Engineering
+  - name: Rahaf Alharbi
+    affiliation: University of Michigan
+  - name: Stacy Hsueh
+    affiliation: UW Computer Science & Engineering
+  - name: Richard E Ladner
+    affiliation: UW Computer Science & Engineering
+  - name: Jennifer Mankoff
+    affiliation: UW Computer Science & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195025
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8073
+  isBreak: false
+- id: 189626
+  title: 'Toward Living Narrative Reviews: An Empirical Study of the Processes and
+    Challenges in Updating Survey Articles in Computing Research'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Raymond Fok
+    affiliation: UW Computer Science & Engineering
+  - name: Alexa Siu
+    affiliation: Adobe
+  - name: Daniel S Weld
+    affiliation: UW Computer Science & Engineering / Allen Institute for 
+      Artificial Intelligence
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195141
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9238
+  isBreak: false
+- id: 188886
+  title: 'Translating HCI Research to Broader Audiences: Motivation, Inspiration,
+    and Critical Factors on Alternative Research Outcomes'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: MinYoung Yoo
+    affiliation: Simon Fraser University
+  - name: Sophia Ppali
+    affiliation: CYENS Centre of Excellence
+  - name: William Odom
+    affiliation: Simon Fraser University
+  - name: Yumeng Zhuang
+    affiliation: Simon Fraser University
+  - name: Kritika Kritika
+    affiliation: University of California, Santa Cruz
+  - name: Wyatt Olson
+    affiliation: UW Art + Art History + Design
+  - name: Catherine Wieczorek
+    affiliation: Georgia Institute of Technology
+  - name: Heidi Biggs
+    affiliation: Georgia Institute of Technology
+  - name: Arne Berger
+    affiliation: Anhalt University of Applied Sciences
+  - name: Audrey Desjardins
+    affiliation: UW Art + Art History + Design
+  - name: Ron Wakkary
+    affiliation: Simon Fraser University
+  - name: Kathryn E Ringland
+    affiliation: University of California, Santa Cruz
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195055
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9377
+  isBreak: false
+- id: 189493
+  title: Underground AI? Critical Approaches to Generative Cinema Through 
+    Amateur Filmmaking
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Brett A Halperin
+    affiliation: UW Human Centered Design & Engineering
+  - name: Diana Flores Ruíz
+    affiliation: UW Cinema & Media Studies
+  - name: Daniela Rosner
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195151
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-1570
+  isBreak: false
+- id: 188962
+  title: Understanding Children's Avatar Making in Social Online Games
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Yue Fu
+    affiliation: UW Information School
+  - name: Samuel Schwamm
+    affiliation: Boston Children's Hospital
+  - name: Amanda Baughan
+    affiliation: UW Computer Science & Engineering
+  - name: Nicole M Powell
+    affiliation: Boston Children's Hospital
+  - name: Zoe Kronberg
+    affiliation: Boston Children's Hospital
+  - name: Alicia Owens
+    affiliation: Boston Children's Hospital
+  - name: Emily Renee Izenman
+    affiliation: Boston Children's Hospital
+  - name: Dania Alsabeh
+    affiliation: University of Michigan
+  - name: Elizabeth Hunt
+    affiliation: Education Development Center
+  - name: Michael Rich
+    affiliation: Boston Children's Hospital
+  - name: David Bickham
+    affiliation: Boston Children's Hospital
+  - name: Jenny Radesky
+    affiliation: University of Michigan
+  - name: Alexis Hiniker
+    affiliation: UW Information School
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195013
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-8487
+  isBreak: false
+- id: 189375
+  title: 'Understanding the LLM-ification of CHI: Unpacking the Impact of LLMs at
+    CHI Through a Systematic Literature Review'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Rock Yuren Pang
+    affiliation: UW Computer Science & Engineering
+  - name: Hope Schroeder
+    affiliation: Massachusetts Institute of Technology
+  - name: Kynnedy Simone Smith
+    affiliation: Columbia University
+  - name: Solon Barocas
+    affiliation: Microsoft
+  - name: Ziang Xiao
+    affiliation: Johns Hopkins University
+  - name: Emily Tseng
+    affiliation: Microsoft
+  - name: Danielle Bragg
+    affiliation: Microsoft
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195055
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-3320
+  isBreak: false
+- id: 189568
+  title: Unknown Word Detection for English as a Second Language (ESL) Learners 
+    Using Gaze and Pre-Trained Language Models
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Jiexin Ding
+    affiliation: Tsinghua University / UW Computer Science & Engineering
+  - name: Bowen Zhao
+    affiliation: Groundlight AI
+  - name: Yuntao Wang
+    affiliation: Tsinghua University
+  - name: Xinyun Liu
+    affiliation: Rice University
+  - name: Rui Hao
+    affiliation: University of Chinese Academy of Sciences
+  - name: Ishan Chatterjee
+    affiliation: UW Computer Science & Engineering
+  - name: Yuanchun Shi
+    affiliation: Tsinghua University / Qinghai University
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195082
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-2855
+  isBreak: false
+- id: 188766
+  title: What's in Your Kit? Mental Health Technology Kits for Depression 
+    Self-Management
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Eleanor R Burgess
+    affiliation: Northwestern University
+  - name: Sean A Munson
+    affiliation: UW Human Centered Design & Engineering
+  - name: David C Mohr
+    affiliation: Northwestern University
+  - name: Madhu Reddy
+    affiliation: University of California, Irvine
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195092
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4984
+  isBreak: false
+- id: 189148
+  title: What Social Media Use Do People Regret? An Analysis of 34K Smartphone 
+    Screenshots With Multimodal LLM
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Longjie Guo
+    affiliation: UW Information School
+  - name: Yue Fu
+    affiliation: UW Information School
+  - name: Xiran Lin
+    affiliation: UW Global Innovation Exchange
+  - name: Xuhai "Orson" Xu
+    affiliation: Columbia University
+  - name: Yung-Ju Chang
+    affiliation: National Yang Ming Chiao Tung University
+  - name: Alexis Hiniker
+    affiliation: UW Information School
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195127
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9612
+  isBreak: false
+- id: 188234
+  title: '"What Would I Want to Make? Probably Everything": Practices and Speculations
+    of Blind and Low Vision Tactile Graphics Creators'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Gina Clepper
+    affiliation: UW Human Centered Design & Engineering
+  - name: Emma J McDonnell
+    affiliation: UW Human Centered Design & Engineering
+  - name: Leah Findlater
+    affiliation: UW Human Centered Design & Engineering
+  - name: Nadya Peek
+    affiliation: UW Human Centered Design & Engineering
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195154
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-9307
+  isBreak: false
+- id: 188636
+  title: 'Wordplay: Accessible, Multilingual, Interactive Typography'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Amy J Ko
+    affiliation: UW Information School
+  - name: Carlos Aldana Lira
+    affiliation: Middle Tennessee State University
+  - name: Isabel Amaya
+    affiliation: UW Information School
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195025
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4202
+  isBreak: false
+- id: 188928
+  title: 'WritingRing: Enabling Natural Handwriting Input With a Single IMU Ring'
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Zhe He
+    affiliation: Tsinghua University
+  - name: Zixuan Wang
+    affiliation: Tsinghua University
+  - name: Chun Yu
+    affiliation: Tsinghua University
+  - name: Chengwen Zhang
+    affiliation: Tsinghua University
+  - name: Xiyuan Shen
+    affiliation: UW Computer Science & Engineering / Tsinghua University
+  - name: Yuanchun Shi
+    affiliation: Tsinghua University / Qinghai University
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195093
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-6084
+  isBreak: false
+- id: 188498
+  title: "``You Go Through So Many Emotions Scrolling Through Instagram'': How Teens
+    Use Instagram to Regulate Their Emotions"
+  bestpaper: false
+  honorablemention: false
+  authors:
+  - name: Katie Davis
+    affiliation: UW Information School
+  - name: Rotem Landesman
+    affiliation: UW Information School
+  - name: Jina Yoon
+    affiliation: UW Computer Science & Engineering
+  - name: JaeWon Kim
+    affiliation: UW Information School
+  - name: Daniela E Munoz Lopez
+    affiliation: UW Psychology
+  - name: Lucia Magis-Weinberg
+    affiliation: UW Psychology
+  - name: Alexis Hiniker
+    affiliation: UW Information School
+  addons: {}
+  trackId: 13412
+  typeId: 13945
+  sessionIds:
+  - 195156
+  source: PCS
+  eventIds: []
+  recognitionIds: []
+  importedId: chi25b-4232
+  isBreak: false
