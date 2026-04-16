@@ -36,7 +36,7 @@ basedpyright = "^1.36.1"
 black = "~25.12.0" # Black does not semver.
 invoke = "^2.2.1"
 isort = "^7.0.0"
-pytest = "^9.0.2"
+pytest = "^9.0.3"
 
 [tool.basedpyright]
 typeCheckingMode = "recommended"
