@@ -33,7 +33,7 @@ titlecase = "^2.4.1"
 #   Example: ~1.2.3 will match versions >=1.2.3 but <1.3.0.
 fogies = {version = "^0.0.0-dev.4", allow-prereleases = true}
 basedpyright = "^1.36.1"
-black = "~25.12.0" # Black does not semver.
+black = "~26.3.1" # Black does not semver.
 invoke = "^2.2.1"
 isort = "^7.0.0"
 pytest = "^9.0.2"
